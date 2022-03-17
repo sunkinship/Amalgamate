@@ -10,6 +10,10 @@ public class playerMovement : MonoBehaviour
     private float moveSpeed = 3f;
     private float dashSpeed;
 
+    public Animator animator;
+
+    Vector2 movement;
+
     public bool constantSprint;
 
     public PlayerInput playerInput;
@@ -51,8 +55,12 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
 
-        
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);*/
 
         GetInput();
         currentDashCooldown = currentDashCooldown - Time.deltaTime;
@@ -98,6 +106,7 @@ public class playerMovement : MonoBehaviour
 
     public void GetInput()
     {
+        
 
         switch (state)
         {
@@ -119,6 +128,7 @@ public class playerMovement : MonoBehaviour
                 {
                     moveY = +1f;
                     lastFacingDirection = "UP";
+                    
                 }
 
                 //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["DOWN"]))
@@ -126,6 +136,7 @@ public class playerMovement : MonoBehaviour
                 {
                     moveY = -1f;
                     lastFacingDirection = "DOWN";
+                    
                 }
 
                 //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["LEFT"]))
@@ -133,6 +144,7 @@ public class playerMovement : MonoBehaviour
                 {
                     moveX = -1f;
                     lastFacingDirection = "LEFT";
+                    
                 }
 
                 //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["RIGHT"]))
@@ -140,6 +152,7 @@ public class playerMovement : MonoBehaviour
                 {
                     moveX = +1f;
                     lastFacingDirection = "RIGHT";
+                    
                 }
 
                 direction = new Vector3(moveX, moveY).normalized;

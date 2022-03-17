@@ -6768,6 +6768,7 @@ GameObject:
   - component: {fileID: 399099368}
   - component: {fileID: 399099369}
   - component: {fileID: 399099370}
+  - component: {fileID: 399099371}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -6790,6 +6791,7 @@ MonoBehaviour:
   dashLayerMask:
     serializedVersion: 2
     m_Bits: 2304
+  animator: {fileID: 399099371}
   constantSprint: 0
   playerInput: {fileID: 399099369}
   currentDashCooldown: 0
@@ -6832,14 +6834,14 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1030076715
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b1de2d5bb40c03d46ab6ed65a59f30e1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0996aa049ee59dd43b322a330df89048, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.5, y: 3.75}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -6980,6 +6982,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 399099363}
   checkmark: {fileID: 463666819}
+--- !u!95 &399099371
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399099363}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dfb217ff1e2f3a243ae8b1d016c5cdef, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &409196952
 GameObject:
   m_ObjectHideFlags: 0
@@ -8035,7 +8056,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -266247513
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -16514,7 +16535,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -266247513
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 15
   m_Sprite: {fileID: 21300000, guid: 8e3d31d6d5a40904d91b8552cd21e9a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
