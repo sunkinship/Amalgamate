@@ -62,6 +62,8 @@ public class playerMovement : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);*/
 
+
+
         GetInput();
         currentDashCooldown = currentDashCooldown - Time.deltaTime;
 
@@ -117,6 +119,7 @@ public class playerMovement : MonoBehaviour
                 float moveX = 0f;
                 float moveY = 0f;
 
+
                 //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["SPRINT"])) moveSpeed = 5; else moveSpeed = 3;
                 if (playerInput.actions["Sprint"].IsPressed() || constantSprint == true) moveSpeed = 5; else moveSpeed = 3;
                 if (playerInput.actions["Sprint"].IsPressed() && constantSprint == true) moveSpeed = 3;
@@ -126,34 +129,52 @@ public class playerMovement : MonoBehaviour
                 //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["UP"]))
                 if (playerInput.actions["Up"].IsPressed())
                 {
+                    if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Down"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
+                    {
+                        animator.SetTrigger("Up");
+                    }
                     moveY = +1f;
                     lastFacingDirection = "UP";
-                    
                 }
+                //else animator.ResetTrigger("Up");
+
 
                 //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["DOWN"]))
                 if (playerInput.actions["Down"].IsPressed())
                 {
                     moveY = -1f;
                     lastFacingDirection = "DOWN";
-                    
+                    if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
+                    {
+                        animator.SetTrigger("Down");
+                    }
+
                 }
+                //else animator.ResetTrigger("Down");
 
                 //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["LEFT"]))
                 if (playerInput.actions["Left"].IsPressed())
                 {
                     moveX = -1f;
                     lastFacingDirection = "LEFT";
-                    
+                    if (playerInput.actions["Right"].IsPressed() == false)
+                    {
+                        animator.SetTrigger("Left");
+                    }
+
                 }
+                //else animator.ResetTrigger("Left");
+
 
                 //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["RIGHT"]))
                 if (playerInput.actions["Right"].IsPressed())
                 {
                     moveX = +1f;
                     lastFacingDirection = "RIGHT";
-                    
+                    animator.SetTrigger("Right");
+
                 }
+                else animator.ResetTrigger("Right");
 
                 direction = new Vector3(moveX, moveY).normalized;
                 if(moveX != 0 || moveY != 0)
