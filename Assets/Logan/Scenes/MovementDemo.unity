@@ -15055,8 +15055,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -280.8}
-  m_SizeDelta: {x: 1024, y: 206.38208}
+  m_AnchoredPosition: {x: 90.47, y: -187.11987}
+  m_SizeDelta: {x: 831.4391, y: 151.4014}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &795644477
 MonoBehaviour:
@@ -15243,7 +15243,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -1.4000015, y: -1.0999985}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &887053712
@@ -16509,8 +16509,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -119.850006, y: -158.6}
-  m_SizeDelta: {x: 239.7088, y: 43.82846}
+  m_AnchoredPosition: {x: -126, y: -100}
+  m_SizeDelta: {x: 234.0362, y: 43.82846}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1350689212
 GameObject:
@@ -16578,8 +16578,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 119.130005, y: 171}
-  m_SizeDelta: {x: 238.26846, y: 341.96988}
+  m_AnchoredPosition: {x: 91.3, y: 122.2}
+  m_SizeDelta: {x: 180, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1570264072
 PrefabInstance:
@@ -17174,8 +17174,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 116.200005, y: 1.2999878}
-  m_SizeDelta: {x: 764.3955, y: 185.36713}
+  m_AnchoredPosition: {x: 6.4922, y: -3.1}
+  m_SizeDelta: {x: 818.4546, y: 132.98221}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1853546873
 MonoBehaviour:
@@ -17198,10 +17198,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 4d2f7673e05c7054397d8a96def8338e, type: 3}
-    m_FontSize: 40
+    m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 41
     m_Alignment: 0
     m_AlignByGeometry: 0
