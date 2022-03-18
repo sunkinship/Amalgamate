@@ -1,16 +1,9 @@
 fileFormatVersion: 2
 <<<<<<< HEAD:Assets/Leo/Scripts.meta
-<<<<<<< HEAD
 guid: eacab3babbd87034bb84e1270929a4ff
 =======
 guid: b456af0ba43510b46bbee455c32bc877
 >>>>>>> 5f997efe6030af90c94690ed4e47504e95247838:Assets/Logan/NPC Dialogue Sample/Materials.meta
-=======
-guid: 772f5b21fabb8ef47966ae760c314759
-=======
-guid: a4127612b3cd206428102ff566b58505
->>>>>>> a1d45ed02563db075fd8b795213f93508d60cb52:Assets/Logan/NPC Dialogue Sample.meta
->>>>>>> 5f997efe6030af90c94690ed4e47504e95247838
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
