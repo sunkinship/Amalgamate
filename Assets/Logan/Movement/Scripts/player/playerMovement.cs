@@ -7,8 +7,10 @@ public class playerMovement : MonoBehaviour
 {
     [SerializeField] private LayerMask dashLayerMask;
 
-    private float moveSpeed = 3f;
+    private float moveSpeed = 6f;
     private float dashSpeed;
+
+    public bool inDialogue;
 
     public Animator animator;
 
@@ -20,6 +22,9 @@ public class playerMovement : MonoBehaviour
 
     private float dashCooldown = 1.5f;
     public float currentDashCooldown;
+
+    public float speakCooldown = .5f;
+    public float speakCooldownLeft;
 
 
     private enum State
@@ -62,16 +67,23 @@ public class playerMovement : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);*/
 
+        if (inDialogue == false)
+        {
+            GetInput();
+        }
 
-
-        GetInput();
+        speakCooldownLeft = speakCooldownLeft - Time.deltaTime;
         currentDashCooldown = currentDashCooldown - Time.deltaTime;
 
     }
 
     void FixedUpdate()
     {
-        Move();
+        if(inDialogue == false)
+        {
+            Move();
+        }
+
     }
 
     public void Move()
@@ -118,11 +130,6 @@ public class playerMovement : MonoBehaviour
 
                 float moveX = 0f;
                 float moveY = 0f;
-
-
-                //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["SPRINT"])) moveSpeed = 5; else moveSpeed = 3;
-                if (playerInput.actions["Sprint"].IsPressed() || constantSprint == true) moveSpeed = 5; else moveSpeed = 3;
-                if (playerInput.actions["Sprint"].IsPressed() && constantSprint == true) moveSpeed = 3;
 
                 direction = Vector2.zero;
 
@@ -206,6 +213,8 @@ public class playerMovement : MonoBehaviour
         }
 
     }
+
+
 
     //private bool CanMove(Vector3 dir, float distance)
     //{
