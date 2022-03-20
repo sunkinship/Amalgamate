@@ -54,6 +54,54 @@ public class dialogueManager : MonoBehaviour
             StartCoroutine(TypeDialogue(dialogue.Lines[0]));
     }
 
+    // New TypeDialogue Method With Skip Ability 
+    public IEnumerator TypeDialogue(string dialogue)
+    {
+        isTyping = true;
+        dialogueText.text = dialogue;
+        int totalVisibleCharacters = dialogue.ToString().Length;
+        int counter = 0;
+
+        float delayTime = 0.03f;
+        float nextTime = Time.time;
+
+
+        foreach (var letter in dialogue.ToCharArray())
+        {
+            while (true)
+            {
+                // Wait for delay to continue
+                if (Time.time > nextTime)
+                {
+                    nextTime = Time.time + delayTime;
+                    int visibleCount = counter % (totalVisibleCharacters + 1);
+                    dialogueText.maxVisibleCharacters = visibleCount;
+                    if (visibleCount >= totalVisibleCharacters)
+                    {
+                        break;
+                    }
+                    counter++;
+                    break;
+                }
+                yield return null;
+
+                //Check for skip input
+                if (playerInput.actions["Interact"].triggered)
+                {
+                    dialogueText.maxVisibleCharacters = totalVisibleCharacters;
+                    // Exits both loops
+                    goto exitLoops;
+                }
+            }
+        }
+
+        exitLoops:
+        isTyping = false;
+    }
+
+
+    // Original TypeDialogue Method 
+
     //public IEnumerator TypeDialogue(string dialogue)
     //{
     //    isTyping = true;
@@ -62,69 +110,18 @@ public class dialogueManager : MonoBehaviour
     //    int totalVisibleCharacters = dialogue.ToString().Length;
     //    int counter = 0;
 
-    //    //float timer = 0;
-    //    float delayTime = 0.03f;
-    //    float nextTime = Time.time + delayTime;
-
-
     //    foreach (var letter in dialogue.ToCharArray())
     //    {
-    //        //Debug.Log("Char: " + counter);
-    //        while (true)
+    //        int visibleCount = counter % (totalVisibleCharacters + 1);
+    //        dialogueText.maxVisibleCharacters = visibleCount;
+    //        if (visibleCount >= totalVisibleCharacters)
     //        {
-    //            // Wait for delay to continue
-    //            if (Time.time > nextTime)
-    //            {
-    //                //timer = 0;
-    //                nextTime = Time.time + delayTime;
-    //                int visibleCount = counter % (totalVisibleCharacters + 1);
-    //                if (visibleCount >= totalVisibleCharacters)
-    //                {
-    //                    break;
-    //                }
-    //                dialogueText.maxVisibleCharacters = visibleCount;
-    //                counter++;
-    //                break;
-    //            }
-    //            yield return null;
-
-    //            // Increment timer
-    //            //timer += Time.deltaTime;
-
-    //            //Check for skip input
-    //            if (Input.GetKeyDown(KeyCode.A))
-    //            {
-    //                Debug.Log("Skip");
-    //                dialogueText.maxVisibleCharacters = totalVisibleCharacters;
-    //                isTyping = false;
-    //                break;
-    //            }
+    //            isTyping = false;
     //        }
+    //        counter += 1;
+    //        yield return new WaitForSeconds(0.03f);
     //    }
-    //    Debug.Log("exited");
+
     //    isTyping = false;
     //}
-
-    public IEnumerator TypeDialogue(string dialogue)
-    {
-        isTyping = true;
-        dialogueText.text = dialogue;
-
-        int totalVisibleCharacters = dialogue.ToString().Length;
-        int counter = 0;
-
-        foreach (var letter in dialogue.ToCharArray())
-        {
-            int visibleCount = counter % (totalVisibleCharacters + 1);
-            dialogueText.maxVisibleCharacters = visibleCount;
-            if (visibleCount >= totalVisibleCharacters)
-            {
-                isTyping = false;
-            }
-            counter += 1;
-            yield return new WaitForSeconds(0.03f);
-        }
-
-        isTyping = false;
-    }
 }

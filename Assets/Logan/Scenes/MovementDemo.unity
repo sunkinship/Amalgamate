@@ -14531,9 +14531,9 @@ MonoBehaviour:
   player: {fileID: 399099363}
   dialogue:
     lines:
-    - Hello, <color=green><size=50>child</size></color>. You are not welcome here..
-    - This here is my shop..
-    - We sell many items here, however none of them are available to you for purchase..
+    - Hello, <color=green><size=50>child</size></color>. You are not welcome here.
+    - This here is my shop.
+    - We sell many items here, however none of them are available to you for purchase.
   NPCname: Shopkeep
 --- !u!1 &761805654
 GameObject:
