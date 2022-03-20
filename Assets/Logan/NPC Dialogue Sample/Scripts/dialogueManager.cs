@@ -48,7 +48,7 @@ public class dialogueManager : MonoBehaviour
     public IEnumerator ShowDialogue(dialogue dialogue)
     {
             yield return new WaitForEndOfFrame();
-
+            
             this.dialogue = dialogue;
             dialogueBox.SetActive(true);
             StartCoroutine(TypeDialogue(dialogue.Lines[0]));
@@ -122,6 +122,8 @@ public class dialogueManager : MonoBehaviour
                 isTyping = false;
             }
             counter += 1;
+
+
             yield return new WaitForSeconds(0.03f);
         }
 
