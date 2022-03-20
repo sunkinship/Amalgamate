@@ -10,7 +10,6 @@ public class ItemInteractable : MonoBehaviour
 
     public void pickUp()
     {
-        Debug.Log("Picked up item");
         item.pickedUp = true;
     }
 }
