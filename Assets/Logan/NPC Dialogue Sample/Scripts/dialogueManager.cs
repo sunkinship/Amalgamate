@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class dialogueManager : MonoBehaviour
 {
 
     [SerializeField] GameObject dialogueBox;
-    [SerializeField] Text dialogueText;
+    [SerializeField]  GameObject dialogueTextBox;
+    public TextMeshProUGUI dialogueText;
     [SerializeField] int lettersPerSecond;
     public GameObject player;
     public PlayerInput playerInput;
@@ -55,12 +57,26 @@ public class dialogueManager : MonoBehaviour
     public IEnumerator TypeDialogue(string dialogue)
     {
         isTyping = true;
-        dialogueText.text = "";
+        dialogueText.text = dialogue;
+
+        int totalVisibleCharacters = dialogue.ToString().Length;
+        int counter = 0;
+
+        
+
         foreach (var letter in dialogue.ToCharArray())
         {
-            dialogueText.text += letter;
-            yield return new WaitForSeconds(1f / lettersPerSecond);
+            int visibleCount = counter % (totalVisibleCharacters + 1);
+            dialogueText.maxVisibleCharacters = visibleCount;
+            if (visibleCount >= totalVisibleCharacters)
+            {
+                isTyping = false;
+            }
+            counter += 1;
+            yield return new WaitForSeconds(0.03f);
+
         }
+
         isTyping = false;
     }
 }
