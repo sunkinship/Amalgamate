@@ -15,6 +15,9 @@ public class dialogueManager : MonoBehaviour
     public GameObject player;
     public PlayerInput playerInput;
     bool isTyping;
+    public GameObject portraitManager;
+    public GameObject currentNPC;
+    public int currentPortraitNumber;
 
 
     public static dialogueManager Instance { get; private set; }
@@ -27,18 +30,23 @@ public class dialogueManager : MonoBehaviour
 
     public void Update()
     {
+
+        currentNPC = portraitManager.GetComponent<managePortraits>().currentNPC;
+
         if (player.GetComponent<playerMovement>().inDialogue == true && playerInput.actions["Interact"].triggered && isTyping == false)
         {
-
             ++currentLine;
             if (currentLine < dialogue.Lines.Count)
             {
+                currentPortraitNumber++;
+                currentNPC.GetComponent<npcInteract>().currentPortrait = currentNPC.GetComponent<npcInteract>().portraits[currentLine];
                 StartCoroutine(TypeDialogue(dialogue.Lines[currentLine]));
             }
             else
             {
                 currentLine = 0;
                 dialogueBox.SetActive(false);
+                currentNPC.GetComponent<npcInteract>().currentPortrait = currentNPC.GetComponent<npcInteract>().portraits[0];
                 player.GetComponent<playerMovement>().inDialogue = false;
                 player.GetComponent<playerMovement>().speakCooldownLeft = player.GetComponent<playerMovement>().speakCooldown;
             }
