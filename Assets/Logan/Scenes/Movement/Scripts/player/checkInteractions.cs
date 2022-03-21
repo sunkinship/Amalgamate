@@ -14,6 +14,8 @@ public class checkInteractions : MonoBehaviour
     GameObject currentNPC;
     public string nameString;
     public Text nameText;
+    public GameObject npcPortrait;
+    public GameObject forPortrait;
 
 
     // Start is called before the first frame update
@@ -25,15 +27,23 @@ public class checkInteractions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(currentNPC != null)
+        {
+            npcPortrait.GetComponent<Image>().sprite = currentNPC.GetComponent<npcInteract>().currentPortrait;
+        }
+        
 
         isKeyDown = playerInput.actions["Interact"].triggered;
 
         if (isKeyDown && isFacingInteractable == true && player.GetComponent<playerMovement>().inDialogue == false && player.GetComponent<playerMovement>().speakCooldownLeft < 0)
         {
             nameString = currentNPC.GetComponent<npcInteract>().NPCname;
+            npcPortrait.GetComponent<Image>().sprite = currentNPC.GetComponent<npcInteract>().firstPortrait;
+            forPortrait.GetComponent<managePortraits>().currentNPC = currentNPC;
             currentNPC.GetComponent<interactable>()?.Interact();
             nameText.text = nameString;
             player.GetComponent<playerMovement>().rb2.velocity = new Vector2(0, 0);
+
         }
     }
 
