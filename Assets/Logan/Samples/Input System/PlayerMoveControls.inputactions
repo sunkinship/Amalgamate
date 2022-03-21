@@ -38,14 +38,6 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Sprint",
-                    "type": "Button",
-                    "id": "76903c25-ea06-40a8-88f5-42916beb7558",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
                     "name": "Dash",
                     "type": "Button",
                     "id": "9beecfe9-5f6a-4cb9-8d59-d3445649196e",
@@ -68,20 +60,17 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Sprint",
+                    "type": "Button",
+                    "id": "5b005a07-ce78-446e-befc-9638168a389d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "12a92808-372f-4aa8-aeb4-9c9a55681dc2",
-                    "path": "<Keyboard>/leftShift",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Sprint",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "",
                     "id": "dee408de-3268-4452-a6a6-7bddbe04438d",
@@ -156,6 +145,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f40481c0-a3d5-40f8-952f-ec84f1864093",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
