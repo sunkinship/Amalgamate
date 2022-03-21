@@ -27,7 +27,7 @@ public class playerMovement : MonoBehaviour
     public float speakCooldownLeft;
 
     public GameObject hornLamp;
-
+    Vector2 originalPos;
 
     private enum State
     {
@@ -51,6 +51,7 @@ public class playerMovement : MonoBehaviour
     private void Awake()
     {
         state = State.Normal;
+        originalPos = new Vector2(hornLamp.transform.localPosition.x, hornLamp.transform.localPosition.y);
     }
 
     // Start is called before the first frame update
@@ -138,10 +139,11 @@ public class playerMovement : MonoBehaviour
                 //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["UP"]))
                 if (playerInput.actions["Up"].IsPressed())
                 {
+                    //originalPos = new Vector2(hornLamp.transform.localPosition.x + 0.5f, hornLamp.transform.localPosition.y + 0.35f);
+                    hornLamp.transform.position = new Vector2(transform.position.x - 0.56f, transform.position.y + 0.3f);
                     if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Down"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
                     {
                         animator.SetTrigger("Up");
-                        hornLamp.transform.localPosition = new Vector2(transform.localPosition.x - 5, transform.localPosition.y);
                     }
                     moveY = +1f;
                     lastFacingDirection = "UP";
@@ -152,6 +154,7 @@ public class playerMovement : MonoBehaviour
                 //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["DOWN"]))
                 if (playerInput.actions["Down"].IsPressed())
                 {
+                    hornLamp.transform.localPosition = originalPos;
                     moveY = -1f;
                     lastFacingDirection = "DOWN";
                     if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
@@ -165,6 +168,7 @@ public class playerMovement : MonoBehaviour
                 //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["LEFT"]))
                 if (playerInput.actions["Left"].IsPressed())
                 {
+                    hornLamp.transform.localPosition = originalPos;
                     moveX = -1f;
                     lastFacingDirection = "LEFT";
                     if (playerInput.actions["Right"].IsPressed() == false)
@@ -179,6 +183,7 @@ public class playerMovement : MonoBehaviour
                 //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["RIGHT"]))
                 if (playerInput.actions["Right"].IsPressed())
                 {
+                    hornLamp.transform.localPosition = originalPos;
                     moveX = +1f;
                     lastFacingDirection = "RIGHT";
                     animator.SetTrigger("Right");

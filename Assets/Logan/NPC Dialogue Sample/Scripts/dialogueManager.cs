@@ -79,7 +79,7 @@ public class dialogueManager : MonoBehaviour
             while (true)
             {
                 // Wait for delay to continue
-                if (Time.time > nextTime)
+                if (Time.time >= nextTime)
                 {
                     nextTime = Time.time + delayTime;
                     int visibleCount = counter % (totalVisibleCharacters + 1);
