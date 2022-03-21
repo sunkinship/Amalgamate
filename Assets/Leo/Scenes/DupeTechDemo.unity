@@ -201,6 +201,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8373339}
   m_CullTransparentMesh: 0
+--- !u!1 &23762836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 23762837}
+  - component: {fileID: 23762838}
+  m_Layer: 0
+  m_Name: HornLampSprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &23762837
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23762836}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.646, y: 0.307, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1918643448}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &23762838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23762836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 2
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0.5
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 21300000, guid: 101c3bb24abfa0b4187336cb1962dcb1,
+    type: 3}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_ShadowIntensity: 0
+  m_ShadowVolumeIntensity: 0
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
 --- !u!224 &36838459 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6680292650503350825, guid: f25dcd618d3acd64795bf8bb32edb6c9,
@@ -723,6 +796,8 @@ MonoBehaviour:
   player: {fileID: 1918643439}
   nameString: 
   nameText: {fileID: 880737549}
+  npcPortrait: {fileID: 0}
+  forPortrait: {fileID: 0}
 --- !u!61 &180785436
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1217,6 +1292,8 @@ MonoBehaviour:
   player: {fileID: 1918643439}
   nameString: 
   nameText: {fileID: 880737549}
+  npcPortrait: {fileID: 0}
+  forPortrait: {fileID: 0}
 --- !u!61 &327571360
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3934,7 +4011,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 883b36249d3fa1f4682984da5e85c942, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14284,6 +14361,8 @@ MonoBehaviour:
   player: {fileID: 1918643439}
   nameString: 
   nameText: {fileID: 880737549}
+  npcPortrait: {fileID: 0}
+  forPortrait: {fileID: 0}
 --- !u!61 &912024168
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15433,6 +15512,9 @@ MonoBehaviour:
     lines:
     - I work with the shopkeep just over there.
   NPCname: ????
+  portraits: []
+  currentPortrait: {fileID: 0}
+  firstPortrait: {fileID: 0}
 --- !u!70 &1139877028
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -15527,7 +15609,7 @@ GameObject:
   - component: {fileID: 1163300697}
   - component: {fileID: 1163300696}
   m_Layer: 10
-  m_Name: Point Light 2D
+  m_Name: HornLampLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15582,7 +15664,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 0.8207547, g: 0.6003976, b: 0.18970275, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.5
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 000000009f80681d33dc69e6
   m_LightCookieSprite: {fileID: 0}
@@ -16068,6 +16150,9 @@ MonoBehaviour:
     - This here is my shop.
     - We sell many items here, however none of them are available to you for purchase.
   NPCname: Shopkeep
+  portraits: []
+  currentPortrait: {fileID: 0}
+  firstPortrait: {fileID: 0}
 --- !u!70 &1240780565
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -19155,6 +19240,8 @@ MonoBehaviour:
   player: {fileID: 1918643439}
   nameString: 
   nameText: {fileID: 880737549}
+  npcPortrait: {fileID: 0}
+  forPortrait: {fileID: 0}
 --- !u!61 &1847190127
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19268,6 +19355,9 @@ MonoBehaviour:
   lettersPerSecond: 45
   player: {fileID: 1918643439}
   playerInput: {fileID: 1918643443}
+  portraitManager: {fileID: 0}
+  currentNPC: {fileID: 0}
+  currentPortraitNumber: 0
 --- !u!95 &1918643442
 Animator:
   serializedVersion: 3
@@ -19420,6 +19510,7 @@ MonoBehaviour:
   currentDashCooldown: 0
   speakCooldown: 0.5
   speakCooldownLeft: 0
+  hornLamp: {fileID: 0}
   rb2: {fileID: 1918643444}
   lastFacingDirection: RIGHT
 --- !u!212 &1918643447
@@ -19461,7 +19552,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 0996aa049ee59dd43b322a330df89048, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aea0fb31ee396f2489c932ff7fc55c2c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -19486,6 +19577,7 @@ Transform:
   - {fileID: 263626118}
   - {fileID: 1087660175}
   - {fileID: 1163300695}
+  - {fileID: 23762837}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -26,6 +26,8 @@ public class playerMovement : MonoBehaviour
     public float speakCooldown = .5f;
     public float speakCooldownLeft;
 
+    public GameObject hornLamp;
+
 
     private enum State
     {
@@ -139,6 +141,7 @@ public class playerMovement : MonoBehaviour
                     if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Down"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
                     {
                         animator.SetTrigger("Up");
+                        hornLamp.transform.localPosition = new Vector2(transform.localPosition.x - 5, transform.localPosition.y);
                     }
                     moveY = +1f;
                     lastFacingDirection = "UP";
