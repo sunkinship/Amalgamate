@@ -37,7 +37,7 @@ public class checkInteractions : MonoBehaviour
 
         if (isKeyDown && isFacingInteractable == true && player.GetComponent<playerMovement>().inDialogue == false && player.GetComponent<playerMovement>().speakCooldownLeft < 0)
         {
-            nameString = currentNPC.GetComponent<npcInteract>().NPCname;
+            nameString = currentNPC.GetComponent<npcInteract>().NPCName;
             npcPortrait.GetComponent<Image>().sprite = currentNPC.GetComponent<npcInteract>().firstPortrait;
             forPortrait.GetComponent<managePortraits>().currentNPC = currentNPC;
             currentNPC.GetComponent<interactable>()?.Interact();

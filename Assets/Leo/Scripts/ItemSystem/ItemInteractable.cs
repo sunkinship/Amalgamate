@@ -6,7 +6,7 @@ public class ItemInteractable : MonoBehaviour
 {
     public Item item;
 
-    public PlayerTest player;
+    public PlayerManager player;
 
     public GameObject itemObject;
 

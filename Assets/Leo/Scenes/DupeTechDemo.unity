@@ -648,7 +648,6 @@ MonoBehaviour:
     m_Bits: 2304
   inDialogue: 0
   animator: {fileID: 112828202}
-  constantSprint: 0
   playerInput: {fileID: 112828203}
   currentDashCooldown: 0
   speakCooldown: 0.5
@@ -4460,18 +4459,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 112828199}
-  dialogue:
-    lines:
-    - Hello, <color=yellow>child</color>. You are not welcome here.
-    - If you have any business take it up with the shopkeep over there.
-    - Now get out of my sight.
-  NPCname: ????
-  portraits:
-  - {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
-  - {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
-  - {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
+  dialoguePreQuest:
+    lines: []
+  dialogueMidQuest:
+    lines: []
+  dialoguePostQuest:
+    lines: []
+  NPCName: 
+  portraitsPreQuest: []
+  portraitsMidQuest: []
+  portraitsPostQuest: []
   currentPortrait: {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
   firstPortrait: {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
+  npc: {fileID: 0}
+  playerManager: {fileID: 0}
 --- !u!70 &763760515
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -4568,7 +4569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sortingOrderBase: 5000
   offset: 0
-  runOnlyOnce: 0
+  runOnlyOnce: 1
 --- !u!1 &773785037
 GameObject:
   m_ObjectHideFlags: 0
@@ -40834,18 +40835,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 112828199}
-  dialogue:
-    lines:
-    - Why hello there.
-    - We'll sell you items if you give us <color=#a52a2aff><size=30>blood</size></color>.
-    - And of course, it doesn't <b><i>have</i></b> to be your own...
-  NPCname: Shopkeep
-  portraits:
-  - {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
-  - {fileID: 21300000, guid: 85491628152d3024d9bdd23faa53f85d, type: 3}
-  - {fileID: 21300000, guid: 06f38c84d94e37241be78b342a079e4e, type: 3}
+  dialoguePreQuest:
+    lines: []
+  dialogueMidQuest:
+    lines: []
+  dialoguePostQuest:
+    lines: []
+  NPCName: 
+  portraitsPreQuest: []
+  portraitsMidQuest: []
+  portraitsPostQuest: []
   currentPortrait: {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
   firstPortrait: {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
+  npc: {fileID: 0}
+  playerManager: {fileID: 0}
 --- !u!70 &1712627803
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -40942,7 +40945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sortingOrderBase: 5000
   offset: 0
-  runOnlyOnce: 0
+  runOnlyOnce: 1
 --- !u!1 &1726921528
 GameObject:
   m_ObjectHideFlags: 0

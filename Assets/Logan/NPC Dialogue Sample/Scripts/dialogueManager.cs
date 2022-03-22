@@ -39,14 +39,14 @@ public class dialogueManager : MonoBehaviour
             if (currentLine < dialogue.Lines.Count)
             {
                 currentPortraitNumber++;
-                currentNPC.GetComponent<npcInteract>().currentPortrait = currentNPC.GetComponent<npcInteract>().portraits[currentLine];
+                currentNPC.GetComponent<npcInteract>().currentPortrait = currentNPC.GetComponent<npcInteract>().portraitsPreQuest[currentLine];
                 StartCoroutine(TypeDialogue(dialogue.Lines[currentLine]));
             }
             else
             {
                 currentLine = 0;
                 dialogueBox.SetActive(false);
-                currentNPC.GetComponent<npcInteract>().currentPortrait = currentNPC.GetComponent<npcInteract>().portraits[0];
+                currentNPC.GetComponent<npcInteract>().currentPortrait = currentNPC.GetComponent<npcInteract>().portraitsPreQuest[0];
                 player.GetComponent<playerMovement>().inDialogue = false;
                 player.GetComponent<playerMovement>().speakCooldownLeft = player.GetComponent<playerMovement>().speakCooldown;
             }

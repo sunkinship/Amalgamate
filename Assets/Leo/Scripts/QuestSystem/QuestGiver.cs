@@ -6,7 +6,7 @@ public class QuestGiver : MonoBehaviour
 {
     public Quest quest;
 
-    public PlayerTest player;
+    public PlayerManager player;
 
     public void AcceptQuest()
     {
