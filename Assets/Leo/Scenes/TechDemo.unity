@@ -1587,8 +1587,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 57.9, y: -4.4}
-  m_SizeDelta: {x: 480.90662, y: 359.95392}
+  m_AnchoredPosition: {x: -0.5, y: 6.71}
+  m_SizeDelta: {x: 480.18994, y: 299.0323}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &348047022
 GameObject:
@@ -2037,7 +2037,7 @@ RectTransform:
   m_Children:
   - {fileID: 337151764}
   m_Father: {fileID: 661477498}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3980,8 +3980,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 450375634}
-  - {fileID: 1364786713}
   - {fileID: 434142900}
+  - {fileID: 1364786713}
   - {fileID: 111971481}
   - {fileID: 1927518485}
   - {fileID: 1929901581}
@@ -18901,7 +18901,7 @@ PrefabInstance:
     - target: {fileID: 6680292650503350825, guid: f25dcd618d3acd64795bf8bb32edb6c9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6680292650503350825, guid: f25dcd618d3acd64795bf8bb32edb6c9,
         type: 3}
@@ -19423,10 +19423,6 @@ MonoBehaviour:
     m_ActionName: Movement/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: 76903c25-ea06-40a8-88f5-42916beb7558
-    m_ActionName: Movement/Run[/Keyboard/leftShift]
-  - m_PersistentCalls:
-      m_Calls: []
     m_ActionId: 9beecfe9-5f6a-4cb9-8d59-d3445649196e
     m_ActionName: Movement/Dash[/Keyboard/space]
   - m_PersistentCalls:
@@ -19508,7 +19504,6 @@ MonoBehaviour:
     m_Bits: 2304
   inDialogue: 0
   animator: {fileID: 1954783394}
-  constantSprint: 0
   playerInput: {fileID: 1954783395}
   currentDashCooldown: 0
   speakCooldown: 0.5

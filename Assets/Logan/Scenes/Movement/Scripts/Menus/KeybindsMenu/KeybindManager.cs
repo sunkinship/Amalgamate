@@ -40,7 +40,6 @@ public class KeybindManager : MonoBehaviour
     //    BindKey("RIGHT", KeyCode.D);
     //    BindKey("LEFT", KeyCode.A);
 
-    //    BindKey("SPRINT", KeyCode.LeftShift); //Sprint
     //    BindKey("DASH", KeyCode.LeftControl); //Dash
     //    BindKey("ACT2", KeyCode.F); //Grab
     //}

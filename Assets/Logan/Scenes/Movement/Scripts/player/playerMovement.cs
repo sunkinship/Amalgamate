@@ -16,8 +16,6 @@ public class playerMovement : MonoBehaviour
 
     Vector2 movement;
 
-    public bool constantSprint;
-
     public PlayerInput playerInput;
 
     private float dashCooldown = 1.5f;
