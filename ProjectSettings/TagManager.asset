@@ -16,8 +16,13 @@ TagManager:
   - UI
   - 
   - 
+<<<<<<< HEAD
+  - MiniMap
+  - Player
+=======
+  - Environment
   - 
-  - 
+>>>>>>> 1a2aa2a10b86911c55eea30c23a9654faa5b4c83
   - 
   - 
   - 
