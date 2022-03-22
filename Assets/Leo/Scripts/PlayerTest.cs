@@ -8,11 +8,7 @@ public class PlayerTest : MonoBehaviour
     public List<Item> inventory = new List<Item>();
 
     public QuestGiver vampire;
-    public ItemInteractable itemInteractable;
     public GameObject item;
-
-    private bool itemInRange = false;
-
 
     void Update()
     {
@@ -35,13 +31,25 @@ public class PlayerTest : MonoBehaviour
 
     public void ProgressQuest()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.O))
         {
             if (vampire.quest.isActive)
             {
-                vampire.AcceptQuest();
-                Debug.Log("Quest: [" + vampire.quest.name + "] from [" + vampire.name + "] accepted");
+                foreach (Item item in inventory)
+                {
+                    if (vampire.quest.goal.IsReached(item))
+                    {
+                        vampire.quest.isComplete = true;
+                        vampire.quest.isActive = false;
+                        Debug.Log("Quest: [" + vampire.quest.name + "] from [" + vampire.name + "] complete");
+                        return;
+                    }
+                }   
+                Debug.Log("Quest: [" + vampire.quest.name + "] from [" + vampire.name + "] not complete");
+                return;
             }
+            Debug.Log("Quest: [" + vampire.quest.name + "] from [" + vampire.name + "] not started");
+            return;
         }
     }
 
@@ -50,7 +58,7 @@ public class PlayerTest : MonoBehaviour
         if (collision.tag == "Item")
         {
             Debug.Log("in range");
-            itemInRange = true;
+            item = collision.gameObject;
         }
     }
 
@@ -59,20 +67,18 @@ public class PlayerTest : MonoBehaviour
         if (collision.tag == "Item")
         {
             Debug.Log("left range");
-            itemInRange = false;
+            item = null;
         }
     }
 
     public void PickUpItem()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (item != null)
         {
-            if (itemInRange)
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log("Picked up item");
-                itemInteractable.pickUp();
-                inventory.Add(itemInteractable.item);
-                item.SetActive(false);
+                item.GetComponent<ItemInteractable>().pickUp();
             }
         }
     }

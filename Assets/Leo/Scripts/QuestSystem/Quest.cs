@@ -6,6 +6,7 @@ using UnityEngine;
 public class Quest
 {
     public bool isActive;
+    public bool isComplete;
     public string name;
     public string npc;
     public string description;

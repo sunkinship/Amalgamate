@@ -7,12 +7,21 @@ public class QuestGoal
 {
     public GoalType goalType;
 
+    public ItemType requiredType;
     public int requiredAmount;
     public int currentAmount;
 
-    public bool IsReached()
+    public bool IsReached(Item item)
     {
-        return currentAmount >= requiredAmount;
+        currentAmount = item.quantity;
+        if (item.itemType == requiredType)
+        {
+            return currentAmount >= requiredAmount;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
 

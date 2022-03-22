@@ -10,6 +10,7 @@ public class Item
     public bool pickedUp;
     public string itemName;
     public string description;
+    public int quantity;
 }
 
 public enum ItemType
