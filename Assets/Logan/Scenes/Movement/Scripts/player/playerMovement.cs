@@ -7,7 +7,7 @@ public class playerMovement : MonoBehaviour
 {
     [SerializeField] private LayerMask dashLayerMask;
 
-    private float moveSpeed = 6f;
+    public float moveSpeed = 6f;
     private float dashSpeed;
 
     public bool inDialogue;
