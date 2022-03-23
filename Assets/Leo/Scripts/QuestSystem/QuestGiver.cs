@@ -6,8 +6,11 @@ public class QuestGiver : MonoBehaviour
 {
     public Quest quest;
 
-    public PlayerTest player;
+    public PlayerManager player;
 
+    /// <summary>
+    /// Receive quest from NPC
+    /// </summary>
     public void AcceptQuest()
     {
         player.quests.Add(quest);
@@ -15,6 +18,10 @@ public class QuestGiver : MonoBehaviour
         player.quests[player.quests.Count - 1].isComplete = false;
     }
 
+    /// <summary>
+    /// Complete quest if condition has been reached
+    /// </summary>
+    /// <returns></returns>
     public bool CompletedQuest()
     {
         foreach (Item item in player.inventory)

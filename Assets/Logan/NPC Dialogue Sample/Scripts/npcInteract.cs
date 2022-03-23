@@ -6,17 +6,43 @@ using UnityEngine.UI;
 public class npcInteract : MonoBehaviour, interactable
 {
     public GameObject player;
-    [SerializeField] dialogue dialogue;
-    public string NPCname;
-    public Sprite[] portraits;
+    [SerializeField] dialogue dialoguePreQuest;
+    [SerializeField] dialogue dialogueMidQuest;
+    [SerializeField] dialogue dialoguePostQuest;
+    public string NPCName;
+    public Sprite[] portraitsPreQuest;
+    public Sprite[] portraitsMidQuest;
+    public Sprite[] portraitsPostQuest;
     public Sprite currentPortrait;
-    public Sprite firstPortrait;
 
-    public void Interact()
+    public PlayerManager playerManager;
+    [HideInInspector]
+    public QuestGiver npc;
+
+    /// <summary>
+    /// Set and write NPC dialogue and portaits based on quest state
+    /// </summary>
+    public void Interact(Sprite protrait)
     {
-        currentPortrait = firstPortrait;
+        currentPortrait = protrait;
 
-        StartCoroutine(dialogueManager.Instance.ShowDialogue(dialogue));
+        // Quest not started
+        if (currentPortrait == portraitsPreQuest[0])
+        {
+            StartCoroutine(dialogueManager.Instance.ShowDialogue(dialoguePreQuest, portraitsPreQuest));
+            playerManager.GetQuest(npc);
+        } 
+        // Quest started but not completed
+        else if (currentPortrait == portraitsMidQuest[0])
+        {
+            StartCoroutine(dialogueManager.Instance.ShowDialogue(dialogueMidQuest, portraitsMidQuest));
+        }
+        // Quest Completed
+        else 
+        {
+            StartCoroutine(dialogueManager.Instance.ShowDialogue(dialoguePostQuest, portraitsPostQuest));
+        }
+
         player.GetComponent<playerMovement>().inDialogue = true;
     }
 }

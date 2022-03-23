@@ -11,6 +11,11 @@ public class QuestGoal
     public int requiredAmount;
     public int currentAmount;
 
+    /// <summary>
+    /// Check if condition to complete quest has been reached
+    /// </summary>
+    /// <param name="item"></param>
+    /// <returns></returns>
     public bool IsReached(Item item)
     {
         currentAmount = item.quantity;

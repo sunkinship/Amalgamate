@@ -462,6 +462,7 @@ GameObject:
   - component: {fileID: 112828202}
   - component: {fileID: 112828201}
   - component: {fileID: 112828200}
+  - component: {fileID: 112828209}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -646,9 +647,9 @@ MonoBehaviour:
   dashLayerMask:
     serializedVersion: 2
     m_Bits: 2304
+  moveSpeed: 6
   inDialogue: 0
   animator: {fileID: 112828202}
-  constantSprint: 0
   playerInput: {fileID: 112828203}
   currentDashCooldown: 0
   speakCooldown: 0.5
@@ -723,6 +724,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &112828209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112828199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49ab4a0edfd81c641a28ab41733d6b89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quests: []
+  inventory: []
+  item: {fileID: 0}
 --- !u!1 &126900758
 GameObject:
   m_ObjectHideFlags: 0
@@ -4426,6 +4442,7 @@ GameObject:
   - component: {fileID: 763760515}
   - component: {fileID: 763760514}
   - component: {fileID: 763760518}
+  - component: {fileID: 763760519}
   m_Layer: 0
   m_Name: npc
   m_TagString: interactableNPC
@@ -4460,18 +4477,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 112828199}
-  dialogue:
+  dialoguePreQuest:
     lines:
-    - Hello, <color=yellow>child</color>. You are not welcome here.
-    - If you have any business take it up with the shopkeep over there.
-    - Now get out of my sight.
-  NPCname: ????
-  portraits:
+    - Fetch me some potions little guy..
+  dialogueMidQuest:
+    lines:
+    - Did you find my potions??
+  dialoguePostQuest:
+    lines:
+    - Thank you child..
+    - Here is your reward..
+  NPCName: npc
+  portraitsPreQuest:
+  - {fileID: 21300000, guid: 06f38c84d94e37241be78b342a079e4e, type: 3}
   - {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
+  portraitsMidQuest:
+  - {fileID: 21300000, guid: 85491628152d3024d9bdd23faa53f85d, type: 3}
+  - {fileID: 21300000, guid: 06f38c84d94e37241be78b342a079e4e, type: 3}
+  portraitsPostQuest:
   - {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
   - {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
   currentPortrait: {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
-  firstPortrait: {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
+  playerManager: {fileID: 112828209}
+  npc: {fileID: 763760519}
 --- !u!70 &763760515
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -4568,7 +4596,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sortingOrderBase: 5000
   offset: 0
-  runOnlyOnce: 0
+  runOnlyOnce: 1
+--- !u!114 &763760519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763760512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da45dc90f8a4284c8031a9c62b42bb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest:
+    isActive: 0
+    isComplete: 0
+    name: Potions
+    npc: ????
+    description: Gather 3 potions
+    reward: 5 gold
+    goal:
+      goalType: 0
+      requiredType: 1
+      requiredAmount: 3
+      currentAmount: 0
+  player: {fileID: 112828209}
 --- !u!1 &773785037
 GameObject:
   m_ObjectHideFlags: 0
@@ -37777,6 +37830,8 @@ MonoBehaviour:
   nameText: {fileID: 1612986183}
   npcPortrait: {fileID: 582254214}
   forPortrait: {fileID: 2129314817}
+  npc: {fileID: 0}
+  playerManager: {fileID: 112828209}
 --- !u!61 &998862682
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40760,6 +40815,8 @@ MonoBehaviour:
   nameText: {fileID: 1612986183}
   npcPortrait: {fileID: 582254214}
   forPortrait: {fileID: 2129314817}
+  npc: {fileID: 0}
+  playerManager: {fileID: 112828209}
 --- !u!61 &1657369791
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40800,6 +40857,7 @@ GameObject:
   - component: {fileID: 1712627803}
   - component: {fileID: 1712627802}
   - component: {fileID: 1712627806}
+  - component: {fileID: 1712627807}
   m_Layer: 0
   m_Name: shopkeep
   m_TagString: interactableNPC
@@ -40834,18 +40892,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 112828199}
-  dialogue:
+  dialoguePreQuest:
     lines:
-    - Why hello there.
-    - We'll sell you items if you give us <color=#a52a2aff><size=30>blood</size></color>.
-    - And of course, it doesn't <b><i>have</i></b> to be your own...
-  NPCname: Shopkeep
-  portraits:
+    - Find me some apples pretty boy..
+  dialogueMidQuest:
+    lines:
+    - Did you find any apples??
+  dialoguePostQuest:
+    lines:
+    - Thank you child..
+    - Here is your reward..
+  NPCName: npc
+  portraitsPreQuest:
+  - {fileID: 21300000, guid: 06f38c84d94e37241be78b342a079e4e, type: 3}
   - {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
+  portraitsMidQuest:
   - {fileID: 21300000, guid: 85491628152d3024d9bdd23faa53f85d, type: 3}
   - {fileID: 21300000, guid: 06f38c84d94e37241be78b342a079e4e, type: 3}
+  portraitsPostQuest:
+  - {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
+  - {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
   currentPortrait: {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
-  firstPortrait: {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
+  playerManager: {fileID: 112828209}
+  npc: {fileID: 1712627807}
 --- !u!70 &1712627803
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -40942,7 +41011,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sortingOrderBase: 5000
   offset: 0
-  runOnlyOnce: 0
+  runOnlyOnce: 1
+--- !u!114 &1712627807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712627800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da45dc90f8a4284c8031a9c62b42bb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest:
+    isActive: 0
+    isComplete: 0
+    name: Apples
+    npc: shopkeep
+    description: Gather 3 apples
+    reward: 10 gold
+    goal:
+      goalType: 0
+      requiredType: 0
+      requiredAmount: 3
+      currentAmount: 0
+  player: {fileID: 112828209}
 --- !u!1 &1726921528
 GameObject:
   m_ObjectHideFlags: 0
@@ -42386,6 +42480,8 @@ MonoBehaviour:
   nameText: {fileID: 1612986183}
   npcPortrait: {fileID: 582254214}
   forPortrait: {fileID: 2129314817}
+  npc: {fileID: 0}
+  playerManager: {fileID: 112828209}
 --- !u!61 &2001223107
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42849,6 +42945,8 @@ MonoBehaviour:
   nameText: {fileID: 1612986183}
   npcPortrait: {fileID: 582254214}
   forPortrait: {fileID: 2129314817}
+  npc: {fileID: 0}
+  playerManager: {fileID: 112828209}
 --- !u!61 &2091459228
 BoxCollider2D:
   m_ObjectHideFlags: 0
