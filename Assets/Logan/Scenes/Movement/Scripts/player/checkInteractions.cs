@@ -17,6 +17,8 @@ public class checkInteractions : MonoBehaviour
     public GameObject npcPortrait;
     public GameObject forPortrait;
 
+    public QuestGiver npc;
+    public PlayerManager playerManager;
 
     // Start is called before the first frame update
     void Start()
@@ -47,6 +49,10 @@ public class checkInteractions : MonoBehaviour
         }
     }
 
+    private void CheckQuestState()
+    {
+
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -63,8 +69,4 @@ public class checkInteractions : MonoBehaviour
     {
         isFacingInteractable = false;
     }
-    
-
-
-
 }
