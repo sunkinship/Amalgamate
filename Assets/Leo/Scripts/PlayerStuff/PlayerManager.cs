@@ -20,7 +20,6 @@ public class PlayerManager : MonoBehaviour
         if (!npc.quest.isActive)
         {
             npc.AcceptQuest();
-            Debug.Log("Quest: [" + npc.quest.name + "] from [" + npc.name + "] accepted");
         }
     }
 
@@ -34,15 +33,11 @@ public class PlayerManager : MonoBehaviour
                 {
                     npc.quest.isComplete = true;
                     npc.quest.isActive = false;
-                    Debug.Log("Quest: [" + npc.quest.name + "] from [" + npc.name + "] complete");
                     return;
                 }
             }
-            Debug.Log("Quest: [" + npc.quest.name + "] from [" + npc.name + "] not complete");
             return;
         }
-        Debug.Log("Quest: [" + npc.quest.name + "] from [" + npc.name + "] not started");
-        return;
     }
 
     public void OnTriggerEnter2D(Collider2D collision)

@@ -10,7 +10,6 @@ public class Quest
     public string name;
     public string npc;
     public string description;
-    public string reward;
 
     public QuestGoal goal;
 }
