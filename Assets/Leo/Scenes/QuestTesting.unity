@@ -594,6 +594,7 @@ MonoBehaviour:
   dashLayerMask:
     serializedVersion: 2
     m_Bits: 2304
+  moveSpeed: 6
   inDialogue: 0
   animator: {fileID: 121754202}
   playerInput: {fileID: 121754203}
@@ -721,6 +722,8 @@ MonoBehaviour:
   nameText: {fileID: 1728039004}
   npcPortrait: {fileID: 1384036278}
   forPortrait: {fileID: 765175547}
+  npc: {fileID: 1685678581}
+  playerManager: {fileID: 121754199}
 --- !u!61 &139553417
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1651,6 +1654,8 @@ MonoBehaviour:
   nameText: {fileID: 1728039004}
   npcPortrait: {fileID: 1384036278}
   forPortrait: {fileID: 765175547}
+  npc: {fileID: 1685678581}
+  playerManager: {fileID: 121754199}
 --- !u!61 &819004097
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2224,13 +2229,13 @@ MonoBehaviour:
     - Here is your reward.
   NPCName: npc
   portraitsPreQuest:
-  - {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
+  - {fileID: 21300000, guid: 06f38c84d94e37241be78b342a079e4e, type: 3}
   - {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
   portraitsMidQuest:
-  - {fileID: 21300000, guid: 06f38c84d94e37241be78b342a079e4e, type: 3}
+  - {fileID: 21300000, guid: 85491628152d3024d9bdd23faa53f85d, type: 3}
   - {fileID: 21300000, guid: 06f38c84d94e37241be78b342a079e4e, type: 3}
   portraitsPostQuest:
-  - {fileID: 21300000, guid: 06f38c84d94e37241be78b342a079e4e, type: 3}
+  - {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
   - {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
   currentPortrait: {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
   firstPortrait: {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
@@ -2365,6 +2370,8 @@ MonoBehaviour:
   nameText: {fileID: 1728039004}
   npcPortrait: {fileID: 1384036278}
   forPortrait: {fileID: 765175547}
+  npc: {fileID: 1685678581}
+  playerManager: {fileID: 121754199}
 --- !u!61 &1743276246
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2442,6 +2449,8 @@ MonoBehaviour:
   nameText: {fileID: 1728039004}
   npcPortrait: {fileID: 1384036278}
   forPortrait: {fileID: 765175547}
+  npc: {fileID: 1685678581}
+  playerManager: {fileID: 121754199}
 --- !u!61 &1903607668
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -7,8 +7,6 @@ public class PlayerManager : MonoBehaviour
     public List<Quest> quests = new List<Quest>();
     public List<Item> inventory = new List<Item>();
 
-    public QuestGiver npc;
-
     [HideInInspector]
     public GameObject item;
 
@@ -17,7 +15,7 @@ public class PlayerManager : MonoBehaviour
         PickUpItem();
     }
 
-    public void GetQuest()
+    public void GetQuest(QuestGiver npc)
     {
         if (!npc.quest.isActive)
         {
@@ -26,7 +24,7 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    public void ProgressQuest()
+    public void ProgressQuest(QuestGiver npc)
     {
         if (npc.quest.isActive)
         {

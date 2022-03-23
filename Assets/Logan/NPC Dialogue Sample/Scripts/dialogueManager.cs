@@ -18,6 +18,7 @@ public class dialogueManager : MonoBehaviour
     public GameObject portraitManager;
     public GameObject currentNPC;
     public int currentPortraitNumber;
+    private Sprite[] portraitList;
 
 
     public static dialogueManager Instance { get; private set; }
@@ -30,18 +31,20 @@ public class dialogueManager : MonoBehaviour
 
     public void Update()
     {
-
         currentNPC = portraitManager.GetComponent<managePortraits>().currentNPC;
 
+        // Checking for input during NPC interaction
         if (player.GetComponent<playerMovement>().inDialogue == true && playerInput.actions["Interact"].triggered && isTyping == false)
         {
+            // Going to next line of dialogue after input
             ++currentLine;
             if (currentLine < dialogue.Lines.Count)
             {
                 currentPortraitNumber++;
-                currentNPC.GetComponent<npcInteract>().currentPortrait = currentNPC.GetComponent<npcInteract>().portraitsPreQuest[currentLine];
+                currentNPC.GetComponent<npcInteract>().currentPortrait = portraitList[currentLine];
                 StartCoroutine(TypeDialogue(dialogue.Lines[currentLine]));
             }
+            // Resetting values after interaction ended
             else
             {
                 currentLine = 0;
@@ -53,16 +56,28 @@ public class dialogueManager : MonoBehaviour
         }
     }
 
-    public IEnumerator ShowDialogue(dialogue dialogue)
+    /// <summary>
+    /// Initializes dialogue when interacting with NPCs
+    /// </summary>
+    /// <param name="dialogue"></param>
+    /// <returns></returns>
+    public IEnumerator ShowDialogue(dialogue dialogue, Sprite[] portraitList)
     {
         yield return new WaitForEndOfFrame();
+
+        // Set currnet portrait list based on quest state
+        this.portraitList = portraitList;
 
         this.dialogue = dialogue;
         dialogueBox.SetActive(true);
         StartCoroutine(TypeDialogue(dialogue.Lines[0]));
     }
 
-    // New TypeDialogue Method With Skip Ability 
+    /// <summary>
+    /// Writes out dialogue letter by letter with skip ability
+    /// </summary>
+    /// <param name="dialogue"></param>
+    /// <returns></returns>
     public IEnumerator TypeDialogue(string dialogue)
     {
         isTyping = true;
@@ -106,30 +121,4 @@ public class dialogueManager : MonoBehaviour
         exitLoops:
         isTyping = false;
     }
-
-
-    // Original TypeDialogue Method 
-
-    //public IEnumerator TypeDialogue(string dialogue)
-    //{
-    //    isTyping = true;
-    //    dialogueText.text = dialogue;
-
-    //    int totalVisibleCharacters = dialogue.ToString().Length;
-    //    int counter = 0;
-
-    //    foreach (var letter in dialogue.ToCharArray())
-    //    {
-    //        int visibleCount = counter % (totalVisibleCharacters + 1);
-    //        dialogueText.maxVisibleCharacters = visibleCount;
-    //        if (visibleCount >= totalVisibleCharacters)
-    //        {
-    //            isTyping = false;
-    //        }
-    //        counter += 1;
-    //        yield return new WaitForSeconds(0.03f);
-    //    }
-
-    //    isTyping = false;
-    //}
 }

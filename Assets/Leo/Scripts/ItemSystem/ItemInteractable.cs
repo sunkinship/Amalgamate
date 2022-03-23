@@ -10,6 +10,9 @@ public class ItemInteractable : MonoBehaviour
 
     public GameObject itemObject;
 
+    /// <summary>
+    /// Pick up item in range and add to inventory 
+    /// </summary>
     public void pickUp()
     {
         foreach (Item item in player.inventory)

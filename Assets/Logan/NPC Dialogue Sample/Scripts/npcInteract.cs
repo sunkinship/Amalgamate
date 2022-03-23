@@ -14,39 +14,35 @@ public class npcInteract : MonoBehaviour, interactable
     public Sprite[] portraitsMidQuest;
     public Sprite[] portraitsPostQuest;
     public Sprite currentPortrait;
-    public Sprite firstPortrait;
 
-    public QuestGiver npc;
     public PlayerManager playerManager;
+    [HideInInspector]
+    public QuestGiver npc;
 
-    public void Interact()
+    /// <summary>
+    /// Set and write NPC dialogue and portaits based on quest state
+    /// </summary>
+    public void Interact(Sprite protrait)
     {
-        currentPortrait = firstPortrait;
-
-        // Check is quest complete
-        playerManager.ProgressQuest();
+        currentPortrait = protrait;
 
         // Quest not started
-        if (npc.quest.isActive == false && npc.quest.isComplete == false)
+        if (currentPortrait == portraitsPreQuest[0])
         {
-            Debug.Log("New quest!!!!");
-            StartCoroutine(dialogueManager.Instance.ShowDialogue(dialoguePreQuest));
-            player.GetComponent<playerMovement>().inDialogue = true;
-            playerManager.GetQuest();
+            StartCoroutine(dialogueManager.Instance.ShowDialogue(dialoguePreQuest, portraitsPreQuest));
+            playerManager.GetQuest(npc);
         } 
         // Quest started but not completed
-        else if (npc.quest.isActive && npc.quest.isComplete == false)
+        else if (currentPortrait == portraitsMidQuest[0])
         {
-            Debug.Log("Doing quest!!!!");
-            StartCoroutine(dialogueManager.Instance.ShowDialogue(dialogueMidQuest));
-            player.GetComponent<playerMovement>().inDialogue = true;
+            StartCoroutine(dialogueManager.Instance.ShowDialogue(dialogueMidQuest, portraitsMidQuest));
         }
         // Quest Completed
         else 
         {
-            Debug.Log("Completed quest!!!!");
-            StartCoroutine(dialogueManager.Instance.ShowDialogue(dialoguePostQuest));
-            player.GetComponent<playerMovement>().inDialogue = true;
+            StartCoroutine(dialogueManager.Instance.ShowDialogue(dialoguePostQuest, portraitsPostQuest));
         }
+
+        player.GetComponent<playerMovement>().inDialogue = true;
     }
 }

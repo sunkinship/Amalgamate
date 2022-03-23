@@ -20,12 +20,6 @@ public class checkInteractions : MonoBehaviour
     public QuestGiver npc;
     public PlayerManager playerManager;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -40,18 +34,46 @@ public class checkInteractions : MonoBehaviour
         if (isKeyDown && isFacingInteractable == true && player.GetComponent<playerMovement>().inDialogue == false && player.GetComponent<playerMovement>().speakCooldownLeft < 0)
         {
             nameString = currentNPC.GetComponent<npcInteract>().NPCName;
-            npcPortrait.GetComponent<Image>().sprite = currentNPC.GetComponent<npcInteract>().firstPortrait;
+
             forPortrait.GetComponent<managePortraits>().currentNPC = currentNPC;
-            currentNPC.GetComponent<interactable>()?.Interact();
+            currentNPC.GetComponent<interactable>()?.Interact(CheckQuestState());
             nameText.text = nameString;
             player.GetComponent<playerMovement>().rb2.velocity = new Vector2(0, 0);
 
         }
     }
 
-    private void CheckQuestState()
+    /// <summary>
+    /// Set portrait based on quest state
+    /// </summary>
+    private Sprite CheckQuestState()
     {
+        npc = currentNPC.GetComponent<QuestGiver>();
 
+        // Check current state of quest
+        playerManager.ProgressQuest(npc);
+
+        // Quest not started
+        if (npc.quest.isActive == false && npc.quest.isComplete == false)
+        {
+            //Debug.Log("New quest!!!!");
+            Debug.Log("isActive: " + npc.quest.isActive + "isComplete: " + npc.quest.isComplete);
+            return currentNPC.GetComponent<npcInteract>().portraitsPreQuest[0];
+        }
+        // Quest started but not completed
+        else if (npc.quest.isActive && npc.quest.isComplete == false)
+        {
+            //Debug.Log("Doing quest!!!!");
+            Debug.Log("isActive: " + npc.quest.isActive + "isComplete: " + npc.quest.isComplete);
+            return currentNPC.GetComponent<npcInteract>().portraitsMidQuest[0];
+        }
+        // Quest Completed
+        else
+        {
+            //Debug.Log("Completed quest!!!!");
+            Debug.Log("isActive: " + npc.quest.isActive + "isComplete: " + npc.quest.isComplete);
+            return currentNPC.GetComponent<npcInteract>().portraitsPostQuest[0];
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
