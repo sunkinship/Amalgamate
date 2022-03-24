@@ -470,7 +470,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mCam: {fileID: 200044422}
-  Player: {fileID: 1886644749}
 --- !u!114 &200044425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1444,13 +1443,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInput: {fileID: 1886644753}
   isInteractingWithNPC: 0
-  player: {fileID: 1886644749}
   nameString: 
   nameText: {fileID: 87966846}
   npcPortrait: {fileID: 803050161}
   forPortrait: {fileID: 818024658}
-  npc: {fileID: 0}
-  playerManager: {fileID: 0}
 --- !u!61 &982045393
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1523,13 +1519,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInput: {fileID: 1886644753}
   isInteractingWithNPC: 0
-  player: {fileID: 1886644749}
   nameString: 
   nameText: {fileID: 87966846}
   npcPortrait: {fileID: 803050161}
   forPortrait: {fileID: 818024658}
-  npc: {fileID: 0}
-  playerManager: {fileID: 0}
 --- !u!61 &1009591319
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24159,13 +24152,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInput: {fileID: 1886644753}
   isInteractingWithNPC: 0
-  player: {fileID: 1886644749}
   nameString: 
   nameText: {fileID: 87966846}
   npcPortrait: {fileID: 803050161}
   forPortrait: {fileID: 818024658}
-  npc: {fileID: 0}
-  playerManager: {fileID: 0}
 --- !u!61 &1164772785
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24345,7 +24335,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mCam: {fileID: 1646357854}
-  Player: {fileID: 1886644749}
 --- !u!114 &1646357856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24689,13 +24678,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInput: {fileID: 1886644753}
   isInteractingWithNPC: 0
-  player: {fileID: 1886644749}
   nameString: 
   nameText: {fileID: 87966846}
   npcPortrait: {fileID: 803050161}
   forPortrait: {fileID: 818024658}
-  npc: {fileID: 0}
-  playerManager: {fileID: 0}
 --- !u!61 &1751624017
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24837,7 +24823,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mCam: {fileID: 1787202243}
-  Player: {fileID: 1886644749}
 --- !u!114 &1787202245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25136,11 +25121,7 @@ MonoBehaviour:
   dialogueTextBox: {fileID: 25076591}
   dialogueText: {fileID: 1155349122}
   lettersPerSecond: 45
-  player: {fileID: 1886644749}
-  playerInput: {fileID: 1886644753}
   portraitManager: {fileID: 818024658}
-  currentNPC: {fileID: 0}
-  currentPortraitNumber: 0
 --- !u!95 &1886644752
 Animator:
   serializedVersion: 3
@@ -25284,14 +25265,11 @@ MonoBehaviour:
     m_Bits: 2304
   moveSpeed: 6
   inDialogue: 0
-  animator: {fileID: 1886644752}
-  playerInput: {fileID: 1886644753}
   currentDashCooldown: 0
   speakCooldown: 0.5
   speakCooldownLeft: 0
-  hornLamp: {fileID: 696722431}
-  rb2: {fileID: 1886644754}
   lastFacingDirection: RIGHT
+  rb2: {fileID: 1886644754}
 --- !u!212 &1886644757
 SpriteRenderer:
   m_ObjectHideFlags: 0
