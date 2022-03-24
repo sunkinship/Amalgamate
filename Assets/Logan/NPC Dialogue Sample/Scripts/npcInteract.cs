@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class npcInteract : MonoBehaviour, interactable
 {
-    public GameObject player;
+    private GameObject player;
     [SerializeField] dialogue dialoguePreQuest;
     [SerializeField] dialogue dialogueMidQuest;
     [SerializeField] dialogue dialoguePostQuest;
@@ -15,9 +15,15 @@ public class npcInteract : MonoBehaviour, interactable
     public Sprite[] portraitsPostQuest;
     public Sprite currentPortrait;
 
-    public PlayerManager playerManager;
-    [HideInInspector]
-    public QuestGiver npc;
+    private PlayerManager playerManager;
+    private QuestGiver npc;
+
+    private void Awake()
+    {
+        player = GameObject.Find("Player");
+        playerManager = player.GetComponent<PlayerManager>();
+        npc = gameObject.GetComponent<QuestGiver>();
+    }
 
     /// <summary>
     /// Set and write NPC dialogue and portaits based on quest state

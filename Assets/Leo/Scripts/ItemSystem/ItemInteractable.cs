@@ -6,9 +6,16 @@ public class ItemInteractable : MonoBehaviour
 {
     public Item item;
 
+    [HideInInspector]
     public PlayerManager player;
 
-    public GameObject itemObject;
+    private GameObject itemObject;
+
+    private void Awake()
+    {
+        player = GameObject.Find("Player").GetComponent<PlayerManager>();
+        itemObject = this.gameObject;
+    }
 
     /// <summary>
     /// Pick up item in range and add to inventory 
@@ -19,13 +26,13 @@ public class ItemInteractable : MonoBehaviour
         {
             if (this.item.itemType == item.itemType)
             {
-                Debug.Log("Picked up item type: " + this.item.itemType + " same as " + item.itemType);
+                //Debug.Log("Picked up item type: " + this.item.itemType + " same as " + item.itemType);
                 item.quantity++;
                 Destroy(itemObject);
                 return;
             }
         }
-        Debug.Log("Picked up new item");
+        //Debug.Log("Picked up new item");
         item.pickedUp = true;
         item.quantity = 1;
         player.inventory.Add(item);

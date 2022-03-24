@@ -6,7 +6,13 @@ public class QuestGiver : MonoBehaviour
 {
     public Quest quest;
 
+    [HideInInspector]
     public PlayerManager player;
+
+    private void Awake()
+    {
+        player = GameObject.Find("Player").GetComponent<PlayerManager>();
+    }
 
     /// <summary>
     /// Receive quest from NPC

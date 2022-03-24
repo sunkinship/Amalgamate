@@ -44,7 +44,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (collision.tag == "Item")
         {
-            Debug.Log("in range");
+            //Debug.Log("in range");
             item = collision.gameObject;
         }
     }
@@ -53,7 +53,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (collision.tag == "Item")
         {
-            Debug.Log("left range");
+            //Debug.Log("left range");
             item = null;
         }
     }
@@ -64,7 +64,7 @@ public class PlayerManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("Picked up item");
+                //Debug.Log("Picked up item");
                 item.GetComponent<ItemInteractable>().pickUp();
             }
         }

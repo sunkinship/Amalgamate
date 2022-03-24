@@ -6,21 +6,29 @@ using UnityEngine.UI;
 
 public class checkInteractions : MonoBehaviour
 {
-    bool isKeyDown;
-    bool isFacingInteractable;
+    private bool isKeyDown;
+    private bool isFacingInteractable;
     public PlayerInput playerInput;
     public bool isInteractingWithNPC;
-    public GameObject player;
-    GameObject currentNPC;
+  
+    private GameObject currentNPC;
+
     public string nameString;
     public Text nameText;
     public GameObject npcPortrait;
     public GameObject forPortrait;
 
-    public QuestGiver npc;
-    public PlayerManager playerManager;
+    private GameObject player;
+    private QuestGiver npc;
+    private PlayerManager playerManager;
 
-    // Update is called once per frame
+    private void Awake()
+    {
+        player = GameObject.Find("Player");
+        playerManager = player.GetComponent<PlayerManager>();
+        //playerInput = gameObject.GetComponent<PlayerInput>();
+    }
+
     void Update()
     {
         if(currentNPC != null)
@@ -56,22 +64,19 @@ public class checkInteractions : MonoBehaviour
         // Quest not started
         if (npc.quest.isActive == false && npc.quest.isComplete == false)
         {
-            //Debug.Log("New quest!!!!");
-            Debug.Log("isActive: " + npc.quest.isActive + "isComplete: " + npc.quest.isComplete);
+            //Debug.Log("isActive: " + npc.quest.isActive + "isComplete: " + npc.quest.isComplete);
             return currentNPC.GetComponent<npcInteract>().portraitsPreQuest[0];
         }
         // Quest started but not completed
         else if (npc.quest.isActive && npc.quest.isComplete == false)
         {
-            //Debug.Log("Doing quest!!!!");
-            Debug.Log("isActive: " + npc.quest.isActive + "isComplete: " + npc.quest.isComplete);
+            //Debug.Log("isActive: " + npc.quest.isActive + "isComplete: " + npc.quest.isComplete);
             return currentNPC.GetComponent<npcInteract>().portraitsMidQuest[0];
         }
         // Quest Completed
         else
         {
-            //Debug.Log("Completed quest!!!!");
-            Debug.Log("isActive: " + npc.quest.isActive + "isComplete: " + npc.quest.isComplete);
+            //Debug.Log("isActive: " + npc.quest.isActive + "isComplete: " + npc.quest.isComplete);
             return currentNPC.GetComponent<npcInteract>().portraitsPostQuest[0];
         }
     }

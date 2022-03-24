@@ -6,13 +6,12 @@ public class CameraFollowPlayer : MonoBehaviour
 {
 
     public GameObject mCam;
-    public GameObject Player;
+    private GameObject Player;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        /*mCam = GameObject.Find("Main Camera");
-        Player = GameObject.Find("Player");*/
+        Player = GameObject.Find("Player");
     }
 
     // Update is called once per frame

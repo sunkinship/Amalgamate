@@ -12,11 +12,11 @@ public class playerMovement : MonoBehaviour
 
     public bool inDialogue;
 
-    public Animator animator;
+    private Animator animator;
 
     Vector2 movement;
 
-    public PlayerInput playerInput;
+    private PlayerInput playerInput;
 
     private float dashCooldown = 1.5f;
     public float currentDashCooldown;
@@ -24,7 +24,7 @@ public class playerMovement : MonoBehaviour
     public float speakCooldown = .5f;
     public float speakCooldownLeft;
 
-    public GameObject hornLamp;
+    private GameObject hornLamp;
     Vector2 originalPos;
 
     private enum State
@@ -32,8 +32,6 @@ public class playerMovement : MonoBehaviour
         Normal,
         Dashing,
     }
-
-    public Rigidbody2D rb2;
 
     public string lastFacingDirection = "RIGHT";
 
@@ -45,9 +43,16 @@ public class playerMovement : MonoBehaviour
 
     private State state;
 
+    [HideInInspector]
+    public Rigidbody2D rb2;
+
 
     private void Awake()
     {
+        playerInput = gameObject.GetComponent<PlayerInput>();
+        hornLamp = GameObject.Find("HornLampLight");
+        rb2 = gameObject.GetComponent<Rigidbody2D>();
+        animator = gameObject.GetComponent<Animator>();
         state = State.Normal;
         originalPos = new Vector2(hornLamp.transform.localPosition.x, hornLamp.transform.localPosition.y);
     }

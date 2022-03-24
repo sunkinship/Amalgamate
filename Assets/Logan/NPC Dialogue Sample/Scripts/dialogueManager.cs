@@ -12,12 +12,12 @@ public class dialogueManager : MonoBehaviour
     [SerializeField] GameObject dialogueTextBox;
     public TextMeshProUGUI dialogueText;
     [SerializeField] int lettersPerSecond;
-    public GameObject player;
-    public PlayerInput playerInput;
-    bool isTyping;
+    private GameObject player;
+    private PlayerInput playerInput;
+    private bool isTyping;
     public GameObject portraitManager;
-    public GameObject currentNPC;
-    public int currentPortraitNumber;
+    private GameObject currentNPC;
+    private int currentPortraitNumber;
     private Sprite[] portraitList;
 
 
@@ -25,6 +25,8 @@ public class dialogueManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        player = GameObject.Find("Player");
+        playerInput = player.GetComponent<PlayerInput>();
     }
     dialogue dialogue;
     int currentLine = 0;
