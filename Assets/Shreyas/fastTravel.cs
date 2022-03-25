@@ -10,14 +10,15 @@ public class fastTravel : MonoBehaviour
     public Animator anim;
     public void OnClickGoHome()
     {
-        anim.SetBool("Fade", true);
         StartCoroutine(Fade());
-        SceneManager.LoadScene("Home", LoadSceneMode.Single);
     }
 
     IEnumerator Fade()
     {
+        anim.SetBool("Fade", true);
         yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene("Home", LoadSceneMode.Single);
+
     }
 
 }
