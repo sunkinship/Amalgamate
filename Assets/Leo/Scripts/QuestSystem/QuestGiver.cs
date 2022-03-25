@@ -23,18 +23,4 @@ public class QuestGiver : MonoBehaviour
         player.quests[player.quests.Count - 1].isActive = true;
         player.quests[player.quests.Count - 1].isComplete = false;
     }
-
-    /// <summary>
-    /// Complete quest if condition has been reached
-    /// </summary>
-    /// <returns></returns>
-    public bool CompletedQuest()
-    {
-        foreach (Item item in player.inventory)
-        {
-            return quest.goal.IsReached(item);
-        }
-
-        return false;
-    }
 }

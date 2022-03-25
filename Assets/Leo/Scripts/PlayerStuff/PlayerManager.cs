@@ -9,6 +9,12 @@ public class PlayerManager : MonoBehaviour
 
     [HideInInspector]
     public GameObject item;
+    public TrustMeter trustMeter;
+
+    private void Awake()
+    {
+        trustMeter = GameObject.Find("Slider").GetComponent<TrustMeter>();
+    }
 
     void Update()
     {
@@ -31,6 +37,7 @@ public class PlayerManager : MonoBehaviour
             {
                 if (npc.quest.goal.IsReached(item))
                 {
+                    trustMeter.StartCoroutine("AddProgress", 0.5f);
                     npc.quest.isComplete = true;
                     npc.quest.isActive = false;
                     return;
