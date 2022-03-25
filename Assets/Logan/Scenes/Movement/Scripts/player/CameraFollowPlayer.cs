@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.U2D;
 
 public class CameraFollowPlayer : MonoBehaviour
 {
@@ -15,9 +16,8 @@ public class CameraFollowPlayer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         mCam.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, -10);
-
     }
 }
