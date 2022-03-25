@@ -7,9 +7,8 @@ public class TrustMeter : MonoBehaviour
 {
     private Slider slider;
 
-    public float fillSpeed = 10;
-    public float targetProgress;
-    public float target = 0;
+    public float fillSpeed;
+    private float targetProgress;
 
     private void Awake()
     {
