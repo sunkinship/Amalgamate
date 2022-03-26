@@ -19,6 +19,7 @@ public class TrustMeter : MonoBehaviour
 
     private void Update()
     {
+        //Debug.Log("Current value: " + slider.value + " Target value: " + targetProgress);
         if (Input.GetKeyDown(KeyCode.Space))
             StartCoroutine("AddProgress", 0.5f);
         if (slider.value <= targetProgress)
@@ -30,7 +31,7 @@ public class TrustMeter : MonoBehaviour
         ani.Play("TrustMeterDown");
         yield return new WaitForSeconds(1f);
 
-        targetProgress = slider.value + newProgress;
+        targetProgress = slider.value + newProgress - 0.005f;
         while (!(slider.value >= targetProgress))
             yield return null;
 
