@@ -73,6 +73,16 @@ public class playerMovement : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);*/
 
+        if (rb2.velocity.x > 0.01 || rb2.velocity.y > 0.01)
+        {
+            animator.SetBool("isMoving", true);
+        } 
+        else
+        {
+            animator.SetBool("isMoving", false);
+        }
+
+
         if (inDialogue == false)
         {
             GetInput();
