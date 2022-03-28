@@ -142,7 +142,6 @@ public class playerMovement : MonoBehaviour
                 //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["UP"]))
                 if (playerInput.actions["Up"].IsPressed())
                 {
-                    //originalPos = new Vector2(hornLamp.transform.localPosition.x + 0.5f, hornLamp.transform.localPosition.y + 0.35f);
                     hornLamp.transform.position = new Vector2(transform.position.x - 0.56f, transform.position.y + 0.3f);
                     if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Down"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
                     {
@@ -192,7 +191,7 @@ public class playerMovement : MonoBehaviour
                     animator.SetTrigger("Right");
 
                 }
-                else animator.ResetTrigger("Right");
+                //else animator.ResetTrigger("Right");
 
                 direction = new Vector3(moveX, moveY).normalized;
                 if(moveX != 0 || moveY != 0)
