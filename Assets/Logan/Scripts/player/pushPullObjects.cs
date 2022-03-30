@@ -7,13 +7,13 @@ public class pushPullObjects : MonoBehaviour
 {
     private PlayerInput playerInput;
     public GameObject heldItem;
-    public GameObject CurrentInteractiveZone;
     public GameObject player;
-    public GameObject leftInterZone;
-    public GameObject rightInterZone;
-    public GameObject downInterZone;
-    public GameObject upInterZone;
     public bool isPulling;
+    private bool isKeyDown;
+    private bool isFacingMovable;
+    private static GameObject currentMovable;
+    private static bool isMovingObject;
+
 
 
     public void Start()
@@ -23,22 +23,35 @@ public class pushPullObjects : MonoBehaviour
 
     public void Update()
     {
-        if(player.GetComponent<playerMovement>().lastFacingDirection == "RIGHT" && isPulling == false)
+
+        if(playerInput.actions["Interact"].triggered && isFacingMovable == true && isMovingObject == false)
         {
-            CurrentInteractiveZone = rightInterZone;
+            isMovingObject = true;
         }
-        if (player.GetComponent<playerMovement>().lastFacingDirection == "LEFT" && isPulling == false)
+        if (isMovingObject == true && playerInput.actions["Interact"].triggered)
         {
-            CurrentInteractiveZone = leftInterZone;
+            isMovingObject = false;
+            currentMovable = null;
         }
-        if (player.GetComponent<playerMovement>().lastFacingDirection == "UP" && isPulling == false)
+
+        if (isMovingObject == true)
         {
-            CurrentInteractiveZone = upInterZone;
+            player.GetComponent<playerMovement>().moveSpeed = 3;
+            currentMovable.transform.position = player.transform.position;
         }
-        if (player.GetComponent<playerMovement>().lastFacingDirection == "DOWN" && isPulling == false)
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "movableObject")
         {
-            CurrentInteractiveZone = downInterZone;
+            isFacingMovable = true;
+
+            currentMovable = collision.gameObject;
+
         }
+
     }
 
 }
