@@ -17,14 +17,14 @@ public class PlayerManager : MonoBehaviour
     public TrustMeter trustMeter;
 
     private SpriteLibrary spriteLibrary;
-    private Light2D hornLamp;
+    //private Light2D hornLamp;
     private Animator ani;
 
     private void Awake()
     {
         spriteLibrary = gameObject.GetComponent<SpriteLibrary>();
         trustMeter = GameObject.Find("Slider").GetComponent<TrustMeter>();
-        hornLamp = GameObject.Find("HornLampLight").GetComponent<Light2D>();
+        //hornLamp = GameObject.Find("HornLampLight").GetComponent<Light2D>();
         ani = GameObject.Find("HornLampLight").GetComponent<Animator>();
     }
 
@@ -41,11 +41,11 @@ public class PlayerManager : MonoBehaviour
             ani.SetTrigger("LampSwitch");
             if (lampOn)
             {
-                spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("Regular");
+                spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibrary/Regular");
                 lampOn = false;
             } else
             {
-                spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("Glow");
+                spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibrary/Glow");
                 lampOn = true;
             }
             

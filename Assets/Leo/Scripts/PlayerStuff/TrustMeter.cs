@@ -20,8 +20,6 @@ public class TrustMeter : MonoBehaviour
     private void Update()
     {
         //Debug.Log("Current value: " + slider.value + " Target value: " + targetProgress);
-        if (Input.GetKeyDown(KeyCode.Space))
-            StartCoroutine("AddProgress", 0.5f);
         if (slider.value <= targetProgress)
             slider.value += fillSpeed * Time.deltaTime;
     }

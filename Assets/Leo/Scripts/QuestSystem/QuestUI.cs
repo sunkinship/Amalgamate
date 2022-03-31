@@ -9,7 +9,7 @@ public class QuestUI : MonoBehaviour
     public TextMeshProUGUI listText;
     public List<Quest> questList;
     private string textContents;
-
+    
     private void Start()
     {
         textContents = "       Quests\n";
