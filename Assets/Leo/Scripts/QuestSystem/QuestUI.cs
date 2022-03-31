@@ -12,7 +12,7 @@ public class QuestUI : MonoBehaviour
 
     private void Start()
     {
-        textContents = "       Quests\n";    
+        textContents = "       Quests\n";
     }
 
     void Update()
