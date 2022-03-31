@@ -8,7 +8,6 @@ public class pushPullObjects : MonoBehaviour
     private PlayerInput playerInput;
     public GameObject heldItem;
     public GameObject player;
-    public bool isPulling;
     private bool isKeyDown;
     private bool isFacingMovable;
     private static GameObject currentMovable;
@@ -28,11 +27,11 @@ public class pushPullObjects : MonoBehaviour
         {
             isMovingObject = true;
         }
-        if (isMovingObject == true && playerInput.actions["Interact"].triggered)
-        {
-            isMovingObject = false;
-            currentMovable = null;
-        }
+        //if (isMovingObject == true && playerInput.actions["Interact"].triggered)
+        //{
+        //    isMovingObject = false;
+        //    currentMovable = null;
+        //}
 
         if (isMovingObject == true)
         {
