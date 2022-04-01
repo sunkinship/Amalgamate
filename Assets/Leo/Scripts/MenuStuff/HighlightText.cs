@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Experimental.U2D.Animation;
 using UnityEngine.Experimental.Rendering.Universal;
+using UnityEngine.InputSystem;
 
 public class HighlightText : Selectable
 {
@@ -28,6 +29,12 @@ public class HighlightText : Selectable
 
     void Update()
     {
+
+        if(Input.GetButton("Fire1") && IsHighlighted())
+        {
+            Debug.Log("kidufr");
+        }
+
         if (IsHighlighted())
         {
             TurnOnGlow();

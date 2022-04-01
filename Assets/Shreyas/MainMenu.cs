@@ -10,4 +10,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+
+    public void OnClickMenu()
+    {
+        SceneManager.LoadScene("MainMenuTesting", LoadSceneMode.Single);
+    }
+
+
 }
