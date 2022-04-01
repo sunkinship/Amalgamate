@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 using TMPro;
-using UnityEngine.Experimental.U2D.Animation;
 using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine.InputSystem;
 
@@ -39,13 +40,14 @@ public class HighlightText : Selectable
         {
             TurnOnGlow();
         }
-        else 
+        else
         {
             if (glowing)
             {
                 TurnOffGlow();
             }
         }
+        //CheckMouse();
     }
 
     private void TurnOnGlow()
@@ -62,5 +64,37 @@ public class HighlightText : Selectable
         targetText.fontSharedMaterial = notGlowMat;
         pointLight.intensity = 0;
         spriteLight.intensity = 0;
+    }
+
+    private void OnMouseDown()
+    {
+        targetText.fontSharedMaterial = glowMat;
+        pointLight.intensity = 2;
+        spriteLight.intensity = 2;
+        Debug.Log("Mouse Down Method");
+    }
+
+    private void OnMouseUp()
+    {
+        targetText.fontSharedMaterial = notGlowMat;
+        pointLight.intensity = 0;
+        spriteLight.intensity = 0;
+        Debug.Log("Mouse Up Method");
+    }
+
+    private void CheckMouse()
+    {
+        Event e = Event.current;
+        int controlID = GUIUtility.GetControlID(FocusType.Passive);
+
+        switch (e.GetTypeForControl(controlID))
+        {
+            case EventType.MouseDown:
+                Debug.Log("Mouse Down Case");
+                break;
+            case EventType.MouseUp:
+                Debug.Log("Mouse Up Case");
+                break;
+        }
     }
 }
