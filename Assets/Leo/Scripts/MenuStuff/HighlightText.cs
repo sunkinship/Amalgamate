@@ -1,93 +1,41 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UI;
-using UnityEngine.UIElements;
 using TMPro;
-using UnityEngine.Experimental.Rendering.Universal;
 
-public class HighlightText : Selectable
+public class HighlightText : MonoBehaviour
 {
+    [HideInInspector]
+    public GetLights getLights;
     private TextMeshProUGUI targetText;
-    private Light2D pointLight;
-    private Light2D spriteLight;
 
-    private Material glowMat;
-    private Material notGlowMat;
-
-    private bool glowing;
-
-    protected override void Awake()
+    private void Awake()
     {
-        pointLight = GameObject.Find("HornPointLight").GetComponent<Light2D>();
-        spriteLight = GameObject.Find("HornSpriteLight").GetComponent<Light2D>();
         targetText = gameObject.GetComponentInChildren<TextMeshProUGUI>();
-        glowMat = Resources.Load<Material>("TextMatVariants/PixelEmulator-xq08 SDF - Glow");
-        notGlowMat = Resources.Load<Material>("TextMatVariants/PixelEmulator-xq08 SDF - NotGlow");
+        getLights = GameObject.Find("HandleButtonEvents").GetComponent<GetLights>();
     }
 
-    void Update()
+    public void TurnOnGlow()
     {
-        if (IsHighlighted())
-        {
-            TurnOnGlow();
-        }
-        else
-        {
-            if (glowing)
-            {
-                TurnOffGlow();
-            }
-        }
-        //CheckMouse();
+        //Debug.Log("Entered");
+        targetText.fontSharedMaterial = getLights.glowMat;
+        getLights.pointLight.intensity = 0.5f;
+        getLights.spriteLight.intensity = 0.7f;
     }
 
-    private void TurnOnGlow()
+    public void TurnOffGlow()
     {
-        glowing = true;
-        targetText.fontSharedMaterial = glowMat;
-        pointLight.intensity = 1;
-        spriteLight.intensity = 1;
+        //Debug.Log("Exited");
+        targetText.fontSharedMaterial = getLights.notGlowMat;
+        getLights.pointLight.intensity = 0;
+        getLights.spriteLight.intensity = 0;
     }
 
-    private void TurnOffGlow()
+    public void IncreaseGlow()
     {
-        glowing = false;
-        targetText.fontSharedMaterial = notGlowMat;
-        pointLight.intensity = 0;
-        spriteLight.intensity = 0;
-    }
-
-    private void OnMouseDown()
-    {
-        targetText.fontSharedMaterial = glowMat;
-        pointLight.intensity = 2;
-        spriteLight.intensity = 2;
-        Debug.Log("Mouse Down Method");
-    }
-
-    private void OnMouseUp()
-    {
-        targetText.fontSharedMaterial = notGlowMat;
-        pointLight.intensity = 0;
-        spriteLight.intensity = 0;
-        Debug.Log("Mouse Up Method");
-    }
-
-    private void CheckMouse()
-    {
-        Event e = Event.current;
-        int controlID = GUIUtility.GetControlID(FocusType.Passive);
-
-        switch (e.GetTypeForControl(controlID))
-        {
-            case EventType.MouseDown:
-                Debug.Log("Mouse Down Case");
-                break;
-            case EventType.MouseUp:
-                Debug.Log("Mouse Up Case");
-                break;
-        }
+        //Debug.Log("Pressed");
+        targetText.fontSharedMaterial = getLights.glowMat;
+        getLights.pointLight.intensity = 0.7f;
+        getLights.spriteLight.intensity = 1f;
     }
 }

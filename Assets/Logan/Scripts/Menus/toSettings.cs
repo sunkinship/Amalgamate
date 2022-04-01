@@ -4,24 +4,38 @@ using UnityEngine;
 
 public class toSettings : MonoBehaviour
 {
+    [HideInInspector]
+    public GameObject mainMenuCanvas, settingsCanvas, creditsCanvas;
 
-    public GameObject settingsCanvas;
-    public GameObject mainCanvas;
-
-    public void Start()
+    public void Awake()
     {
-        //settingsCanvas = GameObject.Find("Settings Canvas");
-        //mainCanvas = GameObject.Find("Pause Canvas");
+        mainMenuCanvas = GameObject.Find("MainMenu Canvas");
+        settingsCanvas = GameObject.Find("Settings Canvas");
+        creditsCanvas = GameObject.Find("Pause Canvas");
     }
 
-    public void onSettingsClick()
+    public void MainMenu()
     {
+        DisableCanvas();
+        mainMenuCanvas.SetActive(true);
+    }
+
+    public void Settings()
+    {
+        DisableCanvas();
         settingsCanvas.SetActive(true);
-        mainCanvas.SetActive(false);
     }
-    public void onBackClick()
+
+    public void Credits()
     {
+        DisableCanvas();
+        creditsCanvas.SetActive(true);
+    }
+
+    private void DisableCanvas()
+    {
+        mainMenuCanvas.SetActive(false);
         settingsCanvas.SetActive(false);
-        mainCanvas.SetActive(true);
+        creditsCanvas.SetActive(false);
     }
 }
