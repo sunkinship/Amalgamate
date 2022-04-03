@@ -8,6 +8,9 @@ public class MenuHandler : MonoBehaviour
     public GameObject mainMenuCanvas, settingsCanvas, creditsCanvas, rebindCanvas;
     private CurrentCanvas currentCanvas = CurrentCanvas.mainmenu;
 
+    public Animator ani;
+    public float waitTime = 1.5f;
+
     private enum CurrentCanvas{
         mainmenu, settings, credits, rebind
     }
@@ -17,6 +20,13 @@ public class MenuHandler : MonoBehaviour
         DisableCanvas();
         currentCanvas = CurrentCanvas.mainmenu;
         mainMenuCanvas.SetActive(true);
+    }
+
+    public void MainMenuFromCredits()
+    {
+        DisableCanvas();
+        ani.Play("PlayerLeftReturn");
+        StartCoroutine(ExitCredits());
     }
 
     public void Settings()
@@ -36,8 +46,22 @@ public class MenuHandler : MonoBehaviour
     public void Credits()
     {
         DisableCanvas();
+        ani.Play("PlayerLeft");
+        StartCoroutine(EnterCredits());
+    }
+
+    private IEnumerator EnterCredits()
+    {
+        yield return new WaitForSeconds(waitTime);
         currentCanvas = CurrentCanvas.credits;
         creditsCanvas.SetActive(true);
+    }
+
+    private IEnumerator ExitCredits()
+    {
+        yield return new WaitForSeconds(waitTime);
+        currentCanvas = CurrentCanvas.mainmenu;
+        mainMenuCanvas.SetActive(true);
     }
 
     private void DisableCanvas()
