@@ -6,58 +6,56 @@ using UnityEngine.SceneManagement;
 public class MenuHandler : MonoBehaviour
 {
     public GameObject mainMenuCanvas, settingsCanvas, creditsCanvas, rebindCanvas;
-    private bool mainmenu = true;
-    private bool settings, credits, rebind;
+    private CurrentCanvas currentCanvas = CurrentCanvas.mainmenu;
+
+    private enum CurrentCanvas{
+        mainmenu, settings, credits, rebind
+    }
 
     public void MainMenu()
     {
         DisableCanvas();
-        mainmenu = true;
+        currentCanvas = CurrentCanvas.mainmenu;
         mainMenuCanvas.SetActive(true);
     }
 
     public void Settings()
     {
         DisableCanvas();
-        settings = true;
+        currentCanvas = CurrentCanvas.settings;
         settingsCanvas.SetActive(true);
     }
 
     public void Rebind()
     {
         DisableCanvas();
-        rebind = true;
+        currentCanvas = CurrentCanvas.rebind;
         rebindCanvas.SetActive(true);
     }
 
     public void Credits()
     {
         DisableCanvas();
-        credits = true;
+        currentCanvas = CurrentCanvas.credits;
         creditsCanvas.SetActive(true);
     }
 
     private void DisableCanvas()
     {
-        if (mainmenu)
+        switch (currentCanvas)
         {
-            mainMenuCanvas.SetActive(false);
-            mainmenu = false;
-        }
-        else if (settings)
-        {
-            settingsCanvas.SetActive(false);
-            settings = false;
-        }
-        else if (rebind)
-        {
-            rebindCanvas.SetActive(false);
-            rebind = false;
-        }
-        else if (credits)
-        {
-            creditsCanvas.SetActive(false);
-            credits = false;
+            case CurrentCanvas.mainmenu:
+                mainMenuCanvas.SetActive(false);
+                break;
+            case CurrentCanvas.settings:
+                settingsCanvas.SetActive(false);
+                break;
+            case CurrentCanvas.rebind:
+                rebindCanvas.SetActive(false);
+                break;
+            case CurrentCanvas.credits:
+                creditsCanvas.SetActive(false);
+                break;
         }
     }
 

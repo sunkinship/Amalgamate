@@ -17,7 +17,6 @@ public class HighlightText : MonoBehaviour
 
     public void TurnOnGlow()
     {
-        //Debug.Log("Entered");
         targetText.fontSharedMaterial = getLights.glowMat;
         getLights.pointLight.intensity = 0.5f;
         getLights.spriteLight.intensity = 0.7f;
@@ -25,7 +24,6 @@ public class HighlightText : MonoBehaviour
 
     public void TurnOffGlow()
     {
-        //Debug.Log("Exited");
         targetText.fontSharedMaterial = getLights.notGlowMat;
         getLights.pointLight.intensity = 0;
         getLights.spriteLight.intensity = 0;
@@ -33,7 +31,6 @@ public class HighlightText : MonoBehaviour
 
     public void IncreaseGlow()
     {
-        //Debug.Log("Pressed");
         targetText.fontSharedMaterial = getLights.glowMat;
         getLights.pointLight.intensity = 0.7f;
         getLights.spriteLight.intensity = 1f;
