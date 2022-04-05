@@ -11,27 +11,32 @@ public class HighlightText : MonoBehaviour
     public GameObject particles;
     private static bool isHighlighted;
     private static float intensity = 0;
-    public MenuHandler menuHandler;
+    private static float changeRate = 0.5f;
 
     private void Awake()
     {
         targetText = gameObject.GetComponentInChildren<TextMeshProUGUI>();
         getLights = GameObject.Find("HandleButtonEvents").GetComponent<GetLights>();
-        menuHandler = GameObject.Find("HandleButtonEvents").GetComponent<MenuHandler>();
     }
 
     private void Update()
     {
         if (isHighlighted)
         {
-            if (intensity <= 0.695)
-                intensity += 0.005f;
+            intensity += changeRate * Time.deltaTime;
+            
+            //if (intensity <= 0.695)
+            //    intensity += 0.005f;
         }
         else
         {
-            if (intensity >= 0.005)
-                intensity -= 0.005f;
+            intensity -= changeRate * Time.deltaTime;
+
+            //if (intensity >= 0.005)
+            //    intensity -= 0.005f;
         }
+
+        intensity = Mathf.Clamp(intensity, 0, 0.6f);
 
         getLights.pointLight.intensity = intensity;
         getLights.spriteLight.intensity = intensity;
