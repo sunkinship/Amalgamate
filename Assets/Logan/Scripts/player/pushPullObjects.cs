@@ -39,7 +39,6 @@ public class pushPullObjects : MonoBehaviour
             canPickUp = false;
             heldItem.GetComponent<CapsuleCollider2D>().enabled = true;
             isMovingObject = false;
-            heldItem.transform.position = this.gameObject.transform.position;
             currentMovable = null;
             heldItem = null;
             canDrop = false;
