@@ -5,11 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class MenuHandler : MonoBehaviour
 {
+    [HideInInspector]
+    public GetLights getLights;
     public GameObject mainMenuCanvas, settingsCanvas, creditsCanvas, rebindCanvas;
     private CurrentCanvas currentCanvas = CurrentCanvas.mainmenu;
 
     public Animator ani;
     public float waitTime = 1.5f;
+
+    private void Awake()
+    {
+        getLights = GameObject.Find("HandleButtonEvents").GetComponent<GetLights>();
+    }
 
     private enum CurrentCanvas{
         mainmenu, settings, credits, rebind
@@ -24,6 +31,8 @@ public class MenuHandler : MonoBehaviour
 
     public void MainMenuFromCredits()
     {
+        getLights.pointLight.enabled = false;
+        getLights.spriteLight.enabled = false;
         DisableCanvas();
         ani.Play("PlayerLeftReturn");
         StartCoroutine(ExitCredits());
@@ -45,6 +54,8 @@ public class MenuHandler : MonoBehaviour
 
     public void Credits()
     {
+        getLights.pointLight.enabled = false;
+        getLights.spriteLight.enabled = false;
         DisableCanvas();
         ani.Play("PlayerLeft");
         StartCoroutine(EnterCredits());
@@ -55,6 +66,8 @@ public class MenuHandler : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         currentCanvas = CurrentCanvas.credits;
         creditsCanvas.SetActive(true);
+        getLights.pointLight.enabled = true;
+        getLights.spriteLight.enabled = true;
     }
 
     private IEnumerator ExitCredits()
@@ -62,6 +75,8 @@ public class MenuHandler : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         currentCanvas = CurrentCanvas.mainmenu;
         mainMenuCanvas.SetActive(true);
+        getLights.pointLight.enabled = true;
+        getLights.spriteLight.enabled = true;
     }
 
     private void DisableCanvas()

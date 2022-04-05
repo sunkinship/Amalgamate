@@ -9,25 +9,48 @@ public class HighlightText : MonoBehaviour
     public GetLights getLights;
     private TextMeshProUGUI targetText;
     public GameObject particles;
+    private static bool isHighlighted;
+    private static float intensity = 0;
+    public MenuHandler menuHandler;
 
     private void Awake()
     {
         targetText = gameObject.GetComponentInChildren<TextMeshProUGUI>();
         getLights = GameObject.Find("HandleButtonEvents").GetComponent<GetLights>();
+        menuHandler = GameObject.Find("HandleButtonEvents").GetComponent<MenuHandler>();
+    }
+
+    private void Update()
+    {
+        if (isHighlighted)
+        {
+            if (intensity <= 0.695)
+                intensity += 0.005f;
+        }
+        else
+        {
+            if (intensity >= 0.005)
+                intensity -= 0.005f;
+        }
+
+        getLights.pointLight.intensity = intensity;
+        getLights.spriteLight.intensity = intensity;
     }
 
     public void TurnOnGlow()
     {
+        isHighlighted = true;
         targetText.fontSharedMaterial = getLights.glowMat;
-        getLights.pointLight.intensity = 0.5f;
-        getLights.spriteLight.intensity = 0.7f;
+        //getLights.pointLight.intensity = 0.5f;
+        //getLights.spriteLight.intensity = 0.7f;
     }
 
     public void TurnOffGlow()
     {
+        isHighlighted = false;
         targetText.fontSharedMaterial = getLights.notGlowMat;
-        getLights.pointLight.intensity = 0;
-        getLights.spriteLight.intensity = 0;
+        //getLights.pointLight.intensity = 0;
+        //getLights.spriteLight.intensity = 0;
     }
 
     public void IncreaseGlow()
