@@ -8,6 +8,7 @@ public class HighlightText : MonoBehaviour
     [HideInInspector]
     public GetLights getLights;
     private TextMeshProUGUI targetText;
+    public GameObject particles;
 
     private void Awake()
     {
@@ -34,5 +35,10 @@ public class HighlightText : MonoBehaviour
         targetText.fontSharedMaterial = getLights.glowMat;
         getLights.pointLight.intensity = 0.7f;
         getLights.spriteLight.intensity = 1f;
+    }
+
+    public void PlayEffect()
+    {
+        particles.GetComponent<ParticleSystem>().Play();
     }
 }
