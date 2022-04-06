@@ -24,16 +24,10 @@ public class HighlightText : MonoBehaviour
         if (isHighlighted)
         {
             intensity += changeRate * Time.deltaTime;
-            
-            //if (intensity <= 0.695)
-            //    intensity += 0.005f;
         }
         else
         {
             intensity -= changeRate * Time.deltaTime;
-
-            //if (intensity >= 0.005)
-            //    intensity -= 0.005f;
         }
 
         intensity = Mathf.Clamp(intensity, 0, 0.6f);

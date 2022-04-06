@@ -17,28 +17,29 @@ public class PlayerManager : MonoBehaviour
     public TrustMeter trustMeter;
 
     private SpriteLibrary spriteLibrary;
-    //private Light2D hornLamp;
-    private Animator ani;
+    private Light2D hornLamp;
+
+    private static float intensity = 0;
+    private static float changeRate = 0.5f;
 
     private void Awake()
     {
         spriteLibrary = gameObject.GetComponent<SpriteLibrary>();
         trustMeter = GameObject.Find("Slider").GetComponent<TrustMeter>();
-        //hornLamp = GameObject.Find("HornLampLight").GetComponent<Light2D>();
-        ani = GameObject.Find("HornLampLight").GetComponent<Animator>();
+        hornLamp = GameObject.Find("HornLampLight").GetComponent<Light2D>();
     }
 
     void Update()
     {
         PickUpItem();
-        ToggleLamp();
+        ToggleLitSprite();
+        ToggleLampLight();
     }
 
-    private void ToggleLamp()
+    private void ToggleLitSprite()
     {
         if (Input.GetKeyDown(KeyCode.L))
         {
-            ani.SetTrigger("LampSwitch");
             if (lampOn)
             {
                 spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibrary/Regular");
@@ -50,6 +51,22 @@ public class PlayerManager : MonoBehaviour
             }
             
         }
+    }
+
+    private void ToggleLampLight()
+    {
+        if (lampOn)
+        {
+            intensity += changeRate * Time.deltaTime;
+        }
+        else
+        {
+            intensity -= changeRate * Time.deltaTime;
+        }
+
+        intensity = Mathf.Clamp(intensity, 0, 1);
+
+        hornLamp.intensity = intensity;
     }
 
     public void GetQuest(QuestGiver npc)
