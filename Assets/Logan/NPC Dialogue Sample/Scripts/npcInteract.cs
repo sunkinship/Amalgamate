@@ -9,10 +9,12 @@ public class npcInteract : MonoBehaviour, interactable
     [SerializeField] dialogue dialoguePreQuest;
     [SerializeField] dialogue dialogueMidQuest;
     [SerializeField] dialogue dialoguePostQuest;
+    [SerializeField] dialogue dialoguePostPostQuest;
     public string NPCName;
     public Sprite[] portraitsPreQuest;
     public Sprite[] portraitsMidQuest;
     public Sprite[] portraitsPostQuest;
+    public Sprite[] portraitsPostPostQuest;
     public Sprite currentPortrait;
 
     private PlayerManager playerManager;

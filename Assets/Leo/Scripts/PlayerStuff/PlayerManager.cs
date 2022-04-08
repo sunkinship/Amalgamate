@@ -70,10 +70,13 @@ public class PlayerManager : MonoBehaviour
     }
 
     public void GetQuest(QuestGiver npc)
-    {
-        if (!npc.quest.isActive)
+    {   
+        if (npc.quest.isAvailable)
         {
-            npc.AcceptQuest();
+            if (!npc.quest.isActive)
+            {
+                npc.AcceptQuest();
+            }
         }
     }
 

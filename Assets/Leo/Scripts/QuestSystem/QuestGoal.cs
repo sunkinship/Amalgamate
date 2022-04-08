@@ -33,5 +33,5 @@ public class QuestGoal
 public enum GoalType
 {
     Gather,
-    Trade
+    Talk
 }

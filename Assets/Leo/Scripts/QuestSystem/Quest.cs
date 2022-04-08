@@ -5,8 +5,10 @@ using UnityEngine;
 [System.Serializable]
 public class Quest
 {
+    public bool isAvailable; 
     public bool isActive;
     public bool isComplete;
+    public bool isPostQuest;
     public string name;
     public string npc;
     public string description;
