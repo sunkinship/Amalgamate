@@ -70,9 +70,18 @@ public class pushPullObjects : MonoBehaviour
             isFacingMovable = true;
             heldItem = collision.gameObject;
             currentMovable = collision.gameObject;
-
         }
 
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "movableObject")
+        {
+            isFacingMovable = false;
+        }
+
+    }
+
 
 }
