@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class managePortraits : MonoBehaviour
 {
+    [HideInInspector]
     public GameObject currentNPC;
 }

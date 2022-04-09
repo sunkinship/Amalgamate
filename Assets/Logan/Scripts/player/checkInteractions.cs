@@ -18,13 +18,12 @@ public class checkInteractions : MonoBehaviour
     public GameObject npcPortrait;
     public GameObject forPortrait;
 
-    private GameObject player;
+    public GameObject player;
     private QuestGiver npc;
     private PlayerManager playerManager;
 
     private void Awake()
     {
-        player = GameObject.Find("Player");
         playerManager = player.GetComponent<PlayerManager>();
         //playerInput = gameObject.GetComponent<PlayerInput>();
     }
@@ -36,7 +35,7 @@ public class checkInteractions : MonoBehaviour
             npcPortrait.GetComponent<Image>().sprite = currentNPC.GetComponent<npcInteract>().currentPortrait;
         }
         
-
+        //Initial check for interaction -> npcInteract -> dialogueManager
         isKeyDown = playerInput.actions["Interact"].triggered;
 
         if (isKeyDown && isFacingInteractable == true && player.GetComponent<playerMovement>().inDialogue == false && player.GetComponent<playerMovement>().speakCooldownLeft < 0)
@@ -61,8 +60,13 @@ public class checkInteractions : MonoBehaviour
         // Check current state of quest
         playerManager.ProgressQuest(npc);
 
+        // No available quest
+        if (npc.quest.hasQuest == false)
+        {
+            return currentNPC.GetComponent<npcInteract>().portraitsNoQuest[0];
+        }
         // Quest not started
-        if (npc.quest.isActive == false && npc.quest.isComplete == false)
+        else if (npc.quest.isActive == false && npc.quest.isComplete == false)
         {
             //Debug.Log("isActive: " + npc.quest.isActive + "isComplete: " + npc.quest.isComplete);
             return currentNPC.GetComponent<npcInteract>().portraitsPreQuest[0];
@@ -73,11 +77,16 @@ public class checkInteractions : MonoBehaviour
             //Debug.Log("isActive: " + npc.quest.isActive + "isComplete: " + npc.quest.isComplete);
             return currentNPC.GetComponent<npcInteract>().portraitsMidQuest[0];
         }
-        // Quest Completed
-        else
+        // First interaction after quest completed
+        else if (npc.quest.isActive && npc.quest.isComplete && npc.quest.isPostQuest == false)
         {
             //Debug.Log("isActive: " + npc.quest.isActive + "isComplete: " + npc.quest.isComplete);
             return currentNPC.GetComponent<npcInteract>().portraitsPostQuest[0];
+        }
+        // Post quest complete
+        else 
+        {
+            return currentNPC.GetComponent<npcInteract>().portraitsPostPostQuest[0];
         }
     }
 

@@ -11,10 +11,15 @@ public class dialogueManager : MonoBehaviour
     [SerializeField] GameObject dialogueBox;
     [SerializeField] GameObject dialogueTextBox;
     public TextMeshProUGUI dialogueText;
+
     [SerializeField] int lettersPerSecond;
-    private GameObject player;
+
+    private playerMovement playerMove;
+    private PlayerManager playerManage;
     private PlayerInput playerInput;
+
     private bool isTyping;
+
     public GameObject portraitManager;
     private GameObject currentNPC;
     private int currentPortraitNumber;
@@ -25,8 +30,9 @@ public class dialogueManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        player = GameObject.Find("Player");
-        playerInput = player.GetComponent<PlayerInput>();
+        playerInput = gameObject.GetComponent<PlayerInput>();
+        playerMove = gameObject.GetComponent<playerMovement>();
+        playerManage = gameObject.GetComponent<PlayerManager>();
     }
     dialogue dialogue;
     int currentLine = 0;
@@ -36,7 +42,7 @@ public class dialogueManager : MonoBehaviour
         currentNPC = portraitManager.GetComponent<managePortraits>().currentNPC;
 
         // Checking for input during NPC interaction
-        if (player.GetComponent<playerMovement>().inDialogue == true && playerInput.actions["Interact"].triggered && isTyping == false)
+        if (playerMove.inDialogue == true && playerInput.actions["Interact"].triggered && isTyping == false)
         {
             // Going to next line of dialogue after input
             ++currentLine;
@@ -52,8 +58,14 @@ public class dialogueManager : MonoBehaviour
                 currentLine = 0;
                 dialogueBox.SetActive(false);
                 currentNPC.GetComponent<npcInteract>().currentPortrait = currentNPC.GetComponent<npcInteract>().portraitsPreQuest[0];
-                player.GetComponent<playerMovement>().inDialogue = false;
-                player.GetComponent<playerMovement>().speakCooldownLeft = player.GetComponent<playerMovement>().speakCooldown;
+                playerMove.inDialogue = false;
+                playerMove.speakCooldownLeft = playerMove.speakCooldown;
+
+                //If quest is completed progresses trust meter and makes isPostQuest true
+                if (playerManage.callPostQuest)
+                {
+                    currentNPC.GetComponent<QuestGiver>().PostQuest();
+                }
             }
         }
     }

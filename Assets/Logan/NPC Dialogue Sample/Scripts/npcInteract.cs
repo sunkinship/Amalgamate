@@ -5,16 +5,21 @@ using UnityEngine.UI;
 
 public class npcInteract : MonoBehaviour, interactable
 {
-    private GameObject player;
+    public GameObject player;
+
     [SerializeField] dialogue dialoguePreQuest;
     [SerializeField] dialogue dialogueMidQuest;
     [SerializeField] dialogue dialoguePostQuest;
     [SerializeField] dialogue dialoguePostPostQuest;
+    [SerializeField] dialogue dialogueNoQuest;
     public string NPCName;
+
     public Sprite[] portraitsPreQuest;
     public Sprite[] portraitsMidQuest;
     public Sprite[] portraitsPostQuest;
     public Sprite[] portraitsPostPostQuest;
+    public Sprite[] portraitsNoQuest;
+
     public Sprite currentPortrait;
 
     private PlayerManager playerManager;
@@ -22,7 +27,6 @@ public class npcInteract : MonoBehaviour, interactable
 
     private void Awake()
     {
-        player = GameObject.Find("Player");
         playerManager = player.GetComponent<PlayerManager>();
         npc = gameObject.GetComponent<QuestGiver>();
     }
@@ -34,8 +38,13 @@ public class npcInteract : MonoBehaviour, interactable
     {
         currentPortrait = protrait;
 
+        // No available quest
+        if (currentPortrait == portraitsNoQuest[0])
+        {
+            StartCoroutine(dialogueManager.Instance.ShowDialogue(dialogueNoQuest, portraitsNoQuest));
+        }
         // Quest not started
-        if (currentPortrait == portraitsPreQuest[0])
+        else if (currentPortrait == portraitsPreQuest[0])
         {
             StartCoroutine(dialogueManager.Instance.ShowDialogue(dialoguePreQuest, portraitsPreQuest));
             playerManager.GetQuest(npc);
@@ -45,10 +54,15 @@ public class npcInteract : MonoBehaviour, interactable
         {
             StartCoroutine(dialogueManager.Instance.ShowDialogue(dialogueMidQuest, portraitsMidQuest));
         }
-        // Quest Completed
-        else 
+        // First interaction after quest completed
+        else if (currentPortrait == portraitsPostQuest[0])
         {
             StartCoroutine(dialogueManager.Instance.ShowDialogue(dialoguePostQuest, portraitsPostQuest));
+        }
+        // Post quest complete
+        else
+        {
+            StartCoroutine(dialogueManager.Instance.ShowDialogue(dialoguePostPostQuest, portraitsPostPostQuest));
         }
 
         player.GetComponent<playerMovement>().inDialogue = true;

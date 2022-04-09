@@ -10,23 +10,24 @@ public class PlayerManager : MonoBehaviour
     public List<Item> inventory = new List<Item>();
 
     private bool lampOn;
+    [HideInInspector]
+    public bool callPostQuest;
 
     [HideInInspector]
     public GameObject item;
-    [HideInInspector]
+
     public TrustMeter trustMeter;
 
-    private SpriteLibrary spriteLibrary;
-    private Light2D hornLamp;
+    //private SpriteLibrary spriteLibrary;
+    public Light2D hornLamp;
+    public float maxBrightness = 0.5f;
 
     private static float intensity = 0;
     private static float changeRate = 0.5f;
 
     private void Awake()
     {
-        spriteLibrary = gameObject.GetComponent<SpriteLibrary>();
-        trustMeter = GameObject.Find("Slider").GetComponent<TrustMeter>();
-        hornLamp = GameObject.Find("HornLampLight").GetComponent<Light2D>();
+        //spriteLibrary = gameObject.GetComponent<SpriteLibrary>();
     }
 
     void Update()
@@ -36,6 +37,7 @@ public class PlayerManager : MonoBehaviour
         ToggleLampLight();
     }
 
+    #region lights
     private void ToggleLitSprite()
     {
         if (Input.GetKeyDown(KeyCode.L))
@@ -64,14 +66,17 @@ public class PlayerManager : MonoBehaviour
             intensity -= changeRate * Time.deltaTime;
         }
 
-        intensity = Mathf.Clamp(intensity, 0, 1);
+        intensity = Mathf.Clamp(intensity, 0, maxBrightness);
 
         hornLamp.intensity = intensity;
     }
+    #endregion
 
+
+    #region quests
     public void GetQuest(QuestGiver npc)
     {   
-        if (npc.quest.isAvailable)
+        if (npc.quest.hasQuest)
         {
             if (!npc.quest.isActive)
             {
@@ -80,6 +85,10 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Deactivate quest and sets CallPostQuest to true after interaction
+    /// </summary>
+    /// <param name="npc"></param>
     public void ProgressQuest(QuestGiver npc)
     {
         if (npc.quest.isActive)
@@ -88,7 +97,7 @@ public class PlayerManager : MonoBehaviour
             {
                 if (npc.quest.goal.IsReached(item))
                 {
-                    trustMeter.StartCoroutine("AddProgress", 0.5f);
+                    callPostQuest = true;
                     npc.quest.isComplete = true;
                     npc.quest.isActive = false;
                     return;
@@ -98,6 +107,10 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
+    #endregion
+
+
+    #region items
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Item")
@@ -127,5 +140,5 @@ public class PlayerManager : MonoBehaviour
             }
         }
     }
-
+    #endregion
 }

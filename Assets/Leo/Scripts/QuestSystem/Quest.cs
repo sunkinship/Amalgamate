@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Quest
 {
-    public bool isAvailable; 
+    public bool hasQuest; 
     public bool isActive;
     public bool isComplete;
     public bool isPostQuest;

@@ -6,13 +6,8 @@ public class QuestGiver : MonoBehaviour
 {
     public Quest quest;
 
-    [HideInInspector]
     public PlayerManager player;
 
-    private void Awake()
-    {
-        player = GameObject.Find("Player").GetComponent<PlayerManager>();
-    }
 
     /// <summary>
     /// Receive quest from NPC
@@ -22,5 +17,15 @@ public class QuestGiver : MonoBehaviour
         player.quests.Add(quest);
         player.quests[player.quests.Count - 1].isActive = true;
         player.quests[player.quests.Count - 1].isComplete = false;
+    }
+
+    /// <summary>
+    /// Makes most quest true and progresses trust meter
+    /// </summary>
+    /// <param name="collision"></param>
+    public void PostQuest()
+    {
+        quest.isPostQuest = true;
+        player.trustMeter.StartCoroutine("AddProgress", 0.5f);
     }
 }
