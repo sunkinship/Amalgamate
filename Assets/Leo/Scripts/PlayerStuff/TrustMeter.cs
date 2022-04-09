@@ -21,7 +21,14 @@ public class TrustMeter : MonoBehaviour
     {
         //Debug.Log("Current value: " + slider.value + " Target value: " + targetProgress);
         if (slider.value <= targetProgress)
+        {
             slider.value += fillSpeed * Time.deltaTime;
+        }
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            StartCoroutine("AddProgress", 0.5f);
+        }
     }
 
     public IEnumerator AddProgress(float newProgress)

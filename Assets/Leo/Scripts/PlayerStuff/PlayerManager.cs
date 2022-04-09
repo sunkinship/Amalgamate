@@ -42,11 +42,11 @@ public class PlayerManager : MonoBehaviour
         {
             if (lampOn)
             {
-                spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibrary/Regular");
+                //spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibrary/Regular");
                 lampOn = false;
             } else
             {
-                spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibrary/Glow");
+                //spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibrary/Glow");
                 lampOn = true;
             }
             

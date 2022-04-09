@@ -73,7 +73,7 @@ public class playerMovement : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);*/
 
-        if (rb2.velocity.x > 0.01 || rb2.velocity.y > 0.01)
+        if (Mathf.Abs(rb2.velocity.x) > 0.01 || Mathf.Abs(rb2.velocity.y) > 0.01)
         {
             animator.SetBool("isMoving", true);
         } 
@@ -155,6 +155,7 @@ public class playerMovement : MonoBehaviour
                     hornLamp.transform.position = new Vector2(transform.position.x - 0.56f, transform.position.y + 0.3f);
                     if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Down"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
                     {
+                        //Debug.Log("set trigger up");
                         animator.SetTrigger("Up");
                     }
                     moveY = +1f;
@@ -171,6 +172,7 @@ public class playerMovement : MonoBehaviour
                     lastFacingDirection = "DOWN";
                     if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
                     {
+                        //Debug.Log("set trigger down");
                         animator.SetTrigger("Down");
                     }
 
@@ -185,6 +187,7 @@ public class playerMovement : MonoBehaviour
                     lastFacingDirection = "LEFT";
                     if (playerInput.actions["Right"].IsPressed() == false)
                     {
+                        //Debug.Log("set trigger left");
                         animator.SetTrigger("Left");
                     }
 
@@ -198,6 +201,7 @@ public class playerMovement : MonoBehaviour
                     hornLamp.transform.localPosition = originalPos;
                     moveX = +1f;
                     lastFacingDirection = "RIGHT";
+                    //Debug.Log("set trigger right");
                     animator.SetTrigger("Right");
 
                 }
