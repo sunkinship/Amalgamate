@@ -13,9 +13,21 @@ public class KeybindsMenuManager : MonoBehaviour
     [SerializeField]
     private Canvas canvas;
     public GameObject settingsCanvas;
-    public GameObject mainCanvas;
+    public GameObject pausedCanvas;
 
     private bool paused = false;
+
+    public void SettingsCanvas()
+    {
+        pausedCanvas.SetActive(false);
+        settingsCanvas.SetActive(true);
+    }
+
+    public void PasuedCanvas()
+    {
+        settingsCanvas.SetActive(false);
+        pausedCanvas.SetActive(true);
+    }
 
     private void OnEnable()
     {
@@ -51,7 +63,7 @@ public class KeybindsMenuManager : MonoBehaviour
             Time.timeScale = 1;
             canvas.enabled = false;
             settingsCanvas.SetActive(false);
-            mainCanvas.SetActive(true);
+            pausedCanvas.SetActive(true);
         }
     }
 
