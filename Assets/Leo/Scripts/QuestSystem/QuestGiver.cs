@@ -20,7 +20,7 @@ public class QuestGiver : MonoBehaviour
     }
 
     /// <summary>
-    /// Makes most quest true and progresses trust meter
+    /// Makes post quest true and progresses trust meter
     /// </summary>
     /// <param name="collision"></param>
     public void PostQuest()

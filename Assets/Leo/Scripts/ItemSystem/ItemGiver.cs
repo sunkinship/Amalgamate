@@ -2,23 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemInteractable : MonoBehaviour
+public class ItemGiver : MonoBehaviour
 {
     public Item item;
-
-    [HideInInspector]
+    public string linkedQuestName;
     public PlayerManager player;
 
-    private GameObject itemObject;
+    //[HideInInspector]
+    public bool canGiveItem, gaveItem;
 
-    private void Awake()
-    {
-        player = GameObject.Find("Player").GetComponent<PlayerManager>();
-        itemObject = this.gameObject;
-    }
 
     /// <summary>
-    /// Pick up item in range and add to inventory 
+    /// Gives required item to player if player has received linked quest 
+    /// </summary>
+    public void CheckToGiveItem()
+    {
+        foreach (Quest quest in player.quests)
+        {
+            if (quest.questName.Equals(linkedQuestName) && gaveItem == false)
+            {
+                canGiveItem = true;
+                PickUp();
+            }
+        }
+    }
+
+
+    /// <summary>
+    /// Receive item from npc and add to inventory 
     /// </summary>
     public void PickUp()
     {
@@ -28,7 +39,6 @@ public class ItemInteractable : MonoBehaviour
             {
                 //Debug.Log("Picked up item type: " + this.item.itemType + " same as " + item.itemType);
                 item.quantity++;
-                Destroy(itemObject);
                 return;
             }
         }
@@ -36,6 +46,5 @@ public class ItemInteractable : MonoBehaviour
         item.pickedUp = true;
         item.quantity = 1;
         player.inventory.Add(item);
-        Destroy(itemObject);
     }
 }

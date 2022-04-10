@@ -19,7 +19,8 @@ public class checkInteractions : MonoBehaviour
     public GameObject forPortrait;
 
     public GameObject player;
-    private QuestGiver npc;
+    public ItemGiver npcItem;
+    private QuestGiver npcQuest;
     private PlayerManager playerManager;
 
     private void Awake()
@@ -55,30 +56,42 @@ public class checkInteractions : MonoBehaviour
     /// </summary>
     private Sprite CheckQuestState()
     {
-        npc = currentNPC.GetComponent<QuestGiver>();
+        npcQuest = currentNPC.GetComponent<QuestGiver>();
+        npcItem = currentNPC.GetComponent<ItemGiver>();
 
         // Check current state of quest
-        playerManager.ProgressQuest(npc);
+        playerManager.ProgressQuest(npcQuest);
 
+        // Check if player has received linked quest
+        npcItem.CheckToGiveItem();
+
+        Debug.Log("Name: " + currentNPC.GetComponent<npcInteract>().name);
+
+        //Linked quest triggered
+        if (npcItem.canGiveItem == true)
+        {
+            Debug.Log("wtf: " + npcItem.canGiveItem);
+            return currentNPC.GetComponent<npcInteract>().portraitsLinkedQuest[0];
+        }
         // No available quest
-        if (npc.quest.hasQuest == false)
+        else if (npcQuest.quest.hasQuest == false)
         {
             return currentNPC.GetComponent<npcInteract>().portraitsNoQuest[0];
         }
         // Quest not started
-        else if (npc.quest.isActive == false && npc.quest.isComplete == false)
+        else if (npcQuest.quest.isActive == false && npcQuest.quest.isComplete == false)
         {
             //Debug.Log("isActive: " + npc.quest.isActive + "isComplete: " + npc.quest.isComplete);
             return currentNPC.GetComponent<npcInteract>().portraitsPreQuest[0];
         }
         // Quest started but not completed
-        else if (npc.quest.isActive && npc.quest.isComplete == false)
+        else if (npcQuest.quest.isActive && npcQuest.quest.isComplete == false)
         {
             //Debug.Log("isActive: " + npc.quest.isActive + "isComplete: " + npc.quest.isComplete);
             return currentNPC.GetComponent<npcInteract>().portraitsMidQuest[0];
         }
         // First interaction after quest completed
-        else if (npc.quest.isActive && npc.quest.isComplete && npc.quest.isPostQuest == false)
+        else if (npcQuest.quest.isActive && npcQuest.quest.isComplete && npcQuest.quest.isPostQuest == false)
         {
             //Debug.Log("isActive: " + npc.quest.isActive + "isComplete: " + npc.quest.isComplete);
             return currentNPC.GetComponent<npcInteract>().portraitsPostQuest[0];

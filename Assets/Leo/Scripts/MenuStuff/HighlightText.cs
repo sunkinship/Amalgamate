@@ -12,6 +12,7 @@ public class HighlightText : MonoBehaviour
     private static bool isHighlighted;
     private static float intensity = 0;
     private static float changeRate = 0.5f;
+    private static float maxBrightness = 0.4f;
 
     private void Awake()
     {
@@ -30,7 +31,7 @@ public class HighlightText : MonoBehaviour
             intensity -= changeRate * Time.deltaTime;
         }
 
-        intensity = Mathf.Clamp(intensity, 0, 0.6f);
+        intensity = Mathf.Clamp(intensity, 0, maxBrightness);
 
         getLights.pointLight.intensity = intensity;
         getLights.spriteLight.intensity = intensity;
@@ -40,16 +41,18 @@ public class HighlightText : MonoBehaviour
     {
         isHighlighted = true;
         targetText.fontSharedMaterial = getLights.glowMat;
-        //getLights.pointLight.intensity = 0.5f;
-        //getLights.spriteLight.intensity = 0.7f;
+    }
+
+    public void TurnOnGlow2()
+    {
+        isHighlighted = true;
+        targetText.fontSharedMaterial = getLights.notButtonMat;
     }
 
     public void TurnOffGlow()
     {
         isHighlighted = false;
         targetText.fontSharedMaterial = getLights.notGlowMat;
-        //getLights.pointLight.intensity = 0;
-        //getLights.spriteLight.intensity = 0;
     }
 
     public void IncreaseGlow()

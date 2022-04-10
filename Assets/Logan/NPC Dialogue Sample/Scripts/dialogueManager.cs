@@ -61,10 +61,16 @@ public class dialogueManager : MonoBehaviour
                 playerMove.inDialogue = false;
                 playerMove.speakCooldownLeft = playerMove.speakCooldown;
 
-                //If quest is completed progresses trust meter and makes isPostQuest true
+                // If quest is completed progresses trust meter and makes isPostQuest true
                 if (playerManage.callPostQuest)
                 {
                     currentNPC.GetComponent<QuestGiver>().PostQuest();
+                }
+                // If linked quest item is recevied reset npc dialogue 
+                if (currentNPC.GetComponent<ItemGiver>().canGiveItem)
+                {
+                    currentNPC.GetComponent<ItemGiver>().canGiveItem = false;
+                    currentNPC.GetComponent<ItemGiver>().gaveItem = true;
                 }
             }
         }
