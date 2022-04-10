@@ -34,10 +34,10 @@ public class QuestUI : MonoBehaviour
     {
         foreach (Quest quest in questList)
         {
-            textContents += "*" + quest.name + "\n  -" + quest.description + "\n";
+            textContents += "*" + quest.questName + "\n  -" + quest.description + "\n";
             if (quest.isActive && quest.isComplete == false)
             {
-                textContents += "*" + quest.name + "\n  -" + quest.description + "\n";
+                textContents += "*" + quest.questName + "\n  -" + quest.description + "\n";
             }
             listText.text = textContents;
         }

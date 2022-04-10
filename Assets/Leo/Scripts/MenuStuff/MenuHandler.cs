@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MenuHandler : MonoBehaviour
 {
-    [HideInInspector]
     public GetLights getLights;
     public GameObject mainMenuCanvas, settingsCanvas, creditsCanvas, rebindCanvas;
     private CurrentCanvas currentCanvas = CurrentCanvas.mainmenu;
@@ -13,10 +12,6 @@ public class MenuHandler : MonoBehaviour
     public Animator ani;
     public float waitTime = 1.5f;
 
-    private void Awake()
-    {
-        getLights = GameObject.Find("HandleButtonEvents").GetComponent<GetLights>();
-    }
 
     private enum CurrentCanvas{
         mainmenu, settings, credits, rebind

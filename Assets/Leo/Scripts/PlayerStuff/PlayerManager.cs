@@ -136,7 +136,7 @@ public class PlayerManager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 //Debug.Log("Picked up item");
-                item.GetComponent<ItemInteractable>().pickUp();
+                item.GetComponent<ItemInteractable>().PickUp();
             }
         }
     }

@@ -6,11 +6,9 @@ using UnityEngine;
 public class Quest
 {
     public bool hasQuest; 
-    public bool isActive;
-    public bool isComplete;
-    public bool isPostQuest;
-    public string name;
-    public string npc;
+    [HideInInspector]
+    public bool isActive, isComplete, isPostQuest;
+    public string questName;
     public string description;
 
     public QuestGoal goal;

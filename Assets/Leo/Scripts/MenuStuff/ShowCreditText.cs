@@ -5,18 +5,13 @@ using TMPro;
 
 public class ShowCreditText : MonoBehaviour
 {
-    [HideInInspector]
     public GetLights getLights;
     public GameObject trent, leo, logan, tyler, shreyas;
 
-    private void Awake()
-    {
-        getLights = GameObject.Find("HandleButtonEvents").GetComponent<GetLights>();
-    }
 
     public void TrentGlow()
     {
-        trent.GetComponent<TextMeshProUGUI>().fontSharedMaterial = getLights.glowMat;
+        trent.GetComponent<TextMeshProUGUI>().fontSharedMaterial = getLights.notButtonMat;
     }
 
     public void TrentOff()
@@ -26,7 +21,7 @@ public class ShowCreditText : MonoBehaviour
 
     public void LeoGlow()
     {
-        leo.GetComponent<TextMeshProUGUI>().fontSharedMaterial = getLights.glowMat;
+        leo.GetComponent<TextMeshProUGUI>().fontSharedMaterial = getLights.notButtonMat;
     }
 
     public void LeoOff()
@@ -36,7 +31,7 @@ public class ShowCreditText : MonoBehaviour
 
     public void LoganGlow()
     {
-        logan.GetComponent<TextMeshProUGUI>().fontSharedMaterial = getLights.glowMat;
+        logan.GetComponent<TextMeshProUGUI>().fontSharedMaterial = getLights.notButtonMat;
     }
 
     public void LoganOff()
@@ -46,7 +41,7 @@ public class ShowCreditText : MonoBehaviour
 
     public void TylerGlow()
     {
-        tyler.GetComponent<TextMeshProUGUI>().fontSharedMaterial = getLights.glowMat;
+        tyler.GetComponent<TextMeshProUGUI>().fontSharedMaterial = getLights.notButtonMat;
     }
 
     public void TylerOff()
@@ -56,7 +51,7 @@ public class ShowCreditText : MonoBehaviour
 
     public void ShreyasGlow()
     {
-        shreyas.GetComponent<TextMeshProUGUI>().fontSharedMaterial = getLights.glowMat;
+        shreyas.GetComponent<TextMeshProUGUI>().fontSharedMaterial = getLights.notButtonMat;
     }
 
     public void ShreyasOff()

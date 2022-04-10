@@ -7,14 +7,17 @@ public class Item
 {
     public ItemType itemType;
 
+    [HideInInspector]
     public bool pickedUp;
+    [HideInInspector]
+    public int quantity;
     public string itemName;
     public string description;
-    public int quantity;
 }
 
 public enum ItemType
 {
     Apple,
-    Potion
+    Potion,
+    Hay
 }
