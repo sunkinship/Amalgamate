@@ -24,6 +24,8 @@ public class playerMovement : MonoBehaviour
     public float speakCooldown = .5f;
     public float speakCooldownLeft;
 
+    private bool isMoving;
+
     private GameObject hornLamp;
     Vector2 originalPos;
 
@@ -75,10 +77,12 @@ public class playerMovement : MonoBehaviour
 
         if (Mathf.Abs(rb2.velocity.x) > 0.01 || Mathf.Abs(rb2.velocity.y) > 0.01)
         {
+            isMoving = true;
             animator.SetBool("isMoving", true);
         } 
         else
         {
+            isMoving = false;
             animator.SetBool("isMoving", false);
         }
 
@@ -175,7 +179,6 @@ public class playerMovement : MonoBehaviour
                         //Debug.Log("set trigger down");
                         animator.SetTrigger("Down");
                     }
-
                 }
                 //else animator.ResetTrigger("Down");
 
@@ -190,20 +193,17 @@ public class playerMovement : MonoBehaviour
                         //Debug.Log("set trigger left");
                         animator.SetTrigger("Left");
                     }
-
                 }
                 //else animator.ResetTrigger("Left");
-
 
                 //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["RIGHT"]))
                 if (playerInput.actions["Right"].IsPressed())
                 {
                     hornLamp.transform.localPosition = originalPos;
+                    animator.SetTrigger("Right");
                     moveX = +1f;
                     lastFacingDirection = "RIGHT";
                     //Debug.Log("set trigger right");
-                    animator.SetTrigger("Right");
-
                 }
                 //else animator.ResetTrigger("Right");
 

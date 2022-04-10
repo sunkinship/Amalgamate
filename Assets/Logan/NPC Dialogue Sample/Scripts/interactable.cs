@@ -8,5 +8,5 @@ public interface interactable
     /// Set and write NPC dialogue and portaits based on quest state
     /// </summary>
     /// <param name="portrait"></param>
-    void Interact(Sprite portrait);
+    void Interact(Sprite portrait, string questState);
 }

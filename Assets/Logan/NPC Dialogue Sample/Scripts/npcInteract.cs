@@ -39,45 +39,45 @@ public class npcInteract : MonoBehaviour, interactable
     /// <summary>
     /// Set and write NPC dialogue and portaits based on quest state
     /// </summary>
-    public void Interact(Sprite protrait)
+    public void Interact(Sprite protrait, string questState)
     {
         currentPortrait = protrait;
 
         //Linked quest triggered
-        if (currentPortrait == portraitsLinkedQuest[0])
+        if (questState.Equals("Linked"))
         {
-            //Debug.Log("Linked quest triggered");
+            //Debug.Log("why");
             StartCoroutine(dialogueManager.Instance.ShowDialogue(dialogueLinkedQuest, portraitsLinkedQuest));
         }
         // No available quest
-        else if (currentPortrait == portraitsNoQuest[0])
+        else if (questState.Equals("None"))
         {
-            Debug.Log("No available quest");
+            //Debug.Log("No available quest");
             StartCoroutine(dialogueManager.Instance.ShowDialogue(dialogueNoQuest, portraitsNoQuest));
         }
         // Quest not started
-        else if (currentPortrait == portraitsPreQuest[0])
+        else if (questState.Equals("New"))
         {
-            Debug.Log("Quest not started");
+            //Debug.Log("New quest");
             StartCoroutine(dialogueManager.Instance.ShowDialogue(dialoguePreQuest, portraitsPreQuest));
             playerManager.GetQuest(npc);
         } 
         // Quest started but not completed
-        else if (currentPortrait == portraitsMidQuest[0])
+        else if (questState.Equals("Started"))
         {
-            Debug.Log("Quest started but not completed");
+            //Debug.Log("Quest started but not completed");
             StartCoroutine(dialogueManager.Instance.ShowDialogue(dialogueMidQuest, portraitsMidQuest));
         }
         // First interaction after quest completed
-        else if (currentPortrait == portraitsPostQuest[0])
+        else if (questState.Equals("Complete"))
         {
-            Debug.Log("First interaction after quest completed");
+            //Debug.Log("First interaction after quest completed");
             StartCoroutine(dialogueManager.Instance.ShowDialogue(dialoguePostQuest, portraitsPostQuest));
         }
-        // Post quest complete
+        // Second interaction after quest completion  
         else
         {
-            Debug.Log("Post quest complete");
+            //Debug.Log("Post post quest");
             StartCoroutine(dialogueManager.Instance.ShowDialogue(dialoguePostPostQuest, portraitsPostPostQuest));
         }
 
