@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Trent/Scenes/MidQReview.unity
     guid: f6cf803d68ff795458d2093002a4bc16
+  - enabled: 1
+    path: Assets/Trent/Scenes/Test.unity
+    guid: 40ebe9806d593c740bf217f28d744010
   m_configObjects: {}

@@ -744,8 +744,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4cb34ac82666ba4fa59d91b98a8f334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMenuCanvas: {fileID: 0}
   settingsCanvas: {fileID: 1046778060}
-  mainCanvas: {fileID: 871099760}
+  creditsCanvas: {fileID: 0}
 --- !u!114 &84953659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1936,6 +1937,8 @@ MonoBehaviour:
   nameText: {fileID: 280627746}
   npcPortrait: {fileID: 1936071921}
   forPortrait: {fileID: 257130232}
+  player: {fileID: 0}
+  npcItem: {fileID: 0}
 --- !u!61 &549502828
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2372,7 +2375,7 @@ MonoBehaviour:
       m_Flags: 0
   canvas: {fileID: 871099764}
   settingsCanvas: {fileID: 1046778060}
-  mainCanvas: {fileID: 871099760}
+  pausedCanvas: {fileID: 0}
 --- !u!1 &871099760
 GameObject:
   m_ObjectHideFlags: 0
@@ -2543,6 +2546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1830610045}
+  sceneToLoad: ShreyasScene
 --- !u!114 &876865574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2588,6 +2592,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 876865573}
         m_MethodName: OnClickGoHome
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 847009607}
+        m_MethodName: Pause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3798,6 +3813,8 @@ MonoBehaviour:
   nameText: {fileID: 280627746}
   npcPortrait: {fileID: 1936071921}
   forPortrait: {fileID: 257130232}
+  player: {fileID: 0}
+  npcItem: {fileID: 0}
 --- !u!61 &1361095984
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3876,8 +3893,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4cb34ac82666ba4fa59d91b98a8f334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMenuCanvas: {fileID: 0}
   settingsCanvas: {fileID: 1046778060}
-  mainCanvas: {fileID: 871099760}
+  creditsCanvas: {fileID: 0}
 --- !u!114 &1504171841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4466,6 +4484,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: b41c66a6-9885-48f3-9699-380c33400682
     m_ActionName: Movement/Interact[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2bf0d86b-8686-41a0-a7b8-a3c51962b95c
+    m_ActionName: Movement/Push/Pull[/Keyboard/leftShift]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Movement
@@ -4523,6 +4545,9 @@ MonoBehaviour:
   dashLayerMask:
     serializedVersion: 2
     m_Bits: 2304
+  wallLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
   moveSpeed: 6
   inDialogue: 0
   currentDashCooldown: 0
@@ -5022,6 +5047,8 @@ MonoBehaviour:
   nameText: {fileID: 280627746}
   npcPortrait: {fileID: 1936071921}
   forPortrait: {fileID: 257130232}
+  player: {fileID: 0}
+  npcItem: {fileID: 0}
 --- !u!61 &1865372478
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5250,6 +5277,8 @@ MonoBehaviour:
   nameText: {fileID: 280627746}
   npcPortrait: {fileID: 1936071921}
   forPortrait: {fileID: 257130232}
+  player: {fileID: 0}
+  npcItem: {fileID: 0}
 --- !u!61 &2079149975
 BoxCollider2D:
   m_ObjectHideFlags: 0
