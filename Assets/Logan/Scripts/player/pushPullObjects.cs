@@ -15,30 +15,37 @@ public class pushPullObjects : MonoBehaviour
     static bool canDrop;
     static bool canPickUp;
 
+    private static Renderer heldObjectRender;
+    private static Renderer playerRender;
 
     public void Start()
     {
+        playerRender = player.GetComponent<Renderer>();
         playerInput = player.GetComponent<PlayerInput>();
         canPickUp = true;
     }
 
     public void Update()
     {
-
+        //Pick up
         if(playerInput.actions["Interact"].IsPressed() && isFacingMovable == true && isMovingObject == false && canPickUp == true)
         {
             player.GetComponent<playerMovement>().moveSpeed = 2.5f;
+            heldObjectRender = heldItem.GetComponent<Renderer>();
+            heldObjectRender.GetComponent<PositionRendering>().enabled = false;
             heldItem.GetComponent<CapsuleCollider2D>().enabled = false;
             canDrop = false;
             isMovingObject = true;
             Invoke("enableDrop", .5f);
         }
-
+        //Drop
         if (playerInput.actions["Interact"].IsPressed() && isMovingObject == true && canDrop == true)
         {
             canPickUp = false;
+            heldObjectRender.GetComponent<PositionRendering>().enabled = true;
             heldItem.GetComponent<CapsuleCollider2D>().enabled = true;
             isMovingObject = false;
+            currentMovable.transform.position = this.gameObject.transform.position;
             currentMovable = null;
             heldItem = null;
             canDrop = false;
@@ -48,6 +55,7 @@ public class pushPullObjects : MonoBehaviour
 
         if (isMovingObject == true)
         {
+            heldObjectRender.sortingOrder = playerRender.sortingOrder + 100;
             currentMovable.transform.position = player.transform.position;
         }
 
