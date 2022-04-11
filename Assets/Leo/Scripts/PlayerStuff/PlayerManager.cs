@@ -95,7 +95,7 @@ public class PlayerManager : MonoBehaviour
         {
             foreach (Item item in inventory)
             {
-                if (npc.quest.goal.IsReached(item))
+                if (npc.quest.goal.IsReached(item) && npc.quest.isComplete == false)
                 {
                     callPostQuest = true;
                     npc.quest.isComplete = true;

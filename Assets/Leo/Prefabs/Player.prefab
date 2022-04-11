@@ -407,7 +407,7 @@ MonoBehaviour:
   - {x: -0.5534859, y: -1.2871497, z: 0}
   m_ShapePathHash: 228770605
   m_Mesh: {fileID: 0}
-  m_InstanceId: 40026
+  m_InstanceId: -45952
 --- !u!1 &951023340945304220
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,13 +560,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 1553409733749040680, guid: b2b7b86ed827b5247bf88b774e2535ac,
+  m_Sprite: {fileID: -2622706684858653769, guid: bf846a3694d72de43aeaacca187693fc,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.5, y: 3.75}
+  m_Size: {x: 6.25, y: 3.75}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -804,8 +804,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_CategoryHash: 1.766494e+32
-  m_labelHash: -8.415019e-21
+  m_CategoryHash: -3.9800195e+13
+  m_labelHash: -5.205608e+26
 --- !u!1 &951023341438876380
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,7 +1111,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951023341713411165}
-  m_LocalRotation: {x: -0, y: -0, z: -0.010464549, w: 0.9999453}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0037386916, w: 0.999993}
   m_LocalPosition: {x: 0.5, y: 0.35000002, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_Children: []
@@ -1133,7 +1133,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.8584906, g: 0.76838773, b: 0.38470095, a: 1}
+  m_Color: {r: 0.8584906, g: 0.7607843, b: 0.4509804, a: 1}
   m_Intensity: 0
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 000000009f80681d33dc69e6
@@ -1146,7 +1146,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.28710333
-  m_PointLightOuterRadius: 3.4100566
+  m_PointLightOuterRadius: 4.485342
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -1536,7 +1536,7 @@ MonoBehaviour:
   - {x: -0.27113056, y: -1.5775857, z: 0}
   m_ShapePathHash: 139732523
   m_Mesh: {fileID: 0}
-  m_InstanceId: 39544
+  m_InstanceId: -45958
 --- !u!60 &951023342635561723
 PolygonCollider2D:
   m_ObjectHideFlags: 0

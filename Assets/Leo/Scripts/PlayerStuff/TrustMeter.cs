@@ -25,10 +25,10 @@ public class TrustMeter : MonoBehaviour
             slider.value += fillSpeed * Time.deltaTime;
         }
 
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            StartCoroutine("AddProgress", 0.5f);
-        }
+        //if (Input.GetKeyDown(KeyCode.K))
+        //{
+        //    StartCoroutine("AddProgress", 0.5f);
+        //}
     }
 
     public IEnumerator AddProgress(float newProgress)
