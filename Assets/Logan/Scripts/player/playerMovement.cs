@@ -6,6 +6,7 @@ using UnityEngine;
 public class playerMovement : MonoBehaviour
 {
     [SerializeField] private LayerMask dashLayerMask;
+    [SerializeField] private LayerMask wallLayerMask;
 
     public float moveSpeed = 6f;
     private float dashSpeed;
@@ -23,8 +24,6 @@ public class playerMovement : MonoBehaviour
 
     public float speakCooldown = .5f;
     public float speakCooldownLeft;
-
-    private bool isMoving;
 
     private GameObject hornLamp;
     Vector2 originalPos;
@@ -75,17 +74,24 @@ public class playerMovement : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);*/
 
-        if (Mathf.Abs(rb2.velocity.x) > 0.01 || Mathf.Abs(rb2.velocity.y) > 0.01)
+        RaycastHit2D raycastHit2d = Physics2D.Raycast(transform.position, direction, 0.5f, wallLayerMask);
+
+        if (raycastHit2d == true)
         {
-            isMoving = true;
-            animator.SetBool("isMoving", true);
-        } 
-        else
-        {
-            isMoving = false;
             animator.SetBool("isMoving", false);
+        } else
+        {
+            animator.SetBool("isMoving", true);
         }
 
+        if (Mathf.Abs(rb2.velocity.x) > 0.01 || Mathf.Abs(rb2.velocity.y) > 0.01)
+        {
+            animator.SetBool("isMoving", true);
+        }
+        else
+        {
+            animator.SetBool("isMoving", false);
+        }
 
         if (inDialogue == false)
         {
@@ -105,6 +111,7 @@ public class playerMovement : MonoBehaviour
         }
 
     }
+
 
     public void Move()
     {
