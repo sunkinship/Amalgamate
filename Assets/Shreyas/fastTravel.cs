@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class fastTravel : MonoBehaviour
 {
     public Animator anim;
+    public string sceneToLoad;
     public void OnClickGoHome()
     {
         StartCoroutine(Fade());
@@ -17,7 +18,7 @@ public class fastTravel : MonoBehaviour
     {
         anim.SetBool("Fade", true);
         yield return new WaitForSeconds(1.5f);
-        SceneManager.LoadScene("Home", LoadSceneMode.Single);
+        SceneManager.LoadScene(sceneToLoad);
 
     }
 

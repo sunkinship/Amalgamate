@@ -273,8 +273,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4cb34ac82666ba4fa59d91b98a8f334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMenuCanvas: {fileID: 0}
   settingsCanvas: {fileID: 2131653103}
-  mainCanvas: {fileID: 1477075704}
+  creditsCanvas: {fileID: 0}
 --- !u!114 &100211889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -490,6 +491,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: b41c66a6-9885-48f3-9699-380c33400682
     m_ActionName: Movement/Interact[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2bf0d86b-8686-41a0-a7b8-a3c51962b95c
+    m_ActionName: Movement/Push/Pull[/Keyboard/leftShift]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Movement
@@ -547,6 +552,9 @@ MonoBehaviour:
   dashLayerMask:
     serializedVersion: 2
     m_Bits: 2304
+  wallLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
   moveSpeed: 6
   inDialogue: 0
   currentDashCooldown: 0
@@ -1197,6 +1205,8 @@ MonoBehaviour:
   nameText: {fileID: 291485955}
   npcPortrait: {fileID: 752328347}
   forPortrait: {fileID: 1529211606}
+  player: {fileID: 0}
+  npcItem: {fileID: 0}
 --- !u!61 &173991162
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1389,6 +1399,8 @@ MonoBehaviour:
   nameText: {fileID: 291485955}
   npcPortrait: {fileID: 752328347}
   forPortrait: {fileID: 1529211606}
+  player: {fileID: 0}
+  npcItem: {fileID: 0}
 --- !u!61 &264333234
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2711,7 +2723,7 @@ MonoBehaviour:
       m_Flags: 0
   canvas: {fileID: 1477075707}
   settingsCanvas: {fileID: 2131653103}
-  mainCanvas: {fileID: 1477075704}
+  pausedCanvas: {fileID: 0}
 --- !u!1 &609769787
 GameObject:
   m_ObjectHideFlags: 0
@@ -3929,6 +3941,8 @@ MonoBehaviour:
   nameText: {fileID: 291485955}
   npcPortrait: {fileID: 752328347}
   forPortrait: {fileID: 1529211606}
+  player: {fileID: 0}
+  npcItem: {fileID: 0}
 --- !u!61 &1111087740
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4007,8 +4021,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4cb34ac82666ba4fa59d91b98a8f334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMenuCanvas: {fileID: 0}
   settingsCanvas: {fileID: 2131653103}
-  mainCanvas: {fileID: 1477075704}
+  creditsCanvas: {fileID: 0}
 --- !u!114 &1166078417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4409,6 +4424,8 @@ MonoBehaviour:
   nameText: {fileID: 291485955}
   npcPortrait: {fileID: 752328347}
   forPortrait: {fileID: 1529211606}
+  player: {fileID: 0}
+  npcItem: {fileID: 0}
 --- !u!61 &1347836222
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4636,6 +4653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 2709027}
+  sceneToLoad: Home
 --- !u!114 &1436622872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6090,10 +6108,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quest:
+    hasQuest: 0
     isActive: 0
     isComplete: 0
-    name: Apples
-    npc: shopkeep
+    isPostQuest: 0
+    questName: 
     description: Gather 3 apples
     goal:
       goalType: 0
@@ -6128,6 +6147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 667a9eff7669af34882d95a6b84f9d52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  NPCName: npc
   dialoguePreQuest:
     lines:
     - Find me some apples pretty boy..
@@ -6138,7 +6159,12 @@ MonoBehaviour:
     lines:
     - Thank you child..
     - Here is your reward..
-  NPCName: npc
+  dialoguePostPostQuest:
+    lines: []
+  dialogueLinkedQuest:
+    lines: []
+  dialogueNoQuest:
+    lines: []
   portraitsPreQuest:
   - {fileID: 21300000, guid: 06f38c84d94e37241be78b342a079e4e, type: 3}
   - {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
@@ -6148,6 +6174,9 @@ MonoBehaviour:
   portraitsPostQuest:
   - {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
   - {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
+  portraitsPostPostQuest: []
+  portraitsLinkedQuest: []
+  portraitsNoQuest: []
   currentPortrait: {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
 --- !u!70 &2054999727
 CapsuleCollider2D:
@@ -6378,10 +6407,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quest:
+    hasQuest: 0
     isActive: 0
     isComplete: 0
-    name: Potions
-    npc: ????
+    isPostQuest: 0
+    questName: 
     description: Gather 3 potions
     goal:
       goalType: 0
@@ -6416,6 +6446,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 667a9eff7669af34882d95a6b84f9d52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  NPCName: npc
   dialoguePreQuest:
     lines:
     - Fetch me some potions little guy..
@@ -6426,7 +6458,12 @@ MonoBehaviour:
     lines:
     - Thank you child..
     - Here is your reward..
-  NPCName: npc
+  dialoguePostPostQuest:
+    lines: []
+  dialogueLinkedQuest:
+    lines: []
+  dialogueNoQuest:
+    lines: []
   portraitsPreQuest:
   - {fileID: 21300000, guid: 06f38c84d94e37241be78b342a079e4e, type: 3}
   - {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
@@ -6436,6 +6473,9 @@ MonoBehaviour:
   portraitsPostQuest:
   - {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
   - {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
+  portraitsPostPostQuest: []
+  portraitsLinkedQuest: []
+  portraitsNoQuest: []
   currentPortrait: {fileID: 21300000, guid: 990902403ce12f54ea39d1147fac6d7c, type: 3}
 --- !u!70 &2099331668
 CapsuleCollider2D:

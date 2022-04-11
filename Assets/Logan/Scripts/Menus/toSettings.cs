@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class toSettings : MonoBehaviour
 {
-    [HideInInspector]
+    //[HideInInspector]
     public GameObject mainMenuCanvas, settingsCanvas, creditsCanvas;
 
     public void Awake()
     {
-        mainMenuCanvas = GameObject.Find("MainMenu Canvas");
-        settingsCanvas = GameObject.Find("Settings Canvas");
-        creditsCanvas = GameObject.Find("Pause Canvas");
+        //mainMenuCanvas = GameObject.Find("Pause Canvas");
+        //settingsCanvas = GameObject.Find("Settings Canvas");
+        //creditsCanvas = GameObject.Find("Pause Canvas");
     }
 
     public void MainMenu()
