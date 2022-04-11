@@ -1,40 +1,37 @@
 fileFormatVersion: 2
-guid: 03e240a184bf6514495eb0c1474494b1
+guid: bf846a3694d72de43aeaacca187693fc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2588364845623356650
-    second: Run Down-Sheet_0
+      213: -2622706684858653769
+    second: Run Up-Sheet 1_0
   - first:
-      213: -4672483252664661446
-    second: Run Down-Sheet_1
+      213: 27680125237809818
+    second: Run Up-Sheet 1_1
   - first:
-      213: 5795849016301928331
-    second: Run Down-Sheet_2
+      213: -7499423481271943052
+    second: Run Up-Sheet 1_2
   - first:
-      213: -7796994581542366182
-    second: Run Down-Sheet_3
+      213: -4050107028342151273
+    second: Run Up-Sheet 1_3
   - first:
-      213: -116853498531789075
-    second: Run Down-Sheet_4
+      213: -4060066767451006185
+    second: Run Up-Sheet 1_4
   - first:
-      213: -1670888504920234424
-    second: Run Down-Sheet_5
+      213: -8894948828638260137
+    second: Run Up-Sheet 1_5
   - first:
-      213: -8060238876996956275
-    second: Run Down-Sheet_6
+      213: -3506315359705895760
+    second: Run Up-Sheet 1_6
   - first:
-      213: 391006684393243866
-    second: Run Down-Sheet_7
+      213: 8125457804764023683
+    second: Run Up-Sheet 1_7
   - first:
-      213: 4615122143181498714
-    second: Run Down-Sheet_8
+      213: 925173932145579214
+    second: Run Up-Sheet 1_8
   - first:
-      213: -338878811111779696
-    second: Run Down-Sheet_9
-  - first:
-      213: 4460758732306117399
-    second: Run Down-Sheet_10
+      213: -7957178845952347796
+    second: Run Up-Sheet 1_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -120,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Run Down-Sheet_0
+      name: Run Up-Sheet 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -134,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aec2d740d18bbe320800000000000000
-      internalID: 2588364845623356650
+      spriteID: 7b325f27a264a9bd0800000000000000
+      internalID: -2622706684858653769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run Down-Sheet_1
+      name: Run Up-Sheet 1_1
       rect:
         serializedVersion: 2
         x: 125
@@ -155,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3a06f1dc31082fb0800000000000000
-      internalID: -4672483252664661446
+      spriteID: a9253206de6526000800000000000000
+      internalID: 27680125237809818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run Down-Sheet_2
+      name: Run Up-Sheet 1_2
       rect:
         serializedVersion: 2
         x: 250
@@ -176,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8f397cf8fdfe6050800000000000000
-      internalID: 5795849016301928331
+      spriteID: 4700092d312bce790800000000000000
+      internalID: -7499423481271943052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run Down-Sheet_3
+      name: Run Up-Sheet 1_3
       rect:
         serializedVersion: 2
         x: 375
@@ -197,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1495830db28bc390800000000000000
-      internalID: -7796994581542366182
+      spriteID: 7976a59bd112bc7c0800000000000000
+      internalID: -4050107028342151273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run Down-Sheet_4
+      name: Run Up-Sheet 1_4
       rect:
         serializedVersion: 2
         x: 500
@@ -218,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de64049bc5ad06ef0800000000000000
-      internalID: -116853498531789075
+      spriteID: 71bd6b149ceb7a7c0800000000000000
+      internalID: -4060066767451006185
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run Down-Sheet_5
+      name: Run Up-Sheet 1_5
       rect:
         serializedVersion: 2
         x: 625
@@ -239,14 +236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84622fce1cfcfc8e0800000000000000
-      internalID: -1670888504920234424
+      spriteID: 7545db5fa2bce8480800000000000000
+      internalID: -8894948828638260137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run Down-Sheet_6
+      name: Run Up-Sheet 1_6
       rect:
         serializedVersion: 2
         x: 750
@@ -260,14 +257,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8f8dc34277442090800000000000000
-      internalID: -8060238876996956275
+      spriteID: 0bceb32f1c0175fc0800000000000000
+      internalID: -3506315359705895760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run Down-Sheet_7
+      name: Run Up-Sheet 1_7
       rect:
         serializedVersion: 2
         x: 875
@@ -281,14 +278,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad4001002822d6500800000000000000
-      internalID: 391006684393243866
+      spriteID: 38b826aa2dc63c070800000000000000
+      internalID: 8125457804764023683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run Down-Sheet_8
+      name: Run Up-Sheet 1_8
       rect:
         serializedVersion: 2
         x: 1000
@@ -302,14 +299,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a596f5323253c0040800000000000000
-      internalID: 4615122143181498714
+      spriteID: ec41dfc1ac0e6dc00800000000000000
+      internalID: 925173932145579214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run Down-Sheet_9
+      name: Run Up-Sheet 1_9
       rect:
         serializedVersion: 2
         x: 1125
@@ -323,29 +320,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09296c9448f0c4bf0800000000000000
-      internalID: -338878811111779696
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run Down-Sheet_10
-      rect:
-        serializedVersion: 2
-        x: 1250
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 713f3d3de6cc7ed30800000000000000
-      internalID: 4460758732306117399
+      spriteID: c61f1c0affb629190800000000000000
+      internalID: -7957178845952347796
       vertices: []
       indices: 
       edges: []
