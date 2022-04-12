@@ -18,7 +18,7 @@ public class fastTravel : MonoBehaviour
     {
         anim.SetBool("Fade", true);
         yield return new WaitForSeconds(1.5f);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(sceneToLoad);
 
     }
 
