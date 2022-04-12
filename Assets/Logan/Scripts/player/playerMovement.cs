@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerMovement : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class playerMovement : MonoBehaviour
 
     public float moveSpeed = 6f;
     private float dashSpeed;
+
+    public bool goToMazeExit;
 
     public bool inDialogue;
 
@@ -100,6 +103,12 @@ public class playerMovement : MonoBehaviour
 
         speakCooldownLeft = speakCooldownLeft - Time.deltaTime;
         currentDashCooldown = currentDashCooldown - Time.deltaTime;
+
+        //if(goToMazeExit == true)
+        //{
+        //    this.gameObject.transform.position = GameObject.Find("exitMazeLocation").transform.position;
+        //    goToMazeExit = false;
+        //}
 
     }
 

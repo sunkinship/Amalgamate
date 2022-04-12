@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Leo/Scenes/MonsterCave.unity
     guid: e4eee4cfcf5a1274c9c1ed14090908cd
+  - enabled: 1
+    path: Assets/Logan/Scripts/mazeScene.unity
+    guid: 07b6d0e579ceb0d4bb81ad602adf5495
   m_configObjects: {}
