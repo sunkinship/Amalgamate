@@ -1382,6 +1382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 829838069}
   hornGlow: 1
 --- !u!1 &387432121
@@ -7619,6 +7620,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 1906922862}
   hornGlow: 0
 --- !u!1 &750032466
@@ -7846,6 +7848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 1167075369}
   hornGlow: 1
 --- !u!1 &757518367
@@ -8058,6 +8061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 1725648333}
   hornGlow: 0
 --- !u!1 &759121909
@@ -17966,6 +17970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 1298289362}
   hornGlow: 1
 --- !u!114 &874339543
@@ -18853,6 +18858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 759121909}
   hornGlow: 0
 --- !u!1 &1016312887
@@ -19210,6 +19216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 1941973288}
   hornGlow: 1
 --- !u!114 &1107242746
@@ -30301,6 +30308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 1561130017}
   hornGlow: 0
 --- !u!1 &1442390380
@@ -30704,6 +30712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 604907899}
   hornGlow: 1
 --- !u!114 &1491922724
@@ -30992,6 +31001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 2099236489}
   hornGlow: 0
 --- !u!1 &1508787785
@@ -46853,6 +46863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 829838069}
   hornGlow: 1
 --- !u!114 &1793316444
@@ -47727,6 +47738,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 1587199074}
   hornGlow: 1
 --- !u!1 &1886392431
@@ -62702,6 +62714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 829838069}
   hornGlow: 1
 --- !u!114 &2100339563
@@ -63000,6 +63013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 0}
   hornGlow: 1
 --- !u!1 &723199622309664892
@@ -63079,6 +63093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 0}
   hornGlow: 1
 --- !u!1 &723199622487191601
@@ -63158,6 +63173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 0}
   hornGlow: 1
 --- !u!1 &723199622920940491
@@ -63237,6 +63253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 0}
   hornGlow: 1
 --- !u!1 &723199622998542576
@@ -63316,6 +63333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 0}
   hornGlow: 1
 --- !u!1 &723199623749871701
@@ -63395,6 +63413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 0}
   hornGlow: 1
 --- !u!222 &3573462794598585159
@@ -65405,6 +65424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 0}
   hornGlow: 1
 --- !u!114 &8384654218906412317
@@ -65527,6 +65547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 0}
   hornGlow: 1
 --- !u!1 &8384654219800298942
@@ -65606,6 +65627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 0}
   hornGlow: 1
 --- !u!1 &8384654220093078911
@@ -65685,6 +65707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 0}
   hornGlow: 1
 --- !u!1 &8384654220415849778
@@ -65764,6 +65787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 0}
   hornGlow: 1
 --- !u!1 &8384654220512114283
@@ -65843,5 +65867,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getLights: {fileID: 1752390586}
+  targetText: {fileID: 0}
   particles: {fileID: 0}
   hornGlow: 1
