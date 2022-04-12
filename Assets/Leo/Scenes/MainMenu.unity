@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -365,8 +365,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4294918973
+  m_fontColor: {r: 0.23921567, g: 0.2646437, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1381,8 +1381,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 829838069}
+  hornGlow: 1
 --- !u!1 &387432121
 GameObject:
   m_ObjectHideFlags: 0
@@ -2083,7 +2084,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 0.4
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
@@ -7300,8 +7301,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4293018367
+  m_fontColor: {r: 1, g: 0.25943398, b: 0.8881028, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7617,8 +7618,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 1906922862}
+  hornGlow: 0
 --- !u!1 &750032466
 GameObject:
   m_ObjectHideFlags: 0
@@ -7843,8 +7845,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 1167075369}
+  hornGlow: 1
 --- !u!1 &757518367
 GameObject:
   m_ObjectHideFlags: 0
@@ -8054,8 +8057,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 1725648333}
+  hornGlow: 0
 --- !u!1 &759121909
 GameObject:
   m_ObjectHideFlags: 0
@@ -8341,7 +8345,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.8708828, g: 0.5647059, b: 0.8862745, a: 1}
+      maxColor: {r: 1, g: 0.25882354, b: 0.8862745, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -17961,8 +17965,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 1298289362}
+  hornGlow: 1
 --- !u!114 &874339543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18847,8 +18852,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 759121909}
+  hornGlow: 0
 --- !u!1 &1016312887
 GameObject:
   m_ObjectHideFlags: 0
@@ -19203,8 +19209,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 1941973288}
+  hornGlow: 1
 --- !u!114 &1107242746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25033,8 +25040,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4284478784
+  m_fontColor: {r: 0.24964403, g: 0.9622642, b: 0.3707895, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -30293,8 +30300,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 1561130017}
+  hornGlow: 0
 --- !u!1 &1442390380
 GameObject:
   m_ObjectHideFlags: 0
@@ -30695,8 +30703,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 604907899}
+  hornGlow: 1
 --- !u!114 &1491922724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30982,8 +30991,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 2099236489}
+  hornGlow: 0
 --- !u!1 &1508787785
 GameObject:
   m_ObjectHideFlags: 0
@@ -31674,7 +31684,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.8708828, g: 0.5647059, b: 0.8862745, a: 1}
+      maxColor: {r: 0.23921569, g: 0.2627451, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -41855,7 +41865,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.8708828, g: 0.5647059, b: 0.8862745, a: 1}
+      maxColor: {r: 0.90588236, g: 0.6156863, b: 0.39215687, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -46647,8 +46657,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4288636739
+  m_fontColor: {r: 0.26139194, g: 0.40392584, b: 0.6226415, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -46827,9 +46837,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4cb34ac82666ba4fa59d91b98a8f334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenuCanvas: {fileID: 0}
+  mainMenuCanvas: {fileID: 1192735109}
   settingsCanvas: {fileID: 1192735109}
-  creditsCanvas: {fileID: 0}
+  creditsCanvas: {fileID: 1991688407}
 --- !u!114 &1793316443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46842,8 +46852,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 829838069}
+  hornGlow: 1
 --- !u!114 &1793316444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47715,8 +47726,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 1587199074}
+  hornGlow: 1
 --- !u!1 &1886392431
 GameObject:
   m_ObjectHideFlags: 0
@@ -47754,7 +47766,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "-AI Developer\r\n-Fast Travel\r            Mechanic\n"
+  m_text: "-AI Developer\r\n-Fast Travel\r            Mechanic\n-UI Functionality "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: af2facf4913d8bd4f9ff64e30b62145a, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: a91edee4228707341af1317cfc2f21d5, type: 2}
@@ -47763,8 +47775,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4284718567
+  m_fontColor: {r: 0.9056604, g: 0.6140702, b: 0.38875046, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -47817,7 +47829,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -831.2006, y: -119.253235, z: -52.816315, w: -346.18607}
+  m_margin: {x: -831.2006, y: 21.876549, z: -52.816315, w: -349.12625}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -48135,7 +48147,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.8708828, g: 0.5647059, b: 0.8862745, a: 1}
+      maxColor: {r: 0.2627451, g: 0.40392157, b: 0.62352943, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -58110,7 +58122,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.8708828, g: 0.5647059, b: 0.8862745, a: 1}
+      maxColor: {r: 0.2509804, g: 0.9607843, b: 0.37254903, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -62689,8 +62701,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 829838069}
+  hornGlow: 1
 --- !u!114 &2100339563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62986,8 +62999,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 0}
+  hornGlow: 1
 --- !u!1 &723199622309664892
 GameObject:
   m_ObjectHideFlags: 0
@@ -63064,8 +63078,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 0}
+  hornGlow: 1
 --- !u!1 &723199622487191601
 GameObject:
   m_ObjectHideFlags: 0
@@ -63142,8 +63157,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 0}
+  hornGlow: 1
 --- !u!1 &723199622920940491
 GameObject:
   m_ObjectHideFlags: 0
@@ -63220,8 +63236,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 0}
+  hornGlow: 1
 --- !u!1 &723199622998542576
 GameObject:
   m_ObjectHideFlags: 0
@@ -63298,8 +63315,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 0}
+  hornGlow: 1
 --- !u!1 &723199623749871701
 GameObject:
   m_ObjectHideFlags: 0
@@ -63376,8 +63394,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 0}
+  hornGlow: 1
 --- !u!222 &3573462794598585159
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -65385,8 +65404,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 0}
+  hornGlow: 1
 --- !u!114 &8384654218906412317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65506,8 +65526,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 0}
+  hornGlow: 1
 --- !u!1 &8384654219800298942
 GameObject:
   m_ObjectHideFlags: 0
@@ -65584,8 +65605,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 0}
+  hornGlow: 1
 --- !u!1 &8384654220093078911
 GameObject:
   m_ObjectHideFlags: 0
@@ -65662,8 +65684,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 0}
+  hornGlow: 1
 --- !u!1 &8384654220415849778
 GameObject:
   m_ObjectHideFlags: 0
@@ -65740,8 +65763,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 0}
+  hornGlow: 1
 --- !u!1 &8384654220512114283
 GameObject:
   m_ObjectHideFlags: 0
@@ -65818,5 +65842,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48211f5555b46349be211b351de4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLights: {fileID: 0}
+  getLights: {fileID: 1752390586}
   particles: {fileID: 0}
+  hornGlow: 1

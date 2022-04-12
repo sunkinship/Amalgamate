@@ -5,36 +5,39 @@ using TMPro;
 
 public class HighlightText : MonoBehaviour
 {
-    [HideInInspector]
     public GetLights getLights;
-    private TextMeshProUGUI targetText;
+    [HideInInspector]
+    public TextMeshProUGUI targetText;
     public GameObject particles;
     private static bool isHighlighted;
     private static float intensity = 0;
     private static float changeRate = 0.5f;
     private static float maxBrightness = 0.4f;
+    public bool hornGlow;
 
     private void Awake()
     {
         targetText = gameObject.GetComponentInChildren<TextMeshProUGUI>();
-        getLights = GameObject.Find("HandleButtonEvents").GetComponent<GetLights>();
     }
 
     private void Update()
     {
-        if (isHighlighted)
+        if (hornGlow)
         {
-            intensity += changeRate * Time.deltaTime;
-        }
-        else
-        {
-            intensity -= changeRate * Time.deltaTime;
-        }
+            if (isHighlighted)
+            {
+                intensity += changeRate * Time.deltaTime;
+            }
+            else
+            {
+                intensity -= changeRate * Time.deltaTime;
+            }
 
-        intensity = Mathf.Clamp(intensity, 0, maxBrightness);
+            intensity = Mathf.Clamp(intensity, 0, maxBrightness);
 
-        getLights.pointLight.intensity = intensity;
-        getLights.spriteLight.intensity = intensity;
+            getLights.pointLight.intensity = intensity;
+            getLights.spriteLight.intensity = intensity;
+        }
     }
 
     public void TurnOnGlow()

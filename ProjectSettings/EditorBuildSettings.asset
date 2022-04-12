@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Trent/Scenes/MidQReview.unity
     guid: f6cf803d68ff795458d2093002a4bc16
   - enabled: 1
-    path: Assets/Trent/Scenes/Test.unity
-    guid: 40ebe9806d593c740bf217f28d744010
+    path: Assets/Leo/Scenes/MonsterCave.unity
+    guid: e4eee4cfcf5a1274c9c1ed14090908cd
   m_configObjects: {}
