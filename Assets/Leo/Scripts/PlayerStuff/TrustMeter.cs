@@ -9,7 +9,7 @@ public class TrustMeter : MonoBehaviour
     private Animator ani;
 
     public float fillSpeed;
-    private float targetProgress;
+    private static float targetProgress;
 
     private void Awake()
     {
