@@ -25,6 +25,8 @@ public class dialogueManager : MonoBehaviour
     private int currentPortraitNumber;
     private Sprite[] portraitList;
 
+    public QuestUI questUI;
+
 
     public static dialogueManager Instance { get; private set; }
     private void Awake()
@@ -65,6 +67,7 @@ public class dialogueManager : MonoBehaviour
                 if (playerManage.callPostQuest && currentNPC.GetComponent<QuestGiver>().quest.isPostQuest == false)
                 {
                     currentNPC.GetComponent<QuestGiver>().PostQuest();
+                    questUI.UpdateList();
                 }
                 // If linked quest item is recevied reset npc dialogue 
                 if (currentNPC.GetComponent<ItemGiver>().canGiveItem)

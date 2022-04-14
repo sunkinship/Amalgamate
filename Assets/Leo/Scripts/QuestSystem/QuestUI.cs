@@ -7,13 +7,9 @@ public class QuestUI : MonoBehaviour
 {
     public GameObject panel;
     public TextMeshProUGUI listText;
-    public List<Quest> questList;
+    public PlayerManager player;
     private string textContents;
-    
-    private void Start()
-    {
-        textContents = "       Quests\n";
-    }
+ 
 
     void Update()
     {
@@ -30,16 +26,16 @@ public class QuestUI : MonoBehaviour
     /// <summary>
     /// Updates contents of the quest list UI
     /// </summary>
-    private void UpdateList()
+    public void UpdateList()
     {
-        foreach (Quest quest in questList)
+        textContents = "";
+        foreach (Quest quest in player.quests)
         {
-            textContents += "*" + quest.questName + "\n  -" + quest.description + "\n";
             if (quest.isActive && quest.isComplete == false)
             {
-                textContents += "*" + quest.questName + "\n  -" + quest.description + "\n";
+                textContents = " *" + quest.questName + "\n -" + quest.description + "\n";
             }
-            listText.text = textContents;
         }
+        listText.text = textContents;
     }
 }

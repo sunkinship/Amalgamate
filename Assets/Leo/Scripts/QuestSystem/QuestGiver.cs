@@ -8,6 +8,8 @@ public class QuestGiver : MonoBehaviour
 
     public PlayerManager player;
 
+    public QuestUI questUI;
+
 
     /// <summary>
     /// Receive quest from NPC
@@ -17,6 +19,7 @@ public class QuestGiver : MonoBehaviour
         player.quests.Add(quest);
         player.quests[player.quests.Count - 1].isActive = true;
         player.quests[player.quests.Count - 1].isComplete = false;
+        questUI.UpdateList();
     }
 
     /// <summary>
