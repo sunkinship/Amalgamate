@@ -15,8 +15,12 @@ public class pushPullObjects : MonoBehaviour
     static bool canDrop;
     static bool canPickUp;
 
+    [SerializeField] private LayerMask wallLayerMask;
+
     private static Renderer heldObjectRender;
     private static Renderer playerRender;
+
+    private Vector3 direction;
 
     public void Start()
     {
@@ -28,8 +32,9 @@ public class pushPullObjects : MonoBehaviour
     public void Update()
     {
         //Pick up
-        if(playerInput.actions["Interact"].IsPressed() && isFacingMovable == true && isMovingObject == false && canPickUp == true)
+        if(playerInput.actions["Interact"].triggered && isFacingMovable == true && isMovingObject == false && canPickUp == true)
         {
+            canPickUp = false;
             player.GetComponent<playerMovement>().moveSpeed = 2.5f;
             heldObjectRender = heldItem.GetComponent<Renderer>();
             heldObjectRender.GetComponent<PositionRendering>().enabled = false;
@@ -37,9 +42,10 @@ public class pushPullObjects : MonoBehaviour
             canDrop = false;
             isMovingObject = true;
             Invoke("enableDrop", .5f);
+
         }
         //Drop
-        if (playerInput.actions["Interact"].IsPressed() && isMovingObject == true && canDrop == true)
+        if (playerInput.actions["Interact"].triggered && isMovingObject == true && canDrop == true)
         {
             canPickUp = false;
             heldObjectRender.GetComponent<PositionRendering>().enabled = true;
@@ -59,6 +65,23 @@ public class pushPullObjects : MonoBehaviour
             currentMovable.transform.position = player.transform.position;
         }
 
+        //Vector3 forward = transform.TransformDirection(Vector3.forward) * 10;
+        //Prevent Dropping in walls
+        RaycastHit2D hit;
+        RaycastHit2D raycastHit2d = Physics2D.Raycast(player.transform.position, direction, 5, wallLayerMask);
+        if (Physics.Raycast(transform.position, Vector3.down, 12, wallLayerMask, QueryTriggerInteraction.Collide))
+        {
+            
+            Debug.DrawRay(player.transform.position, direction, Color.green);
+        }
+            
+
+        if (raycastHit2d.collider != null)
+        {
+            canDrop = false;
+        }
+
+        direction = Vector2.zero;
     }
 
     private void enableDrop()
@@ -73,7 +96,7 @@ public class pushPullObjects : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "movableObject")
+        if (collision.gameObject.tag == "movableObject" && isMovingObject == false)
         {
             isFacingMovable = true;
             heldItem = collision.gameObject;
