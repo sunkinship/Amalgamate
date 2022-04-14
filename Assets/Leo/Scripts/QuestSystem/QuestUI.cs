@@ -11,17 +11,17 @@ public class QuestUI : MonoBehaviour
     private string textContents;
  
 
-    void Update()
-    {
-        if (Input.GetKey(KeyCode.Tab))
-        {
-            panel.SetActive(true);
-        } 
-        if (Input.GetKeyUp(KeyCode.Tab))
-        {
-            panel.SetActive(false);
-        }
-    }
+    //void Update()
+    //{
+    //    if (Input.GetKey(KeyCode.Tab))
+    //    {
+    //        panel.SetActive(true);
+    //    } 
+    //    if (Input.GetKeyUp(KeyCode.Tab))
+    //    {
+    //        panel.SetActive(false);
+    //    }
+    //}
 
     /// <summary>
     /// Updates contents of the quest list UI
