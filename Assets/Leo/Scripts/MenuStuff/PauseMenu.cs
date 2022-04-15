@@ -14,13 +14,14 @@ public class PauseMenu : MonoBehaviour
     public GameObject pausedCanvas;
     public GameObject questListCanvas;
 
+    public Animator ani;
+
     private bool paused = false;
 
     private void Update()
     {
         if (playerInput.actions["Pause"].triggered)
         {
-            Debug.Log("paused");
             Pause();
         }
     }
@@ -58,6 +59,7 @@ public class PauseMenu : MonoBehaviour
         {
             Time.timeScale = 0;
             pausedCanvas.SetActive(true);
+            ani.Play("PausePanelRight");
         }
         else
         {
