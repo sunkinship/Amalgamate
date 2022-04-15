@@ -41,7 +41,7 @@ public class playerMovement : MonoBehaviour
 
     private Vector3 lastMoveDirection;
 
-    private Vector3 direction;
+    public Vector3 direction;
 
     private Vector3 dashDir;
 

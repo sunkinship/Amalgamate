@@ -20,7 +20,7 @@ public class pushPullObjects : MonoBehaviour
     private static Renderer heldObjectRender;
     private static Renderer playerRender;
 
-    private Vector3 direction;
+    private static Vector3 direction;
 
     public void Start()
     {
@@ -67,21 +67,18 @@ public class pushPullObjects : MonoBehaviour
 
         //Vector3 forward = transform.TransformDirection(Vector3.forward) * 10;
         //Prevent Dropping in walls
-        RaycastHit2D hit;
-        RaycastHit2D raycastHit2d = Physics2D.Raycast(player.transform.position, direction, 5, wallLayerMask);
-        if (Physics.Raycast(transform.position, Vector3.down, 12, wallLayerMask, QueryTriggerInteraction.Collide))
+        if(heldItem != null)
         {
             
-            Debug.DrawRay(player.transform.position, direction, Color.green);
+            if (Physics2D.BoxCast(player.transform.position, player.GetComponent<playerMovement>().direction, 0, Vector2.zero).collider != null)
+            {
+                canDrop = false;
+            }
+            else
+            {
+                canDrop = true;
+            }
         }
-            
-
-        if (raycastHit2d.collider != null)
-        {
-            canDrop = false;
-        }
-
-        direction = Vector2.zero;
     }
 
     private void enableDrop()
