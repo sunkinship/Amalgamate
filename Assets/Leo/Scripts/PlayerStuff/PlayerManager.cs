@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.U2D.Animation;
 using UnityEngine.Experimental.Rendering.Universal;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -15,7 +17,7 @@ public class PlayerManager : MonoBehaviour
 
     [HideInInspector]
     public GameObject item;
-
+    public PlayerInput playerInput;
     public TrustMeter trustMeter;
 
     //private SpriteLibrary spriteLibrary;
@@ -40,19 +42,23 @@ public class PlayerManager : MonoBehaviour
     #region lights
     private void ToggleLitSprite()
     {
-        if (Input.GetKeyDown(KeyCode.L))
+        string currentScene = SceneManager.GetActiveScene().name;
+        switch (currentScene)
         {
-            if (lampOn)
-            {
-                //spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibrary/Regular");
+            case "MidQReview":
                 lampOn = false;
-            } else
-            {
-                //spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibrary/Glow");
+                break;
+            case "MonsterCave":
                 lampOn = true;
-            }
-            
+                break;
+            case "mazeScene":
+                lampOn = true;
+                break;
+            case "Vampires Shop":
+                lampOn = false;
+                break;
         }
+        //spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibrary/Glow");
     }
 
     private void ToggleLampLight()
@@ -133,7 +139,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (item != null)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (playerInput.actions["Interact"].triggered)
             {
                 //Debug.Log("Picked up item");
                 item.GetComponent<ItemInteractable>().PickUp();

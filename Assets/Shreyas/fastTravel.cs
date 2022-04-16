@@ -14,11 +14,10 @@ public class fastTravel : MonoBehaviour
         StartCoroutine(Fade());
     }
 
-    IEnumerator Fade()
+    public IEnumerator Fade()
     {
         anim.SetBool("Fade", true);
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(sceneToLoad);
     }
-
 }
