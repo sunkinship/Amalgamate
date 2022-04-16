@@ -241,11 +241,11 @@ namespace UnityEngine.InputSystem.Samples.RebindUI
         }
 
         /// <summary>
-        /// Initiate an interactive rebind that lets the player actuate a control to choose a new binding
-        /// for the action.
+        /// Check for duplicate rebindings when the binding is going to be set to default.
         /// </summary>
-        /// 
-
+        /// <param name="action">InputAction we are resetting.</param>
+        /// <param name="bindingIndex">Current index of the control we are rebinding.</param>
+        /// <returns></returns>
         private bool SwapResetBindings(InputAction action, int bindingIndex)
         {
             // Cache a reference to the current binding.

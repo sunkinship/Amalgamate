@@ -15,6 +15,8 @@ public class pushPullObjects : MonoBehaviour
     static bool canDrop;
     static bool canPickUp;
 
+    private static CapsuleCollider2D heldItemCollider;
+
     [SerializeField] private LayerMask wallLayerMask;
 
     private static Renderer heldObjectRender;
@@ -39,6 +41,7 @@ public class pushPullObjects : MonoBehaviour
             heldObjectRender = heldItem.GetComponent<Renderer>();
             heldObjectRender.GetComponent<PositionRendering>().enabled = false;
             heldItem.GetComponent<CapsuleCollider2D>().enabled = false;
+            heldItemCollider = heldItem.GetComponent<CapsuleCollider2D>();
             canDrop = false;
             isMovingObject = true;
             Invoke("enableDrop", .5f);
@@ -63,21 +66,18 @@ public class pushPullObjects : MonoBehaviour
         {
             heldObjectRender.sortingOrder = playerRender.sortingOrder + 100;
             currentMovable.transform.position = player.transform.position;
-        }
 
-        //Vector3 forward = transform.TransformDirection(Vector3.forward) * 10;
-        //Prevent Dropping in walls
-        if(heldItem != null)
-        {
-            
-            if (Physics2D.BoxCast(player.transform.position, player.GetComponent<playerMovement>().direction, 0, Vector2.zero).collider != null)
-            {
-                canDrop = false;
-            }
-            else
-            {
-                canDrop = true;
-            }
+            //if (Physics2D.BoxCast(heldItemCollider.bounds.center, heldItemCollider.bounds.size, 0f, direction, 3f, wallLayerMask))
+            //{
+            //    Debug.Log("false");
+            //    canDrop = false;
+            //}
+            //else
+            //{
+            //    Debug.Log("TRUE" + Physics2D.BoxCast(heldItemCollider.bounds.center, heldItemCollider.bounds.size, 0f, direction, 3000f, wallLayerMask));
+            //    canDrop = true;
+            //}
+
         }
     }
 
@@ -110,6 +110,4 @@ public class pushPullObjects : MonoBehaviour
         }
 
     }
-
-
 }
