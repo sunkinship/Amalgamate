@@ -48,7 +48,7 @@ public class PlayerManager : MonoBehaviour
             case "MidQReview":
                 lampOn = false;
                 break;
-            case "MonsterCave":
+            case "MonsterTownThing":
                 lampOn = true;
                 break;
             case "mazeScene":

@@ -464,12 +464,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 200044422}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b434b80ad2b5ce74f94bf09ec4e28ee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mCam: {fileID: 200044422}
+  Player: {fileID: 1886644749}
 --- !u!114 &200044425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,7 +541,7 @@ Camera:
   serializedVersion: 2
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.06514774, g: 0.069162615, b: 0.0754717, a: 0}
-  m_projectionMatrixMode: 2
+  m_projectionMatrixMode: 1
   m_GateFitMode: 3
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
@@ -555,7 +556,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 140.3
-  orthographic: 0
+  orthographic: 1
   orthographic size: 10
   m_Depth: 1
   m_CullingMask:
@@ -1447,6 +1448,8 @@ MonoBehaviour:
   nameText: {fileID: 87966846}
   npcPortrait: {fileID: 803050161}
   forPortrait: {fileID: 818024658}
+  player: {fileID: 0}
+  npcItem: {fileID: 0}
 --- !u!61 &982045393
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1523,6 +1526,8 @@ MonoBehaviour:
   nameText: {fileID: 87966846}
   npcPortrait: {fileID: 803050161}
   forPortrait: {fileID: 818024658}
+  player: {fileID: 0}
+  npcItem: {fileID: 0}
 --- !u!61 &1009591319
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24156,6 +24161,8 @@ MonoBehaviour:
   nameText: {fileID: 87966846}
   npcPortrait: {fileID: 803050161}
   forPortrait: {fileID: 818024658}
+  player: {fileID: 0}
+  npcItem: {fileID: 0}
 --- !u!61 &1164772785
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24335,6 +24342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mCam: {fileID: 1646357854}
+  Player: {fileID: 0}
 --- !u!114 &1646357856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24682,6 +24690,8 @@ MonoBehaviour:
   nameText: {fileID: 87966846}
   npcPortrait: {fileID: 803050161}
   forPortrait: {fileID: 818024658}
+  player: {fileID: 0}
+  npcItem: {fileID: 0}
 --- !u!61 &1751624017
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24823,6 +24833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mCam: {fileID: 1787202243}
+  Player: {fileID: 0}
 --- !u!114 &1787202245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25122,6 +25133,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1155349122}
   lettersPerSecond: 45
   portraitManager: {fileID: 818024658}
+  questUI: {fileID: 0}
 --- !u!95 &1886644752
 Animator:
   serializedVersion: 3
@@ -25263,12 +25275,17 @@ MonoBehaviour:
   dashLayerMask:
     serializedVersion: 2
     m_Bits: 2304
+  wallLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
   moveSpeed: 6
+  goToMazeExit: 0
   inDialogue: 0
   currentDashCooldown: 0
   speakCooldown: 0.5
   speakCooldownLeft: 0
   lastFacingDirection: RIGHT
+  direction: {x: 0, y: 0, z: 0}
   rb2: {fileID: 1886644754}
 --- !u!212 &1886644757
 SpriteRenderer:

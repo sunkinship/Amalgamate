@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Logan/Scripts/mazeScene.unity
     guid: 07b6d0e579ceb0d4bb81ad602adf5495
+  - enabled: 1
+    path: Assets/Trent/Scenes/MonsterTownThing.unity
+    guid: cc724565c540e2e4f8a80ffc363bcf67
+  - enabled: 1
+    path: Assets/Trent/Scenes/Vampires Shop.unity
+    guid: 95580930ba80334438e93cc2b74e4339
   m_configObjects: {}
