@@ -76,18 +76,14 @@ public class PlayerManager : MonoBehaviour
     {
         if (lampOn)
         {
-            Debug.Log("on");
             lightIntensity += lightChangeRate * Time.deltaTime;
             hornIntensity += hornChangeRate * Time.deltaTime;
         }
         else
         {
-            Debug.Log("off");
             lightIntensity -= lightChangeRate * Time.deltaTime;
             hornIntensity -= hornChangeRate * Time.deltaTime;
         }
-        Debug.Log("lampOn: " + lampOn);
-        Debug.Log("intensity: " + hornIntensity);
 
         lightIntensity = Mathf.Clamp(lightIntensity, 0, maxBrightness);
         hornIntensity = Mathf.Clamp(lightIntensity, 0, 2);
