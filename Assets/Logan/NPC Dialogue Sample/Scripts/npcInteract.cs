@@ -30,6 +30,11 @@ public class npcInteract : MonoBehaviour, interactable
     private PlayerManager playerManager;
     private QuestGiver npc;
 
+    public bool forceDialogue;
+
+    public Collider2D forceDialogueCollider;
+    public Collider2D afterForceCollider;
+
     private void Awake()
     {
         playerManager = player.GetComponent<PlayerManager>();
