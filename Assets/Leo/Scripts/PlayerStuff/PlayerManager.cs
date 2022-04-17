@@ -11,7 +11,7 @@ public class PlayerManager : MonoBehaviour
     public List<Quest> quests = new List<Quest>();
     public List<Item> inventory = new List<Item>();
 
-    private bool lampOn;
+    private static bool lampOn;
     [HideInInspector]
     public bool callPostQuest;
 
@@ -24,13 +24,17 @@ public class PlayerManager : MonoBehaviour
     public Light2D hornLamp;
     public float maxBrightness = 0.5f;
 
-    public Material mat;
-    private static float intensity = 0;
-    private static float changeRate = 0.5f;
+    private Material mat;
+    public Renderer render;
+    private static float lightIntensity = 0;
+    private static float hornIntensity = 0;
+    private static float lightChangeRate = 0.5f;
+    private static float hornChangeRate = 1f;
 
     private void Awake()
     {
         //spriteLibrary = gameObject.GetComponent<SpriteLibrary>();
+        mat = gameObject.GetComponent<Renderer>().sharedMaterial;
     }
 
     void Update()
@@ -53,12 +57,15 @@ public class PlayerManager : MonoBehaviour
                 lampOn = true;
                 break;
             case "mazeScene":
-                lampOn = true;
+                lampOn = false;
                 break;
             case "Vampires Shop":
                 lampOn = false;
                 break;
             case "TestingScene":
+                lampOn = true;
+                break;
+            case "MonsterCave":
                 lampOn = true;
                 break;
         }
@@ -69,18 +76,21 @@ public class PlayerManager : MonoBehaviour
     {
         if (lampOn)
         {
-            intensity += changeRate * Time.deltaTime;
+            lightIntensity += lightChangeRate * Time.deltaTime;
+            hornIntensity += hornChangeRate * Time.deltaTime;
         }
         else
         {
-            intensity -= changeRate * Time.deltaTime;
+            lightIntensity -= lightChangeRate * Time.deltaTime;
+            hornIntensity -= hornChangeRate * Time.deltaTime;
         }
 
-        intensity = Mathf.Clamp(intensity, 0, maxBrightness);
+        lightIntensity = Mathf.Clamp(lightIntensity, 0, maxBrightness);
+        hornIntensity = Mathf.Clamp(lightIntensity, 0, 2);
 
-        hornLamp.intensity = intensity;
+        hornLamp.intensity = lightIntensity;
 
-        
+        mat.SetColor("Color_18748F50", Color.yellow * hornIntensity);
     }
     #endregion
 

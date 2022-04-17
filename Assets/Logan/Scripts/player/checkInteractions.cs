@@ -93,7 +93,13 @@ public class checkInteractions : MonoBehaviour
         // Check if player has received linked quest
         npcItem.CheckToGiveItem();
 
-        if (npcQuest.quest.hasConnectedQuest)
+        if (npcQuest.quest.hasPreConditionQuest)
+        {
+            // Check if player has finsished pre condition quest
+            npcQuest.CheckforPreCondition();
+            PreConditionCheck();
+        }
+        else if (npcQuest.quest.hasConnectedQuest)
         {
             //Check if player has met pre-condition for connected quest
             npcQuest.CheckforConnectedQuest();
@@ -110,8 +116,6 @@ public class checkInteractions : MonoBehaviour
         //Linked quest triggered
         if (npcItem.canGiveItem == true)
         {
-            //Debug.Log("wtf: " + npcItem.canGiveItem);
-            //return currentNPC.GetComponent<npcInteract>().portraitsLinkedQuest[0];
             currentNPC.GetComponent<interactable>()?.Interact(currentNPC.GetComponent<npcInteract>().portraitsLinkedQuest[0], "Linked");
         }
         // No available quest
@@ -151,17 +155,53 @@ public class checkInteractions : MonoBehaviour
         //Linked quest triggered
         if (npcItem.canGiveItem == true)
         {
-            //Debug.Log("wtf: " + npcItem.canGiveItem);
-            //return currentNPC.GetComponent<npcInteract>().portraitsLinkedQuest[0];
             currentNPC.GetComponent<interactable>()?.Interact(currentNPC.GetComponent<npcInteract>().portraitsLinkedQuest[0], "Linked");
         }
         // Connected quest not received yet
         else if (npcQuest.quest.isConnectedQuest == false)
         {
-            Debug.Log("no quest yet:  " + npcQuest.quest.isConnectedQuest);
             currentNPC.GetComponent<interactable>()?.Interact(currentNPC.GetComponent<npcInteract>().portraitsNoQuest[0], "None");
         }
-        // Regular quest not started
+        // Quest not started
+        else if (npcQuest.quest.isActive == false && npcQuest.quest.isComplete == false)
+        {
+            currentNPC.GetComponent<interactable>()?.Interact(currentNPC.GetComponent<npcInteract>().portraitsPreQuest[0], "New");
+        }
+        // Quest started but not completed
+        else if (npcQuest.quest.isActive && npcQuest.quest.isComplete == false)
+        {
+            //Debug.Log("isActive: " + npcQuest.quest.isActive + ". isComplete: " + npcQuest.quest.isComplete);
+            currentNPC.GetComponent<interactable>()?.Interact(currentNPC.GetComponent<npcInteract>().portraitsMidQuest[0], "Started");
+        }
+        // First interaction after quest completed
+        else if (npcQuest.quest.isActive == false && npcQuest.quest.isComplete && npcQuest.quest.isPostQuest == false)
+        {
+            //Debug.Log("isActive: " + npcQuest.quest.isActive + ". isComplete: " + npcQuest.quest.isComplete + ". isPostQuest " + npcQuest.quest.isPostQuest);
+            currentNPC.GetComponent<interactable>()?.Interact(currentNPC.GetComponent<npcInteract>().portraitsPostQuest[0], "Complete");
+        }
+        // Post quest complete
+        else
+        {
+            //Debug.Log("isActive: " + npcQuest.quest.isActive + ". isComplete: " + npcQuest.quest.isComplete + ". isPostQuest " + npcQuest.quest.isPostQuest);
+            currentNPC.GetComponent<interactable>()?.Interact(currentNPC.GetComponent<npcInteract>().portraitsPostPostQuest[0], "Post");
+        }
+    }
+
+    private void PreConditionCheck()
+    {
+        //Linked quest triggered
+        if (npcItem.canGiveItem == true)
+        {
+            //return currentNPC.GetComponent<npcInteract>().portraitsLinkedQuest[0];
+            currentNPC.GetComponent<interactable>()?.Interact(currentNPC.GetComponent<npcInteract>().portraitsLinkedQuest[0], "Linked");
+        }
+        // Connected quest not received yet
+        else if (npcQuest.quest.isAvailable == false)
+        {
+            //Debug.Log("not ready:  " + npcQuest.quest.isConnectedQuest);
+            currentNPC.GetComponent<interactable>()?.Interact(currentNPC.GetComponent<npcInteract>().portraitsNoQuest[0], "None");
+        }
+        // Quest not started
         else if (npcQuest.quest.isActive == false && npcQuest.quest.isComplete == false)
         {
             //Debug.Log("isActive: " + npcQuest.quest.isActive + ". isComplete: " + npcQuest.quest.isComplete);
