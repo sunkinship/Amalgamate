@@ -24,6 +24,7 @@ public class PlayerManager : MonoBehaviour
     public Light2D hornLamp;
     public float maxBrightness = 0.5f;
 
+    public Material mat;
     private static float intensity = 0;
     private static float changeRate = 0.5f;
 
@@ -78,6 +79,8 @@ public class PlayerManager : MonoBehaviour
         intensity = Mathf.Clamp(intensity, 0, maxBrightness);
 
         hornLamp.intensity = intensity;
+
+        
     }
     #endregion
 
