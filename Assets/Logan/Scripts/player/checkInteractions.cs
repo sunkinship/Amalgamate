@@ -23,6 +23,7 @@ public class checkInteractions : MonoBehaviour
     private QuestGiver npcQuest;
     private PlayerManager playerManager;
 
+
     private void Awake()
     {
         playerManager = player.GetComponent<PlayerManager>();
@@ -36,10 +37,19 @@ public class checkInteractions : MonoBehaviour
             npcPortrait.GetComponent<Image>().sprite = currentNPC.GetComponent<npcInteract>().currentPortrait;
         }
         
+        if(isFacingInteractable == true)
+        {
+            player.GetComponent<playerMovement>().isFacingNPC = true;
+        }
+        else
+        {
+            player.GetComponent<playerMovement>().isFacingNPC = false;
+        }
+
         //Initial check for interaction -> npcInteract -> dialogueManager
         isKeyDown = playerInput.actions["Interact"].triggered;
 
-        if (isKeyDown && isFacingInteractable == true && player.GetComponent<playerMovement>().inDialogue == false && player.GetComponent<playerMovement>().speakCooldownLeft < 0)
+        if (isKeyDown && isFacingInteractable == true && player.GetComponent<playerMovement>().inDialogue == false && player.GetComponent<playerMovement>().speakCooldownLeft < 0 && player.GetComponent<playerMovement>().carryingObject == false)
         {
             nameString = currentNPC.GetComponent<npcInteract>().NPCName;
 
@@ -50,6 +60,23 @@ public class checkInteractions : MonoBehaviour
             player.GetComponent<playerMovement>().rb2.velocity = new Vector2(0, 0);
 
         }
+
+
+        if (isFacingInteractable == true && currentNPC.GetComponent<npcInteract>().forceDialogue == true)
+        {
+            nameString = currentNPC.GetComponent<npcInteract>().NPCName;
+
+            forPortrait.GetComponent<managePortraits>().currentNPC = currentNPC;
+            //currentNPC.GetComponent<interactable>()?.Interact(CheckQuestState());
+            currentNPC.GetComponent<npcInteract>().forceDialogue = false;
+            currentNPC.GetComponent<npcInteract>().forceDialogueCollider.enabled = false;
+            currentNPC.GetComponent<npcInteract>().afterForceCollider.enabled = true;
+            CheckQuestState();
+            nameText.text = nameString;
+            player.GetComponent<playerMovement>().rb2.velocity = new Vector2(0, 0);
+
+        }
+
     }
 
     /// <summary>

@@ -34,7 +34,7 @@ public class pushPullObjects : MonoBehaviour
     public void Update()
     {
         //Pick up
-        if(playerInput.actions["Interact"].triggered && isFacingMovable == true && isMovingObject == false && canPickUp == true)
+        if(playerInput.actions["Interact"].triggered && isFacingMovable == true && isMovingObject == false && canPickUp == true && player.GetComponent<playerMovement>().inDialogue == false)
         {
             canPickUp = false;
             player.GetComponent<playerMovement>().moveSpeed = 2.5f;
@@ -48,13 +48,14 @@ public class pushPullObjects : MonoBehaviour
 
         }
         //Drop
-        if (playerInput.actions["Interact"].triggered && isMovingObject == true && canDrop == true)
+        if (playerInput.actions["Interact"].triggered && isMovingObject == true && canDrop == true && player.GetComponent<playerMovement>().inDialogue == false && player.GetComponent<playerMovement>().isFacingNPC == false)
         {
             canPickUp = false;
             heldObjectRender.GetComponent<PositionRendering>().enabled = true;
             heldItem.GetComponent<CapsuleCollider2D>().enabled = true;
             isMovingObject = false;
             currentMovable.transform.position = this.gameObject.transform.position;
+            player.GetComponent<playerMovement>().carryingObject = false;
             currentMovable = null;
             heldItem = null;
             canDrop = false;
@@ -62,10 +63,17 @@ public class pushPullObjects : MonoBehaviour
             Invoke("CanPickUp", .5f);
         }
 
+        if(player.GetComponent<playerMovement>().inDialogue == true)
+        {
+            canDrop = false;
+        }
+
         if (isMovingObject == true)
         {
+            player.GetComponent<playerMovement>().carryingObject = true;
             heldObjectRender.sortingOrder = playerRender.sortingOrder + 100;
-            currentMovable.transform.position = player.transform.position;
+            currentMovable.transform.position = player.transform.position + currentMovable.GetComponent<holdableObject>().holdLocation;
+            Invoke("enableDrop", .5f);
 
             //if (Physics2D.BoxCast(heldItemCollider.bounds.center, heldItemCollider.bounds.size, 0f, direction, 3f, wallLayerMask))
             //{

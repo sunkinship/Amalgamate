@@ -50,6 +50,9 @@ public class playerMovement : MonoBehaviour
     [HideInInspector]
     public Rigidbody2D rb2;
 
+    public bool carryingObject;
+    public bool isFacingNPC;
+
 
     private void Awake()
     {
