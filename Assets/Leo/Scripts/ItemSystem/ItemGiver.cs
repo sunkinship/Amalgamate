@@ -8,7 +8,7 @@ public class ItemGiver : MonoBehaviour
     public string linkedQuestName;
     public PlayerManager player;
 
-    //[HideInInspector]
+    [HideInInspector]
     public bool canGiveItem, gaveItem;
 
 

@@ -16,10 +16,28 @@ public class QuestGiver : MonoBehaviour
     /// </summary>
     public void AcceptQuest()
     {
+        Debug.Log("got quest");
         player.quests.Add(quest);
         player.quests[player.quests.Count - 1].isActive = true;
         player.quests[player.quests.Count - 1].isComplete = false;
         questUI.UpdateList();
+
+    }
+    /// <summary>
+    /// Checks if player has met pre-condition for quest
+    /// </summary>
+    public void CheckforConnectedQuest()
+    {
+        Debug.Log("check connected quest");
+        foreach (Quest quest in player.quests)
+        {
+            Debug.Log("list name: " + quest.questName + "  required name: " + this.quest.connectedQuestName);
+            if (quest.isActive && quest.questName.Equals(this.quest.connectedQuestName))
+            {
+                Debug.Log("has connected quest!!!");
+                this.quest.isConnectedQuest = true;
+            }
+        }
     }
 
     /// <summary>

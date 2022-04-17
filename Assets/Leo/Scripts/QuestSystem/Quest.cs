@@ -5,11 +5,10 @@ using UnityEngine;
 [System.Serializable]
 public class Quest
 {
-    public bool hasQuest; 
+    public bool hasQuest, hasConnectedQuest;
     [HideInInspector]
-    public bool isActive, isComplete, isPostQuest;
-    public string questName;
-    public string description;
+    public bool isActive, isComplete, isPostQuest, isConnectedQuest;
+    public string questName, description, connectedQuestName;
 
     public QuestGoal goal;
 }
