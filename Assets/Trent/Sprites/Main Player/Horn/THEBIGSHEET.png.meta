@@ -1,0 +1,6152 @@
+fileFormatVersion: 2
+guid: c45fe3b894bddb146931ba188706f501
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7328078694222242917
+    second: THEBIGSHEET_0
+  - first:
+      213: -4244642474094607898
+    second: THEBIGSHEET_1
+  - first:
+      213: -8196154885448817878
+    second: THEBIGSHEET_2
+  - first:
+      213: -5375144797225758099
+    second: THEBIGSHEET_3
+  - first:
+      213: 4096952531172765189
+    second: THEBIGSHEET_4
+  - first:
+      213: 4275259899210074194
+    second: THEBIGSHEET_5
+  - first:
+      213: 1862709537150313593
+    second: THEBIGSHEET_6
+  - first:
+      213: 8943488381057201448
+    second: THEBIGSHEET_7
+  - first:
+      213: 677246219565590454
+    second: THEBIGSHEET_8
+  - first:
+      213: 689856834180679917
+    second: THEBIGSHEET_9
+  - first:
+      213: 42094581419086074
+    second: THEBIGSHEET_10
+  - first:
+      213: -5143460448674373705
+    second: THEBIGSHEET_11
+  - first:
+      213: -4765631174549965768
+    second: THEBIGSHEET_12
+  - first:
+      213: -7925986674633193032
+    second: THEBIGSHEET_13
+  - first:
+      213: -4580021013180205924
+    second: THEBIGSHEET_14
+  - first:
+      213: 5473558465072024359
+    second: THEBIGSHEET_15
+  - first:
+      213: 8540866946506693495
+    second: THEBIGSHEET_16
+  - first:
+      213: -6881212289757388837
+    second: THEBIGSHEET_17
+  - first:
+      213: -4181260542705375572
+    second: THEBIGSHEET_18
+  - first:
+      213: -5241702865909722772
+    second: THEBIGSHEET_19
+  - first:
+      213: 5033800649682728566
+    second: THEBIGSHEET_20
+  - first:
+      213: 563798510072357908
+    second: THEBIGSHEET_21
+  - first:
+      213: -6551089208549887802
+    second: THEBIGSHEET_22
+  - first:
+      213: 1578253006515820930
+    second: THEBIGSHEET_23
+  - first:
+      213: 3333340191434575495
+    second: THEBIGSHEET_24
+  - first:
+      213: -1836028874765767947
+    second: THEBIGSHEET_25
+  - first:
+      213: 5973810030271690175
+    second: THEBIGSHEET_26
+  - first:
+      213: -3360306651551926338
+    second: THEBIGSHEET_27
+  - first:
+      213: -4067567087739871590
+    second: THEBIGSHEET_28
+  - first:
+      213: -3471302211066549796
+    second: THEBIGSHEET_29
+  - first:
+      213: 6830219746135485417
+    second: THEBIGSHEET_30
+  - first:
+      213: -5640918227850282105
+    second: THEBIGSHEET_31
+  - first:
+      213: -8668797474622757240
+    second: THEBIGSHEET_32
+  - first:
+      213: 3542304571027670075
+    second: THEBIGSHEET_33
+  - first:
+      213: -2779749412351441569
+    second: THEBIGSHEET_34
+  - first:
+      213: -9203905891061321325
+    second: THEBIGSHEET_35
+  - first:
+      213: -1219773442416938388
+    second: THEBIGSHEET_36
+  - first:
+      213: -7290164240233946281
+    second: THEBIGSHEET_37
+  - first:
+      213: -7795523642024381407
+    second: THEBIGSHEET_38
+  - first:
+      213: 7579567716588869184
+    second: THEBIGSHEET_39
+  - first:
+      213: 3347970027862213985
+    second: THEBIGSHEET_40
+  - first:
+      213: 6225338935797373702
+    second: THEBIGSHEET_41
+  - first:
+      213: 4388294970982983744
+    second: THEBIGSHEET_42
+  - first:
+      213: -8317156532297801381
+    second: THEBIGSHEET_43
+  - first:
+      213: -9174122649188237685
+    second: THEBIGSHEET_44
+  - first:
+      213: -4019744628979274598
+    second: THEBIGSHEET_45
+  - first:
+      213: 845859637350533171
+    second: THEBIGSHEET_46
+  - first:
+      213: 8602465220523706918
+    second: THEBIGSHEET_47
+  - first:
+      213: 7262048121868615139
+    second: THEBIGSHEET_48
+  - first:
+      213: -2215891893690922084
+    second: THEBIGSHEET_49
+  - first:
+      213: -3428021774255107295
+    second: THEBIGSHEET_50
+  - first:
+      213: 3005900181753161695
+    second: THEBIGSHEET_51
+  - first:
+      213: 5080344939564970797
+    second: THEBIGSHEET_52
+  - first:
+      213: 4250305810560997674
+    second: THEBIGSHEET_53
+  - first:
+      213: -7855502978963322936
+    second: THEBIGSHEET_54
+  - first:
+      213: 9129639183530644544
+    second: THEBIGSHEET_55
+  - first:
+      213: -6142262808958259996
+    second: THEBIGSHEET_56
+  - first:
+      213: -7352313799711928981
+    second: THEBIGSHEET_57
+  - first:
+      213: 8851159878118616794
+    second: THEBIGSHEET_58
+  - first:
+      213: -1965277169997772848
+    second: THEBIGSHEET_59
+  - first:
+      213: -5098743587228572939
+    second: THEBIGSHEET_60
+  - first:
+      213: -7767652953974557045
+    second: THEBIGSHEET_61
+  - first:
+      213: 8559083087300704257
+    second: THEBIGSHEET_62
+  - first:
+      213: -4218968210231572518
+    second: THEBIGSHEET_63
+  - first:
+      213: -2594845343883254466
+    second: THEBIGSHEET_64
+  - first:
+      213: 2884742831908373446
+    second: THEBIGSHEET_65
+  - first:
+      213: 6642568765190118635
+    second: THEBIGSHEET_66
+  - first:
+      213: 4549180817837628789
+    second: THEBIGSHEET_67
+  - first:
+      213: -4293052052918923738
+    second: THEBIGSHEET_68
+  - first:
+      213: 6982220037752811070
+    second: THEBIGSHEET_69
+  - first:
+      213: -5628491016261949169
+    second: THEBIGSHEET_70
+  - first:
+      213: 4079031960116600716
+    second: THEBIGSHEET_71
+  - first:
+      213: 615994276279834478
+    second: THEBIGSHEET_72
+  - first:
+      213: -2398569716588922994
+    second: THEBIGSHEET_73
+  - first:
+      213: -4074587576094398692
+    second: THEBIGSHEET_74
+  - first:
+      213: 7393841455402222274
+    second: THEBIGSHEET_75
+  - first:
+      213: 3884745650494697279
+    second: THEBIGSHEET_76
+  - first:
+      213: 2791780649399557413
+    second: THEBIGSHEET_77
+  - first:
+      213: 7657132842746090949
+    second: THEBIGSHEET_78
+  - first:
+      213: -1463733017233912688
+    second: THEBIGSHEET_79
+  - first:
+      213: 3274211531310086108
+    second: THEBIGSHEET_80
+  - first:
+      213: 439140567049518552
+    second: THEBIGSHEET_81
+  - first:
+      213: -3823308976670213518
+    second: THEBIGSHEET_82
+  - first:
+      213: 2866182035387515213
+    second: THEBIGSHEET_83
+  - first:
+      213: 3732107329992560596
+    second: THEBIGSHEET_84
+  - first:
+      213: -4750245469378062986
+    second: THEBIGSHEET_85
+  - first:
+      213: 7128714333695688111
+    second: THEBIGSHEET_86
+  - first:
+      213: 8697591789619457082
+    second: THEBIGSHEET_87
+  - first:
+      213: 8720558420261654682
+    second: THEBIGSHEET_88
+  - first:
+      213: -5303746181407959942
+    second: THEBIGSHEET_89
+  - first:
+      213: 1733860278906754171
+    second: THEBIGSHEET_90
+  - first:
+      213: 8720025472986548814
+    second: THEBIGSHEET_91
+  - first:
+      213: -3484074168943499863
+    second: THEBIGSHEET_92
+  - first:
+      213: -589180711783576628
+    second: THEBIGSHEET_93
+  - first:
+      213: 12842487867348659
+    second: THEBIGSHEET_94
+  - first:
+      213: 4051296548159474578
+    second: THEBIGSHEET_95
+  - first:
+      213: -5354790142110119040
+    second: THEBIGSHEET_96
+  - first:
+      213: 3660816104403719799
+    second: THEBIGSHEET_97
+  - first:
+      213: 6713476921065733739
+    second: THEBIGSHEET_98
+  - first:
+      213: 3026832881213197418
+    second: THEBIGSHEET_99
+  - first:
+      213: -5863827204309753253
+    second: THEBIGSHEET_100
+  - first:
+      213: -3013016748721438647
+    second: THEBIGSHEET_101
+  - first:
+      213: -1263712821486045911
+    second: THEBIGSHEET_102
+  - first:
+      213: -4042566714387308550
+    second: THEBIGSHEET_103
+  - first:
+      213: 6350205267288883714
+    second: THEBIGSHEET_104
+  - first:
+      213: 1521601986803124606
+    second: THEBIGSHEET_105
+  - first:
+      213: -1828209720521712938
+    second: THEBIGSHEET_106
+  - first:
+      213: -2571923645589450072
+    second: THEBIGSHEET_107
+  - first:
+      213: -5665775373336049328
+    second: THEBIGSHEET_108
+  - first:
+      213: -8284761495278893049
+    second: THEBIGSHEET_109
+  - first:
+      213: -1632691830857813239
+    second: THEBIGSHEET_110
+  - first:
+      213: 3693172847866218711
+    second: THEBIGSHEET_111
+  - first:
+      213: 257650822292708527
+    second: THEBIGSHEET_112
+  - first:
+      213: 3498291650070981195
+    second: THEBIGSHEET_113
+  - first:
+      213: 2041621585166104098
+    second: THEBIGSHEET_114
+  - first:
+      213: 7887951456459537841
+    second: THEBIGSHEET_115
+  - first:
+      213: 1647033773170951453
+    second: THEBIGSHEET_116
+  - first:
+      213: -4391816107907834821
+    second: THEBIGSHEET_117
+  - first:
+      213: 6406942880600551045
+    second: THEBIGSHEET_118
+  - first:
+      213: -8904689285989333541
+    second: THEBIGSHEET_119
+  - first:
+      213: 4279538558372642295
+    second: THEBIGSHEET_120
+  - first:
+      213: 3376867466430929768
+    second: THEBIGSHEET_121
+  - first:
+      213: -9146061734491748866
+    second: THEBIGSHEET_122
+  - first:
+      213: -5822200783772532056
+    second: THEBIGSHEET_123
+  - first:
+      213: 1278708963424749569
+    second: THEBIGSHEET_124
+  - first:
+      213: -6933194430689486819
+    second: THEBIGSHEET_125
+  - first:
+      213: 2445069777627540822
+    second: THEBIGSHEET_126
+  - first:
+      213: -3821535742605565996
+    second: THEBIGSHEET_127
+  - first:
+      213: -8295806598904934139
+    second: THEBIGSHEET_128
+  - first:
+      213: 3759994257675744764
+    second: THEBIGSHEET_129
+  - first:
+      213: -2271099290875095249
+    second: THEBIGSHEET_130
+  - first:
+      213: 8418166070042532865
+    second: THEBIGSHEET_131
+  - first:
+      213: 4276234544664598474
+    second: THEBIGSHEET_132
+  - first:
+      213: -1728154860769828006
+    second: THEBIGSHEET_133
+  - first:
+      213: 462662319702751847
+    second: THEBIGSHEET_134
+  - first:
+      213: -7146667686914427697
+    second: THEBIGSHEET_135
+  - first:
+      213: 806922088819065133
+    second: THEBIGSHEET_136
+  - first:
+      213: -1012082909380070412
+    second: THEBIGSHEET_137
+  - first:
+      213: 412743773409333348
+    second: THEBIGSHEET_138
+  - first:
+      213: 9157767018649956346
+    second: THEBIGSHEET_139
+  - first:
+      213: 8673796574328185460
+    second: THEBIGSHEET_140
+  - first:
+      213: -8160635623628608112
+    second: THEBIGSHEET_141
+  - first:
+      213: 2869849024395395895
+    second: THEBIGSHEET_142
+  - first:
+      213: 3005527795002763602
+    second: THEBIGSHEET_143
+  - first:
+      213: -4889070949873432070
+    second: THEBIGSHEET_144
+  - first:
+      213: -3613091812487611247
+    second: THEBIGSHEET_145
+  - first:
+      213: -4738208348373418673
+    second: THEBIGSHEET_146
+  - first:
+      213: 7888573532093062506
+    second: THEBIGSHEET_147
+  - first:
+      213: 1271164957257349165
+    second: THEBIGSHEET_148
+  - first:
+      213: -6448595331046463776
+    second: THEBIGSHEET_149
+  - first:
+      213: -2859247677618648025
+    second: THEBIGSHEET_150
+  - first:
+      213: 6389472306415753361
+    second: THEBIGSHEET_151
+  - first:
+      213: 5634150003263127650
+    second: THEBIGSHEET_152
+  - first:
+      213: -7142558366641914890
+    second: THEBIGSHEET_153
+  - first:
+      213: 6492931102774161609
+    second: THEBIGSHEET_154
+  - first:
+      213: 3784310316789524371
+    second: THEBIGSHEET_155
+  - first:
+      213: 1302289978495441831
+    second: THEBIGSHEET_156
+  - first:
+      213: 1645770861598473642
+    second: THEBIGSHEET_157
+  - first:
+      213: 5125011206939498807
+    second: THEBIGSHEET_158
+  - first:
+      213: 1218746181450577519
+    second: THEBIGSHEET_159
+  - first:
+      213: -8697764359254779607
+    second: THEBIGSHEET_160
+  - first:
+      213: 5435213580120069102
+    second: THEBIGSHEET_161
+  - first:
+      213: -7285499296573083194
+    second: THEBIGSHEET_162
+  - first:
+      213: -8289931503476928540
+    second: THEBIGSHEET_163
+  - first:
+      213: 18340989038736465
+    second: THEBIGSHEET_164
+  - first:
+      213: -3545241573236650270
+    second: THEBIGSHEET_165
+  - first:
+      213: 9216798063543994046
+    second: THEBIGSHEET_166
+  - first:
+      213: -2412435115258968845
+    second: THEBIGSHEET_167
+  - first:
+      213: -6639469328470788744
+    second: THEBIGSHEET_168
+  - first:
+      213: -9107734068464055236
+    second: THEBIGSHEET_169
+  - first:
+      213: 9107961364325072853
+    second: THEBIGSHEET_170
+  - first:
+      213: 6827782484901521440
+    second: THEBIGSHEET_171
+  - first:
+      213: 8672732664947572277
+    second: THEBIGSHEET_172
+  - first:
+      213: -8827797704740236312
+    second: THEBIGSHEET_173
+  - first:
+      213: 4199439005065752437
+    second: THEBIGSHEET_174
+  - first:
+      213: 8600096282618836487
+    second: THEBIGSHEET_175
+  - first:
+      213: 8931636634379630862
+    second: THEBIGSHEET_176
+  - first:
+      213: 8637720764247398616
+    second: THEBIGSHEET_177
+  - first:
+      213: 2222244877508399363
+    second: THEBIGSHEET_178
+  - first:
+      213: 6682246842049601892
+    second: THEBIGSHEET_179
+  - first:
+      213: 5408323930846000526
+    second: THEBIGSHEET_180
+  - first:
+      213: 6555982631484315056
+    second: THEBIGSHEET_181
+  - first:
+      213: 4832474745830130839
+    second: THEBIGSHEET_182
+  - first:
+      213: -5656185059616304717
+    second: THEBIGSHEET_183
+  - first:
+      213: 4779095781774215915
+    second: THEBIGSHEET_184
+  - first:
+      213: 3565362604136146446
+    second: THEBIGSHEET_185
+  - first:
+      213: -6407458320455283986
+    second: THEBIGSHEET_186
+  - first:
+      213: 7832813564875175415
+    second: THEBIGSHEET_187
+  - first:
+      213: -2692307406354288452
+    second: THEBIGSHEET_188
+  - first:
+      213: 2983719102709778072
+    second: THEBIGSHEET_189
+  - first:
+      213: -5899341159572330280
+    second: THEBIGSHEET_190
+  - first:
+      213: 4065897840501580405
+    second: THEBIGSHEET_191
+  - first:
+      213: 6914084607318236560
+    second: THEBIGSHEET_192
+  - first:
+      213: 5425310630769816121
+    second: THEBIGSHEET_193
+  - first:
+      213: 3904301648926511595
+    second: THEBIGSHEET_194
+  - first:
+      213: 5996510452542674207
+    second: THEBIGSHEET_195
+  - first:
+      213: 1283559081051890637
+    second: THEBIGSHEET_196
+  - first:
+      213: -2917511750297535075
+    second: THEBIGSHEET_197
+  - first:
+      213: -199043472448252325
+    second: THEBIGSHEET_198
+  - first:
+      213: 6405344643637361707
+    second: THEBIGSHEET_199
+  - first:
+      213: -30121425505539953
+    second: THEBIGSHEET_200
+  - first:
+      213: -2692701239696713990
+    second: THEBIGSHEET_201
+  - first:
+      213: -4881043096723571819
+    second: THEBIGSHEET_202
+  - first:
+      213: 2304536674527973343
+    second: THEBIGSHEET_203
+  - first:
+      213: 4144859799896164922
+    second: THEBIGSHEET_204
+  - first:
+      213: -933420774981759062
+    second: THEBIGSHEET_205
+  - first:
+      213: -5698502262627842126
+    second: THEBIGSHEET_206
+  - first:
+      213: -8777464246837891066
+    second: THEBIGSHEET_207
+  - first:
+      213: -7634212271785632837
+    second: THEBIGSHEET_208
+  - first:
+      213: -3279523738985125251
+    second: THEBIGSHEET_209
+  - first:
+      213: 1410022365070923858
+    second: THEBIGSHEET_210
+  - first:
+      213: 7680090041715855413
+    second: THEBIGSHEET_211
+  - first:
+      213: -2537907821280193091
+    second: THEBIGSHEET_212
+  - first:
+      213: -4575581880935553536
+    second: THEBIGSHEET_213
+  - first:
+      213: 6435366527226010376
+    second: THEBIGSHEET_214
+  - first:
+      213: -1774716970007604031
+    second: THEBIGSHEET_215
+  - first:
+      213: 4501064571552084516
+    second: THEBIGSHEET_216
+  - first:
+      213: 3407181404069358226
+    second: THEBIGSHEET_217
+  - first:
+      213: -6010380002086870237
+    second: THEBIGSHEET_218
+  - first:
+      213: -3790877061231706654
+    second: THEBIGSHEET_219
+  - first:
+      213: 1677083051822693642
+    second: THEBIGSHEET_220
+  - first:
+      213: 7854033130502527628
+    second: THEBIGSHEET_221
+  - first:
+      213: -4423364660911878405
+    second: THEBIGSHEET_222
+  - first:
+      213: -1014042177938499178
+    second: THEBIGSHEET_223
+  - first:
+      213: 3912324400790262601
+    second: THEBIGSHEET_224
+  - first:
+      213: -101779048720318894
+    second: THEBIGSHEET_225
+  - first:
+      213: 2787013570308425788
+    second: THEBIGSHEET_226
+  - first:
+      213: -7365905265171679638
+    second: THEBIGSHEET_227
+  - first:
+      213: 8498629643368989879
+    second: THEBIGSHEET_228
+  - first:
+      213: 3084634115650593191
+    second: THEBIGSHEET_229
+  - first:
+      213: 434414405244814566
+    second: THEBIGSHEET_230
+  - first:
+      213: 6686249289677570638
+    second: THEBIGSHEET_231
+  - first:
+      213: 7282987668866689576
+    second: THEBIGSHEET_232
+  - first:
+      213: -3118130782711353733
+    second: THEBIGSHEET_233
+  - first:
+      213: 2366481558133396539
+    second: THEBIGSHEET_234
+  - first:
+      213: 2506164062467861751
+    second: THEBIGSHEET_235
+  - first:
+      213: 2469386755941841092
+    second: THEBIGSHEET_236
+  - first:
+      213: -7059201936007532896
+    second: THEBIGSHEET_237
+  - first:
+      213: -8211895515573178715
+    second: THEBIGSHEET_238
+  - first:
+      213: 1812687322997133875
+    second: THEBIGSHEET_239
+  - first:
+      213: -3086925693599003985
+    second: THEBIGSHEET_240
+  - first:
+      213: 5342946859272830965
+    second: THEBIGSHEET_241
+  - first:
+      213: 3186390475840146900
+    second: THEBIGSHEET_242
+  - first:
+      213: -7556679644965954054
+    second: THEBIGSHEET_243
+  - first:
+      213: -3335451506244577555
+    second: THEBIGSHEET_244
+  - first:
+      213: -4835848714611255647
+    second: THEBIGSHEET_245
+  - first:
+      213: -2104473604943276036
+    second: THEBIGSHEET_246
+  - first:
+      213: -2013436229617689426
+    second: THEBIGSHEET_247
+  - first:
+      213: -6988027114695027139
+    second: THEBIGSHEET_248
+  - first:
+      213: -4450589678686007958
+    second: THEBIGSHEET_249
+  - first:
+      213: -3650561651830332741
+    second: THEBIGSHEET_250
+  - first:
+      213: 8161444373688867810
+    second: THEBIGSHEET_251
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: THEBIGSHEET_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564a93f1fb092b560800000000000000
+      internalID: 7328078694222242917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e14e0da8200815c0800000000000000
+      internalID: -4244642474094607898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_2
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23adb88e88614e80800000000000000
+      internalID: -8196154885448817878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_3
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62d1112946a765b0800000000000000
+      internalID: -5375144797225758099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_4
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ea03ade9c4bd830800000000000000
+      internalID: 4096952531172765189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_5
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25883ee1a36c45b30800000000000000
+      internalID: 4275259899210074194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_6
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974a399747ca9d910800000000000000
+      internalID: 1862709537150313593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_7
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8257fb54c47ad1c70800000000000000
+      internalID: 8943488381057201448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_8
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7eea639df066900800000000000000
+      internalID: 677246219565590454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_9
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8073bb22dd29900800000000000000
+      internalID: 689856834180679917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_10
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0147c7ccc859000800000000000000
+      internalID: 42094581419086074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_11
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf1e7029f1ce98b0800000000000000
+      internalID: -5143460448674373705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_12
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834fb6632b31dddb0800000000000000
+      internalID: -4765631174549965768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_13
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b94204fc1d310290800000000000000
+      internalID: -7925986674633193032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_14
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94b19d872f7070c0800000000000000
+      internalID: -4580021013180205924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_15
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b43ff7c6cf5fb40800000000000000
+      internalID: 5473558465072024359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_16
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b18648c31478670800000000000000
+      internalID: 8540866946506693495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_17
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf55f471e50180a0800000000000000
+      internalID: -6881212289757388837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_18
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca660be80bd29f5c0800000000000000
+      internalID: -4181260542705375572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_19
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61dd43e30bb147b0800000000000000
+      internalID: -5241702865909722772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_20
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676387a4507abd540800000000000000
+      internalID: 5033800649682728566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_21
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414e1cdf1c303d700800000000000000
+      internalID: 563798510072357908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_22
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c03d70f21bd515a0800000000000000
+      internalID: -6551089208549887802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_23
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289511b5fb417e510800000000000000
+      internalID: 1578253006515820930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_24
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e8df94e37624e20800000000000000
+      internalID: 3333340191434575495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_25
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fae932577d1586e0800000000000000
+      internalID: -1836028874765767947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_26
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5720a629c37e250800000000000000
+      internalID: 5973810030271690175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_27
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb77dd177eacd51d0800000000000000
+      internalID: -3360306651551926338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_28
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ed13bd8491d87c0800000000000000
+      internalID: -4067567087739871590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_29
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9a951e70573dfc0800000000000000
+      internalID: -3471302211066549796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_30
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eba34acba0d9ce50800000000000000
+      internalID: 6830219746135485417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_31
+      rect:
+        serializedVersion: 2
+        x: 3875
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b35f532ce67b1b0800000000000000
+      internalID: -5640918227850282105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_32
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886ae4740ae32b780800000000000000
+      internalID: -8668797474622757240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_33
+      rect:
+        serializedVersion: 2
+        x: 4125
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34c85a4d3bc82130800000000000000
+      internalID: 3542304571027670075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_34
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55013023a85c69d0800000000000000
+      internalID: -2779749412351441569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_35
+      rect:
+        serializedVersion: 2
+        x: 4375
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3913a214b58254080800000000000000
+      internalID: -9203905891061321325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62784a448e721fe0800000000000000
+      internalID: -1219773442416938388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_37
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753a99a9f3224da90800000000000000
+      internalID: -7290164240233946281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_38
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1243afecc8cb0d390800000000000000
+      internalID: -7795523642024381407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_39
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0465c421ea8003960800000000000000
+      internalID: 7579567716588869184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_40
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165c1658001667e20800000000000000
+      internalID: 3347970027862213985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_41
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b5c9267c8d46650800000000000000
+      internalID: 6225338935797373702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_42
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048e213a60b56ec30800000000000000
+      internalID: 4388294970982983744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_43
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51e1173336839c80800000000000000
+      internalID: -8317156532297801381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_44
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ef441ae08fea080800000000000000
+      internalID: -9174122649188237685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_45
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ce7e5be8ff638c0800000000000000
+      internalID: -4019744628979274598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_46
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3388e1ecbd81dbb00800000000000000
+      internalID: 845859637350533171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_47
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ac7fd4a88126770800000000000000
+      internalID: 8602465220523706918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_48
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed75c57a4af7c460800000000000000
+      internalID: 7262048121868615139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_49
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b82ef10129f31e0800000000000000
+      internalID: -2215891893690922084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_50
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1235837db583d60d0800000000000000
+      internalID: -3428021774255107295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_51
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7eda31a4a17b920800000000000000
+      internalID: 3005900181753161695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_52
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2339334ec2018640800000000000000
+      internalID: 5080344939564970797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_53
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2954499d9e1cfa30800000000000000
+      internalID: 4250305810560997674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_54
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c74ede29a5abf290800000000000000
+      internalID: -7855502978963322936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_55
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044d4dd677ef2be70800000000000000
+      internalID: 9129639183530644544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_56
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ec23f2b48c42caa0800000000000000
+      internalID: -6142262808958259996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_57
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6dc7faad8557f990800000000000000
+      internalID: -7352313799711928981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_58
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade23718303a5da70800000000000000
+      internalID: 8851159878118616794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_59
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7091d83dee9b4e0800000000000000
+      internalID: -1965277169997772848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_60
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2a072c8bf9d39b0800000000000000
+      internalID: -5098743587228572939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_61
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8635db0bc0c33490800000000000000
+      internalID: -7767652953974557045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_62
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108bc9d48b8f7c670800000000000000
+      internalID: 8559083087300704257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_63
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad74b7e04c63375c0800000000000000
+      internalID: -4218968210231572518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_64
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3523c668e14dfbd0800000000000000
+      internalID: -2594845343883254466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_65
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3c044525aa80820800000000000000
+      internalID: 2884742831908373446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_66
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec134d19152f2c50800000000000000
+      internalID: 6642568765190118635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_67
+      rect:
+        serializedVersion: 2
+        x: 3875
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d9b3ae9dfe12f30800000000000000
+      internalID: 4549180817837628789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_68
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e818747e30c64c0800000000000000
+      internalID: -4293052052918923738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_69
+      rect:
+        serializedVersion: 2
+        x: 4125
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3eeed58124d5e060800000000000000
+      internalID: 6982220037752811070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_70
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09aa32ed3593e1b0800000000000000
+      internalID: -5628491016261949169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_71
+      rect:
+        serializedVersion: 2
+        x: 4375
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f1732c4f1ab9830800000000000000
+      internalID: 4079031960116600716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e675555d7837c8800800000000000000
+      internalID: 615994276279834478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_73
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8735b90d8196bed0800000000000000
+      internalID: -2398569716588922994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_74
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c176ca800382477c0800000000000000
+      internalID: -4074587576094398692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_75
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c28ec221a33c9660800000000000000
+      internalID: 7393841455402222274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_76
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3fea7c369369e530800000000000000
+      internalID: 3884745650494697279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_77
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d154a85b56eb620800000000000000
+      internalID: 2791780649399557413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_78
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c59bd150c9934a60800000000000000
+      internalID: 7657132842746090949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_79
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c03c57396cfabe0800000000000000
+      internalID: -1463733017233912688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_80
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7b93b4a06507d20800000000000000
+      internalID: 3274211531310086108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_81
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd3371e404281600800000000000000
+      internalID: 439140567049518552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_82
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a72031eb0e0fac0800000000000000
+      internalID: -3823308976670213518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_83
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4101e02069b6c720800000000000000
+      internalID: 2866182035387515213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_84
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df86d3d7db1bc330800000000000000
+      internalID: 3732107329992560596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_85
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675dfc9d9ecb31eb0800000000000000
+      internalID: -4750245469378062986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_86
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fadba2dbae74ee260800000000000000
+      internalID: 7128714333695688111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_87
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c2f9d96ad04b870800000000000000
+      internalID: 8697591789619457082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_88
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90dcb20ea5a50970800000000000000
+      internalID: 8720558420261654682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_89
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74185ec2fe4566b0800000000000000
+      internalID: -5303746181407959942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_90
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74956ebcb8ef0810800000000000000
+      internalID: 1733860278906754171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_91
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a88bd87f0c30970800000000000000
+      internalID: 8720025472986548814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_92
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a52205b00516afc0800000000000000
+      internalID: -3484074168943499863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_93
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccbc0a5a34fc2d7f0800000000000000
+      internalID: -589180711783576628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_94
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b69d57bc20ad2000800000000000000
+      internalID: 12842487867348659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_95
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29bcfc0feb8193830800000000000000
+      internalID: 4051296548159474578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_96
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b43c49cb6ffa5b0800000000000000
+      internalID: -5354790142110119040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_97
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7765303e9d4ddc230800000000000000
+      internalID: 3660816104403719799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_98
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ef7efa0bf0b2d50800000000000000
+      internalID: 6713476921065733739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_99
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c4f27f778710a20800000000000000
+      internalID: 3026832881213197418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_100
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5268deb9308f9ea0800000000000000
+      internalID: -5863827204309753253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_101
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940082e0b3d9f26d0800000000000000
+      internalID: -3013016748721438647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_102
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 925b73162e3667ee0800000000000000
+      internalID: -1263712821486045911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_103
+      rect:
+        serializedVersion: 2
+        x: 3875
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff5020edfae5e7c0800000000000000
+      internalID: -4042566714387308550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_104
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2028197bb06702850800000000000000
+      internalID: 6350205267288883714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_105
+      rect:
+        serializedVersion: 2
+        x: 4125
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79cde8f1f0dd1510800000000000000
+      internalID: 1521601986803124606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_106
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da136902f4e0a6e0800000000000000
+      internalID: -1828209720521712938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_107
+      rect:
+        serializedVersion: 2
+        x: 4375
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2963b2211be4cd0800000000000000
+      internalID: -2571923645589450072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0590627015f1f51b0800000000000000
+      internalID: -5665775373336049328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_109
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7084119805d960d80800000000000000
+      internalID: -8284761495278893049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_110
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903b9022e638759e0800000000000000
+      internalID: -1632691830857813239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_111
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d80f2b4329c04330800000000000000
+      internalID: 3693172847866218711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_112
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac18dace0c539300800000000000000
+      internalID: 257650822292708527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_113
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a223398bd6c8030800000000000000
+      internalID: 3498291650070981195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_114
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2267895c30c455c10800000000000000
+      internalID: 2041621585166104098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_115
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bdbbc7be02a77d60800000000000000
+      internalID: 7887951456459537841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_116
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d150de68d707bd610800000000000000
+      internalID: 1647033773170951453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_117
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c9059c4822d03c0800000000000000
+      internalID: -4391816107907834821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_118
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ee96eba980ae850800000000000000
+      internalID: 6406942880600551045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_119
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5016106403c6480800000000000000
+      internalID: -8904689285989333541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_120
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd736615a9f36b30800000000000000
+      internalID: 4279538558372642295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_121
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b503eb11b0dde20800000000000000
+      internalID: 3376867466430929768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_122
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef583d57f49a21180800000000000000
+      internalID: -9146061734491748866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_123
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2cc380c33633fa0800000000000000
+      internalID: -5822200783772532056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_124
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1084a000703eeb110800000000000000
+      internalID: 1278708963424749569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_125
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d185900266858cf90800000000000000
+      internalID: -6933194430689486819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d688a1202aee120800000000000000
+      internalID: 2445069777627540822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_127
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df598d4d7d27fac0800000000000000
+      internalID: -3821535742605565996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_128
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5011ee2f9df5fdc80800000000000000
+      internalID: -8295806598904934139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_129
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf575462bde2e2430800000000000000
+      internalID: 3759994257675744764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_130
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f279fbd4a3f6b70e0800000000000000
+      internalID: -2271099290875095249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_131
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c9129707553d470800000000000000
+      internalID: 8418166070042532865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_132
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7dcf279ac385b30800000000000000
+      internalID: 4276234544664598474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_133
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5323fe6f4c5408e0800000000000000
+      internalID: -1728154860769828006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_134
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a37d0bde4bb6600800000000000000
+      internalID: 462662319702751847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_135
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4f3b97a9fe1dc90800000000000000
+      internalID: -7146667686914427697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_136
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d210a715d53c23b00800000000000000
+      internalID: 806922088819065133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_137
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f33827c4fb54f1f0800000000000000
+      internalID: -1012082909380070412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_138
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460515d664c5ab500800000000000000
+      internalID: 412743773409333348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_139
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff2b62659ce61f70800000000000000
+      internalID: 9157767018649956346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_140
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472e4d257048f5870800000000000000
+      internalID: 8673796574328185460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_141
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09de73023299fbe80800000000000000
+      internalID: -8160635623628608112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_142
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733c61a8b70c3d720800000000000000
+      internalID: 2869849024395395895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_143
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259e3b70b97c5b920800000000000000
+      internalID: 3005527795002763602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_144
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9cc1fdfd7862cb0800000000000000
+      internalID: -4889070949873432070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_145
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cbdc7b328bbddc0800000000000000
+      internalID: -3613091812487611247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_146
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d796b7c908e3eb0800000000000000
+      internalID: -4738208348373418673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_147
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d94fcf4d7d97d60800000000000000
+      internalID: 7888573532093062506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_148
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28bf303bc514a110800000000000000
+      internalID: 1271164957257349165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_149
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6abb866bcf186a0800000000000000
+      internalID: -6448595331046463776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_150
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c0eaad269e158d0800000000000000
+      internalID: -2859247677618648025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_151
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1985b16b537fba850800000000000000
+      internalID: 6389472306415753361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_152
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260c3c3b395803e40800000000000000
+      internalID: 5634150003263127650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_153
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb70d8220980ec90800000000000000
+      internalID: -7142558366641914890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_154
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c070fbdf668b1a50800000000000000
+      internalID: 6492931102774161609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_155
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397e518de22948430800000000000000
+      internalID: 3784310316789524371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_156
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab95cae5d9a21210800000000000000
+      internalID: 1302289978495441831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_157
+      rect:
+        serializedVersion: 2
+        x: 3875
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aadf34301e3f6d610800000000000000
+      internalID: 1645770861598473642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_158
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739568b0a82bf1740800000000000000
+      internalID: 5125011206939498807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_159
+      rect:
+        serializedVersion: 2
+        x: 4125
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66b9b0e13bd9e010800000000000000
+      internalID: 1218746181450577519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_160
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929d092e5655b4780800000000000000
+      internalID: -8697764359254779607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_161
+      rect:
+        serializedVersion: 2
+        x: 4375
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee39f6144f1cd6b40800000000000000
+      internalID: 5435213580120069102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_162
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c137607df4b4ea90800000000000000
+      internalID: -7285499296573083194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_163
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef00f2383f34fc80800000000000000
+      internalID: -8289931503476928540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_164
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154bb784809214000800000000000000
+      internalID: 18340989038736465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_165
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee48489295cccec0800000000000000
+      internalID: -3545241573236650270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_166
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb64c009105a8ef70800000000000000
+      internalID: 9216798063543994046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_167
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f48f475b0f458ed0800000000000000
+      internalID: -2412435115258968845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_168
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875b56bb2dddbd3a0800000000000000
+      internalID: -6639469328470788744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_169
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c0a7c9e14da9180800000000000000
+      internalID: -9107734068464055236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_170
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dff394da9af56e70800000000000000
+      internalID: 9107961364325072853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_171
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0286030bef721ce50800000000000000
+      internalID: 6827782484901521440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_172
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e702e986cbb5870800000000000000
+      internalID: 8672732664947572277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_173
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e313fb52cc5d7580800000000000000
+      internalID: -8827797704740236312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_174
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f2dd88687674a30800000000000000
+      internalID: 4199439005065752437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_175
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70637a7f00ea95770800000000000000
+      internalID: 8600096282618836487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_176
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e093017723c83fb70800000000000000
+      internalID: 8931636634379630862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_177
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d85bfd35495fd770800000000000000
+      internalID: 8637720764247398616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_178
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301d1df21fff6de10800000000000000
+      internalID: 2222244877508399363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_179
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461a7d9491c1cbc50800000000000000
+      internalID: 6682246842049601892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_180
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85f158e5f93e0b40800000000000000
+      internalID: 5408323930846000526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_181
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5d04fd7778bfa50800000000000000
+      internalID: 6555982631484315056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_182
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79440438d26601340800000000000000
+      internalID: 4832474745830130839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_183
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1d2b1f7a13181b0800000000000000
+      internalID: -5656185059616304717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_184
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea4834fa42c25240800000000000000
+      internalID: 4779095781774215915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_185
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e062ffaf566ba7130800000000000000
+      internalID: 3565362604136146446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_186
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea44201b922417a0800000000000000
+      internalID: -6407458320455283986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_187
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f5fe3eef6eb3bc60800000000000000
+      internalID: 7832813564875175415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_188
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0791aada003aad0800000000000000
+      internalID: -2692307406354288452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_189
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896409a27bc486920800000000000000
+      internalID: 2983719102709778072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_190
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8a9dea874512ea0800000000000000
+      internalID: -5899341159572330280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_191
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572ef1c3b88fc6830800000000000000
+      internalID: 4065897840501580405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_192
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d13366153c3ff50800000000000000
+      internalID: 6914084607318236560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_193
+      rect:
+        serializedVersion: 2
+        x: 3875
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9327f2f26439a4b40800000000000000
+      internalID: 5425310630769816121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_194
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be19c30f9adde2630800000000000000
+      internalID: 3904301648926511595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_195
+      rect:
+        serializedVersion: 2
+        x: 4125
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1519b75c72e73350800000000000000
+      internalID: 5996510452542674207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_196
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc323520f2e10d110800000000000000
+      internalID: 1283559081051890637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_197
+      rect:
+        serializedVersion: 2
+        x: 4375
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9dbc7f458ae287d0800000000000000
+      internalID: -2917511750297535075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_198
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b569cd1340bdc3df0800000000000000
+      internalID: -199043472448252325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_199
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2cb4f3340b54e850800000000000000
+      internalID: 6405344643637361707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_200
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f882d9c19bcf49ff0800000000000000
+      internalID: -30121425505539953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_201
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af69f913d7a91aad0800000000000000
+      internalID: -2692701239696713990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_202
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b3b661a2d034cb0800000000000000
+      internalID: -4881043096723571819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_203
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf891145eb5bff10800000000000000
+      internalID: 2304536674527973343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_204
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a8b901700858930800000000000000
+      internalID: 4144859799896164922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_205
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf0e3920c2db03f0800000000000000
+      internalID: -933420774981759062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_206
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b7ce44526adae0b0800000000000000
+      internalID: -5698502262627842126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_207
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6003982c5ce203680800000000000000
+      internalID: -8777464246837891066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_208
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb1a48f264dd0690800000000000000
+      internalID: -7634212271785632837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_209
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7aa459f88acc72d0800000000000000
+      internalID: -3279523738985125251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_210
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2589863ded7619310800000000000000
+      internalID: 1410022365070923858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_211
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5301d7bb339259a60800000000000000
+      internalID: 7680090041715855413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_212
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db598ef684a87ccd0800000000000000
+      internalID: -2537907821280193091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_213
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0066f1295844080c0800000000000000
+      internalID: -4575581880935553536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_214
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80bdebea2c30f4950800000000000000
+      internalID: 6435366527226010376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_215
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4d6d19150fe57e0800000000000000
+      internalID: -1774716970007604031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_216
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4223572516ef67e30800000000000000
+      internalID: 4501064571552084516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_217
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29aeeda5f6db84f20800000000000000
+      internalID: 3407181404069358226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_218
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32320828b37d69ca0800000000000000
+      internalID: -6010380002086870237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_219
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed7b12d569146bc0800000000000000
+      internalID: -3790877061231706654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_220
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d38ba6622364710800000000000000
+      internalID: 1677083051822693642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_221
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a90cd05812ffc60800000000000000
+      internalID: 7854033130502527628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_222
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfec452e64d0d92c0800000000000000
+      internalID: -4423364660911878405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_223
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69956b403066de1f0800000000000000
+      internalID: -1014042177938499178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_224
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943523b605e5b4630800000000000000
+      internalID: 3912324400790262601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_225
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25eb2739e78669ef0800000000000000
+      internalID: -101779048720318894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_226
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c384d6273167da620800000000000000
+      internalID: 2787013570308425788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_227
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a663344003c07c990800000000000000
+      internalID: -7365905265171679638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_228
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b40d9a02a231f570800000000000000
+      internalID: 8498629643368989879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_229
+      rect:
+        serializedVersion: 2
+        x: 3875
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1a7659262deca20800000000000000
+      internalID: 3084634115650593191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_230
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e40ee59999570600800000000000000
+      internalID: 434414405244814566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_231
+      rect:
+        serializedVersion: 2
+        x: 4125
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4280febd445acc50800000000000000
+      internalID: 6686249289677570638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_232
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a695aa2be521560800000000000000
+      internalID: 7282987668866689576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_233
+      rect:
+        serializedVersion: 2
+        x: 4375
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e674dd29c2ab4d0800000000000000
+      internalID: -3118130782711353733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_234
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34dd00607e67d020800000000000000
+      internalID: 2366481558133396539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_235
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc2f34cfeea7c220800000000000000
+      internalID: 2506164062467861751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_236
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8b7f0db26054220800000000000000
+      internalID: 2469386755941841092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_237
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae658e8d3da80e90800000000000000
+      internalID: -7059201936007532896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_238
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae23ad798c790e80800000000000000
+      internalID: -8211895515573178715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_239
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33219182485f72910800000000000000
+      internalID: 1812687322997133875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_240
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa4109df690925d0800000000000000
+      internalID: -3086925693599003985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_241
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fffeb04cd5f52a40800000000000000
+      internalID: 5342946859272830965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_242
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ddc32c6145583c20800000000000000
+      internalID: 3186390475840146900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_243
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd116066e7412790800000000000000
+      internalID: -7556679644965954054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_244
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de610cce68816b1d0800000000000000
+      internalID: -3335451506244577555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_245
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6111a273d93ecb0800000000000000
+      internalID: -4835848714611255647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_246
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf79b2208686bc2e0800000000000000
+      internalID: -2104473604943276036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_247
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac5cb3ba66de04e0800000000000000
+      internalID: -2013436229617689426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_248
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d361ec30d5a850f90800000000000000
+      internalID: -6988027114695027139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_249
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d86e874445c32c0800000000000000
+      internalID: -4450589678686007958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_250
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb26df7e489965dc0800000000000000
+      internalID: -3650561651830332741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEBIGSHEET_251
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ebd5dbaa66434170800000000000000
+      internalID: 8161444373688867810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
