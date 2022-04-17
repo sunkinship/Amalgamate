@@ -1,439 +1,505 @@
 fileFormatVersion: 2
-guid: 4c906543e29ab5a45842d6d5fec2b345
+guid: 1407ffbaca6eeda4d8f34e2b33f69ca9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1466255665455444245
-    second: Big Idle Sheet_0
+      213: -366688119809978526
+    second: Big Horn Sheet_0
   - first:
-      213: 5411552898382494402
-    second: Big Idle Sheet_1
+      213: 466380479780431238
+    second: Big Horn Sheet_1
   - first:
-      213: -2933003088241084888
-    second: Big Idle Sheet_2
+      213: -1754148848845267134
+    second: Big Horn Sheet_2
   - first:
-      213: -5416951327172958066
-    second: Big Idle Sheet_3
+      213: -7163691630605186731
+    second: Big Horn Sheet_3
   - first:
-      213: 7503492891912675315
-    second: Big Idle Sheet_4
+      213: -8434840918219194983
+    second: Big Horn Sheet_4
   - first:
-      213: -5337704866417458083
-    second: Big Idle Sheet_5
+      213: -1742198713609121858
+    second: Big Horn Sheet_5
   - first:
-      213: 7157045778493861011
-    second: Big Idle Sheet_6
+      213: -5725450975209256343
+    second: Big Horn Sheet_6
   - first:
-      213: -1463293245348932715
-    second: Big Idle Sheet_7
+      213: 991873973136864939
+    second: Big Horn Sheet_7
   - first:
-      213: -4843926533491428033
-    second: Big Idle Sheet_8
+      213: 3250274057362315325
+    second: Big Horn Sheet_8
   - first:
-      213: 5607038202994921594
-    second: Big Idle Sheet_9
+      213: 8906958782484287455
+    second: Big Horn Sheet_9
   - first:
-      213: -1548612162395744755
-    second: Big Idle Sheet_10
+      213: -7247967695513176737
+    second: Big Horn Sheet_10
   - first:
-      213: 4674559022104106985
-    second: Big Idle Sheet_11
+      213: 5260391900319245933
+    second: Big Horn Sheet_11
   - first:
-      213: -1739992083438728225
-    second: Big Idle Sheet_12
+      213: -4912562853640282927
+    second: Big Horn Sheet_12
   - first:
-      213: 855711661314264868
-    second: Big Idle Sheet_13
+      213: -9075972796475289215
+    second: Big Horn Sheet_13
   - first:
-      213: -6678627292822712301
-    second: Big Idle Sheet_14
+      213: -4691255210479844950
+    second: Big Horn Sheet_14
   - first:
-      213: -5041589642333922701
-    second: Big Idle Sheet_15
+      213: 1158188508997587574
+    second: Big Horn Sheet_15
   - first:
-      213: -7109799548569945701
-    second: Big Idle Sheet_16
+      213: 3040120602397803467
+    second: Big Horn Sheet_16
   - first:
-      213: 8377186433380879463
-    second: Big Idle Sheet_17
+      213: 1102825350008394519
+    second: Big Horn Sheet_17
   - first:
-      213: 3434224711419206459
-    second: Big Idle Sheet_18
+      213: 1669462719316199503
+    second: Big Horn Sheet_18
   - first:
-      213: -5007349001448248469
-    second: Big Idle Sheet_19
+      213: 5135377963354858347
+    second: Big Horn Sheet_19
   - first:
-      213: -2399901814209034080
-    second: Big Idle Sheet_20
+      213: 2399400222597540291
+    second: Big Horn Sheet_20
   - first:
-      213: 5174797213003309569
-    second: Big Idle Sheet_21
+      213: -7330037166388668599
+    second: Big Horn Sheet_21
   - first:
-      213: -1156001177071610021
-    second: Big Idle Sheet_22
+      213: 8752974359840675287
+    second: Big Horn Sheet_22
   - first:
-      213: -4201564693610949954
-    second: Big Idle Sheet_23
+      213: 8124167009092414402
+    second: Big Horn Sheet_23
   - first:
-      213: 1222612624482763542
-    second: Big Idle Sheet_24
+      213: 8992404734412163922
+    second: Big Horn Sheet_24
   - first:
-      213: 3793840578033750287
-    second: Big Idle Sheet_25
+      213: 4777325012797272261
+    second: Big Horn Sheet_25
   - first:
-      213: -8324632039905402252
-    second: Big Idle Sheet_26
+      213: 5829986137952972522
+    second: Big Horn Sheet_26
   - first:
-      213: 2512106723480404865
-    second: Big Idle Sheet_27
+      213: 8494682567414364838
+    second: Big Horn Sheet_27
   - first:
-      213: -4981925126155110235
-    second: Big Idle Sheet_28
+      213: 973751466212840340
+    second: Big Horn Sheet_28
   - first:
-      213: 5529990615983151339
-    second: Big Idle Sheet_29
+      213: -3655715126018977905
+    second: Big Horn Sheet_29
   - first:
-      213: -3540637124921886134
-    second: Big Idle Sheet_30
+      213: 3668279831168141772
+    second: Big Horn Sheet_30
   - first:
-      213: -5400492839371285613
-    second: Big Idle Sheet_31
+      213: 3097153713094836685
+    second: Big Horn Sheet_31
   - first:
-      213: -2420881127724869971
-    second: Big Idle Sheet_32
+      213: -2147453015589902838
+    second: Big Horn Sheet_32
   - first:
-      213: -734573479266721746
-    second: Big Idle Sheet_33
+      213: 2294880707233397001
+    second: Big Horn Sheet_33
   - first:
-      213: 4666358185310427831
-    second: Big Idle Sheet_34
+      213: 2167309988976564294
+    second: Big Horn Sheet_34
   - first:
-      213: -5110981749803302442
-    second: Big Idle Sheet_35
+      213: -3039251270788651768
+    second: Big Horn Sheet_35
   - first:
-      213: 6860097631435121308
-    second: Big Idle Sheet_36
+      213: -9015596802631380106
+    second: Big Horn Sheet_36
   - first:
-      213: 8020569261412084169
-    second: Big Idle Sheet_37
+      213: -5645354132234029881
+    second: Big Horn Sheet_37
   - first:
-      213: -3148985188868194216
-    second: Big Idle Sheet_38
+      213: -7856129875775719976
+    second: Big Horn Sheet_38
   - first:
-      213: 5610608309587291704
-    second: Big Idle Sheet_39
+      213: -1491109017040117171
+    second: Big Horn Sheet_39
   - first:
-      213: -3316453380787331157
-    second: Big Idle Sheet_40
+      213: 6259705983424528358
+    second: Big Horn Sheet_40
   - first:
-      213: 8484061856707333947
-    second: Big Idle Sheet_41
+      213: 7945090487688401950
+    second: Big Horn Sheet_41
   - first:
-      213: -1875266482590100957
-    second: Big Idle Sheet_42
+      213: -7795386812667170113
+    second: Big Horn Sheet_42
   - first:
-      213: 7914645859610958311
-    second: Big Idle Sheet_43
+      213: -111864357461985920
+    second: Big Horn Sheet_43
   - first:
-      213: 5111767607934546643
-    second: Big Idle Sheet_44
+      213: -4810636434868321883
+    second: Big Horn Sheet_44
   - first:
-      213: -6078756697809579505
-    second: Big Idle Sheet_45
+      213: 1526258248271491878
+    second: Big Horn Sheet_45
   - first:
-      213: -8707536793370536557
-    second: Big Idle Sheet_46
+      213: 5039769845221218738
+    second: Big Horn Sheet_46
   - first:
-      213: -1156403355526861403
-    second: Big Idle Sheet_47
+      213: 4713467980352701776
+    second: Big Horn Sheet_47
   - first:
-      213: 5028178556099753857
-    second: Big Idle Sheet_48
+      213: 6438342701728636345
+    second: Big Horn Sheet_48
   - first:
-      213: 7280961166948777586
-    second: Big Idle Sheet_49
+      213: 6369194000895295948
+    second: Big Horn Sheet_49
   - first:
-      213: 3700657572170151534
-    second: Big Idle Sheet_50
+      213: -956494340481489224
+    second: Big Horn Sheet_50
   - first:
-      213: -6970638418147386369
-    second: Big Idle Sheet_51
+      213: 201688186640936054
+    second: Big Horn Sheet_51
   - first:
-      213: -3534453589998794179
-    second: Big Idle Sheet_52
+      213: 3998922155918034818
+    second: Big Horn Sheet_52
   - first:
-      213: -6966384861599663360
-    second: Big Idle Sheet_53
+      213: 5259277624852658112
+    second: Big Horn Sheet_53
   - first:
-      213: -2347368062281922911
-    second: Big Idle Sheet_54
+      213: -8551195466945711319
+    second: Big Horn Sheet_54
   - first:
-      213: 630615463190650186
-    second: Big Idle Sheet_55
+      213: -5700263274263162797
+    second: Big Horn Sheet_55
   - first:
-      213: -6202703816236795463
-    second: Big Idle Sheet_56
+      213: 4459536758152089224
+    second: Big Horn Sheet_56
   - first:
-      213: 7525440877564767848
-    second: Big Idle Sheet_57
+      213: -7531887345182705441
+    second: Big Horn Sheet_57
   - first:
-      213: -3271293888607466762
-    second: Big Idle Sheet_58
+      213: -1842120726036309524
+    second: Big Horn Sheet_58
   - first:
-      213: -7789596516367442513
-    second: Big Idle Sheet_59
+      213: 4689318940228832415
+    second: Big Horn Sheet_59
   - first:
-      213: -4605366047101245446
-    second: Big Idle Sheet_60
+      213: 8992224148868538502
+    second: Big Horn Sheet_60
   - first:
-      213: -5065612270293176637
-    second: Big Idle Sheet_61
+      213: 5638956210912937776
+    second: Big Horn Sheet_61
   - first:
-      213: -8806713900151870295
-    second: Big Idle Sheet_62
+      213: 8536025497472513590
+    second: Big Horn Sheet_62
   - first:
-      213: 3720158511594034785
-    second: Big Idle Sheet_63
+      213: 55040257864082447
+    second: Big Horn Sheet_63
   - first:
-      213: -9207135886469008125
-    second: Big Idle Sheet_64
+      213: 4355588689286904375
+    second: Big Horn Sheet_64
   - first:
-      213: 3155139608838938941
-    second: Big Idle Sheet_65
+      213: -2170734756148382612
+    second: Big Horn Sheet_65
   - first:
-      213: -6091900371371020437
-    second: Big Idle Sheet_66
+      213: -4357003461435493968
+    second: Big Horn Sheet_66
   - first:
-      213: -3052711086652907897
-    second: Big Idle Sheet_67
+      213: -4752534588827927224
+    second: Big Horn Sheet_67
   - first:
-      213: -4889577025423120019
-    second: Big Idle Sheet_68
+      213: -4578219610934864578
+    second: Big Horn Sheet_68
   - first:
-      213: 967796218147528463
-    second: Big Idle Sheet_69
+      213: -8713592910397845364
+    second: Big Horn Sheet_69
   - first:
-      213: -4058445355956663933
-    second: Big Idle Sheet_70
+      213: 3340183919721867871
+    second: Big Horn Sheet_70
   - first:
-      213: -7211775006997288241
-    second: Big Idle Sheet_71
+      213: -4937587213265194444
+    second: Big Horn Sheet_71
   - first:
-      213: 8382915797282077764
-    second: Big Idle Sheet_72
+      213: -4636059891462469899
+    second: Big Horn Sheet_72
   - first:
-      213: -3104793694797027325
-    second: Big Idle Sheet_73
+      213: 5082357250693543846
+    second: Big Horn Sheet_73
   - first:
-      213: -8586449111858709119
-    second: Big Idle Sheet_74
+      213: 6414951853116528473
+    second: Big Horn Sheet_74
   - first:
-      213: -5159212930834187827
-    second: Big Idle Sheet_75
+      213: -5507558663886716415
+    second: Big Horn Sheet_75
   - first:
-      213: -8990223719907244993
-    second: Big Idle Sheet_76
+      213: 2779809387818881071
+    second: Big Horn Sheet_76
   - first:
-      213: 2483383403524654531
-    second: Big Idle Sheet_77
+      213: 5904760251167088963
+    second: Big Horn Sheet_77
   - first:
-      213: -7931226680004027228
-    second: Big Idle Sheet_78
+      213: -1957915900006243837
+    second: Big Horn Sheet_78
   - first:
-      213: 8794419334631345087
-    second: Big Idle Sheet_79
+      213: -955497904507171789
+    second: Big Horn Sheet_79
   - first:
-      213: -1894079671368911357
-    second: Big Idle Sheet_80
+      213: -1313653759486608217
+    second: Big Horn Sheet_80
   - first:
-      213: 7551813606753378522
-    second: Big Idle Sheet_81
+      213: 728552638566177855
+    second: Big Horn Sheet_81
   - first:
-      213: -6455366306366542072
-    second: Big Idle Sheet_82
+      213: 3104084973644323113
+    second: Big Horn Sheet_82
   - first:
-      213: -918817362879977202
-    second: Big Idle Sheet_83
+      213: -3048654983184027408
+    second: Big Horn Sheet_83
   - first:
-      213: -6612780972887988306
-    second: Big Idle Sheet_84
+      213: 1966294768618645448
+    second: Big Horn Sheet_84
   - first:
-      213: -2196412864817002829
-    second: Big Idle Sheet_85
+      213: 2015904795978328105
+    second: Big Horn Sheet_85
   - first:
-      213: 8718457228734107927
-    second: Big Idle Sheet_86
+      213: -2721172824970363576
+    second: Big Horn Sheet_86
   - first:
-      213: 3715398147170533752
-    second: Big Idle Sheet_87
+      213: 8734550873600986820
+    second: Big Horn Sheet_87
   - first:
-      213: -1199972172691494891
-    second: Big Idle Sheet_88
+      213: 703050616318244292
+    second: Big Horn Sheet_88
   - first:
-      213: 2911708357935400162
-    second: Big Idle Sheet_89
+      213: -8895105022302527286
+    second: Big Horn Sheet_89
   - first:
-      213: -4783383385584416783
-    second: Big Idle Sheet_90
+      213: 8368867859842638080
+    second: Big Horn Sheet_90
   - first:
-      213: 7612445935785243492
-    second: Big Idle Sheet_91
+      213: -8456723211911103358
+    second: Big Horn Sheet_91
   - first:
-      213: 8500404931424385833
-    second: Big Idle Sheet_92
+      213: 531529521211981283
+    second: Big Horn Sheet_92
   - first:
-      213: -1198606171787159782
-    second: Big Idle Sheet_93
+      213: 6690305682807295046
+    second: Big Horn Sheet_93
   - first:
-      213: 2488790625380163366
-    second: Big Idle Sheet_94
+      213: -5420759960572532612
+    second: Big Horn Sheet_94
   - first:
-      213: 6179886854544374686
-    second: Big Idle Sheet_95
+      213: 8100597804855414471
+    second: Big Horn Sheet_95
   - first:
-      213: -1461265935617689398
-    second: Big Idle Sheet_96
+      213: 8373230374161097648
+    second: Big Horn Sheet_96
   - first:
-      213: -1072542474218199742
-    second: Big Idle Sheet_97
+      213: -5702478851856294243
+    second: Big Horn Sheet_97
   - first:
-      213: 1331718049605916200
-    second: Big Idle Sheet_98
+      213: -8276790525915433739
+    second: Big Horn Sheet_98
   - first:
-      213: -8459187227846344044
-    second: Big Idle Sheet_99
+      213: -4726945747281126747
+    second: Big Horn Sheet_99
   - first:
-      213: -4882978544232973752
-    second: Big Idle Sheet_100
+      213: -1818485765211241462
+    second: Big Horn Sheet_100
   - first:
-      213: 7075384536009160089
-    second: Big Idle Sheet_101
+      213: -6702191340162233695
+    second: Big Horn Sheet_101
   - first:
-      213: -8471723296139716329
-    second: Big Idle Sheet_102
+      213: -7074568543613461519
+    second: Big Horn Sheet_102
   - first:
-      213: 5391440497799874002
-    second: Big Idle Sheet_103
+      213: -2878371488567196198
+    second: Big Horn Sheet_103
   - first:
-      213: 8161408577925021570
-    second: Big Idle Sheet_104
+      213: -811237643943269642
+    second: Big Horn Sheet_104
   - first:
-      213: -4930786489624901845
-    second: Big Idle Sheet_105
+      213: -6288638613423470235
+    second: Big Horn Sheet_105
   - first:
-      213: 187973015096887387
-    second: Big Idle Sheet_106
+      213: 2964391047155048685
+    second: Big Horn Sheet_106
   - first:
-      213: 7447991249752204863
-    second: Big Idle Sheet_107
+      213: 866672128057226624
+    second: Big Horn Sheet_107
   - first:
-      213: -9213433366943800037
-    second: Big Idle Sheet_108
+      213: 778810014032839957
+    second: Big Horn Sheet_108
   - first:
-      213: 7138961193097842827
-    second: Big Idle Sheet_109
+      213: -5088328431618204030
+    second: Big Horn Sheet_109
   - first:
-      213: -7235375114836531379
-    second: Big Idle Sheet_110
+      213: 9008112411515138901
+    second: Big Horn Sheet_110
   - first:
-      213: 4207599976543343980
-    second: Big Idle Sheet_111
+      213: -7829289562360041826
+    second: Big Horn Sheet_111
   - first:
-      213: -7403514212461310940
-    second: Big Idle Sheet_112
+      213: 2838348791997434503
+    second: Big Horn Sheet_112
   - first:
-      213: 2601377172159486412
-    second: Big Idle Sheet_113
+      213: -6214420998441592346
+    second: Big Horn Sheet_113
   - first:
-      213: -2755936401802069714
-    second: Big Idle Sheet_114
+      213: -3796839865250852533
+    second: Big Horn Sheet_114
   - first:
-      213: 3687343654026244727
-    second: Big Idle Sheet_115
+      213: 6747284277968203683
+    second: Big Horn Sheet_115
   - first:
-      213: 5748023711724778742
-    second: Big Idle Sheet_116
+      213: 2852221661284174606
+    second: Big Horn Sheet_116
   - first:
-      213: 3035824514849271002
-    second: Big Idle Sheet_117
+      213: 2056386769295455542
+    second: Big Horn Sheet_117
   - first:
-      213: -6020320681662206560
-    second: Big Idle Sheet_118
+      213: -4437265151275566957
+    second: Big Horn Sheet_118
   - first:
-      213: -4811986096507642304
-    second: Big Idle Sheet_119
+      213: 2600579579429427824
+    second: Big Horn Sheet_119
   - first:
-      213: -2832479354919435007
-    second: Big Idle Sheet_120
+      213: 2121112748688835371
+    second: Big Horn Sheet_120
   - first:
-      213: -5337724249509802216
-    second: Big Idle Sheet_121
+      213: 1259653080079511172
+    second: Big Horn Sheet_121
   - first:
-      213: 8154265906775137386
-    second: Big Idle Sheet_122
+      213: -1413237450246979356
+    second: Big Horn Sheet_122
   - first:
-      213: 981489865379009475
-    second: Big Idle Sheet_123
+      213: -2402834945718308657
+    second: Big Horn Sheet_123
   - first:
-      213: 4120660856820756542
-    second: Big Idle Sheet_124
+      213: -9095086663590967634
+    second: Big Horn Sheet_124
   - first:
-      213: -3175087439845381768
-    second: Big Idle Sheet_125
+      213: -5424799845949058259
+    second: Big Horn Sheet_125
   - first:
-      213: 7999009315814088694
-    second: Big Idle Sheet_126
+      213: 7933889945212565493
+    second: Big Horn Sheet_126
   - first:
-      213: 8106677412501111939
-    second: Big Idle Sheet_127
+      213: 6796978687600522291
+    second: Big Horn Sheet_127
   - first:
-      213: 7999609057638271891
-    second: Big Idle Sheet_128
+      213: 3618219906973512342
+    second: Big Horn Sheet_128
   - first:
-      213: 8757328262327991816
-    second: Big Idle Sheet_129
+      213: -7343451210938921656
+    second: Big Horn Sheet_129
   - first:
-      213: -7727622545800711863
-    second: Big Idle Sheet_130
+      213: 4107911794689710240
+    second: Big Horn Sheet_130
   - first:
-      213: -1169781546469389474
-    second: Big Idle Sheet_131
+      213: -7523246465386253103
+    second: Big Horn Sheet_131
   - first:
-      213: -4401769809203899977
-    second: Big Idle Sheet_132
+      213: -7089954228117035129
+    second: Big Horn Sheet_132
   - first:
-      213: 7678712891030470639
-    second: Big Idle Sheet_133
+      213: 3221971373833499828
+    second: Big Horn Sheet_133
   - first:
-      213: -1578798980211850768
-    second: Big Idle Sheet_134
+      213: 1838201699759085572
+    second: Big Horn Sheet_134
   - first:
-      213: 9087537126518070808
-    second: Big Idle Sheet_135
+      213: -8241091774399564321
+    second: Big Horn Sheet_135
   - first:
-      213: -2627704997116108428
-    second: Big Idle Sheet_136
+      213: -5267027629664453548
+    second: Big Horn Sheet_136
   - first:
-      213: -9151872138901840986
-    second: Big Idle Sheet_137
+      213: -3059028936943279067
+    second: Big Horn Sheet_137
   - first:
-      213: -1057225986901318067
-    second: Big Idle Sheet_138
+      213: -8081011119640113072
+    second: Big Horn Sheet_138
   - first:
-      213: -3411446121659297499
-    second: Big Idle Sheet_139
+      213: 1215650345103017762
+    second: Big Horn Sheet_139
   - first:
-      213: 8902838389279739510
-    second: Big Idle Sheet_140
+      213: 453184629743269164
+    second: Big Horn Sheet_140
   - first:
-      213: -3768202407550377116
-    second: Big Idle Sheet_141
+      213: -314240691332625430
+    second: Big Horn Sheet_141
   - first:
-      213: 6047176091893759373
-    second: Big Idle Sheet_142
+      213: 5274042936457599012
+    second: Big Horn Sheet_142
   - first:
-      213: -3520614302155572893
-    second: Big Idle Sheet_143
+      213: -6736275333517366000
+    second: Big Horn Sheet_143
+  - first:
+      213: -180537351355447624
+    second: Big Horn Sheet_144
+  - first:
+      213: -5087608600642026343
+    second: Big Horn Sheet_145
+  - first:
+      213: 4215056580612304188
+    second: Big Horn Sheet_146
+  - first:
+      213: -8256837186618916522
+    second: Big Horn Sheet_147
+  - first:
+      213: 8555155743676115433
+    second: Big Horn Sheet_148
+  - first:
+      213: 8918948676047220027
+    second: Big Horn Sheet_149
+  - first:
+      213: -8260894114897044332
+    second: Big Horn Sheet_150
+  - first:
+      213: -7664556512484251285
+    second: Big Horn Sheet_151
+  - first:
+      213: -8628735238320999745
+    second: Big Horn Sheet_152
+  - first:
+      213: 6607759701644156315
+    second: Big Horn Sheet_153
+  - first:
+      213: -5805230504976818322
+    second: Big Horn Sheet_154
+  - first:
+      213: 7194296800979636643
+    second: Big Horn Sheet_155
+  - first:
+      213: 2390670117920796684
+    second: Big Horn Sheet_156
+  - first:
+      213: 5434649912607487630
+    second: Big Horn Sheet_157
+  - first:
+      213: -5475129974314602481
+    second: Big Horn Sheet_158
+  - first:
+      213: 447300296069970940
+    second: Big Horn Sheet_159
+  - first:
+      213: -6681557017930839519
+    second: Big Horn Sheet_160
+  - first:
+      213: -5775022980123647971
+    second: Big Horn Sheet_161
+  - first:
+      213: 2431343541330268252
+    second: Big Horn Sheet_162
+  - first:
+      213: 3299401541747649147
+    second: Big Horn Sheet_163
+  - first:
+      213: -5186315956102561282
+    second: Big Horn Sheet_164
+  - first:
+      213: -3611566525404786937
+    second: Big Horn Sheet_165
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -519,7 +585,2653 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Big Idle Sheet_0
+      name: Big Horn Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fce5b091349eaf0800000000000000
+      internalID: -366688119809978526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6852d7b439ae87600800000000000000
+      internalID: 466380479780431238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fda657ae208a7e0800000000000000
+      internalID: -1754148848845267134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559c655ba64759c90800000000000000
+      internalID: -7163691630605186731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d7d94efdc61fa80800000000000000
+      internalID: -8434840918219194983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf8f23208772d7e0800000000000000
+      internalID: -1742198713609121858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a0dbb3cac1b80b0800000000000000
+      internalID: -5725450975209256343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba637c69f18d3cd00800000000000000
+      internalID: 991873973136864939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d389fb3d80b4b1d20800000000000000
+      internalID: 3250274057362315325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf850352dfdb9b70800000000000000
+      internalID: 8906958782484287455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f553e6548cb0a6b90800000000000000
+      internalID: -7247967695513176737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66eed5009aa00940800000000000000
+      internalID: 5260391900319245933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dcddfbcc1213dbb0800000000000000
+      internalID: -4912562853640282927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1815bf204daab0280800000000000000
+      internalID: -9075972796475289215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa106accd3055eeb0800000000000000
+      internalID: -4691255210479844950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6729db50056b21010800000000000000
+      internalID: 1158188508997587574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc38444a49da03a20800000000000000
+      internalID: 3040120602397803467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713db8410d50e4f00800000000000000
+      internalID: 1102825350008394519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48899e7f7f1b2710800000000000000
+      internalID: 1669462719316199503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63a22d9c07844740800000000000000
+      internalID: 5135377963354858347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c96be53ac16c4120800000000000000
+      internalID: 2399400222597540291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9471efa880a764a90800000000000000
+      internalID: -7330037166388668599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5d7661ecfc87970800000000000000
+      internalID: 8752974359840675287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cba6e0e9d6deb070800000000000000
+      internalID: 8124167009092414402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b8d2f46707bcc70800000000000000
+      internalID: 8992404734412163922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0be5ca9c77c4240800000000000000
+      internalID: 4777325012797272261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee632ef08548e050800000000000000
+      internalID: 5829986137952972522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aabf6ec9cc23e570800000000000000
+      internalID: 8494682567414364838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493d123acc5738d00800000000000000
+      internalID: 973751466212840340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fcd91367a444dc0800000000000000
+      internalID: -3655715126018977905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9c181321958e230800000000000000
+      internalID: 3668279831168141772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 3875
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1ccc384ec4bfa20800000000000000
+      internalID: 3097153713094836685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a062ce92cd6b232e0800000000000000
+      internalID: -2147453015589902838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 4125
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9093b8c28dd09df10800000000000000
+      internalID: 2294880707233397001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6489a1bb3f4d31e10800000000000000
+      internalID: 2167309988976564294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 4375
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805ec75621962d5d0800000000000000
+      internalID: -3039251270788651768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6735205897a22e280800000000000000
+      internalID: -9015596802631380106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c438ecb35ca7a1b0800000000000000
+      internalID: -5645354132234029881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5fd05608b69f290800000000000000
+      internalID: -7856129875775719976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4221fdcf348e4be0800000000000000
+      internalID: -1491109017040117171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eff7643d61fed650800000000000000
+      internalID: 6259705983424528358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14900324b1a24e60800000000000000
+      internalID: 7945090487688401950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb27530eef831d390800000000000000
+      internalID: -7795386812667170113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0857376a5f3927ef0800000000000000
+      internalID: -111864357461985920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a14f1c76af2d3db0800000000000000
+      internalID: -4810636434868321883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6237bb35acb5e2510800000000000000
+      internalID: 1526258248271491878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9d22ee8fbd0f540800000000000000
+      internalID: 5039769845221218738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055c915b72a996140800000000000000
+      internalID: 4713467980352701776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd93ce4396995950800000000000000
+      internalID: 6438342701728636345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1c9e8c23ce36850800000000000000
+      internalID: 6369194000895295948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6eded0779d9b2f0800000000000000
+      internalID: -956494340481489224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c2020565a8cc200800000000000000
+      internalID: 201688186640936054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2870feb73860f7730800000000000000
+      internalID: 3998922155918034818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7b08c8225bcf840800000000000000
+      internalID: 5259277624852658112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92335cb670d045980800000000000000
+      internalID: -8551195466945711319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350d65bd0c894e0b0800000000000000
+      internalID: -5700263274263162797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ec37ccd0573ed30800000000000000
+      internalID: 4459536758152089224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8ff1e7d5c597790800000000000000
+      internalID: -7531887345182705441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9983ba5f87f66e0800000000000000
+      internalID: -1842120726036309524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9cc9d62bbec31140800000000000000
+      internalID: 4689318940228832415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680aff5783ccacc70800000000000000
+      internalID: 8992224148868538502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 037c27f1cc8914e40800000000000000
+      internalID: 5638956210912937776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636b682d6fd067670800000000000000
+      internalID: 8536025497472513590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04a55aa2da83c000800000000000000
+      internalID: 55040257864082447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ab7a406d8227c30800000000000000
+      internalID: 4355588689286904375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c647e268d3000e1e0800000000000000
+      internalID: -2170734756148382612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b17dfbaf60d883c0800000000000000
+      internalID: -4357003461435493968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 3875
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d7722b8fa9b0eb0800000000000000
+      internalID: -4752534588827927224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3510823585e670c0800000000000000
+      internalID: -4578219610934864578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 4125
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80df522a69131780800000000000000
+      internalID: -8713592910397845364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a6e73f397ba5e20800000000000000
+      internalID: 3340183919721867871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 4375
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43231d9079a2a7bb0800000000000000
+      internalID: -4937587213265194444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f681f3771869afb0800000000000000
+      internalID: -4636059891462469899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a73835fdf8288640800000000000000
+      internalID: 5082357250693543846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9579e38f8bc760950800000000000000
+      internalID: 6414951853116528473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102486353983193b0800000000000000
+      internalID: -5507558663886716415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f209d3009edd39620800000000000000
+      internalID: 2779809387818881071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34129a6e92ce1f150800000000000000
+      internalID: 5904760251167088963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302e908ccd514d4e0800000000000000
+      internalID: -1957915900006243837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c4832e7b36db2f0800000000000000
+      internalID: -955497904507171789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7acb1f3add6f4cde0800000000000000
+      internalID: -1313653759486608217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c19e5c3c65c1a00800000000000000
+      internalID: 728552638566177855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92992be56dce31b20800000000000000
+      internalID: 3104084973644323113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0779cf17001b5d0800000000000000
+      internalID: -3048654983184027408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c729379caea94b10800000000000000
+      internalID: 1966294768618645448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9286b413bbee9fb10800000000000000
+      internalID: 2015904795978328105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84df13babb37c3ad0800000000000000
+      internalID: -2721172824970363576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce809dedbb573970800000000000000
+      internalID: 8734550873600986820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5b4c48fccb1c900800000000000000
+      internalID: 703050616318244292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac06dd94c1d3e8480800000000000000
+      internalID: -8895105022302527286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001aa167af0342470800000000000000
+      internalID: 8368867859842638080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28cfc3e5b0fa3aa80800000000000000
+      internalID: -8456723211911103358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed397b884f506700800000000000000
+      internalID: 531529521211981283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c818e529db8dc50800000000000000
+      internalID: 6690305682807295046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78e969498795c4b0800000000000000
+      internalID: -5420759960572532612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce47b2e8ca1b6070800000000000000
+      internalID: 8100597804855414471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b3226a79a0b33470800000000000000
+      internalID: 8373230374161097648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_97
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e9def72b9bcd0b0800000000000000
+      internalID: -5702478851856294243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_98
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4fd767edee22d80800000000000000
+      internalID: -8276790525915433739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_99
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aad3c423e3866eb0800000000000000
+      internalID: -4726945747281126747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_100
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04ca7fc4d073c6e0800000000000000
+      internalID: -1818485765211241462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_101
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa4ee06c780df2a0800000000000000
+      internalID: -6702191340162233695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_102
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb54ca646512dd90800000000000000
+      internalID: -7074568543613461519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_103
+      rect:
+        serializedVersion: 2
+        x: 3875
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad50754a168fd08d0800000000000000
+      internalID: -2878371488567196198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_104
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa265439a7edb4f0800000000000000
+      internalID: -811237643943269642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_105
+      rect:
+        serializedVersion: 2
+        x: 4125
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569c61eef744ab8a0800000000000000
+      internalID: -6288638613423470235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_106
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0660d83f1a32920800000000000000
+      internalID: 2964391047155048685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_107
+      rect:
+        serializedVersion: 2
+        x: 4375
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085359965b9070c00800000000000000
+      internalID: 866672128057226624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515c1f9d493eeca00800000000000000
+      internalID: 778810014032839957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_109
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e50e42040a269b0800000000000000
+      internalID: -5088328431618204030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_110
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 553b521e28e330d70800000000000000
+      internalID: 9008112411515138901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_111
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e2bd7df96c85390800000000000000
+      internalID: -7829289562360041826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_112
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a8aa72037d36720800000000000000
+      internalID: 2838348791997434503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_113
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9192ff601f1c9a0800000000000000
+      internalID: -6214420998441592346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_114
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b415ea2524aee4bc0800000000000000
+      internalID: -3796839865250852533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_115
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af6fda5d4b23ad50800000000000000
+      internalID: 6747284277968203683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_116
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b848d3d70259720800000000000000
+      internalID: 2852221661284174606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_117
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6353ba81fd0c98c10800000000000000
+      internalID: 2056386769295455542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_118
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398fff3cadaab62c0800000000000000
+      internalID: -4437265151275566957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_119
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a960a595d171420800000000000000
+      internalID: 2600579579429427824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_120
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23862a8ec4bf6d10800000000000000
+      internalID: 2121112748688835371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_121
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ead5a6dcf2b7110800000000000000
+      internalID: 1259653080079511172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_122
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e000c2d60c236ce0800000000000000
+      internalID: -1413237450246979356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_123
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0b09ef85a67aed0800000000000000
+      internalID: -2402834945718308657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_124
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea684470ed2c7c180800000000000000
+      internalID: -9095086663590967634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_125
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23dc9c284d37b4b0800000000000000
+      internalID: -5424799845949058259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet_126
       rect:
         serializedVersion: 2
         x: 0
@@ -527,20 +3239,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: beecf96ad30d6abe0800000000000000
-      internalID: -1466255665455444245
+      spriteID: 5f7307f9ed6da1e60800000000000000
+      internalID: 7933889945212565493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_1
+      name: Big Horn Sheet_127
       rect:
         serializedVersion: 2
         x: 125
@@ -548,20 +3260,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2caf25f70b2b91b40800000000000000
-      internalID: 5411552898382494402
+      spriteID: 334745cba18b35e50800000000000000
+      internalID: 6796978687600522291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_2
+      name: Big Horn Sheet_128
       rect:
         serializedVersion: 2
         x: 250
@@ -569,20 +3281,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82634402b31eb47d0800000000000000
-      internalID: -2933003088241084888
+      spriteID: 6923762d5df763230800000000000000
+      internalID: 3618219906973512342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_3
+      name: Big Horn Sheet_129
       rect:
         serializedVersion: 2
         x: 375
@@ -590,20 +3302,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e88664ad77f13d4b0800000000000000
-      internalID: -5416951327172958066
+      spriteID: 84dc29ae702d61a90800000000000000
+      internalID: -7343451210938921656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_4
+      name: Big Horn Sheet_130
       rect:
         serializedVersion: 2
         x: 500
@@ -611,20 +3323,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ff9f1da703c12860800000000000000
-      internalID: 7503492891912675315
+      spriteID: 0a81e1b330c320930800000000000000
+      internalID: 4107911794689710240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_5
+      name: Big Horn Sheet_131
       rect:
         serializedVersion: 2
         x: 625
@@ -632,20 +3344,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d54405154b9ace5b0800000000000000
-      internalID: -5337704866417458083
+      spriteID: 1d470f8133f089790800000000000000
+      internalID: -7523246465386253103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_6
+      name: Big Horn Sheet_132
       rect:
         serializedVersion: 2
         x: 750
@@ -653,20 +3365,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39ce554473fe25360800000000000000
-      internalID: 7157045778493861011
+      spriteID: 7872e47913c6b9d90800000000000000
+      internalID: -7089954228117035129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_7
+      name: Big Horn Sheet_133
       rect:
         serializedVersion: 2
         x: 875
@@ -674,20 +3386,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5939fb4db8651bbe0800000000000000
-      internalID: -1463293245348932715
+      spriteID: 4b4b2ddc4edb6bc20800000000000000
+      internalID: 3221971373833499828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_8
+      name: Big Horn Sheet_134
       rect:
         serializedVersion: 2
         x: 1000
@@ -695,20 +3407,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3577256b7ae6ccb0800000000000000
-      internalID: -4843926533491428033
+      spriteID: 408d8abe4ba928910800000000000000
+      internalID: 1838201699759085572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_9
+      name: Big Horn Sheet_135
       rect:
         serializedVersion: 2
         x: 1125
@@ -716,566 +3428,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a709e8bc98330dd40800000000000000
-      internalID: 5607038202994921594
+      spriteID: fd53581c1b2c1ad80800000000000000
+      internalID: -8241091774399564321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_10
-      rect:
-        serializedVersion: 2
-        x: 1250
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d065d857179328ae0800000000000000
-      internalID: -1548612162395744755
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 1375
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e7dc1ae9ae5fd040800000000000000
-      internalID: 4674559022104106985
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_12
-      rect:
-        serializedVersion: 2
-        x: 1500
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fdb84a24b6e4ad7e0800000000000000
-      internalID: -1739992083438728225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_13
-      rect:
-        serializedVersion: 2
-        x: 1625
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42fcbc2e83910eb00800000000000000
-      internalID: 855711661314264868
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_14
-      rect:
-        serializedVersion: 2
-        x: 1750
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 310d210bcdfb053a0800000000000000
-      internalID: -6678627292822712301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_15
-      rect:
-        serializedVersion: 2
-        x: 1875
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37ad5698eeca80ab0800000000000000
-      internalID: -5041589642333922701
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_16
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b99714bdafae45d90800000000000000
-      internalID: -7109799548569945701
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_17
-      rect:
-        serializedVersion: 2
-        x: 2125
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76c83ea4daeb14470800000000000000
-      internalID: 8377186433380879463
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_18
-      rect:
-        serializedVersion: 2
-        x: 2250
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b3b92030e21d8af20800000000000000
-      internalID: 3434224711419206459
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_19
-      rect:
-        serializedVersion: 2
-        x: 2375
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6b254efc92528ab0800000000000000
-      internalID: -5007349001448248469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_20
-      rect:
-        serializedVersion: 2
-        x: 2500
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a84144e306d1bed0800000000000000
-      internalID: -2399901814209034080
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_21
-      rect:
-        serializedVersion: 2
-        x: 2625
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1026eb1e5a290d740800000000000000
-      internalID: 5174797213003309569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_22
-      rect:
-        serializedVersion: 2
-        x: 2750
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5796b0ed0f05ffe0800000000000000
-      internalID: -1156001177071610021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_23
-      rect:
-        serializedVersion: 2
-        x: 2875
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eb21f780c2b01b5c0800000000000000
-      internalID: -4201564693610949954
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_24
-      rect:
-        serializedVersion: 2
-        x: 3000
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 613043c44b797f010800000000000000
-      internalID: 1222612624482763542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_25
-      rect:
-        serializedVersion: 2
-        x: 3125
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f011a24b7ed66a430800000000000000
-      internalID: 3793840578033750287
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_26
-      rect:
-        serializedVersion: 2
-        x: 3250
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4726a97f347f87c80800000000000000
-      internalID: -8324632039905402252
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_27
-      rect:
-        serializedVersion: 2
-        x: 3375
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1838bea51cbccd220800000000000000
-      internalID: 2512106723480404865
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_28
-      rect:
-        serializedVersion: 2
-        x: 3500
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a87eed3e75acdab0800000000000000
-      internalID: -4981925126155110235
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_29
-      rect:
-        serializedVersion: 2
-        x: 3625
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be85be48a297ebc40800000000000000
-      internalID: 5529990615983151339
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_30
-      rect:
-        serializedVersion: 2
-        x: 3750
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a4a78724b412ddec0800000000000000
-      internalID: -3540637124921886134
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_31
-      rect:
-        serializedVersion: 2
-        x: 3875
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39bdb3920689d05b0800000000000000
-      internalID: -5400492839371285613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_32
-      rect:
-        serializedVersion: 2
-        x: 4000
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da61382d07d476ed0800000000000000
-      internalID: -2420881127724869971
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_33
-      rect:
-        serializedVersion: 2
-        x: 4125
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2062e200554ec5f0800000000000000
-      internalID: -734573479266721746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_34
-      rect:
-        serializedVersion: 2
-        x: 4250
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ba1a2ecb0c32c040800000000000000
-      internalID: 4666358185310427831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_35
-      rect:
-        serializedVersion: 2
-        x: 4375
-        y: 225
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d1487d7d252219b0800000000000000
-      internalID: -5110981749803302442
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_36
+      name: Big Horn Sheet_136
       rect:
         serializedVersion: 2
         x: 0
@@ -1283,20 +3449,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c92603e0376f33f50800000000000000
-      internalID: 6860097631435121308
+      spriteID: 45cbea7d642c7e6b0800000000000000
+      internalID: -5267027629664453548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_37
+      name: Big Horn Sheet_137
       rect:
         serializedVersion: 2
         x: 125
@@ -1304,20 +3470,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c962ea9f39ce4f60800000000000000
-      internalID: 8020569261412084169
+      spriteID: 524ead7a3652c85d0800000000000000
+      internalID: -3059028936943279067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_38
+      name: Big Horn Sheet_138
       rect:
         serializedVersion: 2
         x: 250
@@ -1325,20 +3491,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8508b8e97ae8c44d0800000000000000
-      internalID: -3148985188868194216
+      spriteID: 0509ed3a33b7adf80800000000000000
+      internalID: -8081011119640113072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_39
+      name: Big Horn Sheet_139
       rect:
         serializedVersion: 2
         x: 375
@@ -1346,20 +3512,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83e2ec20882ecdd40800000000000000
-      internalID: 5610608309587291704
+      spriteID: 22742fe4c8bded010800000000000000
+      internalID: 1215650345103017762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_40
+      name: Big Horn Sheet_140
       rect:
         serializedVersion: 2
         x: 500
@@ -1367,20 +3533,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baf1704b83799f1d0800000000000000
-      internalID: -3316453380787331157
+      spriteID: c25b38905090a4600800000000000000
+      internalID: 453184629743269164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_41
+      name: Big Horn Sheet_141
       rect:
         serializedVersion: 2
         x: 625
@@ -1388,20 +3554,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3f4b75ee417db570800000000000000
-      internalID: 8484061856707333947
+      spriteID: aeb452391c793abf0800000000000000
+      internalID: -314240691332625430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_42
+      name: Big Horn Sheet_142
       rect:
         serializedVersion: 2
         x: 750
@@ -1409,20 +3575,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3225506d117b9f5e0800000000000000
-      internalID: -1875266482590100957
+      spriteID: 42896bd8b1a213940800000000000000
+      internalID: 5274042936457599012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_43
+      name: Big Horn Sheet_143
       rect:
         serializedVersion: 2
         x: 875
@@ -1430,20 +3596,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e99029c97876dd60800000000000000
-      internalID: 7914645859610958311
+      spriteID: 01da8744641f382a0800000000000000
+      internalID: -6736275333517366000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_44
+      name: Big Horn Sheet_144
       rect:
         serializedVersion: 2
         x: 1000
@@ -1451,20 +3617,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d2794d5e85a0f640800000000000000
-      internalID: 5111767607934546643
+      spriteID: 8b6c4c74c3a9e7df0800000000000000
+      internalID: -180537351355447624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_45
+      name: Big Horn Sheet_145
       rect:
         serializedVersion: 2
         x: 1125
@@ -1472,566 +3638,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f02980f6dfae3aba0800000000000000
-      internalID: -6078756697809579505
+      spriteID: 994828adeee2569b0800000000000000
+      internalID: -5087608600642026343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_46
-      rect:
-        serializedVersion: 2
-        x: 1250
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3955182cb6d982780800000000000000
-      internalID: -8707536793370536557
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_47
-      rect:
-        serializedVersion: 2
-        x: 1375
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ad60c86641a3ffe0800000000000000
-      internalID: -1156403355526861403
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_48
-      rect:
-        serializedVersion: 2
-        x: 1500
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 187ff8f91cda7c540800000000000000
-      internalID: 5028178556099753857
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_49
-      rect:
-        serializedVersion: 2
-        x: 1625
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27e356bea9b2b0560800000000000000
-      internalID: 7280961166948777586
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_50
-      rect:
-        serializedVersion: 2
-        x: 1750
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e66bf8874706b5330800000000000000
-      internalID: 3700657572170151534
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_51
-      rect:
-        serializedVersion: 2
-        x: 1875
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ffb52ac6a41534f90800000000000000
-      internalID: -6970638418147386369
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_52
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3a840daf2913fec0800000000000000
-      internalID: -3534453589998794179
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_53
-      rect:
-        serializedVersion: 2
-        x: 2125
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00b71bbb0ed625f90800000000000000
-      internalID: -6966384861599663360
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_54
-      rect:
-        serializedVersion: 2
-        x: 2250
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a6c69a2f297c6fd0800000000000000
-      internalID: -2347368062281922911
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_55
-      rect:
-        serializedVersion: 2
-        x: 2375
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a4dd8513c6560c800800000000000000
-      internalID: 630615463190650186
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_56
-      rect:
-        serializedVersion: 2
-        x: 2500
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9b9fe321eb19be9a0800000000000000
-      internalID: -6202703816236795463
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_57
-      rect:
-        serializedVersion: 2
-        x: 2625
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86ea37d4b9cbf6860800000000000000
-      internalID: 7525440877564767848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_58
-      rect:
-        serializedVersion: 2
-        x: 2750
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6fa45a55a870a92d0800000000000000
-      internalID: -3271293888607466762
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_59
-      rect:
-        serializedVersion: 2
-        x: 2875
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fad5c4a4d3bc5e390800000000000000
-      internalID: -7789596516367442513
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_60
-      rect:
-        serializedVersion: 2
-        x: 3000
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af7a2edfaf37610c0800000000000000
-      internalID: -4605366047101245446
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_61
-      rect:
-        serializedVersion: 2
-        x: 3125
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3cea05b9a7453b9b0800000000000000
-      internalID: -5065612270293176637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_62
-      rect:
-        serializedVersion: 2
-        x: 3250
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ace3f62e5448c580800000000000000
-      internalID: -8806713900151870295
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_63
-      rect:
-        serializedVersion: 2
-        x: 3375
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16655bfb478a0a330800000000000000
-      internalID: 3720158511594034785
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_64
-      rect:
-        serializedVersion: 2
-        x: 3500
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 305734851bea93080800000000000000
-      internalID: -9207135886469008125
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_65
-      rect:
-        serializedVersion: 2
-        x: 3625
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d312c91f1ce49cb20800000000000000
-      internalID: 3155139608838938941
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_66
-      rect:
-        serializedVersion: 2
-        x: 3750
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6f2c5573e8357ba0800000000000000
-      internalID: -6091900371371020437
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_67
-      rect:
-        serializedVersion: 2
-        x: 3875
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78e182ec07792a5d0800000000000000
-      internalID: -3052711086652907897
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_68
-      rect:
-        serializedVersion: 2
-        x: 4000
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d696eb9f99bb42cb0800000000000000
-      internalID: -4889577025423120019
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_69
-      rect:
-        serializedVersion: 2
-        x: 4125
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0f56a5688d4e6d00800000000000000
-      internalID: 967796218147528463
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_70
-      rect:
-        serializedVersion: 2
-        x: 4250
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3898ed983718da7c0800000000000000
-      internalID: -4058445355956663933
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_71
-      rect:
-        serializedVersion: 2
-        x: 4375
-        y: 150
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fcae2eb37d0aaeb90800000000000000
-      internalID: -7211775006997288241
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_72
+      name: Big Horn Sheet_146
       rect:
         serializedVersion: 2
         x: 0
@@ -2039,20 +3659,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44c3207c089165470800000000000000
-      internalID: 8382915797282077764
+      spriteID: c3da193b0a3ee7a30800000000000000
+      internalID: 4215056580612304188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_73
+      name: Big Horn Sheet_147
       rect:
         serializedVersion: 2
         x: 125
@@ -2060,20 +3680,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30820c0a59e89e4d0800000000000000
-      internalID: -3104793694797027325
+      spriteID: 651085b4352d96d80800000000000000
+      internalID: -8256837186618916522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_74
+      name: Big Horn Sheet_148
       rect:
         serializedVersion: 2
         x: 250
@@ -2081,20 +3701,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18d71b5960ec6d880800000000000000
-      internalID: -8586449111858709119
+      spriteID: 9e925fb52d40ab670800000000000000
+      internalID: 8555155743676115433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_75
+      name: Big Horn Sheet_149
       rect:
         serializedVersion: 2
         x: 375
@@ -2102,20 +3722,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc9b6019c2bc668b0800000000000000
-      internalID: -5159212930834187827
+      spriteID: b3d2cb5f09876cb70800000000000000
+      internalID: 8918948676047220027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_76
+      name: Big Horn Sheet_150
       rect:
         serializedVersion: 2
         x: 500
@@ -2123,20 +3743,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3443a3b82f4c3380800000000000000
-      internalID: -8990223719907244993
+      spriteID: 49c527212986b5d80800000000000000
+      internalID: -8260894114897044332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_77
+      name: Big Horn Sheet_151
       rect:
         serializedVersion: 2
         x: 625
@@ -2144,20 +3764,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c500384c00c67220800000000000000
-      internalID: 2483383403524654531
+      spriteID: b692870e57602a590800000000000000
+      internalID: -7664556512484251285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_78
+      name: Big Horn Sheet_152
       rect:
         serializedVersion: 2
         x: 750
@@ -2165,20 +3785,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ac52412b5f9ee190800000000000000
-      internalID: -7931226680004027228
+      spriteID: fb23bfa8403904880800000000000000
+      internalID: -8628735238320999745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_79
+      name: Big Horn Sheet_153
       rect:
         serializedVersion: 2
         x: 875
@@ -2186,20 +3806,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbb478e3acd0c0a70800000000000000
-      internalID: 8794419334631345087
+      spriteID: b9d14a1707a73bb50800000000000000
+      internalID: 6607759701644156315
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_80
+      name: Big Horn Sheet_154
       rect:
         serializedVersion: 2
         x: 1000
@@ -2207,20 +3827,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30674cbf290e6b5e0800000000000000
-      internalID: -1894079671368911357
+      spriteID: e6f5897fc9daf6fa0800000000000000
+      internalID: -5805230504976818322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_81
+      name: Big Horn Sheet_155
       rect:
         serializedVersion: 2
         x: 1125
@@ -2228,566 +3848,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad02f70d67e6dc860800000000000000
-      internalID: 7551813606753378522
+      spriteID: 3a1de1fc2d647d360800000000000000
+      internalID: 7194296800979636643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_82
-      rect:
-        serializedVersion: 2
-        x: 1250
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80f2ffddb8ee966a0800000000000000
-      internalID: -6455366306366542072
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_83
-      rect:
-        serializedVersion: 2
-        x: 1375
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e09e3100a74bf33f0800000000000000
-      internalID: -918817362879977202
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_84
-      rect:
-        serializedVersion: 2
-        x: 1500
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea7ac8dbdbeaa34a0800000000000000
-      internalID: -6612780972887988306
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_85
-      rect:
-        serializedVersion: 2
-        x: 1625
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b60c74f226c481e0800000000000000
-      internalID: -2196412864817002829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_86
-      rect:
-        serializedVersion: 2
-        x: 1750
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 711122c38ae2ef870800000000000000
-      internalID: 8718457228734107927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_87
-      rect:
-        serializedVersion: 2
-        x: 1875
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8718e390eeebf8330800000000000000
-      internalID: 3715398147170533752
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_88
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 518ae5aaaa7d85fe0800000000000000
-      internalID: -1199972172691494891
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_89
-      rect:
-        serializedVersion: 2
-        x: 2125
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e4864c1357786820800000000000000
-      internalID: 2911708357935400162
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_90
-      rect:
-        serializedVersion: 2
-        x: 2250
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f74cbd77220e9db0800000000000000
-      internalID: -4783383385584416783
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_91
-      rect:
-        serializedVersion: 2
-        x: 2375
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46378520f37d4a960800000000000000
-      internalID: 7612445935785243492
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_92
-      rect:
-        serializedVersion: 2
-        x: 2500
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92b77808f3187f570800000000000000
-      internalID: 8500404931424385833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_93
-      rect:
-        serializedVersion: 2
-        x: 2625
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1719098902bd5fe0800000000000000
-      internalID: -1198606171787159782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_94
-      rect:
-        serializedVersion: 2
-        x: 2750
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62f5b1a33e5f98220800000000000000
-      internalID: 2488790625380163366
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_95
-      rect:
-        serializedVersion: 2
-        x: 2875
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e9b393d0a5e53c550800000000000000
-      internalID: 6179886854544374686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_96
-      rect:
-        serializedVersion: 2
-        x: 3000
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac8f029af5a88bbe0800000000000000
-      internalID: -1461265935617689398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_97
-      rect:
-        serializedVersion: 2
-        x: 3125
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 245a4b16d409d11f0800000000000000
-      internalID: -1072542474218199742
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_98
-      rect:
-        serializedVersion: 2
-        x: 3250
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8269cb7a2863b7210800000000000000
-      internalID: 1331718049605916200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_99
-      rect:
-        serializedVersion: 2
-        x: 3375
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 49282b3f80eea9a80800000000000000
-      internalID: -8459187227846344044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_100
-      rect:
-        serializedVersion: 2
-        x: 3500
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84ab32992ec2c3cb0800000000000000
-      internalID: -4882978544232973752
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_101
-      rect:
-        serializedVersion: 2
-        x: 3625
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9953e1e9fb0d03260800000000000000
-      internalID: 7075384536009160089
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_102
-      rect:
-        serializedVersion: 2
-        x: 3750
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 719d03a1c846e6a80800000000000000
-      internalID: -8471723296139716329
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_103
-      rect:
-        serializedVersion: 2
-        x: 3875
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d54403519e32da40800000000000000
-      internalID: 5391440497799874002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_104
-      rect:
-        serializedVersion: 2
-        x: 4000
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28ffb025cd5234170800000000000000
-      internalID: 8161408577925021570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_105
-      rect:
-        serializedVersion: 2
-        x: 4125
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b27cc96efc3529bb0800000000000000
-      internalID: -4930786489624901845
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_106
-      rect:
-        serializedVersion: 2
-        x: 4250
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5885381670db9200800000000000000
-      internalID: 187973015096887387
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_107
-      rect:
-        serializedVersion: 2
-        x: 4375
-        y: 75
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f36a2bb94949c5760800000000000000
-      internalID: 7447991249752204863
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_108
+      name: Big Horn Sheet_156
       rect:
         serializedVersion: 2
         x: 0
@@ -2795,20 +3869,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b156599ea2f432080800000000000000
-      internalID: -9213433366943800037
+      spriteID: c007fc15ecd5d2120800000000000000
+      internalID: 2390670117920796684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_109
+      name: Big Horn Sheet_157
       rect:
         serializedVersion: 2
         x: 125
@@ -2816,20 +3890,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8055eb916fa21360800000000000000
-      internalID: 7138961193097842827
+      spriteID: e86b39f2d41cb6b40800000000000000
+      internalID: 5434649912607487630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_110
+      name: Big Horn Sheet_158
       rect:
         serializedVersion: 2
         x: 250
@@ -2837,20 +3911,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d47a77feaa8c69b90800000000000000
-      internalID: -7235375114836531379
+      spriteID: f0072edfb4e6404b0800000000000000
+      internalID: -5475129974314602481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_111
+      name: Big Horn Sheet_159
       rect:
         serializedVersion: 2
         x: 375
@@ -2858,20 +3932,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c65dec6c2e5646a30800000000000000
-      internalID: 4207599976543343980
+      spriteID: cfb7d27df31253600800000000000000
+      internalID: 447300296069970940
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_112
+      name: Big Horn Sheet_160
       rect:
         serializedVersion: 2
         x: 500
@@ -2879,20 +3953,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42c00bc9c0f614990800000000000000
-      internalID: -7403514212461310940
+      spriteID: 12ac6b7ea475643a0800000000000000
+      internalID: -6681557017930839519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_113
+      name: Big Horn Sheet_161
       rect:
         serializedVersion: 2
         x: 625
@@ -2900,20 +3974,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc9506161c2f91420800000000000000
-      internalID: 2601377172159486412
+      spriteID: d10230c623ffadfa0800000000000000
+      internalID: -5775022980123647971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_114
+      name: Big Horn Sheet_162
       rect:
         serializedVersion: 2
         x: 750
@@ -2921,20 +3995,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e29f403b172f0c9d0800000000000000
-      internalID: -2755936401802069714
+      spriteID: c505eeba11eddb120800000000000000
+      internalID: 2431343541330268252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_115
+      name: Big Horn Sheet_163
       rect:
         serializedVersion: 2
         x: 875
@@ -2942,20 +4016,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 772760754831c2330800000000000000
-      internalID: 3687343654026244727
+      spriteID: b7aae33a834d9cd20800000000000000
+      internalID: 3299401541747649147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_116
+      name: Big Horn Sheet_164
       rect:
         serializedVersion: 2
         x: 1000
@@ -2963,20 +4037,20 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f4b0e98c1515cf40800000000000000
-      internalID: 5748023711724778742
+      spriteID: ef1019fbd118608b0800000000000000
+      internalID: -5186315956102561282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Idle Sheet_117
+      name: Big Horn Sheet_165
       rect:
         serializedVersion: 2
         x: 1125
@@ -2984,560 +4058,14 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adc6300df4a612a20800000000000000
-      internalID: 3035824514849271002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_118
-      rect:
-        serializedVersion: 2
-        x: 1250
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ad269fac36837ca0800000000000000
-      internalID: -6020320681662206560
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_119
-      rect:
-        serializedVersion: 2
-        x: 1375
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04e1b85e324683db0800000000000000
-      internalID: -4811986096507642304
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_120
-      rect:
-        serializedVersion: 2
-        x: 1500
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1054668a80301b8d0800000000000000
-      internalID: -2832479354919435007
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_121
-      rect:
-        serializedVersion: 2
-        x: 1625
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81fcaf653189ce5b0800000000000000
-      internalID: -5337724249509802216
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_122
-      rect:
-        serializedVersion: 2
-        x: 1750
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6c196993a5c92170800000000000000
-      internalID: 8154265906775137386
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_123
-      rect:
-        serializedVersion: 2
-        x: 1875
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c3df8815d3fe9d00800000000000000
-      internalID: 981489865379009475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_124
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3078a297378f2930800000000000000
-      internalID: 4120660856820756542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_125
-      rect:
-        serializedVersion: 2
-        x: 2125
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8792639bbc2dfe3d0800000000000000
-      internalID: -3175087439845381768
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_126
-      rect:
-        serializedVersion: 2
-        x: 2250
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ff93289790320f60800000000000000
-      internalID: 7999009315814088694
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_127
-      rect:
-        serializedVersion: 2
-        x: 2375
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 384cfc8d724b08070800000000000000
-      internalID: 8106677412501111939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_128
-      rect:
-        serializedVersion: 2
-        x: 2500
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39bc68edd02540f60800000000000000
-      internalID: 7999609057638271891
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_129
-      rect:
-        serializedVersion: 2
-        x: 2625
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80e7c8108a7488970800000000000000
-      internalID: 8757328262327991816
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_130
-      rect:
-        serializedVersion: 2
-        x: 2750
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 941bf3fbc38f1c490800000000000000
-      internalID: -7727622545800711863
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_131
-      rect:
-        serializedVersion: 2
-        x: 2875
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e5b82e991e914cfe0800000000000000
-      internalID: -1169781546469389474
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_132
-      rect:
-        serializedVersion: 2
-        x: 3000
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b1dc5b1ea5c9e2c0800000000000000
-      internalID: -4401769809203899977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_133
-      rect:
-        serializedVersion: 2
-        x: 3125
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fef751ad0b4409a60800000000000000
-      internalID: 7678712891030470639
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_134
-      rect:
-        serializedVersion: 2
-        x: 3250
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f149bc31baf61ae0800000000000000
-      internalID: -1578798980211850768
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_135
-      rect:
-        serializedVersion: 2
-        x: 3375
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81e98456eda6d1e70800000000000000
-      internalID: 9087537126518070808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_136
-      rect:
-        serializedVersion: 2
-        x: 3500
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 47120603a34888bd0800000000000000
-      internalID: -2627704997116108428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_137
-      rect:
-        serializedVersion: 2
-        x: 3625
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ab16f247c40ef080800000000000000
-      internalID: -9151872138901840986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_138
-      rect:
-        serializedVersion: 2
-        x: 3750
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d466f6bf09af351f0800000000000000
-      internalID: -1057225986901318067
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_139
-      rect:
-        serializedVersion: 2
-        x: 3875
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5211d14b3db18a0d0800000000000000
-      internalID: -3411446121659297499
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_140
-      rect:
-        serializedVersion: 2
-        x: 4000
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67ecab5885c3d8b70800000000000000
-      internalID: 8902838389279739510
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_141
-      rect:
-        serializedVersion: 2
-        x: 4125
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 463203800e7a4bbc0800000000000000
-      internalID: -3768202407550377116
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_142
-      rect:
-        serializedVersion: 2
-        x: 4250
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8dff83cd92ebe350800000000000000
-      internalID: 6047176091893759373
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Big Idle Sheet_143
-      rect:
-        serializedVersion: 2
-        x: 4375
-        y: 0
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3697bd8f1f3442fc0800000000000000
-      internalID: -3520614302155572893
+      spriteID: 70f4e8a416321edc0800000000000000
+      internalID: -3611566525404786937
       vertices: []
       indices: 
       edges: []
@@ -3551,9 +4079,7 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {fileID: 2800000, guid: fc7550aaf4a81b04e9aa116935d0cb09, type: 3}
-      name: _Emission
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
