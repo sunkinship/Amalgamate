@@ -488,7 +488,7 @@ MonoBehaviour:
   - {x: -0.5534859, y: -1.2871497, z: 0}
   m_ShapePathHash: 228770605
   m_Mesh: {fileID: 0}
-  m_InstanceId: -101904
+  m_InstanceId: -1412
 --- !u!1 &951023340945304220
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,7 +621,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 883b36249d3fa1f4682984da5e85c942, type: 2}
+  - {fileID: 2100000, guid: b4d56978d7396af47b9b69bc4f061e41, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -642,7 +642,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -2622706684858653769, guid: bf846a3694d72de43aeaacca187693fc,
+  m_Sprite: {fileID: -8412613939609717473, guid: 0c63550310073d741a2c14a82b842048,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -681,6 +681,8 @@ MonoBehaviour:
   lastFacingDirection: RIGHT
   direction: {x: 0, y: 0, z: 0}
   rb2: {fileID: 951023341175528873}
+  carryingObject: 0
+  isFacingNPC: 0
 --- !u!58 &951023341175528874
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -864,6 +866,7 @@ MonoBehaviour:
   trustMeter: {fileID: 0}
   hornLamp: {fileID: 951023341713411166}
   maxBrightness: 1
+  render: {fileID: 951023341175528868}
 --- !u!114 &951023341175528877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1220,7 +1223,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 0.8584906, g: 0.7607843, b: 0.4509804, a: 1}
-  m_Intensity: 0
+  m_Intensity: 1
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 000000009f80681d33dc69e6
   m_LightCookieSprite: {fileID: 0}
@@ -1622,7 +1625,7 @@ MonoBehaviour:
   - {x: -0.27113056, y: -1.5775857, z: 0}
   m_ShapePathHash: 139732523
   m_Mesh: {fileID: 0}
-  m_InstanceId: -101908
+  m_InstanceId: -1424
 --- !u!60 &951023342635561723
 PolygonCollider2D:
   m_ObjectHideFlags: 0
