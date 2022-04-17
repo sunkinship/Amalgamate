@@ -57,6 +57,9 @@ public class PlayerManager : MonoBehaviour
             case "Vampires Shop":
                 lampOn = false;
                 break;
+            case "TestingScene":
+                lampOn = true;
+                break;
         }
         //spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibrary/Glow");
     }
