@@ -1,0 +1,4088 @@
+fileFormatVersion: 2
+guid: 0c63550310073d741a2c14a82b842048
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4832658897896028606
+    second: Big Idle&RunSheet_0
+  - first:
+      213: 3816958258441769429
+    second: Big Idle&RunSheet_1
+  - first:
+      213: 8909397099754712854
+    second: Big Idle&RunSheet_2
+  - first:
+      213: 4762878686079837593
+    second: Big Idle&RunSheet_3
+  - first:
+      213: -2993941330173317028
+    second: Big Idle&RunSheet_4
+  - first:
+      213: -1388182796718491023
+    second: Big Idle&RunSheet_5
+  - first:
+      213: -718360659447913725
+    second: Big Idle&RunSheet_6
+  - first:
+      213: -1142958235914252472
+    second: Big Idle&RunSheet_7
+  - first:
+      213: 5794271940184138603
+    second: Big Idle&RunSheet_8
+  - first:
+      213: 282460732155148137
+    second: Big Idle&RunSheet_9
+  - first:
+      213: 1447580475984205473
+    second: Big Idle&RunSheet_10
+  - first:
+      213: 5177167372152486728
+    second: Big Idle&RunSheet_11
+  - first:
+      213: 6802383736492433016
+    second: Big Idle&RunSheet_12
+  - first:
+      213: -1023888984109542301
+    second: Big Idle&RunSheet_13
+  - first:
+      213: -93389714171100222
+    second: Big Idle&RunSheet_14
+  - first:
+      213: 5303115295596886463
+    second: Big Idle&RunSheet_15
+  - first:
+      213: -556576022707363086
+    second: Big Idle&RunSheet_16
+  - first:
+      213: -3039458827500869165
+    second: Big Idle&RunSheet_17
+  - first:
+      213: -4269422791368221791
+    second: Big Idle&RunSheet_18
+  - first:
+      213: -4488137797249652300
+    second: Big Idle&RunSheet_19
+  - first:
+      213: -7990756188778237388
+    second: Big Idle&RunSheet_20
+  - first:
+      213: 4586334616178402010
+    second: Big Idle&RunSheet_21
+  - first:
+      213: 1922841257639172786
+    second: Big Idle&RunSheet_22
+  - first:
+      213: -8037391831692643109
+    second: Big Idle&RunSheet_23
+  - first:
+      213: 3518108841384328654
+    second: Big Idle&RunSheet_24
+  - first:
+      213: 6392849409160246447
+    second: Big Idle&RunSheet_25
+  - first:
+      213: -5829653000687909273
+    second: Big Idle&RunSheet_26
+  - first:
+      213: 2707761382047829733
+    second: Big Idle&RunSheet_27
+  - first:
+      213: 3528364894997517312
+    second: Big Idle&RunSheet_28
+  - first:
+      213: 5730052376392303571
+    second: Big Idle&RunSheet_29
+  - first:
+      213: 8915761103188085465
+    second: Big Idle&RunSheet_30
+  - first:
+      213: -2245188097857427442
+    second: Big Idle&RunSheet_31
+  - first:
+      213: -536662371751958919
+    second: Big Idle&RunSheet_32
+  - first:
+      213: -1327726066551621678
+    second: Big Idle&RunSheet_33
+  - first:
+      213: 5461424598283953331
+    second: Big Idle&RunSheet_34
+  - first:
+      213: 8929028735295736885
+    second: Big Idle&RunSheet_35
+  - first:
+      213: 7711361006363876144
+    second: Big Idle&RunSheet_36
+  - first:
+      213: -5131279885213513029
+    second: Big Idle&RunSheet_37
+  - first:
+      213: -8431283084248233976
+    second: Big Idle&RunSheet_38
+  - first:
+      213: 5000618247292051181
+    second: Big Idle&RunSheet_39
+  - first:
+      213: -3473845365270541918
+    second: Big Idle&RunSheet_40
+  - first:
+      213: 7238974796245145865
+    second: Big Idle&RunSheet_41
+  - first:
+      213: 6130833418780753303
+    second: Big Idle&RunSheet_42
+  - first:
+      213: -2200246250299100205
+    second: Big Idle&RunSheet_43
+  - first:
+      213: 2935406526236373890
+    second: Big Idle&RunSheet_44
+  - first:
+      213: 5172969712392616124
+    second: Big Idle&RunSheet_45
+  - first:
+      213: 2324298281578687556
+    second: Big Idle&RunSheet_46
+  - first:
+      213: -6624635696477489107
+    second: Big Idle&RunSheet_47
+  - first:
+      213: -669565409340675322
+    second: Big Idle&RunSheet_48
+  - first:
+      213: 7572548524126980077
+    second: Big Idle&RunSheet_49
+  - first:
+      213: -3314335536034638025
+    second: Big Idle&RunSheet_50
+  - first:
+      213: 234316171364868691
+    second: Big Idle&RunSheet_51
+  - first:
+      213: 2111088936757659834
+    second: Big Idle&RunSheet_52
+  - first:
+      213: 1394113762665580357
+    second: Big Idle&RunSheet_53
+  - first:
+      213: 7190177062777917613
+    second: Big Idle&RunSheet_54
+  - first:
+      213: -811184720124234289
+    second: Big Idle&RunSheet_55
+  - first:
+      213: 2567804814727852762
+    second: Big Idle&RunSheet_56
+  - first:
+      213: 4267401643830350574
+    second: Big Idle&RunSheet_57
+  - first:
+      213: -6180314795037424552
+    second: Big Idle&RunSheet_58
+  - first:
+      213: 7463177539035928367
+    second: Big Idle&RunSheet_59
+  - first:
+      213: -3830390615471726837
+    second: Big Idle&RunSheet_60
+  - first:
+      213: -8058531476209796703
+    second: Big Idle&RunSheet_61
+  - first:
+      213: 1501846766841707132
+    second: Big Idle&RunSheet_62
+  - first:
+      213: -7023631294716720893
+    second: Big Idle&RunSheet_63
+  - first:
+      213: 332431482642026022
+    second: Big Idle&RunSheet_64
+  - first:
+      213: 6029344289677003049
+    second: Big Idle&RunSheet_65
+  - first:
+      213: -7999525970757503671
+    second: Big Idle&RunSheet_66
+  - first:
+      213: -9145825205366549691
+    second: Big Idle&RunSheet_67
+  - first:
+      213: 6069071231473679446
+    second: Big Idle&RunSheet_68
+  - first:
+      213: 4504761476503179567
+    second: Big Idle&RunSheet_69
+  - first:
+      213: 5853676655868705680
+    second: Big Idle&RunSheet_70
+  - first:
+      213: -4458362080937521323
+    second: Big Idle&RunSheet_71
+  - first:
+      213: -352608527579104147
+    second: Big Idle&RunSheet_72
+  - first:
+      213: 973378445132555675
+    second: Big Idle&RunSheet_73
+  - first:
+      213: 4135970276029218440
+    second: Big Idle&RunSheet_74
+  - first:
+      213: -2680541912051797684
+    second: Big Idle&RunSheet_75
+  - first:
+      213: -5837191812692824492
+    second: Big Idle&RunSheet_76
+  - first:
+      213: -7039533160887043797
+    second: Big Idle&RunSheet_77
+  - first:
+      213: 5920033438179462559
+    second: Big Idle&RunSheet_78
+  - first:
+      213: -6198639628831559368
+    second: Big Idle&RunSheet_79
+  - first:
+      213: 1642703518898749641
+    second: Big Idle&RunSheet_80
+  - first:
+      213: -5385052660094333433
+    second: Big Idle&RunSheet_81
+  - first:
+      213: 6700015677424297138
+    second: Big Idle&RunSheet_82
+  - first:
+      213: 587877573470092553
+    second: Big Idle&RunSheet_83
+  - first:
+      213: 7883483913365787814
+    second: Big Idle&RunSheet_84
+  - first:
+      213: -5080857131876070553
+    second: Big Idle&RunSheet_85
+  - first:
+      213: 7403176660506255707
+    second: Big Idle&RunSheet_86
+  - first:
+      213: 615576804891523198
+    second: Big Idle&RunSheet_87
+  - first:
+      213: 2233398781100131040
+    second: Big Idle&RunSheet_88
+  - first:
+      213: 7485919907009426693
+    second: Big Idle&RunSheet_89
+  - first:
+      213: 8606183234321187245
+    second: Big Idle&RunSheet_90
+  - first:
+      213: 1178234625470497401
+    second: Big Idle&RunSheet_91
+  - first:
+      213: 4238203795034903709
+    second: Big Idle&RunSheet_92
+  - first:
+      213: -1824191696630131318
+    second: Big Idle&RunSheet_93
+  - first:
+      213: -1187007108739546286
+    second: Big Idle&RunSheet_94
+  - first:
+      213: 2168464606695266732
+    second: Big Idle&RunSheet_95
+  - first:
+      213: 2055213253882422465
+    second: Big Idle&RunSheet_96
+  - first:
+      213: 2715885611876610410
+    second: Big Idle&RunSheet_97
+  - first:
+      213: -5080265850313462625
+    second: Big Idle&RunSheet_98
+  - first:
+      213: 1038656466773716603
+    second: Big Idle&RunSheet_99
+  - first:
+      213: -2197597344796747011
+    second: Big Idle&RunSheet_100
+  - first:
+      213: -1075694243021260914
+    second: Big Idle&RunSheet_101
+  - first:
+      213: 1948580696313176929
+    second: Big Idle&RunSheet_102
+  - first:
+      213: 955139361961795288
+    second: Big Idle&RunSheet_103
+  - first:
+      213: -6191648695550285584
+    second: Big Idle&RunSheet_104
+  - first:
+      213: 8824213640395264189
+    second: Big Idle&RunSheet_105
+  - first:
+      213: 651316350846157296
+    second: Big Idle&RunSheet_106
+  - first:
+      213: -6607652912320871620
+    second: Big Idle&RunSheet_107
+  - first:
+      213: -3080621667793915135
+    second: Big Idle&RunSheet_108
+  - first:
+      213: 1668437297959680430
+    second: Big Idle&RunSheet_109
+  - first:
+      213: -5689726296382566840
+    second: Big Idle&RunSheet_110
+  - first:
+      213: 8966579296546186770
+    second: Big Idle&RunSheet_111
+  - first:
+      213: -314418838944239571
+    second: Big Idle&RunSheet_112
+  - first:
+      213: -8404555561385703100
+    second: Big Idle&RunSheet_113
+  - first:
+      213: 3687692462738649463
+    second: Big Idle&RunSheet_114
+  - first:
+      213: 2629334350078928539
+    second: Big Idle&RunSheet_115
+  - first:
+      213: 7518847402454041873
+    second: Big Idle&RunSheet_116
+  - first:
+      213: 590955014069069579
+    second: Big Idle&RunSheet_117
+  - first:
+      213: -692444882534900748
+    second: Big Idle&RunSheet_118
+  - first:
+      213: 4768386791061368469
+    second: Big Idle&RunSheet_119
+  - first:
+      213: 4695404511651275588
+    second: Big Idle&RunSheet_120
+  - first:
+      213: 1754395686734356747
+    second: Big Idle&RunSheet_121
+  - first:
+      213: -2917761569324344806
+    second: Big Idle&RunSheet_122
+  - first:
+      213: -8774720759771182099
+    second: Big Idle&RunSheet_123
+  - first:
+      213: 132745085249543997
+    second: Big Idle&RunSheet_124
+  - first:
+      213: -2876109556881222263
+    second: Big Idle&RunSheet_125
+  - first:
+      213: 1390775970550187367
+    second: Big Idle&RunSheet_126
+  - first:
+      213: -82880493074371424
+    second: Big Idle&RunSheet_127
+  - first:
+      213: -510128948015676898
+    second: Big Idle&RunSheet_128
+  - first:
+      213: -7973839067378971108
+    second: Big Idle&RunSheet_129
+  - first:
+      213: -2159903289692375102
+    second: Big Idle&RunSheet_130
+  - first:
+      213: -6956047793936774815
+    second: Big Idle&RunSheet_131
+  - first:
+      213: 8228106645725264113
+    second: Big Idle&RunSheet_132
+  - first:
+      213: 3092413170820236210
+    second: Big Idle&RunSheet_133
+  - first:
+      213: 2134577162708266894
+    second: Big Idle&RunSheet_134
+  - first:
+      213: -4616077631282434297
+    second: Big Idle&RunSheet_135
+  - first:
+      213: -3616893384963528164
+    second: Big Idle&RunSheet_136
+  - first:
+      213: 1703130668506316109
+    second: Big Idle&RunSheet_137
+  - first:
+      213: 1490734538735277423
+    second: Big Idle&RunSheet_138
+  - first:
+      213: 3365717818832979426
+    second: Big Idle&RunSheet_139
+  - first:
+      213: -42417437787319283
+    second: Big Idle&RunSheet_140
+  - first:
+      213: -4524337461133803644
+    second: Big Idle&RunSheet_141
+  - first:
+      213: -1454853353558522669
+    second: Big Idle&RunSheet_142
+  - first:
+      213: 2589362312293799182
+    second: Big Idle&RunSheet_143
+  - first:
+      213: -5968756937698442809
+    second: Big Idle&RunSheet_144
+  - first:
+      213: 263942696985936962
+    second: Big Idle&RunSheet_145
+  - first:
+      213: -3743295833268929975
+    second: Big Idle&RunSheet_146
+  - first:
+      213: 5488021244685201300
+    second: Big Idle&RunSheet_147
+  - first:
+      213: 7982883001599910822
+    second: Big Idle&RunSheet_148
+  - first:
+      213: 3663449100562775025
+    second: Big Idle&RunSheet_149
+  - first:
+      213: -7127922178853912935
+    second: Big Idle&RunSheet_150
+  - first:
+      213: -8877201425540893618
+    second: Big Idle&RunSheet_151
+  - first:
+      213: -8521410211002692991
+    second: Big Idle&RunSheet_152
+  - first:
+      213: 4460912388894814014
+    second: Big Idle&RunSheet_153
+  - first:
+      213: -671697955213143867
+    second: Big Idle&RunSheet_154
+  - first:
+      213: 5074904941806803401
+    second: Big Idle&RunSheet_155
+  - first:
+      213: -8412613939609717473
+    second: Big Idle&RunSheet_156
+  - first:
+      213: 481350232336432948
+    second: Big Idle&RunSheet_157
+  - first:
+      213: 8952014834629872893
+    second: Big Idle&RunSheet_158
+  - first:
+      213: -1678351722601340572
+    second: Big Idle&RunSheet_159
+  - first:
+      213: -19869015685996819
+    second: Big Idle&RunSheet_160
+  - first:
+      213: -8496880234104354572
+    second: Big Idle&RunSheet_161
+  - first:
+      213: 5782423138598540814
+    second: Big Idle&RunSheet_162
+  - first:
+      213: -7179375724018036904
+    second: Big Idle&RunSheet_163
+  - first:
+      213: 8111011157709090825
+    second: Big Idle&RunSheet_164
+  - first:
+      213: -2623205276647475686
+    second: Big Idle&RunSheet_165
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246c64e3652feecb0800000000000000
+      internalID: -4832658897896028606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d15aec105f88f430800000000000000
+      internalID: 3816958258441769429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_2
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f66cd457984ab70800000000000000
+      internalID: 8909397099754712854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_3
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99561102ee4291240800000000000000
+      internalID: 4762878686079837593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_4
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50b8a809326376d0800000000000000
+      internalID: -2993941330173317028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_5
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a394ee91f2cbce0800000000000000
+      internalID: -1388182796718491023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_6
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303edf849ced706f0800000000000000
+      internalID: -718360659447913725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_7
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f49334a856320f0800000000000000
+      internalID: -1142958235914252472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6360b651a3696050800000000000000
+      internalID: 5794271940184138603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967ba131a808be300800000000000000
+      internalID: 282460732155148137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a654d6f5c6d61410800000000000000
+      internalID: 1447580475984205473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b34ef8b4ef8d740800000000000000
+      internalID: 5177167372152486728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e968fb7fbe66e50800000000000000
+      internalID: 6802383736492433016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_13
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36417bcc46a6ac1f0800000000000000
+      internalID: -1023888984109542301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3082dbc8634bef0800000000000000
+      internalID: -93389714171100222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb93ef4a343789940800000000000000
+      internalID: 5303115295596886463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_16
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f227046e05a648f0800000000000000
+      internalID: -556576022707363086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_17
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9a265dc4ca1d5d0800000000000000
+      internalID: -3039458827500869165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_18
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab5a847796ffb4c0800000000000000
+      internalID: -4269422791368221791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_19
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b92eebd37ee6b1c0800000000000000
+      internalID: -4488137797249652300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_20
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4327e1945912b1190800000000000000
+      internalID: -7990756188778237388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_21
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad22462b80fe5af30800000000000000
+      internalID: 4586334616178402010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_22
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba5c09afed4faa10800000000000000
+      internalID: 1922841257639172786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_23
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4755786b2757090800000000000000
+      internalID: -8037391831692643109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_24
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecdbfdbf955d2d030800000000000000
+      internalID: 3518108841384328654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_25
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4ff87baa6f7b850800000000000000
+      internalID: 6392849409160246447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_26
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76605329b79e81fa0800000000000000
+      internalID: -5829653000687909273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_27
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee4b7171a6e39520800000000000000
+      internalID: 2707761382047829733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_28
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004194c8d2547f030800000000000000
+      internalID: 3528364894997517312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_29
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d30f37f64c358f40800000000000000
+      internalID: 5730052376392303571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_30
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da45c15c752bbb70800000000000000
+      internalID: 8915761103188085465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_31
+      rect:
+        serializedVersion: 2
+        x: 3875
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08e54d025d77d0e0800000000000000
+      internalID: -2245188097857427442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_32
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976e76f8a646d88f0800000000000000
+      internalID: -536662371751958919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_33
+      rect:
+        serializedVersion: 2
+        x: 4125
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7f9245d28f29de0800000000000000
+      internalID: -1327726066551621678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_34
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4ab4c7cb0eacb40800000000000000
+      internalID: 5461424598283953331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_35
+      rect:
+        serializedVersion: 2
+        x: 4375
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53cce84a3584aeb70800000000000000
+      internalID: 8929028735295736885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b1e1f8af1440b60800000000000000
+      internalID: 7711361006363876144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_37
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbacdbe81280ac8b0800000000000000
+      internalID: -5131279885213513029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_38
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808cf9aa4b01efa80800000000000000
+      internalID: -8431283084248233976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_39
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deedd2f2dc3c56540800000000000000
+      internalID: 5000618247292051181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_40
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a98966ab0c6acfc0800000000000000
+      internalID: -3473845365270541918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_41
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90992343931067460800000000000000
+      internalID: 7238974796245145865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_42
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d35870388151550800000000000000
+      internalID: 6130833418780753303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_43
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d3798851b72771e0800000000000000
+      internalID: -2200246250299100205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_44
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283bea3eea8acb820800000000000000
+      internalID: 2935406526236373890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_45
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8340dbb841ac740800000000000000
+      internalID: 5172969712392616124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_46
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c6c81f8f0914020800000000000000
+      internalID: 2324298281578687556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_47
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d283611dee09014a0800000000000000
+      internalID: -6624635696477489107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_48
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b2c56cec935b6f0800000000000000
+      internalID: -669565409340675322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_49
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de74ff8f2c8171960800000000000000
+      internalID: 7572548524126980077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_50
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737933cd36d1102d0800000000000000
+      internalID: -3314335536034638025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_51
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352255ff055704300800000000000000
+      internalID: 234316171364868691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_52
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab882b4f3381c4d10800000000000000
+      internalID: 2111088936757659834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_53
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5474a20b413e85310800000000000000
+      internalID: 1394113762665580357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_54
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da01a0381f3a8c360800000000000000
+      internalID: 7190177062777917613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_55
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc535cd7bc71eb4f0800000000000000
+      internalID: -811184720124234289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_56
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2346acfdca2a320800000000000000
+      internalID: 2567804814727852762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_57
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee21d667f2bd83b30800000000000000
+      internalID: 4267401643830350574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_58
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85404b9407c1b3aa0800000000000000
+      internalID: -6180314795037424552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_59
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2719ed1e68829760800000000000000
+      internalID: 7463177539035928367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_60
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f51dd8708b7dac0800000000000000
+      internalID: -3830390615471726837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_61
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9f53d71585a2090800000000000000
+      internalID: -8058531476209796703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_62
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a3ba46da1a7d410800000000000000
+      internalID: 1501846766841707132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_63
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309c71ddc8c078e90800000000000000
+      internalID: -7023631294716720893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_64
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ec8031ca80d9400800000000000000
+      internalID: 332431482642026022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_65
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9294ab6cfa88ca350800000000000000
+      internalID: 6029344289677003049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_66
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945bc7d4389fbf090800000000000000
+      internalID: -7999525970757503671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_67
+      rect:
+        serializedVersion: 2
+        x: 3875
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5431050be60831180800000000000000
+      internalID: -9145825205366549691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_68
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65cf784312ca93450800000000000000
+      internalID: 6069071231473679446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_69
+      rect:
+        serializedVersion: 2
+        x: 4125
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2116d412b0248e30800000000000000
+      internalID: 4504761476503179567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_70
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09bfc0787ef6c3150800000000000000
+      internalID: 5853676655868705680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_71
+      rect:
+        serializedVersion: 2
+        x: 4375
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55fc5ad0f47b022c0800000000000000
+      internalID: -4458362080937521323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6cbfd099684b1bf0800000000000000
+      internalID: -352608527579104147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_73
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95e526e982228d00800000000000000
+      internalID: 973378445132555675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_74
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ebb408d0be56930800000000000000
+      internalID: 4135970276029218440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_75
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c413b96455dcccad0800000000000000
+      internalID: -2680541912051797684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_76
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e20ae19f02efea0800000000000000
+      internalID: -5837191812692824492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_77
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29beb023ed8e4e90800000000000000
+      internalID: -7039533160887043797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_78
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d0f1ddb0f282250800000000000000
+      internalID: 5920033438179462559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_79
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831f5d079120af9a0800000000000000
+      internalID: -6198639628831559368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_80
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c08e33a52e0cc610800000000000000
+      internalID: 1642703518898749641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_81
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e0e4a03237445b0800000000000000
+      internalID: -5385052660094333433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_82
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b46c6aa2cc3bfc50800000000000000
+      internalID: 6700015677424297138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_83
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d7a12d98f882800800000000000000
+      internalID: 587877573470092553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_84
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a49ca8c9d2c76d60800000000000000
+      internalID: 7883483913365787814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_85
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b440cab5b2d79b0800000000000000
+      internalID: -5080857131876070553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_86
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5120f2f2fd5db660800000000000000
+      internalID: 7403176660506255707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_87
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e787783b7d7fa8800800000000000000
+      internalID: 615576804891523198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_88
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2834dbb50aefe10800000000000000
+      internalID: 2233398781100131040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_89
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505725a4e7453e760800000000000000
+      internalID: 7485919907009426693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_90
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da103a9dd0e4f6770800000000000000
+      internalID: 8606183234321187245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_91
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9720c39362ee95010800000000000000
+      internalID: 1178234625470497401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_92
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9494c885ef11da30800000000000000
+      internalID: 4238203795034903709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_93
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85d420215b2fa6e0800000000000000
+      internalID: -1824191696630131318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_94
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25347b9d257e68fe0800000000000000
+      internalID: -1187007108739546286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_95
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9141e121fe71e10800000000000000
+      internalID: 2168464606695266732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_96
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4265fb095958c10800000000000000
+      internalID: 2055213253882422465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_97
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61ff7a1393c0b520800000000000000
+      internalID: 2715885611876610410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_98
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ca48320254f79b0800000000000000
+      internalID: -5080265850313462625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_99
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ea5b1bd8c0a6e00800000000000000
+      internalID: 1038656466773716603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_100
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa5c08bbd09081e0800000000000000
+      internalID: -2197597344796747011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_101
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87f8c509cd5211f0800000000000000
+      internalID: -1075694243021260914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_102
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1632eebb1dfba0b10800000000000000
+      internalID: 1948580696313176929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_103
+      rect:
+        serializedVersion: 2
+        x: 3875
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ded9bc6036514d00800000000000000
+      internalID: 955139361961795288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_104
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8e6bfe058d21aa0800000000000000
+      internalID: -6191648695550285584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_105
+      rect:
+        serializedVersion: 2
+        x: 4125
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db09ae1ad87e57a70800000000000000
+      internalID: 8824213640395264189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_106
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1c69035c0f90900800000000000000
+      internalID: 651316350846157296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_107
+      rect:
+        serializedVersion: 2
+        x: 4375
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c330a026fa6ec44a0800000000000000
+      internalID: -6607652912320871620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103b5cb3aee6f35d0800000000000000
+      internalID: -3080621667793915135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_109
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea936eaf1ea772710800000000000000
+      internalID: 1668437297959680430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_110
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e0be234180a01b0800000000000000
+      internalID: -5689726296382566840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_111
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216e10dfc50bf6c70800000000000000
+      internalID: 8966579296546186770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_112
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d20b90a5bb5f2abf0800000000000000
+      internalID: -314418838944239571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_113
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44942940f350d5b80800000000000000
+      internalID: -8404555561385703100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_114
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7713c62b1c05d2330800000000000000
+      internalID: 3687692462738649463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_115
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96ef2c19a54d7420800000000000000
+      internalID: 2629334350078928539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_116
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11544af30ef485860800000000000000
+      internalID: 7518847402454041873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_117
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07a2db447e733800800000000000000
+      internalID: 590955014069069579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_118
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb58fd4c01f366f0800000000000000
+      internalID: -692444882534900748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_119
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ea0e0c586bc2240800000000000000
+      internalID: 4768386791061368469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_120
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443adb9a68d692140800000000000000
+      internalID: 4695404511651275588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_121
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b016747f49dd85810800000000000000
+      internalID: 1754395686734356747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_122
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ad229cf470287d0800000000000000
+      internalID: -2917761569324344806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_123
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: debc79e95fde93680800000000000000
+      internalID: -8774720759771182099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_124
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f5af3a3fa97d100800000000000000
+      internalID: 132745085249543997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_125
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9851df6a8910618d0800000000000000
+      internalID: -2876109556881222263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7650bc660670d4310800000000000000
+      internalID: 1390775970550187367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_127
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac2e7371ac89def0800000000000000
+      internalID: -82880493074371424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_128
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12c1efac68abe8f0800000000000000
+      internalID: -510128948015676898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_129
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e8ebc8d9b375190800000000000000
+      internalID: -7973839067378971108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_130
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c730b4d66b7602e0800000000000000
+      internalID: -2159903289692375102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_131
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16942c9d267277f90800000000000000
+      internalID: -6956047793936774815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_132
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f83c70666b103270800000000000000
+      internalID: 8228106645725264113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_133
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3ca7105657aea20800000000000000
+      internalID: 3092413170820236210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_134
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f23e8be9a8f9d10800000000000000
+      internalID: 2134577162708266894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_135
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70fa8c3f9d560ffb0800000000000000
+      internalID: -4616077631282434297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_136
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ae9c621a63ecdc0800000000000000
+      internalID: -3616893384963528164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_137
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d7466c15cb2a710800000000000000
+      internalID: 1703130668506316109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_138
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f65d8bb2a2720b410800000000000000
+      internalID: 1490734538735277423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_139
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e50ebd168e65be20800000000000000
+      internalID: 3365717818832979426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_140
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d049768a09d496ff0800000000000000
+      internalID: -42417437787319283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_141
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f7021dc035631c0800000000000000
+      internalID: -4524337461133803644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_142
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4cbd445925fcbe0800000000000000
+      internalID: -1454853353558522669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_143
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e055e03dd434fe320800000000000000
+      internalID: 2589362312293799182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_144
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c106d16037ba2da0800000000000000
+      internalID: -5968756937698442809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_145
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244c7e60c76b9a300800000000000000
+      internalID: 263942696985936962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_146
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a3ec0c5442d0cc0800000000000000
+      internalID: -3743295833268929975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_147
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f2249ce3e592c40800000000000000
+      internalID: 5488021244685201300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_148
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3edd97bc5e8ce60800000000000000
+      internalID: 7982883001599910822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_149
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbb4c31c8f27d230800000000000000
+      internalID: 3663449100562775025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_150
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99eb8ce2b88841d90800000000000000
+      internalID: -7127922178853912935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_151
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e443b0f3658ddc480800000000000000
+      internalID: -8877201425540893618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_152
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a4ccbbf8eddb980800000000000000
+      internalID: -8521410211002692991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_153
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3fe63ace2858ed30800000000000000
+      internalID: 4460912388894814014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_154
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c01a2fb446ada6f0800000000000000
+      internalID: -671697955213143867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_155
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9d445182fad6640800000000000000
+      internalID: 5074904941806803401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_156
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f153011a134604b80800000000000000
+      internalID: -8412613939609717473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_157
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ff6fa6c791ea600800000000000000
+      internalID: 481350232336432948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_158
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc0422ff02fb3c70800000000000000
+      internalID: 8952014834629872893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_159
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461ae26200c45b8e0800000000000000
+      internalID: -1678351722601340572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_160
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deedff94c3969bff0800000000000000
+      internalID: -19869015685996819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_161
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f80c2b0274051a80800000000000000
+      internalID: -8496880234104354572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_162
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e065a2d353b4f3050800000000000000
+      internalID: 5782423138598540814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_163
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f87d421dbbd5c90800000000000000
+      internalID: -7179375724018036904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_164
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900fa788ca9109070800000000000000
+      internalID: 8111011157709090825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Idle&RunSheet_165
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a163f7003b0889bd0800000000000000
+      internalID: -2623205276647475686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

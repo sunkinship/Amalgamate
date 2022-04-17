@@ -1,0 +1,4088 @@
+fileFormatVersion: 2
+guid: 041d8e9952a354a4183e74e556b8dbb0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4762598520217398251
+    second: Big Horn Sheet 1_0
+  - first:
+      213: -7680918014458327819
+    second: Big Horn Sheet 1_1
+  - first:
+      213: -952840099916556770
+    second: Big Horn Sheet 1_2
+  - first:
+      213: 1951526035742590258
+    second: Big Horn Sheet 1_3
+  - first:
+      213: 7118882175929483337
+    second: Big Horn Sheet 1_4
+  - first:
+      213: 4015580338337818298
+    second: Big Horn Sheet 1_5
+  - first:
+      213: -3062999814763210724
+    second: Big Horn Sheet 1_6
+  - first:
+      213: -6019985070795324205
+    second: Big Horn Sheet 1_7
+  - first:
+      213: 8323066661986931014
+    second: Big Horn Sheet 1_8
+  - first:
+      213: 3991013741146207754
+    second: Big Horn Sheet 1_9
+  - first:
+      213: 9013038843528182971
+    second: Big Horn Sheet 1_10
+  - first:
+      213: 6732763194391438144
+    second: Big Horn Sheet 1_11
+  - first:
+      213: 7788748382343373831
+    second: Big Horn Sheet 1_12
+  - first:
+      213: -277397483999681701
+    second: Big Horn Sheet 1_13
+  - first:
+      213: 2001951465685294603
+    second: Big Horn Sheet 1_14
+  - first:
+      213: 2726507139601468233
+    second: Big Horn Sheet 1_15
+  - first:
+      213: 8123948396596445190
+    second: Big Horn Sheet 1_16
+  - first:
+      213: -2801610164137993508
+    second: Big Horn Sheet 1_17
+  - first:
+      213: 1854927209845750815
+    second: Big Horn Sheet 1_18
+  - first:
+      213: -7149799985225705951
+    second: Big Horn Sheet 1_19
+  - first:
+      213: 204422771804892921
+    second: Big Horn Sheet 1_20
+  - first:
+      213: -3089639494393416240
+    second: Big Horn Sheet 1_21
+  - first:
+      213: 4048105841954132181
+    second: Big Horn Sheet 1_22
+  - first:
+      213: 7002852926609682705
+    second: Big Horn Sheet 1_23
+  - first:
+      213: -8264004105680750739
+    second: Big Horn Sheet 1_24
+  - first:
+      213: 4326782378624016871
+    second: Big Horn Sheet 1_25
+  - first:
+      213: -5369139600176922547
+    second: Big Horn Sheet 1_26
+  - first:
+      213: 3976923527785260772
+    second: Big Horn Sheet 1_27
+  - first:
+      213: -5750576544707412679
+    second: Big Horn Sheet 1_28
+  - first:
+      213: 5448806959509288039
+    second: Big Horn Sheet 1_29
+  - first:
+      213: 1982578241698757708
+    second: Big Horn Sheet 1_30
+  - first:
+      213: 2598106402917999635
+    second: Big Horn Sheet 1_31
+  - first:
+      213: 6103820072877669096
+    second: Big Horn Sheet 1_32
+  - first:
+      213: 7146186060055943313
+    second: Big Horn Sheet 1_33
+  - first:
+      213: -6576799681840985627
+    second: Big Horn Sheet 1_34
+  - first:
+      213: -3940039126704551778
+    second: Big Horn Sheet 1_35
+  - first:
+      213: 8073112142693979781
+    second: Big Horn Sheet 1_36
+  - first:
+      213: 6914276362025266657
+    second: Big Horn Sheet 1_37
+  - first:
+      213: -3968541469696391836
+    second: Big Horn Sheet 1_38
+  - first:
+      213: 2183423255547602637
+    second: Big Horn Sheet 1_39
+  - first:
+      213: 4963064657715915706
+    second: Big Horn Sheet 1_40
+  - first:
+      213: 4809554967814427235
+    second: Big Horn Sheet 1_41
+  - first:
+      213: 3995287792853506108
+    second: Big Horn Sheet 1_42
+  - first:
+      213: 6251550679772831768
+    second: Big Horn Sheet 1_43
+  - first:
+      213: 1918100277522850641
+    second: Big Horn Sheet 1_44
+  - first:
+      213: -1765306511553688600
+    second: Big Horn Sheet 1_45
+  - first:
+      213: 2668671092429269652
+    second: Big Horn Sheet 1_46
+  - first:
+      213: -5707983145147774392
+    second: Big Horn Sheet 1_47
+  - first:
+      213: -5130212009725996309
+    second: Big Horn Sheet 1_48
+  - first:
+      213: 4108184436821622389
+    second: Big Horn Sheet 1_49
+  - first:
+      213: -2504227844098700021
+    second: Big Horn Sheet 1_50
+  - first:
+      213: 3147599515747072904
+    second: Big Horn Sheet 1_51
+  - first:
+      213: 6200703529536384265
+    second: Big Horn Sheet 1_52
+  - first:
+      213: 1272200562475892675
+    second: Big Horn Sheet 1_53
+  - first:
+      213: -111004547434788406
+    second: Big Horn Sheet 1_54
+  - first:
+      213: -7902996314713227456
+    second: Big Horn Sheet 1_55
+  - first:
+      213: -617058772051373930
+    second: Big Horn Sheet 1_56
+  - first:
+      213: -6222119420117713420
+    second: Big Horn Sheet 1_57
+  - first:
+      213: -8285674218089622120
+    second: Big Horn Sheet 1_58
+  - first:
+      213: 4688512837063472186
+    second: Big Horn Sheet 1_59
+  - first:
+      213: -1845078811636279881
+    second: Big Horn Sheet 1_60
+  - first:
+      213: -5608002078050139954
+    second: Big Horn Sheet 1_61
+  - first:
+      213: 7879150309332069213
+    second: Big Horn Sheet 1_62
+  - first:
+      213: -2548269984072525182
+    second: Big Horn Sheet 1_63
+  - first:
+      213: -850367931018349971
+    second: Big Horn Sheet 1_64
+  - first:
+      213: -8851724540545593747
+    second: Big Horn Sheet 1_65
+  - first:
+      213: -1059464157838802712
+    second: Big Horn Sheet 1_66
+  - first:
+      213: 1418525637690994485
+    second: Big Horn Sheet 1_67
+  - first:
+      213: 7810327277362845547
+    second: Big Horn Sheet 1_68
+  - first:
+      213: 171770378622888685
+    second: Big Horn Sheet 1_69
+  - first:
+      213: -8719659415646998913
+    second: Big Horn Sheet 1_70
+  - first:
+      213: 2864049369467656436
+    second: Big Horn Sheet 1_71
+  - first:
+      213: 5293343745064242773
+    second: Big Horn Sheet 1_72
+  - first:
+      213: 3800611741364893266
+    second: Big Horn Sheet 1_73
+  - first:
+      213: 4676983102614041232
+    second: Big Horn Sheet 1_74
+  - first:
+      213: 3790998974261667707
+    second: Big Horn Sheet 1_75
+  - first:
+      213: 1482646576820626663
+    second: Big Horn Sheet 1_76
+  - first:
+      213: 115435939447545925
+    second: Big Horn Sheet 1_77
+  - first:
+      213: 4417139701344400402
+    second: Big Horn Sheet 1_78
+  - first:
+      213: 3358887269031358772
+    second: Big Horn Sheet 1_79
+  - first:
+      213: -853663489919760557
+    second: Big Horn Sheet 1_80
+  - first:
+      213: 7155303331798925847
+    second: Big Horn Sheet 1_81
+  - first:
+      213: 2661576543569720883
+    second: Big Horn Sheet 1_82
+  - first:
+      213: -181164218030393820
+    second: Big Horn Sheet 1_83
+  - first:
+      213: -6150545581537195594
+    second: Big Horn Sheet 1_84
+  - first:
+      213: -7644670241212317516
+    second: Big Horn Sheet 1_85
+  - first:
+      213: 179724408789598492
+    second: Big Horn Sheet 1_86
+  - first:
+      213: -3775153952155269971
+    second: Big Horn Sheet 1_87
+  - first:
+      213: -3330849642857861909
+    second: Big Horn Sheet 1_88
+  - first:
+      213: -2157275001753088325
+    second: Big Horn Sheet 1_89
+  - first:
+      213: 310436530510952952
+    second: Big Horn Sheet 1_90
+  - first:
+      213: -1055962271340423110
+    second: Big Horn Sheet 1_91
+  - first:
+      213: -2903896860487103926
+    second: Big Horn Sheet 1_92
+  - first:
+      213: -2567723922995879357
+    second: Big Horn Sheet 1_93
+  - first:
+      213: 5106911401244062254
+    second: Big Horn Sheet 1_94
+  - first:
+      213: 8308983506113241590
+    second: Big Horn Sheet 1_95
+  - first:
+      213: 2853877525191939804
+    second: Big Horn Sheet 1_96
+  - first:
+      213: 6461489653591793625
+    second: Big Horn Sheet 1_97
+  - first:
+      213: 5916977870589416782
+    second: Big Horn Sheet 1_98
+  - first:
+      213: -126779716018189864
+    second: Big Horn Sheet 1_99
+  - first:
+      213: -8177643964628298597
+    second: Big Horn Sheet 1_100
+  - first:
+      213: -2741243161559785281
+    second: Big Horn Sheet 1_101
+  - first:
+      213: -6991101488190451430
+    second: Big Horn Sheet 1_102
+  - first:
+      213: -3349012450844377197
+    second: Big Horn Sheet 1_103
+  - first:
+      213: 1397171190482363374
+    second: Big Horn Sheet 1_104
+  - first:
+      213: 2263174673318891662
+    second: Big Horn Sheet 1_105
+  - first:
+      213: -3362764134558505107
+    second: Big Horn Sheet 1_106
+  - first:
+      213: -5792008188820482790
+    second: Big Horn Sheet 1_107
+  - first:
+      213: -7972011143711438949
+    second: Big Horn Sheet 1_108
+  - first:
+      213: 5884552899040323993
+    second: Big Horn Sheet 1_109
+  - first:
+      213: 4174354676146837910
+    second: Big Horn Sheet 1_110
+  - first:
+      213: 7058041225243409633
+    second: Big Horn Sheet 1_111
+  - first:
+      213: 4464712929223953836
+    second: Big Horn Sheet 1_112
+  - first:
+      213: -4796834133797869722
+    second: Big Horn Sheet 1_113
+  - first:
+      213: -5930803892738144485
+    second: Big Horn Sheet 1_114
+  - first:
+      213: -6290545508834462390
+    second: Big Horn Sheet 1_115
+  - first:
+      213: 2386054904568187947
+    second: Big Horn Sheet 1_116
+  - first:
+      213: -2458876717160839908
+    second: Big Horn Sheet 1_117
+  - first:
+      213: -5663700499773715519
+    second: Big Horn Sheet 1_118
+  - first:
+      213: 3450449519543745886
+    second: Big Horn Sheet 1_119
+  - first:
+      213: 160509349252178522
+    second: Big Horn Sheet 1_120
+  - first:
+      213: 7018012945022650082
+    second: Big Horn Sheet 1_121
+  - first:
+      213: -2597633280444667752
+    second: Big Horn Sheet 1_122
+  - first:
+      213: -6371338270343914885
+    second: Big Horn Sheet 1_123
+  - first:
+      213: 1498065479931743048
+    second: Big Horn Sheet 1_124
+  - first:
+      213: 2118310029021619018
+    second: Big Horn Sheet 1_125
+  - first:
+      213: 5584881509096033821
+    second: Big Horn Sheet 1_126
+  - first:
+      213: 4560500331321338331
+    second: Big Horn Sheet 1_127
+  - first:
+      213: -5467225822686920678
+    second: Big Horn Sheet 1_128
+  - first:
+      213: -8757728182681888175
+    second: Big Horn Sheet 1_129
+  - first:
+      213: -5510248414704260499
+    second: Big Horn Sheet 1_130
+  - first:
+      213: -8603767244769352629
+    second: Big Horn Sheet 1_131
+  - first:
+      213: 169147592740802921
+    second: Big Horn Sheet 1_132
+  - first:
+      213: 1127045030579655296
+    second: Big Horn Sheet 1_133
+  - first:
+      213: -828275976571499154
+    second: Big Horn Sheet 1_134
+  - first:
+      213: 2207387470497954675
+    second: Big Horn Sheet 1_135
+  - first:
+      213: -7981239025647110333
+    second: Big Horn Sheet 1_136
+  - first:
+      213: -3667702791266494660
+    second: Big Horn Sheet 1_137
+  - first:
+      213: 7765309142297557352
+    second: Big Horn Sheet 1_138
+  - first:
+      213: -5113881655863207931
+    second: Big Horn Sheet 1_139
+  - first:
+      213: -4035572305438028467
+    second: Big Horn Sheet 1_140
+  - first:
+      213: -8122775448435195461
+    second: Big Horn Sheet 1_141
+  - first:
+      213: -3291555482767488973
+    second: Big Horn Sheet 1_142
+  - first:
+      213: 7414802941901005997
+    second: Big Horn Sheet 1_143
+  - first:
+      213: 4329452762532772205
+    second: Big Horn Sheet 1_144
+  - first:
+      213: -7751981361973728095
+    second: Big Horn Sheet 1_145
+  - first:
+      213: -1298522626120533959
+    second: Big Horn Sheet 1_146
+  - first:
+      213: -8235108344759392385
+    second: Big Horn Sheet 1_147
+  - first:
+      213: 2962792045160649287
+    second: Big Horn Sheet 1_148
+  - first:
+      213: -4999501235774756144
+    second: Big Horn Sheet 1_149
+  - first:
+      213: 845271670675666055
+    second: Big Horn Sheet 1_150
+  - first:
+      213: -8769051541292313505
+    second: Big Horn Sheet 1_151
+  - first:
+      213: -6894532411430458132
+    second: Big Horn Sheet 1_152
+  - first:
+      213: -9175078624936202440
+    second: Big Horn Sheet 1_153
+  - first:
+      213: 5987414592950479407
+    second: Big Horn Sheet 1_154
+  - first:
+      213: 7563018284251307107
+    second: Big Horn Sheet 1_155
+  - first:
+      213: 5928342890011999
+    second: Big Horn Sheet 1_156
+  - first:
+      213: 2546961321357813480
+    second: Big Horn Sheet 1_157
+  - first:
+      213: -2206351413053393415
+    second: Big Horn Sheet 1_158
+  - first:
+      213: 4987741674305856319
+    second: Big Horn Sheet 1_159
+  - first:
+      213: -4067962102531009402
+    second: Big Horn Sheet 1_160
+  - first:
+      213: 2290933358528924561
+    second: Big Horn Sheet 1_161
+  - first:
+      213: -1734300080847644794
+    second: Big Horn Sheet 1_162
+  - first:
+      213: -2267818135013959364
+    second: Big Horn Sheet 1_163
+  - first:
+      213: -2870202232863047240
+    second: Big Horn Sheet 1_164
+  - first:
+      213: -2026093091300636569
+    second: Big Horn Sheet 1_165
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bebeb5dee16281240800000000000000
+      internalID: 4762598520217398251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc0057d2c5e76590800000000000000
+      internalID: -7680918014458327819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_2
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16d9bc3af4d6c2f0800000000000000
+      internalID: -952840099916556770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_3
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2350d520796351b10800000000000000
+      internalID: 1951526035742590258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_4
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940032e1f995bc260800000000000000
+      internalID: 7118882175929483337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_5
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab62ba1da053ab730800000000000000
+      internalID: 4015580338337818298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_6
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1893fd95e90e75d0800000000000000
+      internalID: -3062999814763210724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_7
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4071e2977b47ca0800000000000000
+      internalID: -6019985070795324205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_8
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64190a51809718370800000000000000
+      internalID: 8323066661986931014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_9
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06f8be2adde26730800000000000000
+      internalID: 3991013741146207754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_10
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc7b47331fb41d70800000000000000
+      internalID: 9013038843528182971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_11
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043a68e14749f6d50800000000000000
+      internalID: 6732763194391438144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_12
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704a97e1361371c60800000000000000
+      internalID: 7788748382343373831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_13
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53ac90457c762cf0800000000000000
+      internalID: -277397483999681701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_14
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e9eb1504c58cb10800000000000000
+      internalID: 2001951465685294603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_15
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b038d3ccf76d520800000000000000
+      internalID: 2726507139601468233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_16
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6004cb036001eb070800000000000000
+      internalID: 8123948396596445190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_17
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda5e67366eae19d0800000000000000
+      internalID: -2801610164137993508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_18
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1cff0338760eb910800000000000000
+      internalID: 1854927209845750815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_19
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12657817bcec6cc90800000000000000
+      internalID: -7149799985225705951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_20
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe6e698d6146d200800000000000000
+      internalID: 204422771804892921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_21
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5b9acdf356f15d0800000000000000
+      internalID: -3089639494393416240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_22
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d01cd2c0d2cd2830800000000000000
+      internalID: 4048105841954132181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_23
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111ffd052a12f2160800000000000000
+      internalID: 7002852926609682705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_24
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d67778aec0c505d80800000000000000
+      internalID: -8264004105680750739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_25
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1ed4a26a1db0c30800000000000000
+      internalID: 4326782378624016871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_26
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40c8f50bfbfc75b0800000000000000
+      internalID: -5369139600176922547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_27
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6a88cb0eed03730800000000000000
+      internalID: 3976923527785260772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_28
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d7507b919d130b0800000000000000
+      internalID: -5750576544707412679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_29
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7643a378f0d0e9b40800000000000000
+      internalID: 5448806959509288039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_30
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c7fdb1868838b10800000000000000
+      internalID: 1982578241698757708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_31
+      rect:
+        serializedVersion: 2
+        x: 3875
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314689212045e0420800000000000000
+      internalID: 2598106402917999635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_32
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eab5c0540025b450800000000000000
+      internalID: 6103820072877669096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_33
+      rect:
+        serializedVersion: 2
+        x: 4125
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1989b780c5a5c2360800000000000000
+      internalID: 7146186060055943313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_34
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e947f4e8838ab4a0800000000000000
+      internalID: -6576799681840985627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_35
+      rect:
+        serializedVersion: 2
+        x: 4375
+        y: 525
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9882ab1a4b2259c0800000000000000
+      internalID: -3940039126704551778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586da2978b4790070800000000000000
+      internalID: 8073112142693979781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_37
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed6565c7b174ff50800000000000000
+      internalID: 6914276362025266657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_38
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465075e3f88ece8c0800000000000000
+      internalID: -3968541469696391836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_39
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6ed35f1e31d4e10800000000000000
+      internalID: 2183423255547602637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_40
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abbe370c20950e440800000000000000
+      internalID: 4963064657715915706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_41
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3625b48d2c8feb240800000000000000
+      internalID: 4809554967814427235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_42
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c38dc74641d127730800000000000000
+      internalID: 3995287792853506108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_43
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 810263b9838f1c650800000000000000
+      internalID: 6251550679772831768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_44
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153e3553a067e9a10800000000000000
+      internalID: 1918100277522850641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_45
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb882ba41f5087e0800000000000000
+      internalID: -1765306511553688600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_46
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49aa9962836090520800000000000000
+      internalID: 2668671092429269652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_47
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84acc89529b29c0b0800000000000000
+      internalID: -5707983145147774392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_48
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2d6d1bb53ddc8b0800000000000000
+      internalID: -5130212009725996309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_49
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e7a8caaf3330930800000000000000
+      internalID: 4108184436821622389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_50
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0dcad33b023f3dd0800000000000000
+      internalID: -2504227844098700021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_51
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88bbb4735158eab20800000000000000
+      internalID: 3147599515747072904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_52
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90de683e1035d0650800000000000000
+      internalID: 6200703529536384265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_53
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf7d61dba3c7a110800000000000000
+      internalID: 1272200562475892675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_54
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac942b5c3f1a57ef0800000000000000
+      internalID: -111004547434788406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_55
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ffb4049bae25290800000000000000
+      internalID: -7902996314713227456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_56
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690d65ee054cf67f0800000000000000
+      internalID: -617058772051373930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_57
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fdf2d58a5796a9a0800000000000000
+      internalID: -6222119420117713420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_58
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895d722b23f530d80800000000000000
+      internalID: -8285674218089622120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_59
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34f602a591f01140800000000000000
+      internalID: 4688512837063472186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_60
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5d1d1b896f466e0800000000000000
+      internalID: -1845078811636279881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_61
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec04b2e82df5c22b0800000000000000
+      internalID: -5608002078050139954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_62
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ba5a7f57d585d60800000000000000
+      internalID: 7879150309332069213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_63
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a119763f9b2acd0800000000000000
+      internalID: -2548269984072525182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_64
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6274474fd2e234f0800000000000000
+      internalID: -850367931018349971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_65
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e0c27cd6b582580800000000000000
+      internalID: -8851724540545593747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_66
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e082c336f60c41f0800000000000000
+      internalID: -1059464157838802712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_67
+      rect:
+        serializedVersion: 2
+        x: 3875
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f2b534d8d9fa310800000000000000
+      internalID: 1418525637690994485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_68
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6791c2274bd36c60800000000000000
+      internalID: 7810327277362845547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_69
+      rect:
+        serializedVersion: 2
+        x: 4125
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea60c0df30426200800000000000000
+      internalID: 171770378622888685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_70
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e68ffc5fb8df680800000000000000
+      internalID: -8719659415646998913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_71
+      rect:
+        serializedVersion: 2
+        x: 4375
+        y: 450
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f81d462ab52fb720800000000000000
+      internalID: 2864049369467656436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e079e371cb57940800000000000000
+      internalID: 5293343745064242773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_73
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256bb350e3c7eb430800000000000000
+      internalID: 3800611741364893266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_74
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09270d32a5bf7e040800000000000000
+      internalID: 4676983102614041232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_75
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77acb44b755c9430800000000000000
+      internalID: 3790998974261667707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_76
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4a7dac43b639410800000000000000
+      internalID: 1482646576820626663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_77
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 540a515106c1a9100800000000000000
+      internalID: 115435939447545925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_78
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21478e5c725dc4d30800000000000000
+      internalID: 4417139701344400402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_79
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431323fcc2a2d9e20800000000000000
+      internalID: 3358887269031358772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_80
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357cc9d249d2724f0800000000000000
+      internalID: -853663489919760557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_81
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7124b08487ebc4360800000000000000
+      internalID: 7155303331798925847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_82
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3363cf5c3c1dfe420800000000000000
+      internalID: 2661576543569720883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_83
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42679428a106c7df0800000000000000
+      internalID: -181164218030393820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_84
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b980ad616fd4aaa0800000000000000
+      internalID: -6150545581537195594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_85
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b04a873beca8e590800000000000000
+      internalID: -7644670241212317516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_86
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c110f57c5628e7200800000000000000
+      internalID: 179724408789598492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_87
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da48f5d6b75fb9bc0800000000000000
+      internalID: -3775153952155269971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_88
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec683db5e176c1d0800000000000000
+      internalID: -3330849642857861909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_89
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe4dadc0d1df02e0800000000000000
+      internalID: -2157275001753088325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_90
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9f8663164ee4400800000000000000
+      internalID: 310436530510952952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_91
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a381a80b8e77851f0800000000000000
+      internalID: -1055962271340423110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_92
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a4b4ed03943b7d0800000000000000
+      internalID: -2903896860487103926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_93
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342ee8842bc9d5cd0800000000000000
+      internalID: -2567723922995879357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_94
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e227b82acd46fd640800000000000000
+      internalID: 5106911401244062254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_95
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1a576d9707f4370800000000000000
+      internalID: 8308983506113241590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_96
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd659891d720b9720800000000000000
+      internalID: 2853877525191939804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_97
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df53320b92dba950800000000000000
+      internalID: 6461489653591793625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_98
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45545816045d1250800000000000000
+      internalID: 5916977870589416782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_99
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9c20e15869d3ef0800000000000000
+      internalID: -126779716018189864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_100
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9496b4242c238e80800000000000000
+      internalID: -8177643964628298597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_101
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0a2484ed525f9d0800000000000000
+      internalID: -2741243161559785281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_102
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1114b7ac3e9afe90800000000000000
+      internalID: -6991101488190451430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_103
+      rect:
+        serializedVersion: 2
+        x: 3875
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f7f077beae581d0800000000000000
+      internalID: -3349012450844377197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_104
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee36c139bcfb36310800000000000000
+      internalID: 1397171190482363374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_105
+      rect:
+        serializedVersion: 2
+        x: 4125
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8055d3ef59686f10800000000000000
+      internalID: 2263174673318891662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_106
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d67673816df0551d0800000000000000
+      internalID: -3362764134558505107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_107
+      rect:
+        serializedVersion: 2
+        x: 4375
+        y: 375
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1593395d37ae9fa0800000000000000
+      internalID: -5792008188820482790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97cf913a1abd5190800000000000000
+      internalID: -7972011143711438949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_109
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9992b491fa12aa150800000000000000
+      internalID: 5884552899040323993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_110
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 699193616794ee930800000000000000
+      internalID: 4174354676146837910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_111
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec32b8691333f160800000000000000
+      internalID: 7058041225243409633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_112
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadcc7a01c8d5fd30800000000000000
+      internalID: 4464712929223953836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_113
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667628025c83e6db0800000000000000
+      internalID: -4796834133797869722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_114
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17c6d4484d81bda0800000000000000
+      internalID: -5930803892738144485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_115
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a453e7e303e73b8a0800000000000000
+      internalID: -6290545508834462390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_116
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c8d593b48fc1120800000000000000
+      internalID: 2386054904568187947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_117
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c15462747a050edd0800000000000000
+      internalID: -2458876717160839908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_118
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb09cc276e7661b0800000000000000
+      internalID: -5663700499773715519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_119
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d72d78e8572ef20800000000000000
+      internalID: 3450449519543745886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_120
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a522e49176e3a3200800000000000000
+      internalID: 160509349252178522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_121
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e60b29279df46160800000000000000
+      internalID: 7018012945022650082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_122
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898ec565b4a53fbd0800000000000000
+      internalID: -2597633280444667752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_123
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a9c4499957497a0800000000000000
+      internalID: -6371338270343914885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_124
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b4b9ded923ac410800000000000000
+      internalID: 1498065479931743048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_125
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 300
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a432bf38fbfb56d10800000000000000
+      internalID: 2118310029021619018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e015e742c718d40800000000000000
+      internalID: 5584881509096033821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_127
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9a57683e62a4f30800000000000000
+      internalID: 4560500331321338331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_128
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1047e3b4138024b0800000000000000
+      internalID: -5467225822686920678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_129
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a91d74e9c467680800000000000000
+      internalID: -8757728182681888175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_130
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6aa469e24aa783b0800000000000000
+      internalID: -5510248414704260499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_131
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44a16d8647499880800000000000000
+      internalID: -8603767244769352629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_132
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9619de3e6dee85200800000000000000
+      internalID: 169147592740802921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_133
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082d195eb7114af00800000000000000
+      internalID: 1127045030579655296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_134
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d4770436f5184f0800000000000000
+      internalID: -828275976571499154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_135
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 225
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37bbdac853732ae10800000000000000
+      internalID: 2207387470497954675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_136
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347b1d08461fc3190800000000000000
+      internalID: -7981239025647110333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_137
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c371ad06eb3b91dc0800000000000000
+      internalID: -3667702791266494660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_138
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8693db5c58be3cb60800000000000000
+      internalID: 7765309142297557352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_139
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50813ee7ab7d709b0800000000000000
+      internalID: -5113881655863207931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_140
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d46fc9e54cef7c0800000000000000
+      internalID: -4035572305438028467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_141
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb181c514ca164f80800000000000000
+      internalID: -8122775448435195461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_142
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33887235abb0252d0800000000000000
+      internalID: -3291555482767488973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_143
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4e7878dfba6e660800000000000000
+      internalID: 7414802941901005997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_144
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69799e595e451c30800000000000000
+      internalID: 4329452762532772205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_145
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 150
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac6b16e50e6b6490800000000000000
+      internalID: -7751981361973728095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_146
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93837492d88bafde0800000000000000
+      internalID: -1298522626120533959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_147
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77e2c7879407bd80800000000000000
+      internalID: -8235108344759392385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_148
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7425723eaa3fd1920800000000000000
+      internalID: 2962792045160649287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_149
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dae4835d143e9ab0800000000000000
+      internalID: -4999501235774756144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_150
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784f2552b120bbb00800000000000000
+      internalID: 845271670675666055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_151
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f541e2865121e4680800000000000000
+      internalID: -8769051541292313505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_152
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec2544fc43b150a0800000000000000
+      internalID: -6894532411430458132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_153
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83fe56e2a929ba080800000000000000
+      internalID: -9175078624936202440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_154
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2aadcf79d1971350800000000000000
+      internalID: 5987414592950479407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_155
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 75
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c55961f0d35f860800000000000000
+      internalID: 7563018284251307107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_156
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5dd014ebcf051000800000000000000
+      internalID: 5928342890011999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_157
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e62130d3df985320800000000000000
+      internalID: 2546961321357813480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_158
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5754f54177161e0800000000000000
+      internalID: -2206351413053393415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_159
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33a96860a4083540800000000000000
+      internalID: 4987741674305856319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_160
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68453ee4502bb87c0800000000000000
+      internalID: -4067962102531009402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_161
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b853f60c70bcf10800000000000000
+      internalID: 2290933358528924561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_162
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6871523e3478ee7e0800000000000000
+      internalID: -1734300080847644794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_163
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39dd4feb671780e0800000000000000
+      internalID: -2267818135013959364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_164
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b14aa4b64efa28d0800000000000000
+      internalID: -2870202232863047240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Horn Sheet 1_165
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 0
+        width: 125
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7680723711fd1e3e0800000000000000
+      internalID: -2026093091300636569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
