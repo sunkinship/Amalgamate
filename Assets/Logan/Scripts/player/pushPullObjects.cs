@@ -15,7 +15,7 @@ public class pushPullObjects : MonoBehaviour
     public static bool canDropObject;
     static bool canPickUp;
 
-    private static CapsuleCollider2D heldItemCollider;
+    private static Collider2D heldItemCollider;
 
     [SerializeField] private LayerMask wallLayerMask;
 
@@ -42,8 +42,8 @@ public class pushPullObjects : MonoBehaviour
             player.GetComponent<playerMovement>().moveSpeed = 2.5f;
             heldObjectRender = heldItem.GetComponent<Renderer>();
             heldObjectRender.GetComponent<PositionRendering>().enabled = false;
-            heldItem.GetComponent<CapsuleCollider2D>().enabled = false;
-            heldItemCollider = heldItem.GetComponent<CapsuleCollider2D>();
+            heldItem.GetComponent<BoxCollider2D>().enabled = false;
+            heldItemCollider = heldItem.GetComponent<BoxCollider2D>();
             canDropObject = false;
             isMovingObject = true;
             player.GetComponent<playerMovement>().carryingObject = true;
@@ -55,7 +55,7 @@ public class pushPullObjects : MonoBehaviour
         {
             canPickUp = false;
             heldObjectRender.GetComponent<PositionRendering>().enabled = true;
-            heldItem.GetComponent<CapsuleCollider2D>().enabled = true;
+            heldItem.GetComponent<BoxCollider2D>().enabled = true;
             isMovingObject = false;
             currentMovable.transform.position = this.gameObject.transform.position;
             player.GetComponent<playerMovement>().carryingObject = false;
