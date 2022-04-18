@@ -11,11 +11,13 @@ public class pressurePlate : MonoBehaviour
 
     public Collider2D wallToRemove;
 
+    public GameObject player;
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if(bigPlate == true)
         {
-            if (collision.gameObject.tag == "movableObject" && collision.gameObject.name.Contains("BIG"))
+            if (collision.gameObject.tag == "movableObject" && collision.gameObject.name.Contains("BIG") && player.GetComponent<playerMovement>().carryingObject == false)
             {
                 triggered = true;
                 if(removeWall == true && wallToRemove != null)
@@ -26,7 +28,7 @@ public class pressurePlate : MonoBehaviour
         }
         else if(bigPlate == false)
         {
-            if (collision.gameObject.tag == "movableObject")
+            if (collision.gameObject.tag == "movableObject" && player.GetComponent<playerMovement>().carryingObject == false)
             {
                 triggered = true;
                 if (removeWall == true && wallToRemove != null)
