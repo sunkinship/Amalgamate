@@ -8,6 +8,7 @@ public class loadSceneOnTrigger : MonoBehaviour
     public string sceneToLoad;
     public bool mazeExit;
     public GameObject player;
+    public QuestUI questLog;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,11 +21,13 @@ public class loadSceneOnTrigger : MonoBehaviour
             {
                 SceneManager.LoadScene(sceneToLoad);
                 collision.gameObject.GetComponent<playerMovement>().goToMazeExit = true;
+                questLog.UpdateList();
 
             }
             else
             {
                 SceneManager.LoadScene(sceneToLoad);
+                questLog.UpdateList();
             }
         }
 

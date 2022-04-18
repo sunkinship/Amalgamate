@@ -10,7 +10,7 @@ public class PauseMenu : MonoBehaviour
 {
     public PlayerInput playerInput;
 
-    public GameObject settingsCanvas;
+    //public GameObject settingsCanvas;
     public GameObject pausedCanvas;
     public GameObject questListCanvas;
 
@@ -29,19 +29,19 @@ public class PauseMenu : MonoBehaviour
     {
         questListCanvas.SetActive(false);
         pausedCanvas.SetActive(false);
-        settingsCanvas.SetActive(true);
+        //settingsCanvas.SetActive(true);
     }
 
     public void PasuedCanvas()
     {
         questListCanvas.SetActive(false);
-        settingsCanvas.SetActive(false);
+        //settingsCanvas.SetActive(false);
         pausedCanvas.SetActive(true);
     }
 
     public void QuestListCanvas()
     {
-        settingsCanvas.SetActive(false);
+        //settingsCanvas.SetActive(false);
         pausedCanvas.SetActive(false);
         questListCanvas.SetActive(true);
     }
@@ -71,7 +71,7 @@ public class PauseMenu : MonoBehaviour
     private void DisableAll()
     {
         pausedCanvas.SetActive(false);
-        settingsCanvas.SetActive(false);
+        //settingsCanvas.SetActive(false);
         questListCanvas.SetActive(false);
     }
 }
