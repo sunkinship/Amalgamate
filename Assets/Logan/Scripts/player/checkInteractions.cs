@@ -24,6 +24,8 @@ public class checkInteractions : MonoBehaviour
     private PlayerManager playerManager;
 
 
+
+
     private void Awake()
     {
         playerManager = player.GetComponent<PlayerManager>();
@@ -62,7 +64,7 @@ public class checkInteractions : MonoBehaviour
         }
 
 
-        if (isFacingInteractable == true && currentNPC.GetComponent<npcInteract>().forceDialogue == true)
+        if (isFacingInteractable == true && currentNPC.GetComponent<npcInteract>().forceDialogue == true && currentNPC.GetComponent<npcInteract>().mustHoldCertainObject == false)
         {
             nameString = currentNPC.GetComponent<npcInteract>().NPCName;
 
@@ -75,6 +77,23 @@ public class checkInteractions : MonoBehaviour
             nameText.text = nameString;
             player.GetComponent<playerMovement>().rb2.velocity = new Vector2(0, 0);
 
+        }
+
+        if (isFacingInteractable == true && currentNPC.GetComponent<npcInteract>().forceDialogue == true && currentNPC.GetComponent<npcInteract>().mustHoldCertainObject == true)
+        {
+            if(player.GetComponent<playerMovement>().carryingObject == true)
+            {
+                nameString = currentNPC.GetComponent<npcInteract>().NPCName;
+
+                forPortrait.GetComponent<managePortraits>().currentNPC = currentNPC;
+                //currentNPC.GetComponent<interactable>()?.Interact(CheckQuestState());
+                currentNPC.GetComponent<npcInteract>().forceDialogue = false;
+                currentNPC.GetComponent<npcInteract>().forceDialogueCollider.enabled = false;
+                currentNPC.GetComponent<npcInteract>().afterForceCollider.enabled = true;
+                CheckQuestState();
+                nameText.text = nameString;
+                player.GetComponent<playerMovement>().rb2.velocity = new Vector2(0, 0);
+            }
         }
 
     }

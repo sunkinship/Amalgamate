@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Trent/Scenes/Vampires Shop.unity
     guid: 95580930ba80334438e93cc2b74e4339
+  - enabled: 1
+    path: Assets/Logan/Scenes/Gameplay Loop Test Puzzle Stuff/ForestScene.unity
+    guid: ac2fa7a88bcb1ac4a884c3bff57d9830
   m_configObjects: {}

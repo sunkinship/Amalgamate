@@ -35,6 +35,8 @@ public class npcInteract : MonoBehaviour, interactable
     public Collider2D forceDialogueCollider;
     public Collider2D afterForceCollider;
 
+    public bool mustHoldCertainObject;
+
     private void Awake()
     {
         playerManager = player.GetComponent<PlayerManager>();

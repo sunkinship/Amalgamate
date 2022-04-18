@@ -8,8 +8,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
-    public List<Quest> quests = new List<Quest>();
-    public List<Item> inventory = new List<Item>();
+    [SerializeField]
+    public static List<Quest> quests = new List<Quest>();
+    [SerializeField]
+    public static List<Item> inventory = new List<Item>();
 
     private static bool lampOn;
     [HideInInspector]
@@ -57,7 +59,7 @@ public class PlayerManager : MonoBehaviour
                 lampOn = true;
                 break;
             case "mazeScene":
-                lampOn = false;
+                lampOn = true;
                 break;
             case "Vampires Shop":
                 lampOn = false;
@@ -66,6 +68,9 @@ public class PlayerManager : MonoBehaviour
                 lampOn = true;
                 break;
             case "MonsterCave":
+                lampOn = true;
+                break;
+            case "CopyMazeScene":
                 lampOn = true;
                 break;
         }
