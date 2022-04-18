@@ -11,8 +11,8 @@ public class pushPullObjects : MonoBehaviour
     private bool isKeyDown;
     private bool isFacingMovable;
     private static GameObject currentMovable;
-    private static bool isMovingObject;
-    static bool canDrop;
+    public static bool isMovingObject;
+    public static bool canDropObject;
     static bool canPickUp;
 
     private static CapsuleCollider2D heldItemCollider;
@@ -24,31 +24,34 @@ public class pushPullObjects : MonoBehaviour
 
     private static Vector3 direction;
 
-    public void Start()
+    private void Awake()
     {
         playerRender = player.GetComponent<Renderer>();
         playerInput = player.GetComponent<PlayerInput>();
         canPickUp = true;
     }
 
+
     public void Update()
     {
         //Pick up
         if(playerInput.actions["Interact"].triggered && isFacingMovable == true && isMovingObject == false && canPickUp == true && player.GetComponent<playerMovement>().inDialogue == false)
         {
+            Debug.Log("picked up");
             canPickUp = false;
             player.GetComponent<playerMovement>().moveSpeed = 2.5f;
             heldObjectRender = heldItem.GetComponent<Renderer>();
             heldObjectRender.GetComponent<PositionRendering>().enabled = false;
             heldItem.GetComponent<CapsuleCollider2D>().enabled = false;
             heldItemCollider = heldItem.GetComponent<CapsuleCollider2D>();
-            canDrop = false;
+            canDropObject = false;
             isMovingObject = true;
+            player.GetComponent<playerMovement>().carryingObject = true;
             Invoke("enableDrop", .5f);
 
         }
         //Drop
-        if (playerInput.actions["Interact"].triggered && isMovingObject == true && canDrop == true && player.GetComponent<playerMovement>().inDialogue == false && player.GetComponent<playerMovement>().isFacingNPC == false)
+        if (playerInput.actions["Interact"].triggered && isMovingObject == true && canDropObject == true && player.GetComponent<playerMovement>().inDialogue == false && player.GetComponent<playerMovement>().isFacingNPC == false)
         {
             canPickUp = false;
             heldObjectRender.GetComponent<PositionRendering>().enabled = true;
@@ -58,22 +61,21 @@ public class pushPullObjects : MonoBehaviour
             player.GetComponent<playerMovement>().carryingObject = false;
             currentMovable = null;
             heldItem = null;
-            canDrop = false;
+            canDropObject = false;
             player.GetComponent<playerMovement>().moveSpeed = 6;
             Invoke("CanPickUp", .5f);
         }
 
-        if(player.GetComponent<playerMovement>().inDialogue == true)
-        {
-            canDrop = false;
-        }
 
         if (isMovingObject == true)
         {
-            player.GetComponent<playerMovement>().carryingObject = true;
             heldObjectRender.sortingOrder = playerRender.sortingOrder + 100;
             currentMovable.transform.position = player.transform.position + currentMovable.GetComponent<holdableObject>().holdLocation;
-            Invoke("enableDrop", .5f);
+
+            if (player.GetComponent<playerMovement>().inDialogue == true)
+            {
+                canDropObject = false;
+            }
 
             //if (Physics2D.BoxCast(heldItemCollider.bounds.center, heldItemCollider.bounds.size, 0f, direction, 3f, wallLayerMask))
             //{
@@ -91,7 +93,7 @@ public class pushPullObjects : MonoBehaviour
 
     private void enableDrop()
     {
-        canDrop = true;
+        canDropObject = true;
     }
 
     private void CanPickUp()
