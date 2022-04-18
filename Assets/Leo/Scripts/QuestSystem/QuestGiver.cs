@@ -20,7 +20,6 @@ public class QuestGiver : MonoBehaviour
         PlayerManager.quests[PlayerManager.quests.Count - 1].isActive = true;
         PlayerManager.quests[PlayerManager.quests.Count - 1].isComplete = false;
         questUI.UpdateList();
-
     }
 
     /// <summary>

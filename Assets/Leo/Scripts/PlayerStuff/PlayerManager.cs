@@ -21,6 +21,7 @@ public class PlayerManager : MonoBehaviour
     public GameObject item;
     public PlayerInput playerInput;
     public TrustMeter trustMeter;
+    public QuestUI questUI;
 
     //private SpriteLibrary spriteLibrary;
     public Light2D hornLamp;
@@ -37,6 +38,11 @@ public class PlayerManager : MonoBehaviour
     {
         //spriteLibrary = gameObject.GetComponent<SpriteLibrary>();
         mat = gameObject.GetComponent<Renderer>().sharedMaterial;
+    }
+
+    private void Start()
+    {
+        questUI.UpdateList();
     }
 
     void Update()
@@ -102,14 +108,8 @@ public class PlayerManager : MonoBehaviour
 
     #region quests
     public void GetQuest(QuestGiver npc)
-    {   
-        if (npc.quest.hasQuest)
-        {
-            if (!npc.quest.isActive)
-            {
-                npc.AcceptQuest();
-            }
-        }
+    {
+        npc.AcceptQuest();
     }
 
     /// <summary>

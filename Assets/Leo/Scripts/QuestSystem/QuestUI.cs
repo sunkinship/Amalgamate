@@ -28,11 +28,11 @@ public class QuestUI : MonoBehaviour
     /// </summary>
     public void UpdateList()
     {
-        Debug.Log("updating");
+        //Debug.Log("updating");
         textContents = "";
         foreach (Quest quest in PlayerManager.quests)
         {
-            Debug.Log("quest: " + quest.questName);
+            //Debug.Log("quest: " + quest.questName);
             if (quest.isActive && quest.isComplete == false)
             {
                 textContents = " *" + quest.questName + "\n -" + quest.description + "\n";

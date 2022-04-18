@@ -8,28 +8,34 @@ public class loadSceneOnTrigger : MonoBehaviour
     public string sceneToLoad;
     public bool mazeExit;
     public GameObject player;
-    public QuestUI questLog;
+    public Animator anim;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.name == "Player")
         {
-
             player = collision.gameObject;
 
             if (mazeExit == true)
             {
-                SceneManager.LoadScene(sceneToLoad);
+                StartCoroutine(Fade());
+                //SceneManager.LoadScene(sceneToLoad);
                 collision.gameObject.GetComponent<playerMovement>().goToMazeExit = true;
-                questLog.UpdateList();
 
             }
             else
             {
-                SceneManager.LoadScene(sceneToLoad);
-                questLog.UpdateList();
+                //SceneManager.LoadScene(sceneToLoad);
+                StartCoroutine(Fade());
             }
         }
 
+    }
+
+    public IEnumerator Fade()
+    {
+        anim.SetTrigger("FadeTrigger");
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(sceneToLoad);
     }
 }

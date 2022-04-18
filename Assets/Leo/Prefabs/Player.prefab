@@ -488,7 +488,7 @@ MonoBehaviour:
   - {x: -0.5534859, y: -1.2871497, z: 0}
   m_ShapePathHash: 228770605
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1412
+  m_InstanceId: -46478
 --- !u!1 &951023340945304220
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,7 +642,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -8412613939609717473, guid: 0c63550310073d741a2c14a82b842048,
+  m_Sprite: {fileID: 2480247889503599291, guid: 8d9e24384b5eec04f9440cc2802a351d,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -680,6 +680,7 @@ MonoBehaviour:
   speakCooldownLeft: 0
   lastFacingDirection: RIGHT
   direction: {x: 0, y: 0, z: 0}
+  rayDirection: {x: 0, y: 0, z: 0}
   rb2: {fileID: 951023341175528873}
   carryingObject: 0
   isFacingNPC: 0
@@ -858,12 +859,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49ab4a0edfd81c641a28ab41733d6b89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quests: []
-  inventory: []
   callPostQuest: 0
   item: {fileID: 0}
   playerInput: {fileID: 951023341175528915}
   trustMeter: {fileID: 0}
+  questUI: {fileID: 0}
   hornLamp: {fileID: 951023341713411166}
   maxBrightness: 1
   render: {fileID: 951023341175528868}
@@ -1625,7 +1625,7 @@ MonoBehaviour:
   - {x: -0.27113056, y: -1.5775857, z: 0}
   m_ShapePathHash: 139732523
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1424
+  m_InstanceId: -46482
 --- !u!60 &951023342635561723
 PolygonCollider2D:
   m_ObjectHideFlags: 0
