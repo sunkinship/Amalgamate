@@ -29,7 +29,7 @@ public class QuestUI : MonoBehaviour
     public void UpdateList()
     {
         textContents = "";
-        foreach (Quest quest in player.quests)
+        foreach (Quest quest in PlayerManager.quests)
         {
             if (quest.isActive && quest.isComplete == false)
             {

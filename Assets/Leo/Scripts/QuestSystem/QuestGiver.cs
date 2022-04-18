@@ -16,9 +16,9 @@ public class QuestGiver : MonoBehaviour
     /// </summary>
     public void AcceptQuest()
     {
-        player.quests.Add(quest);
-        player.quests[player.quests.Count - 1].isActive = true;
-        player.quests[player.quests.Count - 1].isComplete = false;
+        PlayerManager.quests.Add(quest);
+        PlayerManager.quests[PlayerManager.quests.Count - 1].isActive = true;
+        PlayerManager.quests[PlayerManager.quests.Count - 1].isComplete = false;
         questUI.UpdateList();
 
     }
@@ -28,7 +28,7 @@ public class QuestGiver : MonoBehaviour
     /// </summary>
     public void CheckforConnectedQuest()
     {
-        foreach (Quest quest in player.quests)
+        foreach (Quest quest in PlayerManager.quests)
         {
             if (quest.isActive && quest.questName.Equals(this.quest.connectedQuestName))
             {
@@ -42,7 +42,7 @@ public class QuestGiver : MonoBehaviour
     /// </summary>
     public void CheckforPreCondition()
     {
-        foreach (Quest quest in player.quests)
+        foreach (Quest quest in PlayerManager.quests)
         {
             if (quest.isComplete && quest.questName.Equals(this.quest.PreQuestName))
             {

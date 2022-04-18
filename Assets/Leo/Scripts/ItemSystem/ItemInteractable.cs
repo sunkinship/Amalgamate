@@ -22,7 +22,7 @@ public class ItemInteractable : MonoBehaviour
     /// </summary>
     public void PickUp()
     {
-        foreach (Item item in player.inventory)
+        foreach (Item item in PlayerManager.inventory)
         {
             if (this.item.itemType == item.itemType)
             {
@@ -35,7 +35,7 @@ public class ItemInteractable : MonoBehaviour
         //Debug.Log("Picked up new item");
         item.pickedUp = true;
         item.quantity = 1;
-        player.inventory.Add(item);
+        PlayerManager.inventory.Add(item);
         Destroy(itemObject);
     }
 }
