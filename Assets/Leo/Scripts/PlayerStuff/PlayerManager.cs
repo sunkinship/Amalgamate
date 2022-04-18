@@ -57,7 +57,7 @@ public class PlayerManager : MonoBehaviour
                 lampOn = true;
                 break;
             case "mazeScene":
-                lampOn = false;
+                lampOn = true;
                 break;
             case "Vampires Shop":
                 lampOn = false;
@@ -66,6 +66,9 @@ public class PlayerManager : MonoBehaviour
                 lampOn = true;
                 break;
             case "MonsterCave":
+                lampOn = true;
+                break;
+            case "CopyMazeScene":
                 lampOn = true;
                 break;
         }

@@ -43,6 +43,8 @@ public class playerMovement : MonoBehaviour
 
     public Vector3 direction;
 
+    public Vector3 rayDirection;
+
     private Vector3 dashDir;
 
     private State state;
@@ -50,8 +52,8 @@ public class playerMovement : MonoBehaviour
     [HideInInspector]
     public Rigidbody2D rb2;
 
-    public bool carryingObject;
-    public bool isFacingNPC;
+    [HideInInspector]
+    public bool carryingObject, isFacingNPC;
 
 
     private void Awake()
@@ -80,13 +82,36 @@ public class playerMovement : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);*/
 
-        RaycastHit2D raycastHit2d = Physics2D.Raycast(transform.position, direction, 0.5f, wallLayerMask);
+        //SetRayDirection();
 
-        if (raycastHit2d == true)
+        //if (pushPullObjects.isMovingObject)
+        //{
+        //    RaycastHit2D preventDorppingObject = Physics2D.Raycast(transform.position, rayDirection, 0.5f, wallLayerMask);
+        //    Debug.DrawLine(transform.position, rayDirection, Color.red);
+
+        //    if (preventDorppingObject == true)
+        //    {
+        //        pushPullObjects.canDropObject = false;
+        //        Debug.Log("ray hit: " + rayDirection);
+        //    }
+        //    else
+        //    {
+        //        pushPullObjects.canDropObject = true;
+        //        Debug.Log("ray not hit: " + rayDirection);
+        //    }
+        //}
+
+        RaycastHit2D stopAniTransition = Physics2D.Raycast(transform.position, rayDirection, 10f, wallLayerMask);
+        //Debug.Log("shooting raycast dir: " + direction);
+
+        if (stopAniTransition == true)
         {
+            //Debug.Log("aniStop ray hit");
             animator.SetBool("isMoving", false);
-        } else
+        }
+        else
         {
+            //Debug.Log("aniStop ray not hit");
             animator.SetBool("isMoving", true);
         }
 
@@ -227,6 +252,8 @@ public class playerMovement : MonoBehaviour
                 //else animator.ResetTrigger("Right");
 
                 direction = new Vector3(moveX, moveY).normalized;
+                //rayDirection = new Vector3(moveX, moveY).normalized;
+
                 if(moveX != 0 || moveY != 0)
                 {
                     lastMoveDirection = direction;
@@ -255,6 +282,25 @@ public class playerMovement : MonoBehaviour
 
         }
 
+    }
+
+    private void SetRayDirection()
+    {
+        switch (lastFacingDirection)
+        {
+            case "UP":
+                rayDirection = new Vector3(0, 1).normalized;
+                break;
+            case "DOWN":
+                rayDirection = new Vector3(0, -1).normalized;
+                break;
+            case "LEFT":
+                rayDirection = new Vector3(-1, 0).normalized;
+                break;
+            case "RIGHT":
+                rayDirection = new Vector3(1, 0).normalized;
+                break;
+        }
     }
 
 
