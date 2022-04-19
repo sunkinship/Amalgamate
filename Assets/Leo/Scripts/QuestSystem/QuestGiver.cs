@@ -13,6 +13,11 @@ public class QuestGiver : MonoBehaviour
     public bool removesCollider;
     public Collider2D colliderToRemove;
 
+    private void Start()
+    {
+        CheckToRemoveCollider();
+        player.GetComponent<checkInteractions>().UpdateForcedColliders();
+    }
 
     /// <summary>
     /// Receive quest from NPC
@@ -60,10 +65,11 @@ public class QuestGiver : MonoBehaviour
     public void PostQuest()
     {
         quest.isPostQuest = true;
+        CheckToRemoveCollider();
         player.trustMeter.StartCoroutine("AddProgress", 0.5f);
     }
 
-    private void Update()
+    public void CheckToRemoveCollider()
     {
         if (quest.isPostQuest == true && removesCollider == true)
         {

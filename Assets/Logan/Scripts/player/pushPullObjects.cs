@@ -39,7 +39,7 @@ public class pushPullObjects : MonoBehaviour
         //Pick up
         if(playerInput.actions["Interact"].triggered && isFacingMovable == true && isMovingObject == false && canPickUp == true && player.GetComponent<playerMovement>().inDialogue == false)
         {
-            Debug.Log("picked up");
+            //Debug.Log("picked up");
             ani.SetBool("isCarrying", true);
             canPickUp = false;
             player.GetComponent<playerMovement>().moveSpeed = 2.5f;

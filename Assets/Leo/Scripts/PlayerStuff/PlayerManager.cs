@@ -76,7 +76,7 @@ public class PlayerManager : MonoBehaviour
             case "MonsterCave":
                 lampOn = true;
                 break;
-            case "CopyMazeScene":
+            case "FixingPuzzle":
                 lampOn = true;
                 break;
         }

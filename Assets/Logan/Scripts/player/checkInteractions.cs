@@ -48,55 +48,87 @@ public class checkInteractions : MonoBehaviour
             player.GetComponent<playerMovement>().isFacingNPC = false;
         }
 
-        //Initial check for interaction -> npcInteract -> dialogueManager
+        // Initial check for interaction -> npcInteract -> dialogueManager
         isKeyDown = playerInput.actions["Interact"].triggered;
 
+        // Regular dialogue 
         if (isKeyDown && isFacingInteractable == true && player.GetComponent<playerMovement>().inDialogue == false && player.GetComponent<playerMovement>().speakCooldownLeft < 0 && player.GetComponent<playerMovement>().carryingObject == false)
         {
-            nameString = currentNPC.GetComponent<npcInteract>().NPCName;
-
-            forPortrait.GetComponent<managePortraits>().currentNPC = currentNPC;
-            //currentNPC.GetComponent<interactable>()?.Interact(CheckQuestState());
-            CheckQuestState();
-            nameText.text = nameString;
-            player.GetComponent<playerMovement>().rb2.velocity = new Vector2(0, 0);
-
+            RegularInteraction();
         }
-
-
-        if (isFacingInteractable == true && currentNPC.GetComponent<npcInteract>().forceDialogue == true && currentNPC.GetComponent<npcInteract>().mustHoldCertainObject == false)
+        // Forced dialogue 
+        else if (isFacingInteractable == true && currentNPC.GetComponent<npcInteract>().forceDialogue == true && currentNPC.GetComponent<npcInteract>().mustHoldCertainObject == false)
         {
-            nameString = currentNPC.GetComponent<npcInteract>().NPCName;
-
-            forPortrait.GetComponent<managePortraits>().currentNPC = currentNPC;
-            //currentNPC.GetComponent<interactable>()?.Interact(CheckQuestState());
-            currentNPC.GetComponent<npcInteract>().forceDialogue = false;
-            currentNPC.GetComponent<npcInteract>().forceDialogueCollider.enabled = false;
-            currentNPC.GetComponent<npcInteract>().afterForceCollider.enabled = true;
-            CheckQuestState();
-            nameText.text = nameString;
-            player.GetComponent<playerMovement>().rb2.velocity = new Vector2(0, 0);
-
+            RegularForecedInteraction();
         }
-
-        if (isFacingInteractable == true && currentNPC.GetComponent<npcInteract>().forceDialogue == true && currentNPC.GetComponent<npcInteract>().mustHoldCertainObject == true)
+        // Foreced dialogue requiring held object
+        else if (isFacingInteractable == true && currentNPC.GetComponent<npcInteract>().forceDialogue == true && currentNPC.GetComponent<npcInteract>().mustHoldCertainObject == true)
         {
-            if(player.GetComponent<playerMovement>().carryingObject == true)
-            {
-                nameString = currentNPC.GetComponent<npcInteract>().NPCName;
-
-                forPortrait.GetComponent<managePortraits>().currentNPC = currentNPC;
-                //currentNPC.GetComponent<interactable>()?.Interact(CheckQuestState());
-                currentNPC.GetComponent<npcInteract>().forceDialogue = false;
-                currentNPC.GetComponent<npcInteract>().forceDialogueCollider.enabled = false;
-                currentNPC.GetComponent<npcInteract>().afterForceCollider.enabled = true;
-                CheckQuestState();
-                nameText.text = nameString;
-                player.GetComponent<playerMovement>().rb2.velocity = new Vector2(0, 0);
-            }
+            HoldingObjectInteraction();
         }
 
     }
+
+    /// <summary>
+    /// Initiates regular dialogue 
+    /// </summary>
+    private void RegularInteraction()
+    {
+        nameString = currentNPC.GetComponent<npcInteract>().NPCName;
+
+        forPortrait.GetComponent<managePortraits>().currentNPC = currentNPC;
+        //currentNPC.GetComponent<interactable>()?.Interact(CheckQuestState());
+        CheckQuestState();
+        nameText.text = nameString;
+        player.GetComponent<playerMovement>().rb2.velocity = new Vector2(0, 0);
+    }
+
+
+    /// <summary>
+    /// Initiates forced dialogue
+    /// </summary>
+    private void RegularForecedInteraction()
+    {
+        nameString = currentNPC.GetComponent<npcInteract>().NPCName;
+
+        forPortrait.GetComponent<managePortraits>().currentNPC = currentNPC;
+        //currentNPC.GetComponent<interactable>()?.Interact(CheckQuestState());
+        UpdateForcedColliders();
+        CheckQuestState();
+        nameText.text = nameString;
+        player.GetComponent<playerMovement>().rb2.velocity = new Vector2(0, 0);
+    }
+
+
+    /// <summary>
+    /// Initiates forced dialogue requiring held object
+    /// </summary>
+    private void HoldingObjectInteraction()
+    {
+        if (player.GetComponent<playerMovement>().carryingObject == true)
+        {
+            nameString = currentNPC.GetComponent<npcInteract>().NPCName;
+
+            forPortrait.GetComponent<managePortraits>().currentNPC = currentNPC;
+            //currentNPC.GetComponent<interactable>()?.Interact(CheckQuestState());
+            UpdateForcedColliders();
+            CheckQuestState();
+            nameText.text = nameString;
+            player.GetComponent<playerMovement>().rb2.velocity = new Vector2(0, 0);
+        }
+    }
+
+
+    /// <summary>
+    /// Removes foreced dialogue colliders and updates state of forced dialogue
+    /// </summary>
+    public void UpdateForcedColliders()
+    {
+        currentNPC.GetComponent<npcInteract>().forceDialogue = false;
+        currentNPC.GetComponent<npcInteract>().forceDialogueCollider.enabled = false;
+        currentNPC.GetComponent<npcInteract>().afterForceCollider.enabled = true;
+    }
+
 
     /// <summary>
     /// Set portrait based on quest state
@@ -130,6 +162,9 @@ public class checkInteractions : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Checks quest state for regular quests
+    /// </summary>
     private void RegularQuestCheck()
     {
         //Linked quest triggered
@@ -169,6 +204,9 @@ public class checkInteractions : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Checks quest state for connected quests
+    /// </summary>
     private void ConnectedQuestCheck()
     {
         //Linked quest triggered
@@ -206,6 +244,9 @@ public class checkInteractions : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Checks quest state for pre condition quests
+    /// </summary>
     private void PreConditionCheck()
     {
         //Linked quest triggered
