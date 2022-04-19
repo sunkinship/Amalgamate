@@ -64,7 +64,7 @@ public class dialogueManager : MonoBehaviour
                 playerMove.speakCooldownLeft = playerMove.speakCooldown;
 
                 // If quest is completed progresses trust meter and makes isPostQuest true
-                if (playerManage.callPostQuest && currentNPC.GetComponent<QuestGiver>().quest.isPostQuest == false)
+                if (playerManage.callPostQuest && currentNPC.GetComponent<QuestGiver>().quest.isPostQuest == false && currentNPC.GetComponent<QuestGiver>().quest.isComplete == true)
                 {
                     currentNPC.GetComponent<QuestGiver>().PostQuest();
                     questUI.UpdateList();

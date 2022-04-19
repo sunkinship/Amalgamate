@@ -8,10 +8,11 @@ using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
-    [SerializeField]
     public static List<Quest> quests = new List<Quest>();
-    [SerializeField]
     public static List<Item> inventory = new List<Item>();
+
+    // Holds names of npc who have already used forced interaction 
+    public static List<string> forcedDialogueEncounters = new List<string>();
 
     private static bool lampOn;
     [HideInInspector]
@@ -33,6 +34,8 @@ public class PlayerManager : MonoBehaviour
     private static float hornIntensity = 0;
     private static float lightChangeRate = 0.5f;
     private static float hornChangeRate = 1f;
+
+    public static bool pickedUp;
 
     private void Awake()
     {
@@ -76,8 +79,11 @@ public class PlayerManager : MonoBehaviour
             case "MonsterCave":
                 lampOn = true;
                 break;
-            case "FixingPuzzle":
+            case "ActualPuzzleScene":
                 lampOn = true;
+                break;
+            case "Forest Scene":
+                lampOn = false;
                 break;
         }
         //spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibrary/Glow");
@@ -124,6 +130,7 @@ public class PlayerManager : MonoBehaviour
             {
                 if (npc.quest.goal.IsReached(item) && npc.quest.isComplete == false)
                 {
+                    //Debug.Log("calling post quest. Item: " + item.itemName);
                     callPostQuest = true;
                     npc.quest.isComplete = true;
                     npc.quest.isActive = false;
@@ -163,6 +170,7 @@ public class PlayerManager : MonoBehaviour
             if (playerInput.actions["Interact"].triggered)
             {
                 //Debug.Log("Picked up item");
+                pickedUp = true;
                 item.GetComponent<ItemInteractable>().PickUp();
             }
         }

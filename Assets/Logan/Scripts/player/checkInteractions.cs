@@ -54,6 +54,7 @@ public class checkInteractions : MonoBehaviour
         // Regular dialogue 
         if (isKeyDown && isFacingInteractable == true && player.GetComponent<playerMovement>().inDialogue == false && player.GetComponent<playerMovement>().speakCooldownLeft < 0 && player.GetComponent<playerMovement>().carryingObject == false)
         {
+            LoadQuestState();
             RegularInteraction();
         }
         // Forced dialogue 
@@ -67,6 +68,20 @@ public class checkInteractions : MonoBehaviour
             HoldingObjectInteraction();
         }
 
+    }
+
+    /// <summary>
+    /// Checks if player aleady has quest and updates quest state in case scene change occured 
+    /// </summary>
+    private void LoadQuestState()
+    {
+        foreach (Quest quest in PlayerManager.quests)
+        {
+            if (quest.questName.Equals(currentNPC.GetComponent<QuestGiver>().quest.questName))
+            {
+                currentNPC.GetComponent<QuestGiver>().quest = quest;
+            }
+        }
     }
 
     /// <summary>
@@ -93,7 +108,8 @@ public class checkInteractions : MonoBehaviour
 
         forPortrait.GetComponent<managePortraits>().currentNPC = currentNPC;
         //currentNPC.GetComponent<interactable>()?.Interact(CheckQuestState());
-        UpdateForcedColliders();
+        currentNPC.GetComponent<npcInteract>().UpdateForcedColliders();
+        PlayerManager.forcedDialogueEncounters.Add(currentNPC.name);
         CheckQuestState();
         nameText.text = nameString;
         player.GetComponent<playerMovement>().rb2.velocity = new Vector2(0, 0);
@@ -111,7 +127,8 @@ public class checkInteractions : MonoBehaviour
 
             forPortrait.GetComponent<managePortraits>().currentNPC = currentNPC;
             //currentNPC.GetComponent<interactable>()?.Interact(CheckQuestState());
-            UpdateForcedColliders();
+            currentNPC.GetComponent<npcInteract>().UpdateForcedColliders();
+            PlayerManager.forcedDialogueEncounters.Add(currentNPC.name);
             CheckQuestState();
             nameText.text = nameString;
             player.GetComponent<playerMovement>().rb2.velocity = new Vector2(0, 0);
@@ -119,15 +136,7 @@ public class checkInteractions : MonoBehaviour
     }
 
 
-    /// <summary>
-    /// Removes foreced dialogue colliders and updates state of forced dialogue
-    /// </summary>
-    public void UpdateForcedColliders()
-    {
-        currentNPC.GetComponent<npcInteract>().forceDialogue = false;
-        currentNPC.GetComponent<npcInteract>().forceDialogueCollider.enabled = false;
-        currentNPC.GetComponent<npcInteract>().afterForceCollider.enabled = true;
-    }
+    
 
 
     /// <summary>
@@ -222,6 +231,7 @@ public class checkInteractions : MonoBehaviour
         // Quest not started
         else if (npcQuest.quest.isActive == false && npcQuest.quest.isComplete == false)
         {
+            //Debug.Log("quest not started?");
             currentNPC.GetComponent<interactable>()?.Interact(currentNPC.GetComponent<npcInteract>().portraitsPreQuest[0], "New");
         }
         // Quest started but not completed

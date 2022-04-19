@@ -16,7 +16,15 @@ public class QuestGiver : MonoBehaviour
     private void Start()
     {
         CheckToRemoveCollider();
-        player.GetComponent<checkInteractions>().UpdateForcedColliders();
+
+        // If npc name matches name in list removed colliders for forced dialogue
+        foreach (string npcName in PlayerManager.forcedDialogueEncounters)
+        {
+            if (npcName.Equals(gameObject.GetComponent<npcInteract>().NPCName))
+            {
+                gameObject.GetComponent<npcInteract>().UpdateForcedColliders();
+            }
+        }
     }
 
     /// <summary>
@@ -64,9 +72,10 @@ public class QuestGiver : MonoBehaviour
     /// <param name="collision"></param>
     public void PostQuest()
     {
+        //Debug.Log(quest.questName + " complete");
         quest.isPostQuest = true;
         CheckToRemoveCollider();
-        player.trustMeter.StartCoroutine("AddProgress", 0.5f);
+        player.trustMeter.StartCoroutine("AddProgress", 0.18f);
     }
 
     public void CheckToRemoveCollider()

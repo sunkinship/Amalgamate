@@ -37,11 +37,25 @@ public class npcInteract : MonoBehaviour, interactable
 
     public bool mustHoldCertainObject;
 
+
     private void Awake()
     {
         playerManager = player.GetComponent<PlayerManager>();
         npc = gameObject.GetComponent<QuestGiver>();
     }
+
+
+    /// <summary>
+    /// Removes foreced dialogue colliders and updates state of forced dialogue
+    /// </summary>
+    public void UpdateForcedColliders()
+    {
+        forceDialogue = false;
+        forceDialogueCollider.enabled = false;
+        afterForceCollider.enabled = true;
+        //Debug.Log("forced dialogue activated");
+    }
+
 
     /// <summary>
     /// Set and write NPC dialogue and portaits based on quest state
