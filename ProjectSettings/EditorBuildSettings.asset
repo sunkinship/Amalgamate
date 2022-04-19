@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Leo/Scenes/ActualPuzzleScene.unity
     guid: f60d88fb2d2e15249905d508832fba4e
+  - enabled: 1
+    path: Assets/Leo/Scenes/TestingScenes/Testing1.unity
+    guid: 1d8283cb225601e41947937740d7c09a
+  - enabled: 1
+    path: Assets/Leo/Scenes/TestingScenes/Testing2.unity
+    guid: 510cfbd829f26034fae90d59830754a3
   m_configObjects: {}

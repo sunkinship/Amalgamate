@@ -54,7 +54,6 @@ public class checkInteractions : MonoBehaviour
         // Regular dialogue 
         if (isKeyDown && isFacingInteractable == true && player.GetComponent<playerMovement>().inDialogue == false && player.GetComponent<playerMovement>().speakCooldownLeft < 0 && player.GetComponent<playerMovement>().carryingObject == false)
         {
-            LoadQuestState();
             RegularInteraction();
         }
         // Forced dialogue 
@@ -70,19 +69,6 @@ public class checkInteractions : MonoBehaviour
 
     }
 
-    /// <summary>
-    /// Checks if player aleady has quest and updates quest state in case scene change occured 
-    /// </summary>
-    private void LoadQuestState()
-    {
-        foreach (Quest quest in PlayerManager.quests)
-        {
-            if (quest.questName.Equals(currentNPC.GetComponent<QuestGiver>().quest.questName))
-            {
-                currentNPC.GetComponent<QuestGiver>().quest = quest;
-            }
-        }
-    }
 
     /// <summary>
     /// Initiates regular dialogue 

@@ -15,9 +15,13 @@ public class QuestGiver : MonoBehaviour
 
     private void Start()
     {
+        // Updates quest state after changing scenes
+        LoadQuestState();
+
+        // Removes any regular colliders already removed after switching scenes
         CheckToRemoveCollider();
 
-        // If npc name matches name in list removed colliders for forced dialogue
+        // If npc name matches name in list, remove forced dialogue collider
         foreach (string npcName in PlayerManager.forcedDialogueEncounters)
         {
             if (npcName.Equals(gameObject.GetComponent<npcInteract>().NPCName))
@@ -32,6 +36,7 @@ public class QuestGiver : MonoBehaviour
     /// </summary>
     public void AcceptQuest()
     {
+        Debug.Log("Accepted Quest: " + quest.questName);
         PlayerManager.quests.Add(quest);
         PlayerManager.quests[PlayerManager.quests.Count - 1].isActive = true;
         PlayerManager.quests[PlayerManager.quests.Count - 1].isComplete = false;
@@ -83,6 +88,20 @@ public class QuestGiver : MonoBehaviour
         if (quest.isPostQuest == true && removesCollider == true)
         {
             colliderToRemove.enabled = false;
+        }
+    }
+
+    /// <summary>
+    /// Checks if player aleady has quest and updates quest state in case scene change occured 
+    /// </summary>
+    private void LoadQuestState()
+    {
+        foreach (Quest quest in PlayerManager.quests)
+        {
+            if (quest.questName.Equals(this.quest.questName))
+            {
+                this.quest = quest;
+            }
         }
     }
 }
