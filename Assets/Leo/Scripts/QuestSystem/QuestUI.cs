@@ -11,18 +11,6 @@ public class QuestUI : MonoBehaviour
     private string textContents;
  
 
-    //void Update()
-    //{
-    //    if (Input.GetKey(KeyCode.Tab))
-    //    {
-    //        panel.SetActive(true);
-    //    } 
-    //    if (Input.GetKeyUp(KeyCode.Tab))
-    //    {
-    //        panel.SetActive(false);
-    //    }
-    //}
-
     /// <summary>
     /// Updates contents of the quest list UI
     /// </summary>
@@ -32,10 +20,9 @@ public class QuestUI : MonoBehaviour
         textContents = "";
         foreach (Quest quest in PlayerManager.quests)
         {
-            //Debug.Log("quest: " + quest.questName);
             if (quest.isActive && quest.isComplete == false)
             {
-                textContents = " *" + quest.questName + "\n -" + quest.description + "\n";
+                textContents += " *" + quest.questName + "\n -" + quest.description + "\n\n";
             }
         }
         listText.text = textContents;

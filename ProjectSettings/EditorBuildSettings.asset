@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Tyler/Scenes/PuzzleTesting.unity
     guid: 2ee08010f3ce2fe4189b8bf35f8d2270
+  - enabled: 1
+    path: Assets/Trent/Scenes/Player House.unity
+    guid: c0eeb81f923a9ce4caf2b8d6134d4fac
   m_configObjects: {}

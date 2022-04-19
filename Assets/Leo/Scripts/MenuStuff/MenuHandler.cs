@@ -95,7 +95,7 @@ public class MenuHandler : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Player House");
     }
 
     public void Quit()
