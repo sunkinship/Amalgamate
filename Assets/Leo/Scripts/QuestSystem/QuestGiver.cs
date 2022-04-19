@@ -10,6 +10,9 @@ public class QuestGiver : MonoBehaviour
 
     public QuestUI questUI;
 
+    public bool removesCollider;
+    public Collider2D colliderToRemove;
+
 
     /// <summary>
     /// Receive quest from NPC
@@ -58,5 +61,13 @@ public class QuestGiver : MonoBehaviour
     {
         quest.isPostQuest = true;
         player.trustMeter.StartCoroutine("AddProgress", 0.5f);
+    }
+
+    private void Update()
+    {
+        if (quest.isPostQuest == true && removesCollider == true)
+        {
+            colliderToRemove.enabled = false;
+        }
     }
 }
