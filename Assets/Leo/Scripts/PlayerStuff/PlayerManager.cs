@@ -82,7 +82,7 @@ public class PlayerManager : MonoBehaviour
             case "ActualPuzzleScene":
                 lampOn = true;
                 break;
-            case "Forest Scene":
+            case "ForestScene":
                 lampOn = false;
                 break;
         }
