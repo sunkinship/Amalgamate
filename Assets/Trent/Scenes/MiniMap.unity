@@ -24342,7 +24342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mCam: {fileID: 1646357854}
-  Player: {fileID: 0}
+  Player: {fileID: 1886644749}
 --- !u!114 &1646357856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24350,7 +24350,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646357854}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c88f5cead0c0b2a4eb05b5900433f8d1, type: 3}
   m_Name: 
@@ -25218,6 +25218,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: b41c66a6-9885-48f3-9699-380c33400682
     m_ActionName: Movement/Interact[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2bf0d86b-8686-41a0-a7b8-a3c51962b95c
+    m_ActionName: Movement/Push/Pull[/Keyboard/leftShift]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Movement
@@ -25286,7 +25290,10 @@ MonoBehaviour:
   speakCooldownLeft: 0
   lastFacingDirection: RIGHT
   direction: {x: 0, y: 0, z: 0}
+  rayDirection: {x: 0, y: 0, z: 0}
   rb2: {fileID: 1886644754}
+  carryingObject: 0
+  isFacingNPC: 0
 --- !u!212 &1886644757
 SpriteRenderer:
   m_ObjectHideFlags: 0
