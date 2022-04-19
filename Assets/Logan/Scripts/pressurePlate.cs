@@ -9,7 +9,7 @@ public class pressurePlate : MonoBehaviour
     public bool bigPlate;
     public bool triggered;
 
-    public Collider2D wallToRemove;
+    public GameObject wallToRemove;
 
     public GameObject player;
 
@@ -22,7 +22,7 @@ public class pressurePlate : MonoBehaviour
                 triggered = true;
                 if(removeWall == true && wallToRemove != null)
                 {
-                    wallToRemove.enabled = false;
+                    wallToRemove.SetActive(false);
                 }
             }
         }
@@ -33,7 +33,7 @@ public class pressurePlate : MonoBehaviour
                 triggered = true;
                 if (removeWall == true && wallToRemove != null)
                 {
-                    wallToRemove.enabled = false;
+                    wallToRemove.SetActive(false);
                 }
             }
         }
@@ -45,7 +45,7 @@ public class pressurePlate : MonoBehaviour
             triggered = false;
             if (removeWall == true && wallToRemove != null)
             {
-                wallToRemove.enabled = true;
+                wallToRemove.SetActive(true);
             }
         }
     }

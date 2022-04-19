@@ -24,6 +24,8 @@ public class pushPullObjects : MonoBehaviour
 
     private static Vector3 direction;
 
+    public Animator ani;
+
     private void Awake()
     {
         playerRender = player.GetComponent<Renderer>();
@@ -38,6 +40,7 @@ public class pushPullObjects : MonoBehaviour
         if(playerInput.actions["Interact"].triggered && isFacingMovable == true && isMovingObject == false && canPickUp == true && player.GetComponent<playerMovement>().inDialogue == false)
         {
             Debug.Log("picked up");
+            ani.SetBool("isCarrying", true);
             canPickUp = false;
             player.GetComponent<playerMovement>().moveSpeed = 2.5f;
             heldObjectRender = heldItem.GetComponent<Renderer>();
@@ -47,12 +50,13 @@ public class pushPullObjects : MonoBehaviour
             canDropObject = false;
             isMovingObject = true;
             player.GetComponent<playerMovement>().carryingObject = true;
-            Invoke("enableDrop", .5f);
+            Invoke("enableDrop", 0.2f);
 
         }
         //Drop
         if (playerInput.actions["Interact"].triggered && isMovingObject == true && canDropObject == true && player.GetComponent<playerMovement>().inDialogue == false && player.GetComponent<playerMovement>().isFacingNPC == false)
         {
+            ani.SetBool("isCarrying", false);
             canPickUp = false;
             heldObjectRender.GetComponent<PositionRendering>().enabled = true;
             heldItem.GetComponent<BoxCollider2D>().enabled = true;
@@ -63,7 +67,7 @@ public class pushPullObjects : MonoBehaviour
             heldItem = null;
             canDropObject = false;
             player.GetComponent<playerMovement>().moveSpeed = 6;
-            Invoke("CanPickUp", .5f);
+            Invoke("CanPickUp", 0.2f);
         }
 
 

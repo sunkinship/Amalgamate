@@ -208,6 +208,10 @@ public class playerMovement : MonoBehaviour
                     }
                     moveY = +1f;
                     lastFacingDirection = "UP";
+                    animator.SetBool("LastUp", true);
+                    animator.SetBool("LastDown", false);
+                    animator.SetBool("LastRight", false);
+                    animator.SetBool("LastLeft", false);
                 }
                 //else animator.ResetTrigger("Up");
 
@@ -218,6 +222,10 @@ public class playerMovement : MonoBehaviour
                     hornLamp.transform.localPosition = originalPos;
                     moveY = -1f;
                     lastFacingDirection = "DOWN";
+                    animator.SetBool("LastUp", false);
+                    animator.SetBool("LastDown", true);
+                    animator.SetBool("LastRight", false);
+                    animator.SetBool("LastLeft", false);
                     if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
                     {
                         //Debug.Log("set trigger down");
@@ -232,6 +240,10 @@ public class playerMovement : MonoBehaviour
                     hornLamp.transform.localPosition = originalPos;
                     moveX = -1f;
                     lastFacingDirection = "LEFT";
+                    animator.SetBool("LastUp", false);
+                    animator.SetBool("LastDown", false);
+                    animator.SetBool("LastRight", false);
+                    animator.SetBool("LastLeft", true);
                     if (playerInput.actions["Right"].IsPressed() == false)
                     {
                         //Debug.Log("set trigger left");
@@ -247,6 +259,10 @@ public class playerMovement : MonoBehaviour
                     animator.SetTrigger("Right");
                     moveX = +1f;
                     lastFacingDirection = "RIGHT";
+                    animator.SetBool("LastUp", false);
+                    animator.SetBool("LastDown", false);
+                    animator.SetBool("LastRight", true);
+                    animator.SetBool("LastLeft", false);
                     //Debug.Log("set trigger right");
                 }
                 //else animator.ResetTrigger("Right");
