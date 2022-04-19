@@ -130,7 +130,7 @@ public class playerMovement : MonoBehaviour
         }
 
         speakCooldownLeft = speakCooldownLeft - Time.deltaTime;
-        currentDashCooldown = currentDashCooldown - Time.deltaTime;
+
 
         //if(goToMazeExit == true)
         //{
