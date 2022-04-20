@@ -9,6 +9,8 @@ public class loadSceneOnTrigger : MonoBehaviour
     public bool mazeExit;
     public GameObject player;
     public Animator anim;
+    public Vector2 spawnLocation;
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -37,5 +39,6 @@ public class loadSceneOnTrigger : MonoBehaviour
         anim.SetTrigger("FadeTrigger");
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(sceneToLoad);
+        PlayerManager.spawnPoint = spawnLocation;
     }
 }
