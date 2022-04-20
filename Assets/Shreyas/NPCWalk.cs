@@ -3,21 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 
-public class playerInterference : MonoBehaviour
+public class NPCWalk : MonoBehaviour
 {
     public AIPath aiPath;
     public Patrol patrol;
     Animator anim;
+    public Transform NPCDirection;
+    Rigidbody2D rb;
     void Start()
     {
         anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
         anim.SetBool("isMoving", true);
-
     }
 
+    void Update()
+    {
+        if(aiPath.reachedDestination)
+        {
+            anim.SetBool("isMoving", false);
+        }
+        else if(!aiPath.reachedDestination)
+        {
+            anim.SetBool("isMoving", true);
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if (collision.tag == "Player")
         {
             aiPath.canMove = false;
             anim.SetBool("isMoving", false);
@@ -35,4 +48,5 @@ public class playerInterference : MonoBehaviour
         aiPath.canMove = true;
         anim.SetBool("isMoving", true);
     }
+
 }
