@@ -7,7 +7,6 @@ public class puzzleButton : MonoBehaviour
 {
     public GameObject itemToDisable;
     public float time;
-    public GameObject player;
     public PlayerInput playerInput;
     public bool canPressButton;
 
