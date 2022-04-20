@@ -14,6 +14,8 @@ public class PlayerManager : MonoBehaviour
     // Holds names of npc who have already used forced interaction 
     public static List<string> forcedDialogueEncounters = new List<string>();
 
+    public static Vector2 spawnPoint;
+
     private static bool lampOn;
     [HideInInspector]
     public bool callPostQuest;
@@ -41,6 +43,8 @@ public class PlayerManager : MonoBehaviour
     {
         //spriteLibrary = gameObject.GetComponent<SpriteLibrary>();
         mat = gameObject.GetComponent<Renderer>().sharedMaterial;
+        Debug.Log("Vector: " + spawnPoint);
+        gameObject.transform.position = spawnPoint;
     }
 
     private void Start()

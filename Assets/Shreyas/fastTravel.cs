@@ -9,6 +9,7 @@ public class fastTravel : MonoBehaviour
 {
     public Animator anim;
     public string sceneToLoad;
+
     public void OnClickGoHome()
     {
         StartCoroutine(Fade());
