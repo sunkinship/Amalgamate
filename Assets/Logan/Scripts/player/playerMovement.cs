@@ -31,6 +31,8 @@ public class playerMovement : MonoBehaviour
     private GameObject hornLamp;
     Vector2 originalPos;
 
+    public bool inLoadingZone;
+
     private enum State
     {
         Normal,
@@ -115,7 +117,7 @@ public class playerMovement : MonoBehaviour
             animator.SetBool("isMoving", true);
         }
 
-        if (Mathf.Abs(rb2.velocity.x) > 0.01 || Mathf.Abs(rb2.velocity.y) > 0.01)
+        if ((Mathf.Abs(rb2.velocity.x) > 0.01 || Mathf.Abs(rb2.velocity.y) > 0.01) && inLoadingZone == false)
         {
             animator.SetBool("isMoving", true);
         }
@@ -198,7 +200,7 @@ public class playerMovement : MonoBehaviour
                 direction = Vector2.zero;
 
                 //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["UP"]))
-                if (playerInput.actions["Up"].IsPressed())
+                if (playerInput.actions["Up"].IsPressed() && inLoadingZone == false)
                 {
                     hornLamp.transform.position = new Vector2(transform.position.x - 0.56f, transform.position.y + 0.3f);
                     if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Down"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
@@ -217,7 +219,7 @@ public class playerMovement : MonoBehaviour
 
 
                 //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["DOWN"]))
-                if (playerInput.actions["Down"].IsPressed())
+                if (playerInput.actions["Down"].IsPressed() && inLoadingZone == false)
                 {
                     hornLamp.transform.localPosition = originalPos;
                     moveY = -1f;
@@ -235,7 +237,7 @@ public class playerMovement : MonoBehaviour
                 //else animator.ResetTrigger("Down");
 
                 //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["LEFT"]))
-                if (playerInput.actions["Left"].IsPressed())
+                if (playerInput.actions["Left"].IsPressed() && inLoadingZone == false)
                 {
                     hornLamp.transform.localPosition = originalPos;
                     moveX = -1f;
@@ -253,7 +255,7 @@ public class playerMovement : MonoBehaviour
                 //else animator.ResetTrigger("Left");
 
                 //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["RIGHT"]))
-                if (playerInput.actions["Right"].IsPressed())
+                if (playerInput.actions["Right"].IsPressed() && inLoadingZone == false)
                 {
                     hornLamp.transform.localPosition = originalPos;
                     animator.SetTrigger("Right");

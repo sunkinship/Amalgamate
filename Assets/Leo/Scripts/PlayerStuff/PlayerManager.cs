@@ -14,6 +14,7 @@ public class PlayerManager : MonoBehaviour
     // Holds names of npc who have already used forced interaction 
     public static List<string> forcedDialogueEncounters = new List<string>();
 
+    // Used to set player position when entering new scene
     public static Vector2 spawnPoint;
 
     private static bool lampOn;
@@ -43,7 +44,7 @@ public class PlayerManager : MonoBehaviour
     {
         //spriteLibrary = gameObject.GetComponent<SpriteLibrary>();
         mat = gameObject.GetComponent<Renderer>().sharedMaterial;
-        Debug.Log("Vector: " + spawnPoint);
+        //Debug.Log("Vector: " + spawnPoint);
         gameObject.transform.position = spawnPoint;
     }
 
