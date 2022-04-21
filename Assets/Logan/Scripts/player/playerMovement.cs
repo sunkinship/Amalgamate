@@ -33,7 +33,7 @@ public class playerMovement : MonoBehaviour
     private GameObject hornLamp;
     Vector2 originalPos;
 
-    public bool inLoadingZone;
+    public static bool inLoadingZone;
 
     private enum State
     {

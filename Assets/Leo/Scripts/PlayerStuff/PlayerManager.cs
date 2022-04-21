@@ -44,6 +44,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Awake()
     {
+        playerMovement.inLoadingZone = true;
         //spriteLibrary = gameObject.GetComponent<SpriteLibrary>();
         mat = gameObject.GetComponent<Renderer>().sharedMaterial;
         //Debug.Log("Vector: " + spawnPoint);

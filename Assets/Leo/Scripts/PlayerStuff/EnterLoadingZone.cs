@@ -9,7 +9,7 @@ public class EnterLoadingZone : MonoBehaviour
     public float speed;
     [HideInInspector]
     public Animator ani;
-    private bool moving;
+    private bool calledCoroutine;
     public string playerDirection;
 
     private void Awake()
@@ -21,17 +21,17 @@ public class EnterLoadingZone : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
-            player.GetComponent<playerMovement>().inLoadingZone = true;
-            if (moving == false)
+            playerMovement.inLoadingZone = true;
+            if (calledCoroutine == false)
             {
-                moving = true;
-                StartCoroutine(MoveToTarget());
+                calledCoroutine = true;
+                StartCoroutine(ExitScene());
             }
         }
 
     }
 
-    public IEnumerator MoveToTarget()
+    public IEnumerator ExitScene()
     {
         while (player.transform.position != targetPos)
         {
@@ -40,8 +40,8 @@ public class EnterLoadingZone : MonoBehaviour
             player.transform.position = Vector2.MoveTowards(player.transform.position, targetPos, speed * Time.deltaTime);
             yield return null;
         }
-        moving = false;
-        player.GetComponent<playerMovement>().inLoadingZone = false;
+        calledCoroutine = false;
+        playerMovement.inLoadingZone = false;
     }
 
     private void SetDirection()
