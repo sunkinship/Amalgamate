@@ -11,24 +11,35 @@ public class puzzleButton : MonoBehaviour
     public bool canPressButton;
 
     public GameObject cameraToMove;
-    public GameObject objectToFocus;
+    private GameObject objectToFocus;
     public GameObject player;
 
-    public float slideTime;
+    public float focusTime;
     public float waitToDisable;
+
+    private float speed = 0.0005f;
+
+    private bool canActivatecanPressButton;
+
+    public void Start()
+    {
+        objectToFocus = itemToDisable;
+        canActivatecanPressButton = true;
+    }
 
 
     private void Update()
     {
         if(canPressButton == true && playerInput.actions["Interact"].triggered)
         {
+            canPressButton = false;
             StartCoroutine(buttonWork());
         }
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && canActivatecanPressButton == true)
         {
             canPressButton = true;
         }
@@ -44,15 +55,22 @@ public class puzzleButton : MonoBehaviour
 
     public IEnumerator buttonWork()
     {
+        player.GetComponent<playerMovement>().enabled = false;
         cameraToMove.GetComponent<CameraFollowPlayer>().enabled = false;
-        //cameraToMove.transform.position = new Vector3(objectToFocus.transform.position.x, objectToFocus.transform.position.y, -10);
-        cameraToMove.transform.position += new Vector3(objectToFocus.transform.position.x, objectToFocus.transform.position.y, -10) - cameraToMove.transform.position;
+        canActivatecanPressButton = false;
+        while(cameraToMove.transform.position != new Vector3(objectToFocus.transform.position.x, objectToFocus.transform.position.y, -10))
+        {
+            cameraToMove.transform.position = Vector3.MoveTowards(new Vector3(cameraToMove.transform.position.x, cameraToMove.transform.position.y, -10), new Vector3(objectToFocus.transform.position.x, objectToFocus.transform.position.y, -10), speed / Time.deltaTime);
+            yield return null;
+        }
         yield return new WaitForSeconds(waitToDisable);
         itemToDisable.SetActive(false);
-        yield return new WaitForSeconds(slideTime);
+        yield return new WaitForSeconds(focusTime);
         cameraToMove.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
         cameraToMove.GetComponent<CameraFollowPlayer>().enabled = true;
+        player.GetComponent<playerMovement>().enabled = true;
         yield return new WaitForSeconds(time);
+        canActivatecanPressButton = true;
         itemToDisable.SetActive(true);
     }
 }
