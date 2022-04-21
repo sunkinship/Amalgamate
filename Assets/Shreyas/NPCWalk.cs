@@ -6,6 +6,7 @@ using Pathfinding;
 public class NPCWalk : MonoBehaviour
 {
     public AIPath aiPath;
+    public Seeker seeker;
     public Patrol patrol;
     public Animator anim;
     public GameObject hotZone;
@@ -21,13 +22,36 @@ public class NPCWalk : MonoBehaviour
 
     void Update()
     {
-  
-
         if (aiPath.reachedDestination)
         {
-            anim.SetBool("isMoving", false);
+            anim.Play("NPCIdle");
             StartCoroutine(PatrolWait());
         }
+
+        if(aiPath.desiredVelocity.x > aiPath.desiredVelocity.y)
+        {
+            if (aiPath.desiredVelocity.x >= 0.01f)
+            {
+                anim.Play("NPCWalkright");
+            }
+            if (aiPath.desiredVelocity.x <= -0.01f)
+            {
+                anim.Play("NPCWalkleft");
+            }
+        }
+
+        if (aiPath.desiredVelocity.x < aiPath.desiredVelocity.y)
+        {
+            if (aiPath.desiredVelocity.y >= 0.01f)
+            {
+                anim.Play("NPCWalkUp");
+            }
+            if (aiPath.desiredVelocity.y <= -0.01f)
+            {
+                anim.Play("NPCWalkDown");
+            }
+        }
+
 
     }
 

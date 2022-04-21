@@ -18,15 +18,9 @@ public class Trigger : MonoBehaviour
         {
             gameObject.SetActive(false);
             NPCparent.aiPath.canMove = false;
-            NPCparent.anim.SetBool("isMoving", false);
+            NPCparent.anim.Play("NPCIdle");
             NPCparent.hotZone.SetActive(true);
         }
-        if(NPCparent.aiPath.reachedDestination && collider.gameObject.CompareTag("Player"))
-        {
-            gameObject.SetActive(false);
-            NPCparent.aiPath.canMove = false;
-            NPCparent.anim.SetBool("isMoving", false);
-            NPCparent.hotZone.SetActive(true);
-        }
+
     }
 }
