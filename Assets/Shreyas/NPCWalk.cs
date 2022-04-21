@@ -7,9 +7,11 @@ public class NPCWalk : MonoBehaviour
 {
     public AIPath aiPath;
     public Patrol patrol;
-    Animator anim;
-    public Transform NPCDirection;
-    Rigidbody2D rb;
+    public Animator anim;
+    public GameObject hotZone;
+    public GameObject triggerArea;
+
+    public Rigidbody2D rb;
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -19,34 +21,21 @@ public class NPCWalk : MonoBehaviour
 
     void Update()
     {
-        if(aiPath.reachedDestination)
+  
+
+        if (aiPath.reachedDestination)
         {
             anim.SetBool("isMoving", false);
+            StartCoroutine(PatrolWait());
         }
-        else if(!aiPath.reachedDestination)
-        {
-            anim.SetBool("isMoving", true);
-        }
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Player")
-        {
-            aiPath.canMove = false;
-            anim.SetBool("isMoving", false);
-        }
+
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    IEnumerator PatrolWait()
     {
-        StartCoroutine(Wait());
-    }
-
-    IEnumerator Wait()
-    {
-        yield return new WaitForSeconds(2);
-        aiPath.canMove = true;
+        yield return new WaitForSeconds(patrol.delay);
         anim.SetBool("isMoving", true);
     }
+
 
 }
