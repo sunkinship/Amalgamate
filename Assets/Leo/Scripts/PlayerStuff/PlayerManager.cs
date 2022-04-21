@@ -11,6 +11,8 @@ public class PlayerManager : MonoBehaviour
     public static List<Quest> quests = new List<Quest>();
     public static List<Item> inventory = new List<Item>();
 
+    
+
     // Holds names of npc who have already used forced interaction 
     public static List<string> forcedDialogueEncounters = new List<string>();
 
@@ -50,6 +52,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Start()
     {
+        
         questUI.UpdateList();
     }
 

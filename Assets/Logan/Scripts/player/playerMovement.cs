@@ -9,6 +9,8 @@ public class playerMovement : MonoBehaviour
     [SerializeField] private LayerMask dashLayerMask;
     [SerializeField] private LayerMask wallLayerMask;
 
+    public AudioSource woodSoundEffect;
+    public AudioSource grassWalkingSoundEffect;
     public float moveSpeed = 6f;
     private float dashSpeed;
 
@@ -71,12 +73,54 @@ public class playerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        woodSoundEffect = GetComponent<AudioSource>();
+        grassWalkingSoundEffect = GetComponent<AudioSource>();
         playerInput = GetComponent<PlayerInput>();
     }
 
     // Update is called once per frame
+
+    public void OnCollis(Collider other)
+    {
+        
+        Debug.Log("Help");
+        if (other.tag == "Wood")
+        {
+            Debug.Log("Sound");
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+            {
+                woodSoundEffect.UnPause();
+            }
+            else
+            {
+                woodSoundEffect.Pause();
+            }
+        }
+    }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+
+        Debug.Log("Help");
+        if (tag == "Wood")
+        {
+            Debug.Log("Sound");
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+            {
+                woodSoundEffect.UnPause();
+            }
+            else
+            {
+                woodSoundEffect.Pause();
+            }
+        }
+    }
     void Update()
     {
+        
+
+        
+
         /*movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
