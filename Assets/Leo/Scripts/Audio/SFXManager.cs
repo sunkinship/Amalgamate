@@ -43,7 +43,7 @@ public class SFXManager : MonoBehaviour
 
     public static void PlaySound(string clip)
     {
-        SFXManager.SFXInstance.Audiosrc.volume.Equals();
+        //SFXManager.SFXInstance.Audiosrc.volume.Equals();
         switch (clip)
         {
             case "Footstep":
