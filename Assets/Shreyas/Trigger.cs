@@ -5,7 +5,7 @@ using Pathfinding;
 
 public class Trigger : MonoBehaviour
 {
-    private NPCWalk NPCparent;
+    public NPCWalk NPCparent;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +18,7 @@ public class Trigger : MonoBehaviour
         {
             gameObject.SetActive(false);
             NPCparent.aiPath.canMove = false;
-            NPCparent.anim.Play("NPCIdle");
+            NPCparent.anim.SetBool("isMoving", false);
             NPCparent.hotZone.SetActive(true);
         }
 

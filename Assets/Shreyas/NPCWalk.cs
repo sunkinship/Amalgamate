@@ -11,49 +11,40 @@ public class NPCWalk : MonoBehaviour
     public Animator anim;
     public GameObject hotZone;
     public GameObject triggerArea;
-
-    public Rigidbody2D rb;
     void Start()
     {
         anim = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
-        anim.SetBool("isMoving", true);
     }
 
     void Update()
     {
-        if(aiPath.reachedDestination)
+        anim.SetBool("isMoving", true);
+        if (aiPath.velocity.x >= 0.01f)
         {
-            anim.SetBool("isMoving", false);
-            StartCoroutine(PatrolWait());
-        }
-        if (aiPath.velocity.x > aiPath.velocity.y )
-        {
-            if (aiPath.velocity.x >= 0.01f)
-            {
-                anim.Play("NPCWalkright");
-            }
-            if (aiPath.velocity.x <= -0.01f)
-            {
-                anim.Play("NPCWalkleft");
-            }
+            anim.Play("NPCWalkright");
 
         }
-        if (aiPath.reachedDestination)
+        else if (aiPath.velocity.x <= -0.01f)
+        {
+            anim.Play("NPCWalkleft");
+        }
+        else if (aiPath.velocity.y >= 0.01f)
+        {
+            anim.Play("NPCWalkUp");
+        }
+        else if (aiPath.velocity.y <= -0.01f)
+        {
+            anim.Play("NPCWalkDown");
+        }
+        else
         {
             anim.SetBool("isMoving", false);
             StartCoroutine(PatrolWait());
         }
-        if (aiPath.velocity.x > aiPath.velocity.y)
+
+        if (aiPath.canMove == false)
         {
-            if (aiPath.velocity.y >= 0.01f)
-            {
-                anim.Play("NPCWalkUp");
-            }
-            if (aiPath.velocity.y <= -0.01f)
-            {
-                anim.Play("NPCWalkDown");
-            }
+            anim.SetBool("isMoving", false);
         }
 
     }

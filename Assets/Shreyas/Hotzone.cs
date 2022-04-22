@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Hotzone : MonoBehaviour
 {
-    private NPCWalk NPCparent;
-    private bool inRange;
+    public NPCWalk NPCparent;
+    public bool inRange;
     private void Start()
     {
         NPCparent = GetComponentInParent<NPCWalk>();
