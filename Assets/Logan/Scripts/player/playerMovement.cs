@@ -35,6 +35,8 @@ public class playerMovement : MonoBehaviour
 
     public static bool inLoadingZone;
 
+    public GameObject interactionZones;
+
     private enum State
     {
         Normal,
@@ -58,6 +60,8 @@ public class playerMovement : MonoBehaviour
 
     [HideInInspector]
     public bool carryingObject, isFacingNPC;
+
+    public GameObject carriedObject;
 
 
     private void Awake()
@@ -117,8 +121,16 @@ public class playerMovement : MonoBehaviour
     }
     void Update()
     {
-        
 
+        interactionZones = GameObject.FindGameObjectWithTag("interactionZone");
+
+        if(carryingObject == true && inLoadingZone == true)
+        {
+            interactionZones.GetComponent<pushPullObjects>();
+            carriedObject = pushPullObjects.currentMovable;
+
+            DontDestroyOnLoad(carriedObject);
+        }
         
 
         /*movement.x = Input.GetAxisRaw("Horizontal");

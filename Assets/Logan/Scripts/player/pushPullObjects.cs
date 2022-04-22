@@ -10,7 +10,7 @@ public class pushPullObjects : MonoBehaviour
     public GameObject player;
     private bool isKeyDown;
     private bool isFacingMovable;
-    private static GameObject currentMovable;
+    public static GameObject currentMovable;
     public static bool isMovingObject;
     public static bool canDropObject;
     static bool canPickUp;
