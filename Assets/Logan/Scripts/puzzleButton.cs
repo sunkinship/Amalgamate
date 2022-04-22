@@ -17,7 +17,7 @@ public class puzzleButton : MonoBehaviour
     public float focusTime;
     public float waitToDisable;
 
-    private float speed = 0.0005f;
+    public float speed = 0.0005f;
 
     private bool canActivatecanPressButton;
 
