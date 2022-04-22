@@ -10,12 +10,11 @@ public class loadSceneOnTrigger : MonoBehaviour
     public GameObject player;
     public Animator anim;
     public Vector2 spawnLocation;
-    [HideInInspector]
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag.Equals("Player") && playerMovement.inLoadingZone == false)
+        if(collision.gameObject.tag.Equals("Player") && EnterThisScene.enteringScene == false)
         {
             player = collision.gameObject;
 
