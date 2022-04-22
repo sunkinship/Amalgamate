@@ -9,6 +9,7 @@ TagManager:
   - interactableNPC
   - movableObject
   - Wall
+  - Wood
   layers:
   - Default
   - TransparentFX
