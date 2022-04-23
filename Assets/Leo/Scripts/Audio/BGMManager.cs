@@ -38,6 +38,11 @@ public class BGMManager : MonoBehaviour
         BGM = GetComponent<AudioSource>();
     }
 
+    public void ChangeMasterVolume(float value)
+    {
+        AudioListener.volume = value;
+    }
+
     private void Update()
     {
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
