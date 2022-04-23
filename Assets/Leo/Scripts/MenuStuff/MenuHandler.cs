@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class MenuHandler : MonoBehaviour
 {
     public GetLights getLights;
-    public GameObject mainMenuCanvas, settingsCanvas, creditsCanvas, rebindCanvas;
+    public GameObject mainMenuCanvas, settingsCanvas, creditsCanvas;
     private CurrentCanvas currentCanvas = CurrentCanvas.mainmenu;
 
     public Animator ani;
@@ -14,7 +14,7 @@ public class MenuHandler : MonoBehaviour
 
 
     private enum CurrentCanvas{
-        mainmenu, settings, credits, rebind
+        mainmenu, settings, credits
     }
 
     public void MainMenu()
@@ -38,13 +38,6 @@ public class MenuHandler : MonoBehaviour
         DisableCanvas();
         currentCanvas = CurrentCanvas.settings;
         settingsCanvas.SetActive(true);
-    }
-
-    public void Rebind()
-    {
-        DisableCanvas();
-        currentCanvas = CurrentCanvas.rebind;
-        rebindCanvas.SetActive(true);
     }
 
     public void Credits()
@@ -83,9 +76,6 @@ public class MenuHandler : MonoBehaviour
                 break;
             case CurrentCanvas.settings:
                 settingsCanvas.SetActive(false);
-                break;
-            case CurrentCanvas.rebind:
-                rebindCanvas.SetActive(false);
                 break;
             case CurrentCanvas.credits:
                 creditsCanvas.SetActive(false);
