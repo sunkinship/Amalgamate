@@ -5,48 +5,51 @@ using Pathfinding;
 
 public class NPCWalk : MonoBehaviour
 {
-    public AILerp aiPath;
+    public AILerp aiLerp;
     public Seeker seeker;
     public Patrol patrol;
     public Animator anim;
     public GameObject hotZone;
     public GameObject triggerArea;
+
+    public float raycastDistance;
     void Start()
     {
         anim = GetComponent<Animator>();
+        aiLerp = GetComponent<AILerp>();
+        seeker = GetComponent<Seeker>();
+        patrol = GetComponent<Patrol>();
     }
 
     void Update()
     {
         anim.SetBool("isMoving", true);
-        if (aiPath.velocity.x >= 0.01f)
+        if (aiLerp.velocity.x >= 0.01f && aiLerp.canMove == true)
         {
             anim.Play("NPCWalkright");
-
         }
-        else if (aiPath.velocity.x <= -0.01f)
+        else if (aiLerp.velocity.x <= -0.01f && aiLerp.canMove == true)
         {
             anim.Play("NPCWalkleft");
         }
-        else if (aiPath.velocity.y >= 0.01f)
+        else if (aiLerp.velocity.y >= 0.01f && aiLerp.canMove == true)
         {
             anim.Play("NPCWalkUp");
         }
-        else if (aiPath.velocity.y <= -0.01f)
+        else if (aiLerp.velocity.y <= -0.01f && aiLerp.canMove == true)
         {
             anim.Play("NPCWalkDown");
         }
-        else
+        else if(aiLerp.reachedEndOfPath)
         {
             anim.SetBool("isMoving", false);
             StartCoroutine(PatrolWait());
         }
 
-        if (aiPath.canMove == false)
+        if (aiLerp.canMove == false)
         {
             anim.SetBool("isMoving", false);
         }
-
     }
 
     IEnumerator PatrolWait()

@@ -16,6 +16,8 @@ public class Hotzone : MonoBehaviour
         {
             inRange = true;
         }
+
+
     }
 
     private void OnTriggerExit2D(Collider2D collider)
@@ -32,7 +34,7 @@ public class Hotzone : MonoBehaviour
         inRange = false;
         gameObject.SetActive(false);
         NPCparent.triggerArea.SetActive(true);
-        NPCparent.aiPath.canMove = true;
+        NPCparent.aiLerp.canMove = true;
         NPCparent.anim.SetBool("isMoving", true);
 
     }
