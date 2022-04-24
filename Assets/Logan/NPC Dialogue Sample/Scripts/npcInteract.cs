@@ -7,6 +7,7 @@ public class npcInteract : MonoBehaviour, interactable
 {
     public GameObject player;
     public string NPCName;
+    public AudioClip voiceClip;
 
     [Header ("Dialogue")]
     [SerializeField] dialogue dialoguePreQuest;

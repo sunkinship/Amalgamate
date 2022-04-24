@@ -26,7 +26,7 @@ public class dialogueManager : MonoBehaviour
     private Sprite[] portraitList;
 
     public QuestUI questUI;
-
+    private AudioClip voiceClip;
 
     public static dialogueManager Instance { get; private set; }
     private void Awake()
@@ -103,6 +103,8 @@ public class dialogueManager : MonoBehaviour
     /// <returns></returns>
     public IEnumerator TypeDialogue(string dialogue)
     {
+        currentNPC = portraitManager.GetComponent<managePortraits>().currentNPC;
+        voiceClip = currentNPC.GetComponent<npcInteract>().voiceClip;
         isTyping = true;
         dialogueText.text = dialogue;
         int totalVisibleCharacters = dialogue.ToString().Length;
@@ -120,8 +122,9 @@ public class dialogueManager : MonoBehaviour
                 if (Time.time >= nextTime)
                 {
                     nextTime = Time.time + delayTime;
-                    int visibleCount = counter % (totalVisibleCharacters + 1);
+                    int visibleCount = counter % totalVisibleCharacters;
                     dialogueText.maxVisibleCharacters = visibleCount;
+                    PlaySound();
                     if (visibleCount >= totalVisibleCharacters)
                     {
                         break;
@@ -134,7 +137,6 @@ public class dialogueManager : MonoBehaviour
                 //Check for skip input
                 if (playerInput.actions["Interact"].triggered)
                 {
-                    dialogueText.maxVisibleCharacters = totalVisibleCharacters;
                     // Exits both loops
                     goto exitLoops;
                 }
@@ -142,6 +144,12 @@ public class dialogueManager : MonoBehaviour
         }
 
         exitLoops:
+        dialogueText.maxVisibleCharacters = totalVisibleCharacters;
         isTyping = false;
+    }
+
+    public void PlaySound()
+    {
+        AudioManager.Instance.PlaySound(voiceClip);
     }
 }

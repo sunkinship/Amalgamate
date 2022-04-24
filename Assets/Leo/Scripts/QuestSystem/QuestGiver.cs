@@ -36,7 +36,7 @@ public class QuestGiver : MonoBehaviour
     /// </summary>
     public void AcceptQuest()
     {
-        Debug.Log("Accepted Quest: " + quest.questName);
+        //Debug.Log("Accepted Quest: " + quest.questName);
         PlayerManager.quests.Add(quest);
         PlayerManager.quests[PlayerManager.quests.Count - 1].isActive = true;
         PlayerManager.quests[PlayerManager.quests.Count - 1].isComplete = false;
