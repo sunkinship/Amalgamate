@@ -63,6 +63,12 @@ public class playerMovement : MonoBehaviour
 
     public GameObject carriedObject;
 
+    //Variables for audio 
+    private float stepRate = 0.5f;
+    private float stepCoolDown;
+    [SerializeField] private AudioClip clip;
+
+
 
     private void Awake()
     {
@@ -102,23 +108,23 @@ public class playerMovement : MonoBehaviour
         }
     }
 
-    public void OnCollisionEnter(Collision collision)
-    {
+    //public void OnCollisionEnter(Collision collision)
+    //{
 
-        Debug.Log("Help");
-        if (tag == "Wood")
-        {
-            Debug.Log("Sound");
-            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
-            {
-                woodSoundEffect.UnPause();
-            }
-            else
-            {
-                woodSoundEffect.Pause();
-            }
-        }
-    }
+    //    Debug.Log("Help");
+    //    if (tag == "Wood")
+    //    {
+    //        Debug.Log("Sound");
+    //        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+    //        {
+    //            woodSoundEffect.UnPause();
+    //        }
+    //        else
+    //        {
+    //            woodSoundEffect.Pause();
+    //        }
+    //    }
+    //}
     void Update()
     {
 
@@ -131,7 +137,16 @@ public class playerMovement : MonoBehaviour
 
             DontDestroyOnLoad(carriedObject);
         }
-        
+
+        //Play footstep sfx
+        stepCoolDown -= Time.deltaTime;
+
+        if (stepCoolDown <= 0f && animator.GetBool("isMoving"))
+        {
+            stepCoolDown = stepRate;
+            AudioManager.Instance.PlaySound(clip);
+        }
+
 
         /*movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");

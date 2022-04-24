@@ -109,6 +109,7 @@ public class dialogueManager : MonoBehaviour
         dialogueText.text = dialogue;
         int totalVisibleCharacters = dialogue.ToString().Length;
         int counter = 0;
+        int voiceClipCounter = 3;
 
         float delayTime = 0.03f;
         float nextTime = Time.time;
@@ -121,10 +122,15 @@ public class dialogueManager : MonoBehaviour
                 // Wait for delay to continue
                 if (Time.time >= nextTime)
                 {
+                    voiceClipCounter++;
                     nextTime = Time.time + delayTime;
                     int visibleCount = counter % totalVisibleCharacters;
                     dialogueText.maxVisibleCharacters = visibleCount;
-                    PlaySound();
+                    if (voiceClipCounter >= 3)
+                    {
+                        PlaySound();
+                        voiceClipCounter = 0;
+                    }
                     if (visibleCount >= totalVisibleCharacters)
                     {
                         break;

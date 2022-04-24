@@ -332,7 +332,7 @@ MonoBehaviour:
   - {x: -0.5534859, y: -1.2871497, z: 0}
   m_ShapePathHash: 228770605
   m_Mesh: {fileID: 0}
-  m_InstanceId: 714058
+  m_InstanceId: 760526
 --- !u!1 &951023340945304220
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,20 +518,23 @@ MonoBehaviour:
   wallLayerMask:
     serializedVersion: 2
     m_Bits: 1
-  soundEffect: {fileID: 0}
+  woodSoundEffect: {fileID: 0}
+  grassWalkingSoundEffect: {fileID: 0}
   moveSpeed: 6
   goToMazeExit: 0
   inDialogue: 0
   currentDashCooldown: 0
   speakCooldown: 0.5
   speakCooldownLeft: 0
-  inLoadingZone: 0
+  interactionZones: {fileID: 0}
   lastFacingDirection: RIGHT
   direction: {x: 0, y: 0, z: 0}
   rayDirection: {x: 0, y: 0, z: 0}
   rb2: {fileID: 951023341175528873}
   carryingObject: 0
   isFacingNPC: 0
+  carriedObject: {fileID: 0}
+  clip: {fileID: 8300000, guid: 1c2d8d252aeb0a9409c4b034a776f4a3, type: 3}
 --- !u!58 &951023341175528874
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1361,7 +1364,7 @@ MonoBehaviour:
   - {x: -0.27113056, y: -1.5775857, z: 0}
   m_ShapePathHash: 139732523
   m_Mesh: {fileID: 0}
-  m_InstanceId: 714136
+  m_InstanceId: 760604
 --- !u!60 &951023342635561723
 PolygonCollider2D:
   m_ObjectHideFlags: 0
