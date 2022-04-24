@@ -56,6 +56,7 @@ public class pushPullObjects : MonoBehaviour
         //Drop
         if (playerInput.actions["Interact"].triggered && isMovingObject == true && canDropObject == true && player.GetComponent<playerMovement>().inDialogue == false && player.GetComponent<playerMovement>().isFacingNPC == false)
         {
+            heldItem.GetComponentInChildren<ParticleSystem>().Play();
             ani.SetBool("isCarrying", false);
             canPickUp = false;
             heldObjectRender.GetComponent<PositionRendering>().enabled = true;
