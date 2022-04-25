@@ -80,7 +80,7 @@ public class QuestGiver : MonoBehaviour
         //Debug.Log(quest.questName + " complete");
         quest.isPostQuest = true;
         CheckToRemoveCollider();
-        player.trustMeter.StartCoroutine("AddProgress", 0.18f);
+        player.trustMeter.StartCoroutine("AddProgress", 0.15f);
     }
 
     public void CheckToRemoveCollider()

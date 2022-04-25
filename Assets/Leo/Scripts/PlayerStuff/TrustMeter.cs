@@ -27,7 +27,7 @@ public class TrustMeter : MonoBehaviour
 
         //if (Input.GetKeyDown(KeyCode.K))
         //{
-        //    StartCoroutine("AddProgress", 0.5f);
+        //    StartCoroutine("AddProgress", 0.15f);
         //}
     }
 
@@ -36,9 +36,13 @@ public class TrustMeter : MonoBehaviour
         ani.Play("TrustMeterDown");
         yield return new WaitForSeconds(1f);
 
-        targetProgress = slider.value + newProgress - 0.005f;
-        while (!(slider.value >= targetProgress))
+        //targetProgress = slider.value + newProgress - 0.005f;
+        targetProgress = slider.value + newProgress;
+        //while (!(slider.value >= targetProgress))
+        //    yield return null;
+        while (slider.value < targetProgress){
             yield return null;
+        }
 
         yield return new WaitForSeconds(1.5f);
         ani.Play("TrustMeterUp");
