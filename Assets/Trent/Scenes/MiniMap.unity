@@ -434,7 +434,6 @@ GameObject:
   - component: {fileID: 200044428}
   - component: {fileID: 200044427}
   - component: {fileID: 200044426}
-  - component: {fileID: 200044425}
   - component: {fileID: 200044424}
   m_Layer: 0
   m_Name: Map Cam
@@ -471,26 +470,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mCam: {fileID: 200044422}
   Player: {fileID: 1886644749}
---- !u!114 &200044425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 200044422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88f5cead0c0b2a4eb05b5900433f8d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AssetsPPU: 20
-  m_RefResolutionX: 320
-  m_RefResolutionY: 200
-  m_UpscaleRT: 1
-  m_PixelSnapping: 0
-  m_CropFrameX: 0
-  m_CropFrameY: 0
-  m_StretchFill: 1
 --- !u!114 &200044426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1707,7 +1686,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.03333336, y: 0.03333336, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -25282,18 +25261,23 @@ MonoBehaviour:
   wallLayerMask:
     serializedVersion: 2
     m_Bits: 0
+  woodSoundEffect: {fileID: 0}
+  grassWalkingSoundEffect: {fileID: 0}
   moveSpeed: 6
   goToMazeExit: 0
   inDialogue: 0
   currentDashCooldown: 0
   speakCooldown: 0.5
   speakCooldownLeft: 0
+  interactionZones: {fileID: 0}
   lastFacingDirection: RIGHT
   direction: {x: 0, y: 0, z: 0}
   rayDirection: {x: 0, y: 0, z: 0}
   rb2: {fileID: 1886644754}
   carryingObject: 0
   isFacingNPC: 0
+  carriedObject: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!212 &1886644757
 SpriteRenderer:
   m_ObjectHideFlags: 0
