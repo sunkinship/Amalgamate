@@ -6,18 +6,17 @@ public class Hotzone : MonoBehaviour
 {
     public NPCWalk NPCparent;
     public bool inRange;
+    public float distance;
     private void Start()
     {
         NPCparent = GetComponentInParent<NPCWalk>();
     }
-    private void OnTriggerEnter2D(Collider2D collider)
+    private void OnTriggerStay2D(Collider2D collider)
     {
         if(collider.gameObject.CompareTag("Player"))
         {
             inRange = true;
         }
-
-
     }
 
     private void OnTriggerExit2D(Collider2D collider)

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class pressurePlate : MonoBehaviour
 {
@@ -13,6 +14,15 @@ public class pressurePlate : MonoBehaviour
 
     public GameObject player;
 
+    //camera follow stuff
+    public PlayerInput playerInput;
+    public GameObject cameraToMove;
+    private GameObject objectToFocus;
+    public float focusTime;
+    public float waitToDisable;
+    public float speed = 0.0005f;
+
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if(bigPlate == true)
@@ -22,7 +32,7 @@ public class pressurePlate : MonoBehaviour
                 triggered = true;
                 if(removeWall == true && wallToRemove != null)
                 {
-                    wallToRemove.SetActive(false);
+                    StartCoroutine(plateWork());
                 }
             }
         }
@@ -33,7 +43,7 @@ public class pressurePlate : MonoBehaviour
                 triggered = true;
                 if (removeWall == true && wallToRemove != null)
                 {
-                    wallToRemove.SetActive(false);
+                    StartCoroutine(plateWork());
                 }
             }
         }
@@ -48,6 +58,24 @@ public class pressurePlate : MonoBehaviour
                 wallToRemove.SetActive(true);
             }
         }
+    }
+
+    public IEnumerator plateWork()
+    {
+        objectToFocus = wallToRemove;
+        player.GetComponent<playerMovement>().enabled = false;
+        cameraToMove.GetComponent<CameraFollowPlayer>().enabled = false;
+        while (cameraToMove.transform.position != new Vector3(objectToFocus.transform.position.x, objectToFocus.transform.position.y, -10))
+        {
+            cameraToMove.transform.position = Vector3.MoveTowards(new Vector3(cameraToMove.transform.position.x, cameraToMove.transform.position.y, -10), new Vector3(objectToFocus.transform.position.x, objectToFocus.transform.position.y, -10), speed / Time.deltaTime);
+            yield return null;
+        }
+        yield return new WaitForSeconds(waitToDisable);
+        wallToRemove.SetActive(false);
+        yield return new WaitForSeconds(focusTime);
+        cameraToMove.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
+        cameraToMove.GetComponent<CameraFollowPlayer>().enabled = true;
+        player.GetComponent<playerMovement>().enabled = true;
     }
 
 }
