@@ -56,6 +56,11 @@ public class NPCWalk : MonoBehaviour
     {
         yield return new WaitForSeconds(patrol.delay);
         anim.SetBool("isMoving", true);
+        if(aiLerp.reachedEndOfPath == false && aiLerp.canMove == false)
+        {
+            StopCoroutine(PatrolWait());
+            anim.SetBool("isMoving", false);
+        }
     }
 
 
