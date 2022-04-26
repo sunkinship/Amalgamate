@@ -111,7 +111,7 @@ public class pushPullObjects : MonoBehaviour
     public IEnumerator buttonPrompt()
     {
         yield return new WaitForSeconds(2);
-        prompt.SetActive(true);
+        //prompt.SetActive(true);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
