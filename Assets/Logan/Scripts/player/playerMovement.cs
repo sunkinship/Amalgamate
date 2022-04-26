@@ -37,6 +37,8 @@ public class playerMovement : MonoBehaviour
 
     public GameObject interactionZones;
 
+    public bool mirroredPlayer;
+
     private enum State
     {
         Normal,
@@ -67,6 +69,7 @@ public class playerMovement : MonoBehaviour
     private float stepRate = 0.5f;
     private float stepCoolDown;
     [SerializeField] private AudioClip clip;
+
 
 
 
@@ -271,7 +274,7 @@ public class playerMovement : MonoBehaviour
                 direction = Vector2.zero;
 
                 //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["UP"]))
-                if (playerInput.actions["Up"].IsPressed() && inLoadingZone == false)
+                if (playerInput.actions["Up"].IsPressed() && inLoadingZone == false && mirroredPlayer == false)
                 {
                     hornLamp.transform.position = new Vector2(transform.position.x - 0.56f, transform.position.y + 0.3f);
                     if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Down"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
@@ -290,7 +293,7 @@ public class playerMovement : MonoBehaviour
 
 
                 //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["DOWN"]))
-                if (playerInput.actions["Down"].IsPressed() && inLoadingZone == false)
+                if (playerInput.actions["Down"].IsPressed() && inLoadingZone == false && mirroredPlayer == false)
                 {
                     hornLamp.transform.localPosition = originalPos;
                     moveY = -1f;
@@ -338,6 +341,42 @@ public class playerMovement : MonoBehaviour
                     animator.SetBool("LastLeft", false);
                     //Debug.Log("set trigger right");
                 }
+                #region mirrorInput
+                if (playerInput.actions["Up"].IsPressed() && inLoadingZone == false && mirroredPlayer == true)
+                {
+                    hornLamp.transform.position = new Vector2(transform.position.x - 0.56f, transform.position.y + 0.3f);
+                    if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Down"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
+                    {
+                        //Debug.Log("set trigger up");
+                        animator.SetTrigger("Down");
+                    }
+                    moveY = -1f;
+                    lastFacingDirection = "DOWN";
+                    animator.SetBool("LastUp", false);
+                    animator.SetBool("LastDown", true);
+                    animator.SetBool("LastRight", false);
+                    animator.SetBool("LastLeft", false);
+                }
+                //else animator.ResetTrigger("Up");
+
+
+                //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["DOWN"]))
+                if (playerInput.actions["Down"].IsPressed() && inLoadingZone == false && mirroredPlayer == true)
+                {
+                    hornLamp.transform.localPosition = originalPos;
+                    moveY = +1f;
+                    lastFacingDirection = "UP";
+                    animator.SetBool("LastUp", true);
+                    animator.SetBool("LastDown", false);
+                    animator.SetBool("LastRight", false);
+                    animator.SetBool("LastLeft", false);
+                    if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
+                    {
+                        //Debug.Log("set trigger down");
+                        animator.SetTrigger("Up");
+                    }
+                }
+                #endregion mirrorInput
                 //else animator.ResetTrigger("Right");
 
                 direction = new Vector3(moveX, moveY).normalized;
