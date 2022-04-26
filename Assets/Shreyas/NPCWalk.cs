@@ -11,8 +11,6 @@ public class NPCWalk : MonoBehaviour
     public Animator anim;
     public GameObject hotZone;
     public GameObject triggerArea;
-
-    public float raycastDistance;
     void Start()
     {
         anim = GetComponent<Animator>();
