@@ -23,7 +23,8 @@ public class checkInteractions : MonoBehaviour
     private QuestGiver npcQuest;
     private PlayerManager playerManager;
 
-
+    //prompt
+    public GameObject prompt;
 
 
     private void Awake()
@@ -34,6 +35,13 @@ public class checkInteractions : MonoBehaviour
 
     void Update()
     {
+
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            prompt.SetActive(false);
+        }
+
+
         if(currentNPC != null)
         {
             npcPortrait.GetComponent<Image>().sprite = currentNPC.GetComponent<npcInteract>().currentPortrait;
@@ -283,6 +291,12 @@ public class checkInteractions : MonoBehaviour
         }
     }
 
+    public IEnumerator buttonPrompt()
+    {
+        yield return new WaitForSeconds(2);
+        prompt.SetActive(true);
+    }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "interactableNPC")
@@ -292,10 +306,16 @@ public class checkInteractions : MonoBehaviour
             currentNPC = collision.gameObject;
 
         }
+        if(collision.gameObject.tag == "interactableNPC" && player.GetComponent<playerMovement>().carryingObject == false)
+        {
+            StartCoroutine(buttonPrompt());
+        }
 
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
+        StopCoroutine(buttonPrompt());
         isFacingInteractable = false;
+        prompt.SetActive(false);
     }
 }
