@@ -11,6 +11,8 @@ public class MapMove : MonoBehaviour
 
     private Vector2 moveVelocity;
 
+    public playerMovement playerMove;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,8 @@ public class MapMove : MonoBehaviour
     void Update()
     {
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        moveVelocity = moveInput.normalized * speed;
+        //rb.velocity = moveVelocity * Time.fixedDeltaTime;
+        moveVelocity = moveInput.normalized * speed * playerMove.moveSpeed;
     }
 
     private void FixedUpdate()
