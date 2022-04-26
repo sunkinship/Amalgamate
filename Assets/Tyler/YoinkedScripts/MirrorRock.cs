@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine;
 
-public class pushPullObjects : MonoBehaviour
+public class MirrorRock : MonoBehaviour
 {
     private PlayerInput playerInput;
     public static GameObject heldItem;
@@ -36,27 +36,25 @@ public class pushPullObjects : MonoBehaviour
 
     public void Update()
     {
-
-
         //Pick up
-        if (playerInput.actions["Interact"].triggered && isFacingMovable == true && isMovingObject == false && canPickUp == true && player.GetComponent<playerMovement>().inDialogue == false)
+        if (playerInput.actions["Interact"].triggered && isFacingMovable == true && isMovingObject == false && canPickUp == true && player.GetComponent<MirrorPlayer>().inDialogue == false)
         {
             //Debug.Log("picked up");
             ani.SetBool("isCarrying", true);
             canPickUp = false;
-            player.GetComponent<playerMovement>().moveSpeed = 2.5f;
+            player.GetComponent<MirrorPlayer>().moveSpeed = 2.5f;
             heldObjectRender = heldItem.GetComponent<Renderer>();
             heldObjectRender.GetComponent<PositionRendering>().enabled = false;
             heldItem.GetComponent<BoxCollider2D>().enabled = false;
             heldItemCollider = heldItem.GetComponent<BoxCollider2D>();
             canDropObject = false;
             isMovingObject = true;
-            player.GetComponent<playerMovement>().carryingObject = true;
+            player.GetComponent<MirrorPlayer>().carryingObject = true;
             Invoke("enableDrop", 0.2f);
 
         }
         //Drop
-        if (playerInput.actions["Interact"].triggered && isMovingObject == true && canDropObject == true && player.GetComponent<playerMovement>().inDialogue == false && player.GetComponent<playerMovement>().isFacingNPC == false)
+        if (playerInput.actions["Interact"].triggered && isMovingObject == true && canDropObject == true && player.GetComponent<MirrorPlayer>().inDialogue == false && player.GetComponent<MirrorPlayer>().isFacingNPC == false)
         {
             heldItem.GetComponentInChildren<ParticleSystem>().Play();
             ani.SetBool("isCarrying", false);
@@ -65,11 +63,11 @@ public class pushPullObjects : MonoBehaviour
             heldItem.GetComponent<BoxCollider2D>().enabled = true;
             isMovingObject = false;
             currentMovable.transform.position = this.gameObject.transform.position;
-            player.GetComponent<playerMovement>().carryingObject = false;
+            player.GetComponent<MirrorPlayer>().carryingObject = false;
             currentMovable = null;
             heldItem = null;
             canDropObject = false;
-            player.GetComponent<playerMovement>().moveSpeed = 6;
+            player.GetComponent<MirrorPlayer>().moveSpeed = 6;
             Invoke("CanPickUp", 0.2f);
         }
 
@@ -79,7 +77,7 @@ public class pushPullObjects : MonoBehaviour
             heldObjectRender.sortingOrder = playerRender.sortingOrder + 100;
             currentMovable.transform.position = player.transform.position + currentMovable.GetComponent<holdableObject>().holdLocation;
 
-            if (player.GetComponent<playerMovement>().inDialogue == true)
+            if (player.GetComponent<MirrorPlayer>().inDialogue == true)
             {
                 canDropObject = false;
             }
@@ -106,12 +104,6 @@ public class pushPullObjects : MonoBehaviour
     private void CanPickUp()
     {
         canPickUp = true;
-    }
-
-    public IEnumerator buttonPrompt()
-    {
-        yield return new WaitForSeconds(2);
-        prompt.SetActive(true);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

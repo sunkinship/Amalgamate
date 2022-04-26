@@ -70,6 +70,7 @@ public class playerMovement : MonoBehaviour
 
 
 
+
     private void Awake()
     {
         playerInput = gameObject.GetComponent<PlayerInput>();

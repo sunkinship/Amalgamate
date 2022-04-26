@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class checkInteractions : MonoBehaviour
+public class MirrorInteractions : MonoBehaviour
 {
     private bool isKeyDown;
     private bool isFacingInteractable;
     public PlayerInput playerInput;
     public bool isInteractingWithNPC;
-  
+
     private GameObject currentNPC;
 
     public string nameString;
@@ -23,8 +23,7 @@ public class checkInteractions : MonoBehaviour
     private QuestGiver npcQuest;
     private PlayerManager playerManager;
 
-    //prompt
-    public GameObject prompt;
+
 
 
     private void Awake()
@@ -35,32 +34,25 @@ public class checkInteractions : MonoBehaviour
 
     void Update()
     {
-
-        if(Input.GetKeyDown(KeyCode.E))
-        {
-            prompt.SetActive(false);
-        }
-
-
-        if(currentNPC != null)
+        if (currentNPC != null)
         {
             npcPortrait.GetComponent<Image>().sprite = currentNPC.GetComponent<npcInteract>().currentPortrait;
         }
-        
-        if(isFacingInteractable == true)
+
+        if (isFacingInteractable == true)
         {
-            player.GetComponent<playerMovement>().isFacingNPC = true;
+            player.GetComponent<MirrorPlayer>().isFacingNPC = true;
         }
         else
         {
-            player.GetComponent<playerMovement>().isFacingNPC = false;
+            player.GetComponent<MirrorPlayer>().isFacingNPC = false;
         }
 
         // Initial check for interaction -> npcInteract -> dialogueManager
         isKeyDown = playerInput.actions["Interact"].triggered;
 
         // Regular dialogue 
-        if (isKeyDown && isFacingInteractable == true && player.GetComponent<playerMovement>().inDialogue == false && player.GetComponent<playerMovement>().speakCooldownLeft < 0 && player.GetComponent<playerMovement>().carryingObject == false)
+        if (isKeyDown && isFacingInteractable == true && player.GetComponent<MirrorPlayer>().inDialogue == false && player.GetComponent<MirrorPlayer>().speakCooldownLeft < 0 && player.GetComponent<MirrorPlayer>().carryingObject == false)
         {
             RegularInteraction();
         }
@@ -89,7 +81,7 @@ public class checkInteractions : MonoBehaviour
         //currentNPC.GetComponent<interactable>()?.Interact(CheckQuestState());
         CheckQuestState();
         nameText.text = nameString;
-        player.GetComponent<playerMovement>().rb2.velocity = new Vector2(0, 0);
+        player.GetComponent<MirrorPlayer>().rb2.velocity = new Vector2(0, 0);
     }
 
 
@@ -106,7 +98,7 @@ public class checkInteractions : MonoBehaviour
         PlayerManager.forcedDialogueEncounters.Add(currentNPC.name);
         CheckQuestState();
         nameText.text = nameString;
-        player.GetComponent<playerMovement>().rb2.velocity = new Vector2(0, 0);
+        player.GetComponent<MirrorPlayer>().rb2.velocity = new Vector2(0, 0);
     }
 
 
@@ -115,7 +107,7 @@ public class checkInteractions : MonoBehaviour
     /// </summary>
     private void HoldingObjectInteraction()
     {
-        if (player.GetComponent<playerMovement>().carryingObject == true)
+        if (player.GetComponent<MirrorPlayer>().carryingObject == true)
         {
             nameString = currentNPC.GetComponent<npcInteract>().NPCName;
 
@@ -125,12 +117,12 @@ public class checkInteractions : MonoBehaviour
             PlayerManager.forcedDialogueEncounters.Add(currentNPC.name);
             CheckQuestState();
             nameText.text = nameString;
-            player.GetComponent<playerMovement>().rb2.velocity = new Vector2(0, 0);
+            player.GetComponent<MirrorPlayer>().rb2.velocity = new Vector2(0, 0);
         }
     }
 
 
-    
+
 
 
     /// <summary>
@@ -158,7 +150,7 @@ public class checkInteractions : MonoBehaviour
             //Check if player has met pre-condition for connected quest
             npcQuest.CheckforConnectedQuest();
             ConnectedQuestCheck();
-        } 
+        }
         else
         {
             RegularQuestCheck();
@@ -291,31 +283,19 @@ public class checkInteractions : MonoBehaviour
         }
     }
 
-    public IEnumerator buttonPrompt()
-    {
-        yield return new WaitForSeconds(2);
-        prompt.SetActive(true);
-    }
-
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "interactableNPC")
+        if (collision.gameObject.tag == "interactableNPC")
         {
             isFacingInteractable = true;
 
             currentNPC = collision.gameObject;
 
         }
-        if(collision.gameObject.tag == "interactableNPC" && player.GetComponent<playerMovement>().carryingObject == false)
-        {
-            StartCoroutine(buttonPrompt());
-        }
 
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        StopCoroutine(buttonPrompt());
         isFacingInteractable = false;
-        prompt.SetActive(false);
     }
 }

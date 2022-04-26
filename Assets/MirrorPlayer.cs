@@ -277,12 +277,12 @@ public class MirrorPlayer : MonoBehaviour
                     if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Down"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
                     {
                         //Debug.Log("set trigger up");
-                        animator.SetTrigger("Up");
+                        animator.SetTrigger("Down");
                     }
-                    moveY = +1f;
+                    moveY = -1f;
                     lastFacingDirection = "UP";
-                    animator.SetBool("LastUp", true);
-                    animator.SetBool("LastDown", false);
+                    animator.SetBool("LastUp", false);
+                    animator.SetBool("LastDown", true);
                     animator.SetBool("LastRight", false);
                     animator.SetBool("LastLeft", false);
                 }
@@ -293,16 +293,16 @@ public class MirrorPlayer : MonoBehaviour
                 if (playerInput.actions["Down"].IsPressed() && inLoadingZone == false)
                 {
                     hornLamp.transform.localPosition = originalPos;
-                    moveY = -1f;
+                    moveY = +1f;
                     lastFacingDirection = "DOWN";
-                    animator.SetBool("LastUp", false);
-                    animator.SetBool("LastDown", true);
+                    animator.SetBool("LastUp", true);
+                    animator.SetBool("LastDown", false);
                     animator.SetBool("LastRight", false);
                     animator.SetBool("LastLeft", false);
                     if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
                     {
                         //Debug.Log("set trigger down");
-                        animator.SetTrigger("Down");
+                        animator.SetTrigger("Up");
                     }
                 }
                 //else animator.ResetTrigger("Down");
