@@ -14,6 +14,7 @@ public class pushPullObjects : MonoBehaviour
     public static bool isMovingObject;
     public static bool canDropObject;
     static bool canPickUp;
+    public GameObject prompt;
 
     private static Collider2D heldItemCollider;
 
@@ -36,7 +37,10 @@ public class pushPullObjects : MonoBehaviour
 
     public void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            prompt.SetActive(false);
+        }
 
         //Pick up
         if (playerInput.actions["Interact"].triggered && isFacingMovable == true && isMovingObject == false && canPickUp == true && player.GetComponent<playerMovement>().inDialogue == false)
@@ -108,6 +112,7 @@ public class pushPullObjects : MonoBehaviour
         canPickUp = true;
     }
 
+
     public IEnumerator buttonPrompt()
     {
         yield return new WaitForSeconds(2);
@@ -124,13 +129,20 @@ public class pushPullObjects : MonoBehaviour
         }
 
     }
-
+  private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "moveableObject" && player.GetComponent<playerMovement>().carryingObject == false)
+        {
+            StartCoroutine(buttonPrompt());
+        }
+    }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "movableObject")
         {
             isFacingMovable = false;
+            StopCoroutine(buttonPrompt());
+            prompt.SetActive(false);
         }
-
     }
 }
