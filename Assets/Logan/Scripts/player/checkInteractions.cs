@@ -36,7 +36,7 @@ public class checkInteractions : MonoBehaviour
     void Update()
     {
 
-        if(Input.GetKeyDown(KeyCode.E))
+        if(Input.GetKey(KeyCode.E))
         {
             prompt.SetActive(false);
         }
@@ -293,7 +293,7 @@ public class checkInteractions : MonoBehaviour
 
     public IEnumerator buttonPrompt()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(.26f);
         prompt.SetActive(true);
     }
 
@@ -306,12 +306,22 @@ public class checkInteractions : MonoBehaviour
             currentNPC = collision.gameObject;
 
         }
-        if(collision.gameObject.tag == "interactableNPC" && player.GetComponent<playerMovement>().carryingObject == false)
+
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "interactableNPC" && player.GetComponent<playerMovement>().carryingObject == false && isInteractingWithNPC == false)
         {
             StartCoroutine(buttonPrompt());
         }
-
+        if (other.gameObject.tag == "movableObject" && player.GetComponent<playerMovement>().carryingObject == false)
+        {
+            StartCoroutine(buttonPrompt());
+        }
     }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         StopCoroutine(buttonPrompt());

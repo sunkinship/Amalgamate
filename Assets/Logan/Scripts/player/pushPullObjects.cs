@@ -39,13 +39,14 @@ public class pushPullObjects : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            prompt.SetActive(false);
+            //prompt.SetActive(false);
         }
 
         //Pick up
         if (playerInput.actions["Interact"].triggered && isFacingMovable == true && isMovingObject == false && canPickUp == true && player.GetComponent<playerMovement>().inDialogue == false)
         {
             //Debug.Log("picked up");
+            prompt.SetActive(false);
             ani.SetBool("isCarrying", true);
             canPickUp = false;
             player.GetComponent<playerMovement>().moveSpeed = 2.5f;
@@ -116,7 +117,7 @@ public class pushPullObjects : MonoBehaviour
     public IEnumerator buttonPrompt()
     {
         yield return new WaitForSeconds(2);
-        //prompt.SetActive(true);
+        prompt.SetActive(true);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
