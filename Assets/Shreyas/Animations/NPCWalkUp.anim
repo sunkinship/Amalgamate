@@ -20,33 +20,34 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -2622706684858653769, guid: bf846a3694d72de43aeaacca187693fc,
+      value: {fileID: -6272776110192203903, guid: 66136ea13be8c13468370128dedd0ea4,
         type: 3}
     - time: 0.16666667
-      value: {fileID: 27680125237809818, guid: bf846a3694d72de43aeaacca187693fc, type: 3}
+      value: {fileID: 7258791877184979470, guid: 66136ea13be8c13468370128dedd0ea4,
+        type: 3}
     - time: 0.33333334
-      value: {fileID: -7499423481271943052, guid: bf846a3694d72de43aeaacca187693fc,
+      value: {fileID: 7769326430576695899, guid: 66136ea13be8c13468370128dedd0ea4,
         type: 3}
     - time: 0.5
-      value: {fileID: -4050107028342151273, guid: bf846a3694d72de43aeaacca187693fc,
+      value: {fileID: -3566496857366694176, guid: 66136ea13be8c13468370128dedd0ea4,
         type: 3}
     - time: 0.6666667
-      value: {fileID: -4060066767451006185, guid: bf846a3694d72de43aeaacca187693fc,
+      value: {fileID: -1101334978725619610, guid: 66136ea13be8c13468370128dedd0ea4,
         type: 3}
     - time: 0.8333333
-      value: {fileID: -8894948828638260137, guid: bf846a3694d72de43aeaacca187693fc,
+      value: {fileID: 2545348025752223264, guid: 66136ea13be8c13468370128dedd0ea4,
         type: 3}
     - time: 1
-      value: {fileID: -3506315359705895760, guid: bf846a3694d72de43aeaacca187693fc,
+      value: {fileID: -8932272474438887150, guid: 66136ea13be8c13468370128dedd0ea4,
         type: 3}
     - time: 1.1666666
-      value: {fileID: 8125457804764023683, guid: bf846a3694d72de43aeaacca187693fc,
+      value: {fileID: 8749279482948158010, guid: 66136ea13be8c13468370128dedd0ea4,
         type: 3}
     - time: 1.3333334
-      value: {fileID: 925173932145579214, guid: bf846a3694d72de43aeaacca187693fc,
+      value: {fileID: 5882556399734119540, guid: 66136ea13be8c13468370128dedd0ea4,
         type: 3}
     - time: 1.5
-      value: {fileID: -7957178845952347796, guid: bf846a3694d72de43aeaacca187693fc,
+      value: {fileID: 3036892101560187632, guid: 66136ea13be8c13468370128dedd0ea4,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -67,16 +68,16 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -2622706684858653769, guid: bf846a3694d72de43aeaacca187693fc, type: 3}
-    - {fileID: 27680125237809818, guid: bf846a3694d72de43aeaacca187693fc, type: 3}
-    - {fileID: -7499423481271943052, guid: bf846a3694d72de43aeaacca187693fc, type: 3}
-    - {fileID: -4050107028342151273, guid: bf846a3694d72de43aeaacca187693fc, type: 3}
-    - {fileID: -4060066767451006185, guid: bf846a3694d72de43aeaacca187693fc, type: 3}
-    - {fileID: -8894948828638260137, guid: bf846a3694d72de43aeaacca187693fc, type: 3}
-    - {fileID: -3506315359705895760, guid: bf846a3694d72de43aeaacca187693fc, type: 3}
-    - {fileID: 8125457804764023683, guid: bf846a3694d72de43aeaacca187693fc, type: 3}
-    - {fileID: 925173932145579214, guid: bf846a3694d72de43aeaacca187693fc, type: 3}
-    - {fileID: -7957178845952347796, guid: bf846a3694d72de43aeaacca187693fc, type: 3}
+    - {fileID: -6272776110192203903, guid: 66136ea13be8c13468370128dedd0ea4, type: 3}
+    - {fileID: 7258791877184979470, guid: 66136ea13be8c13468370128dedd0ea4, type: 3}
+    - {fileID: 7769326430576695899, guid: 66136ea13be8c13468370128dedd0ea4, type: 3}
+    - {fileID: -3566496857366694176, guid: 66136ea13be8c13468370128dedd0ea4, type: 3}
+    - {fileID: -1101334978725619610, guid: 66136ea13be8c13468370128dedd0ea4, type: 3}
+    - {fileID: 2545348025752223264, guid: 66136ea13be8c13468370128dedd0ea4, type: 3}
+    - {fileID: -8932272474438887150, guid: 66136ea13be8c13468370128dedd0ea4, type: 3}
+    - {fileID: 8749279482948158010, guid: 66136ea13be8c13468370128dedd0ea4, type: 3}
+    - {fileID: 5882556399734119540, guid: 66136ea13be8c13468370128dedd0ea4, type: 3}
+    - {fileID: 3036892101560187632, guid: 66136ea13be8c13468370128dedd0ea4, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
