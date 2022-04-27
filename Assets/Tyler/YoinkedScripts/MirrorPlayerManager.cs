@@ -6,12 +6,12 @@ using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-public class PlayerManager : MonoBehaviour
+public class MirrorPlayerManager : MonoBehaviour
 {
     public static List<Quest> quests = new List<Quest>();
     public static List<Item> inventory = new List<Item>();
 
-    
+
 
     // Holds names of npc who have already used forced interaction 
     public static List<string> forcedDialogueEncounters = new List<string>();
@@ -47,12 +47,11 @@ public class PlayerManager : MonoBehaviour
         //spriteLibrary = gameObject.GetComponent<SpriteLibrary>();
         mat = gameObject.GetComponent<Renderer>().sharedMaterial;
         //Debug.Log("Vector: " + spawnPoint);
-        gameObject.transform.position = spawnPoint;
     }
 
     private void Start()
     {
-        
+
         questUI.UpdateList();
     }
 

@@ -1,0 +1,187 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: BrunetteGirl
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: LeftWalk
+    m_Hash: 478596022
+    m_CategoryList:
+    - m_Name: Left1
+      m_Hash: 17714750
+      m_Sprite: {fileID: 5594402003507514976, guid: a28da6fa08ac3ab4ba5ff733cb2da62e,
+        type: 3}
+    - m_Name: Left2
+      m_Hash: -1744363644
+      m_Sprite: {fileID: 8993598699966123109, guid: a28da6fa08ac3ab4ba5ff733cb2da62e,
+        type: 3}
+    - m_Name: Left3
+      m_Hash: -285200622
+      m_Sprite: {fileID: -9005318303702616769, guid: a28da6fa08ac3ab4ba5ff733cb2da62e,
+        type: 3}
+    - m_Name: Left4
+      m_Hash: 1902426801
+      m_Sprite: {fileID: 343928907310729066, guid: a28da6fa08ac3ab4ba5ff733cb2da62e,
+        type: 3}
+    - m_Name: Left5
+      m_Hash: 107186727
+      m_Sprite: {fileID: -529703659404777893, guid: a28da6fa08ac3ab4ba5ff733cb2da62e,
+        type: 3}
+    - m_Name: Left6
+      m_Hash: -1620386915
+      m_Sprite: {fileID: 5646648526624563073, guid: a28da6fa08ac3ab4ba5ff733cb2da62e,
+        type: 3}
+    - m_Name: Left7
+      m_Hash: -395449589
+      m_Sprite: {fileID: -8756241734286355082, guid: a28da6fa08ac3ab4ba5ff733cb2da62e,
+        type: 3}
+    - m_Name: Left8
+      m_Hash: 2027091610
+      m_Sprite: {fileID: -1650082695049700513, guid: a28da6fa08ac3ab4ba5ff733cb2da62e,
+        type: 3}
+    - m_Name: Left9
+      m_Hash: 265668108
+      m_Sprite: {fileID: 8497696182580814861, guid: a28da6fa08ac3ab4ba5ff733cb2da62e,
+        type: 3}
+    - m_Name: Left10
+      m_Hash: 901500100
+      m_Sprite: {fileID: -8220641244354884273, guid: a28da6fa08ac3ab4ba5ff733cb2da62e,
+        type: 3}
+  - m_Name: RightWalk
+    m_Hash: -552962582
+    m_CategoryList:
+    - m_Name: Right1
+      m_Hash: -1642138487
+      m_Sprite: {fileID: -1057154719135727187, guid: 2c8784de826c24e40b080b7fb1b70d1e,
+        type: 3}
+    - m_Name: Right2
+      m_Hash: 118990131
+      m_Sprite: {fileID: 6295489957492345768, guid: 2c8784de826c24e40b080b7fb1b70d1e,
+        type: 3}
+    - m_Name: Right3
+      m_Hash: 1880135077
+      m_Sprite: {fileID: -2964630665265431055, guid: 2c8784de826c24e40b080b7fb1b70d1e,
+        type: 3}
+    - m_Name: Right4
+      m_Hash: -294387706
+      m_Sprite: {fileID: -2648685201083812597, guid: 2c8784de826c24e40b080b7fb1b70d1e,
+        type: 3}
+    - m_Name: Right5
+      m_Hash: -1720504176
+      m_Sprite: {fileID: 7113140849619621164, guid: 2c8784de826c24e40b080b7fb1b70d1e,
+        type: 3}
+    - m_Name: Right6
+      m_Hash: 8020266
+      m_Sprite: {fileID: -8262399442760872742, guid: 2c8784de826c24e40b080b7fb1b70d1e,
+        type: 3}
+    - m_Name: Right7
+      m_Hash: 2004701628
+      m_Sprite: {fileID: 6810948755903362744, guid: 2c8784de826c24e40b080b7fb1b70d1e,
+        type: 3}
+    - m_Name: Right8
+      m_Hash: -406696915
+      m_Sprite: {fileID: 7936752466855237842, guid: 2c8784de826c24e40b080b7fb1b70d1e,
+        type: 3}
+    - m_Name: Right9
+      m_Hash: -1866105669
+      m_Sprite: {fileID: 7935889930288410774, guid: 2c8784de826c24e40b080b7fb1b70d1e,
+        type: 3}
+    - m_Name: Right10
+      m_Hash: 1612839505
+      m_Sprite: {fileID: -240375513102725045, guid: 2c8784de826c24e40b080b7fb1b70d1e,
+        type: 3}
+  - m_Name: UpWalk
+    m_Hash: 414503519
+    m_CategoryList:
+    - m_Name: Walk1
+      m_Hash: 1502737586
+      m_Sprite: {fileID: -8919189223496144666, guid: bf611eb4c6664a9409f4bdd2c666462f,
+        type: 3}
+    - m_Name: Walk2
+      m_Hash: -1063738104
+      m_Sprite: {fileID: 4873115819204557005, guid: bf611eb4c6664a9409f4bdd2c666462f,
+        type: 3}
+    - m_Name: Walk3
+      m_Hash: -1214278242
+      m_Sprite: {fileID: 5661163878006217732, guid: bf611eb4c6664a9409f4bdd2c666462f,
+        type: 3}
+    - m_Name: Walk4
+      m_Hash: 704315453
+      m_Sprite: {fileID: 6344981567683364178, guid: bf611eb4c6664a9409f4bdd2c666462f,
+        type: 3}
+    - m_Name: Walk5
+      m_Hash: 1593585835
+      m_Sprite: {fileID: -5990735613787467118, guid: bf611eb4c6664a9409f4bdd2c666462f,
+        type: 3}
+    - m_Name: Walk6
+      m_Hash: -940220143
+      m_Sprite: {fileID: 1550818653281608389, guid: bf611eb4c6664a9409f4bdd2c666462f,
+        type: 3}
+    - m_Name: Walk7
+      m_Hash: -1326296697
+      m_Sprite: {fileID: -5055346027824510871, guid: bf611eb4c6664a9409f4bdd2c666462f,
+        type: 3}
+    - m_Name: Walk8
+      m_Hash: 541936662
+      m_Sprite: {fileID: -7147450771146216559, guid: bf611eb4c6664a9409f4bdd2c666462f,
+        type: 3}
+    - m_Name: Walk9
+      m_Hash: 1464499328
+      m_Sprite: {fileID: -7518764229390277319, guid: bf611eb4c6664a9409f4bdd2c666462f,
+        type: 3}
+    - m_Name: Walk10
+      m_Hash: -772957067
+      m_Sprite: {fileID: -6447075393187249706, guid: bf611eb4c6664a9409f4bdd2c666462f,
+        type: 3}
+  - m_Name: DownWalk
+    m_Hash: -1983262384
+    m_CategoryList:
+    - m_Name: Walk1
+      m_Hash: 1502737586
+      m_Sprite: {fileID: 2035337007044434606, guid: d08c17239407c5243995b2dbdc74e982,
+        type: 3}
+    - m_Name: Walk2
+      m_Hash: -1063738104
+      m_Sprite: {fileID: 7771037455490821696, guid: d08c17239407c5243995b2dbdc74e982,
+        type: 3}
+    - m_Name: Walk3
+      m_Hash: -1214278242
+      m_Sprite: {fileID: 6830650874611071601, guid: d08c17239407c5243995b2dbdc74e982,
+        type: 3}
+    - m_Name: Walk4
+      m_Hash: 704315453
+      m_Sprite: {fileID: -8919805330452164760, guid: d08c17239407c5243995b2dbdc74e982,
+        type: 3}
+    - m_Name: Walk5
+      m_Hash: 1593585835
+      m_Sprite: {fileID: 953950142318646621, guid: d08c17239407c5243995b2dbdc74e982,
+        type: 3}
+    - m_Name: Walk6
+      m_Hash: -940220143
+      m_Sprite: {fileID: -4964452112834259597, guid: d08c17239407c5243995b2dbdc74e982,
+        type: 3}
+    - m_Name: Walk7
+      m_Hash: -1326296697
+      m_Sprite: {fileID: -5704050496142671848, guid: d08c17239407c5243995b2dbdc74e982,
+        type: 3}
+    - m_Name: Walk8
+      m_Hash: 541936662
+      m_Sprite: {fileID: -8697732421146860918, guid: d08c17239407c5243995b2dbdc74e982,
+        type: 3}
+    - m_Name: Walk9
+      m_Hash: 1464499328
+      m_Sprite: {fileID: 4356852507366138267, guid: d08c17239407c5243995b2dbdc74e982,
+        type: 3}
+    - m_Name: Walk10
+      m_Hash: -772957067
+      m_Sprite: {fileID: -1889957565863384232, guid: d08c17239407c5243995b2dbdc74e982,
+        type: 3}
