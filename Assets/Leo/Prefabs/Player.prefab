@@ -488,7 +488,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 1312567200823941512, guid: 6fa32d2153b674341afadddf7b5b6354,
+  m_Sprite: {fileID: -230690820108742335, guid: e0d3f8e8b8ea77b48875ea81b6954d11,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -527,6 +527,7 @@ MonoBehaviour:
   speakCooldown: 0.5
   speakCooldownLeft: 0
   interactionZones: {fileID: 0}
+  mirroredPlayer: 0
   lastFacingDirection: RIGHT
   direction: {x: 0, y: 0, z: 0}
   rayDirection: {x: 0, y: 0, z: 0}
@@ -1482,6 +1483,7 @@ MonoBehaviour:
   forPortrait: {fileID: 951023340541334101}
   player: {fileID: 951023341175528912}
   npcItem: {fileID: 0}
+  prompt: {fileID: 0}
 --- !u!114 &7067648592839997419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1495,6 +1497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 951023341175528912}
+  prompt: {fileID: 0}
   wallLayerMask:
     serializedVersion: 2
     m_Bits: 256
@@ -1578,6 +1581,7 @@ MonoBehaviour:
   forPortrait: {fileID: 951023340541334101}
   player: {fileID: 951023341175528912}
   npcItem: {fileID: 0}
+  prompt: {fileID: 0}
 --- !u!114 &5944197188537626926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1591,6 +1595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 951023341175528912}
+  prompt: {fileID: 0}
   wallLayerMask:
     serializedVersion: 2
     m_Bits: 256
@@ -1858,6 +1863,7 @@ MonoBehaviour:
   forPortrait: {fileID: 951023340541334101}
   player: {fileID: 951023341175528912}
   npcItem: {fileID: 0}
+  prompt: {fileID: 0}
 --- !u!114 &6856814869304444291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1871,6 +1877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 951023341175528912}
+  prompt: {fileID: 0}
   wallLayerMask:
     serializedVersion: 2
     m_Bits: 256
@@ -2190,6 +2197,7 @@ MonoBehaviour:
   forPortrait: {fileID: 951023340541334101}
   player: {fileID: 951023341175528912}
   npcItem: {fileID: 0}
+  prompt: {fileID: 0}
 --- !u!114 &7433600459451513706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2203,6 +2211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 951023341175528912}
+  prompt: {fileID: 0}
   wallLayerMask:
     serializedVersion: 2
     m_Bits: 256

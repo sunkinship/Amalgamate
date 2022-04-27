@@ -30,10 +30,10 @@ EditorBuildSettings:
     path: Assets/Leo/Scenes/ActualPuzzleScene.unity
     guid: f60d88fb2d2e15249905d508832fba4e
   - enabled: 1
-    path: Assets/Trent/Scenes/Player House Moved.unity
+    path: Assets/Trent/Scenes/Player House.unity
     guid: f8983ecbefd6d474ab92104479f67495
   - enabled: 0
-    path: Assets/Trent/Scenes/Player House.unity
+    path: Assets/Trent/Scenes/OldScenes/Old Player House.unity
     guid: c0eeb81f923a9ce4caf2b8d6134d4fac
   - enabled: 1
     path: Assets/Leo/Scenes/TestingScenes/Testing1.unity
