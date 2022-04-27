@@ -185,3 +185,31 @@ MonoBehaviour:
       m_Hash: -772957067
       m_Sprite: {fileID: -6490019141134101344, guid: 7c7dd1904f5881f49b84404735e8cf8c,
         type: 3}
+  - m_Name: IdleLeft
+    m_Hash: -100872689
+    m_CategoryList:
+    - m_Name: IdleLeft1
+      m_Hash: 328863464
+      m_Sprite: {fileID: -3630784390376849690, guid: a9e1effb1aa38d643a7a4d0331fab2df,
+        type: 3}
+  - m_Name: IdleRight
+    m_Hash: 1738480326
+    m_CategoryList:
+    - m_Name: IdleRight1
+      m_Hash: -239331544
+      m_Sprite: {fileID: -7870417176934576491, guid: 87154453fb6f2a843be82b51d7b4fac9,
+        type: 3}
+  - m_Name: IdleUp
+    m_Hash: 1560457943
+    m_CategoryList:
+    - m_Name: IdleUp1
+      m_Hash: -1690916238
+      m_Sprite: {fileID: 2877003719039173028, guid: a7eea4c85cb6a934eae756b827c9b5ae,
+        type: 3}
+  - m_Name: IdleDown
+    m_Hash: -1620788900
+    m_CategoryList:
+    - m_Name: IdleDown1
+      m_Hash: -509700399
+      m_Sprite: {fileID: -3401104277548210339, guid: 7c7dd1904f5881f49b84404735e8cf8c,
+        type: 3}
