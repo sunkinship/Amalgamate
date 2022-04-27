@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: NPCIdleDown
+  m_Name: RedNPCIdleLeft
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -8514395394034749310, guid: e4fea804821d39048b94f30f154ad39e,
+      value: {fileID: -3630784390376849690, guid: a9e1effb1aa38d643a7a4d0331fab2df,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -41,7 +41,7 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -8514395394034749310, guid: e4fea804821d39048b94f30f154ad39e, type: 3}
+    - {fileID: -3630784390376849690, guid: a9e1effb1aa38d643a7a4d0331fab2df, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
