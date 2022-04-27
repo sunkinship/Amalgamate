@@ -96,6 +96,9 @@ public class PlayerManager : MonoBehaviour
             case "NEWMAZE":
                 lampOn = true;
                 break;
+            case "MirrorScene":
+                lampOn = true;
+                break;
         }
         //spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibrary/Glow");
     }
