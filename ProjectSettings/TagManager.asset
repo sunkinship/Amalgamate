@@ -50,3 +50,6 @@ TagManager:
   - name: UIMeter
     uniqueID: 975863
     locked: 0
+  - name: MiniMap
+    uniqueID: 1705646631
+    locked: 0
