@@ -26,7 +26,7 @@ public class ExitThisScene : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Player") && EnterThisScene.enteringScene == false)
         {
-            Debug.Log("GO");
+            //Debug.Log("GO");
             exitingScene = true;
             playerMovement.inLoadingZone = true;
             if (calledCoroutine == false)
@@ -83,6 +83,16 @@ public class ExitThisScene : MonoBehaviour
             case "Down":
                 playerAni.SetBool("isMoving", true);
                 playerAni.SetBool("Down", true);
+                playerAni.SetBool("isCarrying", false);
+                break;
+            case "DownIdle":
+                playerAni.SetBool("isMoving", false);
+                playerAni.SetBool("Down", true);
+                playerAni.SetBool("isCarrying", false);
+                break;
+            case "UpIdle":
+                playerAni.SetBool("isMoving", false);
+                playerAni.SetBool("Up", true);
                 playerAni.SetBool("isCarrying", false);
                 break;
         }
