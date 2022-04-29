@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Quest
 {
-    public bool hasQuest, hasConnectedQuest, hasPreConditionQuest;
+    public bool hasQuest, hasConnectedQuest, hasPreConditionQuest, isHuman;
     [HideInInspector]
     public bool isActive, isComplete, isPostQuest, isConnectedQuest, isAvailable;
     public string questName, description, connectedQuestName, PreQuestName;
