@@ -332,7 +332,7 @@ MonoBehaviour:
   - {x: -0.5534859, y: -1.2871497, z: 0}
   m_ShapePathHash: 228770605
   m_Mesh: {fileID: 0}
-  m_InstanceId: 792296
+  m_InstanceId: 159276
 --- !u!1 &951023340945304220
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,6 +717,7 @@ MonoBehaviour:
   playerInput: {fileID: 951023341175528915}
   trustMeter: {fileID: 0}
   questUI: {fileID: 0}
+  spotShadow: {fileID: 954841039}
   hornLamp: {fileID: 951023341713411166}
   maxBrightness: 1
   render: {fileID: 951023341175528868}
@@ -1366,7 +1367,7 @@ MonoBehaviour:
   - {x: -0.27113056, y: -1.5775857, z: 0}
   m_ShapePathHash: 139732523
   m_Mesh: {fileID: 0}
-  m_InstanceId: 792374
+  m_InstanceId: 159354
 --- !u!60 &951023342635561723
 PolygonCollider2D:
   m_ObjectHideFlags: 0

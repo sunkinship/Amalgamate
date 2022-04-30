@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerSound : MonoBehaviour
+public class PlayMusic : MonoBehaviour
 {
     [SerializeField] private AudioClip clip;
     [SerializeField] private float volume;

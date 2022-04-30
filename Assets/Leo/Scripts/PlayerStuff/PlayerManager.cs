@@ -28,6 +28,7 @@ public class PlayerManager : MonoBehaviour
     public PlayerInput playerInput;
     public TrustMeter trustMeter;
     public QuestUI questUI;
+    public GameObject spotShadow;
 
     //private SpriteLibrary spriteLibrary;
     public Light2D hornLamp;
@@ -63,44 +64,56 @@ public class PlayerManager : MonoBehaviour
         ToggleLampLight();
     }
 
-    #region lights
+    #region lights/shadow
     private void ToggleLitSprite()
     {
         string currentScene = SceneManager.GetActiveScene().name;
         switch (currentScene)
         {
             case "MidQReview":
-                lampOn = false;
+                LitScene();
                 break;
             case "MonsterTownThing":
-                lampOn = true;
+                DarkScene();
                 break;
             case "mazeScene":
-                lampOn = true;
+                DarkScene();
                 break;
             case "Vampires Shop":
-                lampOn = false;
+                LitScene();
                 break;
             case "TestingScene":
-                lampOn = true;
+                DarkScene();
                 break;
             case "MonsterCave":
-                lampOn = true;
+                DarkScene();
                 break;
             case "ActualPuzzleScene":
-                lampOn = true;
+                DarkScene();
                 break;
             case "ForestScene":
-                lampOn = false;
+                LitScene();
                 break;
             case "NEWMAZE":
-                lampOn = true;
+                DarkScene();
                 break;
             case "MirrorScene":
-                lampOn = true;
+                DarkScene();
                 break;
         }
         //spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibrary/Glow");
+    }
+
+    private void DarkScene()
+    {
+        lampOn = true;
+        spotShadow.SetActive(false);
+    }
+
+    private void LitScene()
+    {
+        lampOn = false;
+        spotShadow.SetActive(true);
     }
 
     private void ToggleLampLight()

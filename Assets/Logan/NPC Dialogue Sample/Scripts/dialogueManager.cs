@@ -17,6 +17,7 @@ public class dialogueManager : MonoBehaviour
     private playerMovement playerMove;
     private PlayerManager playerManage;
     private PlayerInput playerInput;
+    private TriggerFinalQuest finalQuestTrigger;
 
     private bool isTyping;
 
@@ -35,6 +36,7 @@ public class dialogueManager : MonoBehaviour
         playerInput = gameObject.GetComponent<PlayerInput>();
         playerMove = gameObject.GetComponent<playerMovement>();
         playerManage = gameObject.GetComponent<PlayerManager>();
+        finalQuestTrigger = gameObject.GetComponent<TriggerFinalQuest>();
     }
     dialogue dialogue;
     int currentLine = 0;
@@ -68,6 +70,7 @@ public class dialogueManager : MonoBehaviour
                 {
                     currentNPC.GetComponent<QuestGiver>().PostQuest();
                     questUI.UpdateList();
+                    finalQuestTrigger.CheckForEnding();
                 }
                 // If linked quest item is recevied reset npc dialogue 
                 if (currentNPC.GetComponent<ItemGiver>().canGiveItem)
@@ -156,6 +159,6 @@ public class dialogueManager : MonoBehaviour
 
     public void PlaySound()
     {
-        AudioManager.Instance.PlaySound(voiceClip);
+        AudioManager.Instance.PlaySound(voiceClip, 0.5f);
     }
 }

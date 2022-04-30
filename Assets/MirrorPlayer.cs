@@ -144,7 +144,7 @@ public class MirrorPlayer : MonoBehaviour
         if (stepCoolDown <= 0f && animator.GetBool("isMoving"))
         {
             stepCoolDown = stepRate;
-            AudioManager.Instance.PlaySound(clip);
+            AudioManager.Instance.PlaySound(clip, 0.5f);
         }
 
 

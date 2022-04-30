@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class TriggerFinalQuest : MonoBehaviour
 {
-    private int humanQuestCounter = 0;
-    private int monsterQuestCounter = 0;
+    private static int humanQuestCounter = 0;
+    private static int monsterQuestCounter = 0;
+
+    public SwitchMayors switchMayor;
 
 
+    /// <summary>
+    /// Checks if player has completed at least one human and monster quest 
+    /// If true then the final quest will be triggered
+    /// </summary>
     public void CheckForEnding()
     {
         foreach (Quest quest in PlayerManager.quests)
@@ -24,12 +30,7 @@ public class TriggerFinalQuest : MonoBehaviour
 
         if (humanQuestCounter >= 1 && monsterQuestCounter >= 1)
         {
-            TriggerLastQuest();
+            switchMayor.SwitchMayor();
         }
-    }
-
-    private void TriggerLastQuest()
-    {
-
     }
 }

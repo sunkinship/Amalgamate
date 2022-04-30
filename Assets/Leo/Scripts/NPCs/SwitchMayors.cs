@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class SwitchMayors : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject noQuestMayor;
+    public GameObject QuestMayor;
 
-    // Update is called once per frame
-    void Update()
+    public void SwitchMayor()
     {
-        
+        noQuestMayor.SetActive(false);
+        QuestMayor.SetActive(true);
     }
 }
