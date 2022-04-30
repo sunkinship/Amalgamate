@@ -5,14 +5,10 @@ using UnityEngine;
 public class PlayerSound : MonoBehaviour
 {
     [SerializeField] private AudioClip clip;
+    [SerializeField] private float volume;
 
     private void Start()
     {
-        AudioManager.Instance.PlayMusic(clip);
-    }
-
-    public void PlaySound()
-    {
-        AudioManager.Instance.PlaySound(clip);
+        AudioManager.Instance.PlayMusic(clip, volume);
     }
 }

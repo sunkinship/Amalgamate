@@ -26,16 +26,17 @@ public class AudioManager : MonoBehaviour
     }
 
     #region Play Audio
-    public void PlaySound(AudioClip clip)
+    public void PlaySound(AudioClip clip, float volume)
     {
-        sfxSource.PlayOneShot(clip);
+        sfxSource.PlayOneShot(clip, volume);
     }
 
-    public void PlayMusic(AudioClip clip)
+    public void PlayMusic(AudioClip clip, float volume)
     {
-        musicSource.PlayOneShot(clip);
+        musicSource.PlayOneShot(clip, volume);
     }
     #endregion
+
 
     #region Volume
     public void ChangeMasterVolume(float value)
