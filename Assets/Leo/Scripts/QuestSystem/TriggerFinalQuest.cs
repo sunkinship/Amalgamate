@@ -4,20 +4,25 @@ using UnityEngine;
 
 public class TriggerFinalQuest : MonoBehaviour
 {
-    private int questCounter = 0;
+    private int humanQuestCounter = 0;
+    private int monsterQuestCounter = 0;
 
 
     public void CheckForEnding()
     {
         foreach (Quest quest in PlayerManager.quests)
         {
-            if (quest.isHuman && quest.isComplete || quest.isHuman == false && quest.isComplete)
+            if (quest.isHuman == false && quest.isComplete)
             {
-                questCounter++;
+                monsterQuestCounter++;
+            }
+            else if (quest.isHuman && quest.isComplete)
+            {
+                humanQuestCounter++;
             }
         }
 
-        if (questCounter >= 2)
+        if (humanQuestCounter >= 1 && monsterQuestCounter >= 1)
         {
             TriggerLastQuest();
         }
