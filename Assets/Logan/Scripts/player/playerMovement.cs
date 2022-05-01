@@ -10,8 +10,8 @@ public class playerMovement : MonoBehaviour
 
     private MoveDirection moveDir;
 
-    public AudioSource woodSoundEffect;
-    public AudioSource grassWalkingSoundEffect;
+    //public AudioSource woodSoundEffect;
+    //public AudioSource grassWalkingSoundEffect;
     public float moveSpeed = 300f;
     public float runMoveSpeed = 500f;
     private bool isRunning;
@@ -66,8 +66,8 @@ public class playerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        woodSoundEffect = GetComponent<AudioSource>();
-        grassWalkingSoundEffect = GetComponent<AudioSource>();
+        //woodSoundEffect = GetComponent<AudioSource>();
+        //grassWalkingSoundEffect = GetComponent<AudioSource>();
         playerInput = GetComponent<PlayerInput>();
     }
 
@@ -128,6 +128,7 @@ public class playerMovement : MonoBehaviour
         else
         {
             direction = new Vector2(0, 0);
+            moveDir = MoveDirection.None;
         }
     }
 

@@ -22,7 +22,7 @@ public class EnterThisScene : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Player") && ExitThisScene.exitingScene == false)
         {
-            Debug.Log("COME");
+            //Debug.Log("COME");
             enteringScene = true;
             playerMovement.inLoadingZone = true;
             if (calledCoroutine == false)

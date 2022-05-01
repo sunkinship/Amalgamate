@@ -49,7 +49,7 @@ public class pushPullObjects : MonoBehaviour
             prompt.SetActive(false);
             ani.SetBool("isCarrying", true);
             canPickUp = false;
-            player.GetComponent<playerMovement>().moveSpeed = 2.5f;
+            player.GetComponent<playerMovement>().moveSpeed = 200f;
             heldObjectRender = heldItem.GetComponent<Renderer>();
             heldObjectRender.GetComponent<PositionRendering>().enabled = false;
             heldItem.GetComponent<BoxCollider2D>().enabled = false;
@@ -74,7 +74,7 @@ public class pushPullObjects : MonoBehaviour
             currentMovable = null;
             heldItem = null;
             canDropObject = false;
-            player.GetComponent<playerMovement>().moveSpeed = 6;
+            player.GetComponent<playerMovement>().moveSpeed = 300;
             Invoke("CanPickUp", 0.2f);
         }
 

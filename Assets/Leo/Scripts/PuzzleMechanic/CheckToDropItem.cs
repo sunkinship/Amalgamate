@@ -4,6 +4,19 @@ using UnityEngine;
 
 public class CheckToDropItem : MonoBehaviour
 {
+    private bool canDrop;
+
+    private void Update()
+    {
+        if (canDrop)
+        {
+            pushPullObjects.canDropObject = true;
+        }
+        else
+        {
+            pushPullObjects.canDropObject = false;
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -11,21 +24,32 @@ public class CheckToDropItem : MonoBehaviour
         {
             if (collision.gameObject.tag.Equals("Wall"))
             {
-                pushPullObjects.canDropObject = false;
-                //Debug.Log("hit");
+                canDrop = false;
+                Debug.Log("cannot drop");
             }
         }
     }
 
-
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (pushPullObjects.isMovingObject)
         {
             if (collision.gameObject.tag.Equals("Wall"))
             {
-                pushPullObjects.canDropObject = true;
-                //Debug.Log("no");
+                canDrop = false;
+                Debug.Log("cannot drop");
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (pushPullObjects.isMovingObject)
+        {
+            if (canDrop == false)
+            {
+                canDrop = true;
+                Debug.Log("can drop");
             }
         }
     }

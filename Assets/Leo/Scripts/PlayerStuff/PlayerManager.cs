@@ -80,9 +80,6 @@ public class PlayerManager : MonoBehaviour
                 DarkScene();
                 break;
             case "Vampires Shop":
-                LitScene();
-                break;
-            case "TestingScene":
                 DarkScene();
                 break;
             case "MonsterCave":
@@ -100,6 +97,9 @@ public class PlayerManager : MonoBehaviour
             case "MirrorScene":
                 DarkScene();
                 break;
+            case "Witch house":
+                Indoors();
+                break;
         }
         //spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibrary/Glow");
     }
@@ -107,13 +107,22 @@ public class PlayerManager : MonoBehaviour
     private void DarkScene()
     {
         lampOn = true;
-        spotShadow.SetActive(false);
+        spotShadow.SetActive(true);
+        spotShadow.transform.position = new Vector3(transform.position.x, transform.position.y - 1.75f, transform.position.z);
+    }
+
+    private void Indoors()
+    {
+        lampOn = false;
+        spotShadow.SetActive(true);
+        spotShadow.transform.position = new Vector3(transform.position.x, transform.position.y - 1.75f, transform.position.z);
     }
 
     private void LitScene()
     {
         lampOn = false;
         spotShadow.SetActive(true);
+        spotShadow.transform.position = new Vector3(transform.position.x - 0.2700005f, transform.position.y - 1.75f, transform.position.z);
     }
 
     private void ToggleLampLight()
