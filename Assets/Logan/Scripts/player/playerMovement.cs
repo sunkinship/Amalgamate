@@ -6,28 +6,23 @@ using UnityEngine.SceneManagement;
 
 public class playerMovement : MonoBehaviour
 {
-    [SerializeField] private LayerMask dashLayerMask;
     [SerializeField] private LayerMask wallLayerMask;
+
+    private MoveDirection moveDir;
 
     public AudioSource woodSoundEffect;
     public AudioSource grassWalkingSoundEffect;
-    public float moveSpeed = 6f;
-    private float dashSpeed;
-
-    public bool goToMazeExit;
+    public float moveSpeed = 300f;
+    public float runMoveSpeed = 500f;
+    private bool isRunning;
 
     public bool inDialogue;
 
     private Animator animator;
 
-    Vector2 movement;
-
     private PlayerInput playerInput;
 
-    private float dashCooldown = 1.5f;
-    public float currentDashCooldown;
-
-    public float speakCooldown = .5f;
+    public float speakCooldown = 0.5f;
     public float speakCooldownLeft;
 
     private GameObject hornLamp;
@@ -39,23 +34,7 @@ public class playerMovement : MonoBehaviour
 
     public bool mirroredPlayer;
 
-    private enum State
-    {
-        Normal,
-        Dashing,
-    }
-
-    public string lastFacingDirection = "RIGHT";
-
-    private Vector3 lastMoveDirection;
-
     public Vector3 direction;
-
-    public Vector3 rayDirection;
-
-    private Vector3 dashDir;
-
-    private State state;
 
     [HideInInspector]
     public Rigidbody2D rb2;
@@ -70,8 +49,10 @@ public class playerMovement : MonoBehaviour
     private float stepCoolDown;
     [SerializeField] private AudioClip clip;
 
-
-
+    private enum MoveDirection
+    {
+        None, Up, Down, Left, Right
+    }
 
     private void Awake()
     {
@@ -79,7 +60,6 @@ public class playerMovement : MonoBehaviour
         hornLamp = GameObject.Find("HornLampLight");
         rb2 = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
-        state = State.Normal;
         originalPos = new Vector2(hornLamp.transform.localPosition.x, hornLamp.transform.localPosition.y);
     }
 
@@ -91,27 +71,7 @@ public class playerMovement : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
     }
 
-    // Update is called once per frame
-
-    public void OnCollis(Collider other)
-    {
-        
-        Debug.Log("Help");
-        if (other.tag == "Wood")
-        {
-            Debug.Log("Sound");
-            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
-            {
-                woodSoundEffect.UnPause();
-            }
-            else
-            {
-                woodSoundEffect.Pause();
-            }
-        }
-    }
-
-    //public void OnCollisionEnter(Collision collision)
+    //public void OnCollisionEnter2D(Collision collision)
     //{
 
     //    Debug.Log("Help");
@@ -128,20 +88,63 @@ public class playerMovement : MonoBehaviour
     //        }
     //    }
     //}
+
     void Update()
     {
-
-        interactionZones = GameObject.FindGameObjectWithTag("interactionZone");
-
-        if(carryingObject == true && inLoadingZone == true)
+        //Talking to NPC cooldown
+        if (speakCooldownLeft > 0)
         {
-            interactionZones.GetComponent<pushPullObjects>();
-            carriedObject = pushPullObjects.currentMovable;
-
-            DontDestroyOnLoad(carriedObject);
+            speakCooldownLeft -= Time.deltaTime;
         }
 
-        //Play footstep sfx
+        //Finding curently enabled interaction zone
+        interactionZones = GameObject.FindGameObjectWithTag("interactionZone");
+
+        CarryObjectToScene();
+
+        PlayFootStepSFX();
+
+        CheckIfMoving();
+
+        //Check if running
+        if (playerInput.actions["Dash"].IsPressed())
+        {
+            isRunning = true;
+        }
+        else
+        {
+            isRunning = false;
+        }
+
+        //Movement
+        if (inDialogue == false)
+        {
+            //Get input;
+            GetInput();
+
+            //Set direction
+            ChangeDirection();
+        }
+        else
+        {
+            direction = new Vector2(0, 0);
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (isRunning == false)
+        {
+            rb2.velocity = direction * moveSpeed * Time.deltaTime;
+        } 
+        else
+        {
+            rb2.velocity = direction * runMoveSpeed * Time.deltaTime;
+        }
+    }
+
+    private void PlayFootStepSFX()
+    {
         stepCoolDown -= Time.deltaTime;
 
         if (stepCoolDown <= 0f && animator.GetBool("isMoving"))
@@ -149,48 +152,10 @@ public class playerMovement : MonoBehaviour
             stepCoolDown = stepRate;
             AudioManager.Instance.PlaySound(clip, 0.5f);
         }
+    }
 
-
-        /*movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);*/
-
-        //SetRayDirection();
-
-        //if (pushPullObjects.isMovingObject)
-        //{
-        //    RaycastHit2D preventDorppingObject = Physics2D.Raycast(transform.position, rayDirection, 0.5f, wallLayerMask);
-        //    Debug.DrawLine(transform.position, rayDirection, Color.red);
-
-        //    if (preventDorppingObject == true)
-        //    {
-        //        pushPullObjects.canDropObject = false;
-        //        Debug.Log("ray hit: " + rayDirection);
-        //    }
-        //    else
-        //    {
-        //        pushPullObjects.canDropObject = true;
-        //        Debug.Log("ray not hit: " + rayDirection);
-        //    }
-        //}
-
-        RaycastHit2D stopAniTransition = Physics2D.Raycast(transform.position, rayDirection, 10f, wallLayerMask);
-        //Debug.Log("shooting raycast dir: " + direction);
-
-        if (stopAniTransition == true)
-        {
-            //Debug.Log("aniStop ray hit");
-            animator.SetBool("isMoving", false);
-        }
-        else
-        {
-            //Debug.Log("aniStop ray not hit");
-            animator.SetBool("isMoving", true);
-        }
-
+    private void CheckIfMoving()
+    {
         if ((Mathf.Abs(rb2.velocity.x) > 0.01 || Mathf.Abs(rb2.velocity.y) > 0.01) && inLoadingZone == false)
         {
             animator.SetBool("isMoving", true);
@@ -199,263 +164,197 @@ public class playerMovement : MonoBehaviour
         {
             animator.SetBool("isMoving", false);
         }
-
-        if (inDialogue == false)
-        {
-            GetInput();
-        }
-
-        speakCooldownLeft = speakCooldownLeft - Time.deltaTime;
-
-
-        //if(goToMazeExit == true)
-        //{
-        //    this.gameObject.transform.position = GameObject.Find("exitMazeLocation").transform.position;
-        //    goToMazeExit = false;
-        //}
-
     }
 
-    void FixedUpdate()
+    /// <summary>
+    /// Checks for player input and sets direction to last pressed key
+    /// </summary>
+    private void GetInput()
     {
-        if(inDialogue == false)
+        if (playerInput.actions["Up"].triggered)
         {
-            Move();
+            moveDir = MoveDirection.Up;
+        }
+        else if (playerInput.actions["Right"].triggered)
+        {
+            moveDir = MoveDirection.Right;
+        }
+        else if (playerInput.actions["Left"].triggered)
+        {
+            moveDir = MoveDirection.Left;
+        }
+        else if (playerInput.actions["Down"].triggered)
+        {
+            moveDir = MoveDirection.Down;
         }
 
+        if (playerInput.actions["Up"].WasReleasedThisFrame())
+        {
+            moveDir = MoveDirection.None;
+            CheckLastDirection();
+        }
+        else if (playerInput.actions["Down"].WasReleasedThisFrame())
+        {
+            moveDir = MoveDirection.None;
+            CheckLastDirection();
+        }
+        else if (playerInput.actions["Left"].WasReleasedThisFrame())
+        {
+            moveDir = MoveDirection.None;
+            CheckLastDirection();
+        }
+        else if (playerInput.actions["Right"].WasReleasedThisFrame())
+        {
+            moveDir = MoveDirection.None;
+            CheckLastDirection();
+        }
     }
 
-
-    public void Move()
+    /// <summary>
+    /// Checks for last pressed key in case player presses multiple keys at once
+    /// </summary>
+    private void CheckLastDirection()
     {
-        switch(state)
+        if (playerInput.actions["Up"].IsPressed())
         {
-            case State.Normal:
-                rb2.velocity = direction * moveSpeed;
-
-                //if (Input.GetKeyDown(KeybindManager.MyInstance.Keybinds["DASH"]) && currentDashCooldown < 0)
-                if (playerInput.actions["Dash"].IsPressed() && currentDashCooldown < 0)
-                {
-                    dashDir = direction;
-
-                    float dashDistance = 5f;
-
-                    Vector3 dashPosition = transform.position + direction * dashDistance;
-                    RaycastHit2D raycastHit2d = Physics2D.Raycast(transform.position, direction, dashDistance, dashLayerMask);
-                    if (raycastHit2d.collider != null)
-                    {
-                        dashPosition = raycastHit2d.point;
-                    }
-
-                    rb2.MovePosition(dashPosition);
-
-                }
-                break;
-            case State.Dashing:
-                rb2.velocity = dashDir.normalized * dashSpeed;
-                break;
+            moveDir = MoveDirection.Up;
         }
-
+        else if (playerInput.actions["Right"].IsPressed())
+        {
+            moveDir = MoveDirection.Right;
+        }
+        else if (playerInput.actions["Left"].IsPressed())
+        {
+            moveDir = MoveDirection.Left;
+        }
+        else if (playerInput.actions["Down"].IsPressed())
+        {
+            moveDir = MoveDirection.Down;
+        }
     }
 
-    public void GetInput()
+    /// <summary>
+    /// Sets player movement and animations based on player direction
+    /// </summary>
+    private void ChangeDirection()
     {
-        
-
-        switch (state)
+        switch (moveDir)
         {
-            case State.Normal:
-
-                //Vector2 input = playerInput.actions["Movement"].ReadValue<Vector2>();
-
-                float moveX = 0f;
-                float moveY = 0f;
-
-                direction = Vector2.zero;
-
-                //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["UP"]))
-                if (playerInput.actions["Up"].IsPressed() && inLoadingZone == false && mirroredPlayer == false)
-                {
-                    hornLamp.transform.position = new Vector2(transform.position.x - 0.56f, transform.position.y + 0.3f);
-                    if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Down"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
-                    {
-                        //Debug.Log("set trigger up");
-                        animator.SetTrigger("Up");
-                    }
-                    moveY = +1f;
-                    lastFacingDirection = "UP";
-                    animator.SetBool("LastUp", true);
-                    animator.SetBool("LastDown", false);
-                    animator.SetBool("LastRight", false);
-                    animator.SetBool("LastLeft", false);
-                }
-                //else animator.ResetTrigger("Up");
-
-
-                //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["DOWN"]))
-                if (playerInput.actions["Down"].IsPressed() && inLoadingZone == false && mirroredPlayer == false)
-                {
-                    hornLamp.transform.localPosition = originalPos;
-                    moveY = -1f;
-                    lastFacingDirection = "DOWN";
-                    animator.SetBool("LastUp", false);
-                    animator.SetBool("LastDown", true);
-                    animator.SetBool("LastRight", false);
-                    animator.SetBool("LastLeft", false);
-                    if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
-                    {
-                        //Debug.Log("set trigger down");
-                        animator.SetTrigger("Down");
-                    }
-                }
-                //else animator.ResetTrigger("Down");
-
-                //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["LEFT"]))
-                if (playerInput.actions["Left"].IsPressed() && inLoadingZone == false)
-                {
-                    hornLamp.transform.localPosition = originalPos;
-                    moveX = -1f;
-                    lastFacingDirection = "LEFT";
-                    animator.SetBool("LastUp", false);
-                    animator.SetBool("LastDown", false);
-                    animator.SetBool("LastRight", false);
-                    animator.SetBool("LastLeft", true);
-                    if (playerInput.actions["Right"].IsPressed() == false)
-                    {
-                        //Debug.Log("set trigger left");
-                        animator.SetTrigger("Left");
-                    }
-                }
-                //else animator.ResetTrigger("Left");
-
-                //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["RIGHT"]))
-                if (playerInput.actions["Right"].IsPressed() && inLoadingZone == false)
-                {
-                    hornLamp.transform.localPosition = originalPos;
-                    animator.SetTrigger("Right");
-                    moveX = +1f;
-                    lastFacingDirection = "RIGHT";
-                    animator.SetBool("LastUp", false);
-                    animator.SetBool("LastDown", false);
-                    animator.SetBool("LastRight", true);
-                    animator.SetBool("LastLeft", false);
-                    //Debug.Log("set trigger right");
-                }
-                #region mirrorInput
-                if (playerInput.actions["Up"].IsPressed() && inLoadingZone == false && mirroredPlayer == true)
-                {
-                    hornLamp.transform.position = new Vector2(transform.position.x - 0.56f, transform.position.y + 0.3f);
-                    if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Down"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
-                    {
-                        //Debug.Log("set trigger up");
-                        animator.SetTrigger("Down");
-                    }
-                    moveY = -1f;
-                    lastFacingDirection = "DOWN";
-                    animator.SetBool("LastUp", false);
-                    animator.SetBool("LastDown", true);
-                    animator.SetBool("LastRight", false);
-                    animator.SetBool("LastLeft", false);
-                }
-                //else animator.ResetTrigger("Up");
-
-
-                //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["DOWN"]))
-                if (playerInput.actions["Down"].IsPressed() && inLoadingZone == false && mirroredPlayer == true)
-                {
-                    hornLamp.transform.localPosition = originalPos;
-                    moveY = +1f;
-                    lastFacingDirection = "UP";
-                    animator.SetBool("LastUp", true);
-                    animator.SetBool("LastDown", false);
-                    animator.SetBool("LastRight", false);
-                    animator.SetBool("LastLeft", false);
-                    if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
-                    {
-                        //Debug.Log("set trigger down");
-                        animator.SetTrigger("Up");
-                    }
-                }
-                #endregion mirrorInput
-                //else animator.ResetTrigger("Right");
-
-                direction = new Vector3(moveX, moveY).normalized;
-                //rayDirection = new Vector3(moveX, moveY).normalized;
-
-                if(moveX != 0 || moveY != 0)
-                {
-                    lastMoveDirection = direction;
-                }
-
-                //if (Input.GetKeyDown(KeybindManager.MyInstance.Keybinds["DASH"]) && currentDashCooldown < 0)
-                if (playerInput.actions["Dash"].IsPressed() && currentDashCooldown < 0)
-                {
-                    dashDir = lastMoveDirection;
-                    dashSpeed = 25f;
-                    state = State.Dashing;
-                }
-
+            case MoveDirection.Up:
+                PlayerUp();
                 break;
-            case State.Dashing:
-                float dashSpeedDropMultiplier = 4f;
-                dashSpeed -= dashSpeed * dashSpeedDropMultiplier * Time.deltaTime;
-
-                float dashSpeedMinimum = 3f;
-                if(dashSpeed < dashSpeedMinimum)
-                {
-                    currentDashCooldown = dashCooldown;
-                    state = State.Normal;
-                }
+            case MoveDirection.Left:
+                PlayerLeft();
                 break;
-
+            case MoveDirection.Down:
+                PlayerDown();
+                break;
+            case MoveDirection.Right:
+                PlayerRight();
+                break;
+            case MoveDirection.None:
+                direction = new Vector2(0, 0);
+                break;
         }
-
     }
 
-    private void SetRayDirection()
+    private void PlayerUp()
     {
-        switch (lastFacingDirection)
+        if (mirroredPlayer == false)
         {
-            case "UP":
-                rayDirection = new Vector3(0, 1).normalized;
-                break;
-            case "DOWN":
-                rayDirection = new Vector3(0, -1).normalized;
-                break;
-            case "LEFT":
-                rayDirection = new Vector3(-1, 0).normalized;
-                break;
-            case "RIGHT":
-                rayDirection = new Vector3(1, 0).normalized;
-                break;
+            direction = new Vector2(0, 1);
+            hornLamp.transform.position = new Vector2(transform.position.x - 0.56f, transform.position.y + 0.3f);
+            if (animator.GetBool("isMoving"))
+            {
+                animator.SetTrigger("Up");
+            }
+            animator.SetBool("LastUp", true);
+            animator.SetBool("LastDown", false);
+            animator.SetBool("LastRight", false);
+            animator.SetBool("LastLeft", false);
+        }
+        else
+        {
+            direction = new Vector2(0, -1);
+            hornLamp.transform.localPosition = originalPos;
+            if (animator.GetBool("isMoving"))
+            {
+                animator.SetTrigger("Down");
+            }
+            animator.SetBool("LastUp", false);
+            animator.SetBool("LastDown", true);
+            animator.SetBool("LastRight", false);
+            animator.SetBool("LastLeft", false);
         }
     }
 
+    private void PlayerDown()
+    {
+        if (mirroredPlayer == false)
+        {
+            direction = new Vector2(0, -1);
+            hornLamp.transform.localPosition = originalPos;
+            if (animator.GetBool("isMoving"))
+            {
+                animator.SetTrigger("Down");
+            }
+            animator.SetBool("LastUp", false);
+            animator.SetBool("LastDown", true);
+            animator.SetBool("LastRight", false);
+            animator.SetBool("LastLeft", false);
+        }
+        else
+        {
+            direction = new Vector2(0, 1);
+            hornLamp.transform.position = new Vector2(transform.position.x - 0.56f, transform.position.y + 0.3f);
+            if (animator.GetBool("isMoving"))
+            {
+                animator.SetTrigger("Up");
+            }
+            animator.SetBool("LastUp", true);
+            animator.SetBool("LastDown", false);
+            animator.SetBool("LastRight", false);
+            animator.SetBool("LastLeft", false);
+        }
+    }
 
+    private void PlayerLeft()
+    {
+        direction = new Vector2(-1, 0);
+        hornLamp.transform.localPosition = originalPos;
+        if (animator.GetBool("isMoving"))
+        {
+            animator.SetTrigger("Left");
+        }
+        animator.SetBool("LastUp", false);
+        animator.SetBool("LastDown", false);
+        animator.SetBool("LastRight", false);
+        animator.SetBool("LastLeft", true);
+    }
 
-    //private bool CanMove(Vector3 dir, float distance)
-    //{
-    //    return Physics2D.Raycast(transform.position, dir, distance * Time.deltaTime).collider == null;
-    //}
+    private void PlayerRight()
+    {
+        direction = new Vector2(1, 0);
+        hornLamp.transform.localPosition = originalPos;
+        if (animator.GetBool("isMoving"))
+        {
+            animator.SetTrigger("Right");
+        }
+        animator.SetBool("LastUp", false);
+        animator.SetBool("LastDown", false);
+        animator.SetBool("LastRight", true);
+        animator.SetBool("LastLeft", false);
+    }
 
-    //private void handleDash()
-    //{
-    //    if (Input.GetKeyDown(KeybindManager.MyInstance.Keybinds["DASH"]))
-    //    {
-    //        dashDir = direction;
+    private void CarryObjectToScene()
+    {
+        //Carry object across scenes
+        if (carryingObject == true && inLoadingZone == true)
+        {
+            interactionZones.GetComponent<pushPullObjects>();
+            carriedObject = pushPullObjects.currentMovable;
 
-    ////        INSTANT TELE -DASH
-    //        float dashDistance = 5f;
-
-    //        Vector3 dashPosition = transform.position + direction * dashDistance;
-    //        RaycastHit2D raycastHit2d = Physics2D.Raycast(transform.position, lastMoveDirection, dashDistance, dashLayerMask);
-    //        if (raycastHit2d.collider != null)
-    //        {
-    //            dashPosition = raycastHit2d.point;
-    //        }
-
-    //        rb2.MovePosition(dashPosition);
-    //    }
-    //}
-
+            DontDestroyOnLoad(carriedObject);
+        }
+    }
 }

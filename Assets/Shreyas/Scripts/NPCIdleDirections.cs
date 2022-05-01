@@ -23,25 +23,25 @@ public class NPCIdleDirections : MonoBehaviour
             if(right == true)
             {
                 NPCparent.anim.Play("NPCIdleRight");
-                Debug.Log("Is Working right");
+                //Debug.Log("Is Working right");
             }
             
             if(left == true)
             {
                 NPCparent.anim.Play("NPCIdleLeft");
-                Debug.Log("Is Working left");
+                //Debug.Log("Is Working left");
             }
 
             if (up == true)
             {
                 NPCparent.anim.Play("NPCIdleUp");
-                Debug.Log("Is Working up");
+                //Debug.Log("Is Working up");
             }
 
             if (down == true)
             {
                 NPCparent.anim.Play("NPCIdleDown");
-                Debug.Log("Is Working down");
+                //Debug.Log("Is Working down");
             }
         }
     }

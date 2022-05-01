@@ -454,18 +454,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 367eacadb607bb34f9a6603eff0f5fb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashLayerMask:
-    serializedVersion: 2
-    m_Bits: 2304
   wallLayerMask:
     serializedVersion: 2
     m_Bits: 1
   woodSoundEffect: {fileID: 0}
   grassWalkingSoundEffect: {fileID: 0}
-  moveSpeed: 6
-  goToMazeExit: 0
+  moveSpeed: 300
   inDialogue: 0
-  currentDashCooldown: 0
   speakCooldown: 0.5
   speakCooldownLeft: 0
   interactionZones: {fileID: 0}

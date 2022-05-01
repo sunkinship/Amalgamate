@@ -36,7 +36,7 @@ public class checkInteractions : MonoBehaviour
     void Update()
     {
 
-        if(Input.GetKey(KeyCode.E))
+        if(playerInput.actions["Interact"].triggered)
         {
             prompt.SetActive(false);
         }
@@ -58,9 +58,8 @@ public class checkInteractions : MonoBehaviour
 
         // Initial check for interaction -> npcInteract -> dialogueManager
         isKeyDown = playerInput.actions["Interact"].triggered;
-
         // Regular dialogue 
-        if (isKeyDown && isFacingInteractable == true && player.GetComponent<playerMovement>().inDialogue == false && player.GetComponent<playerMovement>().speakCooldownLeft < 0 && player.GetComponent<playerMovement>().carryingObject == false)
+        if (isKeyDown && isFacingInteractable == true && player.GetComponent<playerMovement>().inDialogue == false && player.GetComponent<playerMovement>().speakCooldownLeft <= 0 && player.GetComponent<playerMovement>().carryingObject == false)
         {
             RegularInteraction();
         }

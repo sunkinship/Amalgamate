@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class loadSceneOnTrigger : MonoBehaviour
 {
     public string sceneToLoad;
-    public bool mazeExit;
     public GameObject player;
     public Animator anim;
     public Vector2 spawnLocation;
@@ -16,22 +15,8 @@ public class loadSceneOnTrigger : MonoBehaviour
     {
         if(collision.gameObject.tag.Equals("Player") && EnterThisScene.enteringScene == false)
         {
-            player = collision.gameObject;
-
-            if (mazeExit == true)
-            {
-                StartCoroutine(Fade());
-                //SceneManager.LoadScene(sceneToLoad);
-                collision.gameObject.GetComponent<playerMovement>().goToMazeExit = true;
-
-            }
-            else
-            {
-                //SceneManager.LoadScene(sceneToLoad);
-                StartCoroutine(Fade());
-            }
+            StartCoroutine(Fade());
         }
-
     }
 
     public IEnumerator Fade()

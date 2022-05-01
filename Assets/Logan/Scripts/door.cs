@@ -7,7 +7,6 @@ using UnityEngine.InputSystem;
 public class door : MonoBehaviour
 {
     public string sceneToLoad;
-    public bool mazeExit;
     public GameObject player;
     public Animator anim;
     public PlayerInput playerInput;
@@ -16,22 +15,8 @@ public class door : MonoBehaviour
     {
         if (collision.gameObject.name == "Player" && playerInput.actions["Interact"].triggered)
         {
-            player = collision.gameObject;
-
-            if (mazeExit == true)
-            {
-                StartCoroutine(Fade());
-                //SceneManager.LoadScene(sceneToLoad);
-                collision.gameObject.GetComponent<playerMovement>().goToMazeExit = true;
-
-            }
-            else
-            {
-                //SceneManager.LoadScene(sceneToLoad);
-                StartCoroutine(Fade());
-            }
+            StartCoroutine(Fade());
         }
-
     }
 
     public IEnumerator Fade()

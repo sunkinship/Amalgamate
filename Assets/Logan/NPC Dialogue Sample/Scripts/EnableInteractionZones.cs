@@ -10,34 +10,40 @@ public class EnableInteractionZones : MonoBehaviour
     public GameObject leftTrigger;
     public GameObject rightTrigger;
 
-    // Start is called before the first frame update
-    void Start()
+    private Animator ani;
+
+    private void Awake()
     {
-        
+        ani = player.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (player.GetComponent<playerMovement>().lastFacingDirection == ("RIGHT"))
+        SetInteractionZone();
+    }
+
+    private void SetInteractionZone()
+    {
+        if (ani.GetBool("LastRight") == true)
         {
             rightTrigger.SetActive(true);
         }
         else rightTrigger.SetActive(false);
 
-        if (player.GetComponent<playerMovement>().lastFacingDirection == ("LEFT"))
+        if (ani.GetBool("LastLeft") == true)
         {
             leftTrigger.SetActive(true);
         }
         else leftTrigger.SetActive(false);
 
-        if (player.GetComponent<playerMovement>().lastFacingDirection == ("UP"))
+        if (ani.GetBool("LastUp") == true)
         {
             upTrigger.SetActive(true);
         }
         else upTrigger.SetActive(false);
 
-        if (player.GetComponent<playerMovement>().lastFacingDirection == ("DOWN"))
+        if (ani.GetBool("LastDown") == true)
         {
             downTrigger.SetActive(true);
         }

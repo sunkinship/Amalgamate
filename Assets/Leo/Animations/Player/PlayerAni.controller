@@ -343,7 +343,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Up
+    m_ConditionEvent: LastUp
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: isMoving
@@ -364,7 +364,7 @@ AnimatorStateTransition:
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
+  m_CanTransitionToSelf: 0
 --- !u!1101 &-3241803221218078471
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -945,7 +945,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Right
+    m_ConditionEvent: LastRight
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: isMoving
@@ -966,7 +966,7 @@ AnimatorStateTransition:
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
+  m_CanTransitionToSelf: 0
 --- !u!1101 &2843624753900391640
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1287,7 +1287,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Left
+    m_ConditionEvent: LastLeft
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: isMoving
@@ -1308,7 +1308,7 @@ AnimatorStateTransition:
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
+  m_CanTransitionToSelf: 0
 --- !u!1101 &8500376999026801422
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1403,7 +1403,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Down
+    m_ConditionEvent: LastDown
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: isMoving
@@ -1424,4 +1424,4 @@ AnimatorStateTransition:
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
+  m_CanTransitionToSelf: 0
