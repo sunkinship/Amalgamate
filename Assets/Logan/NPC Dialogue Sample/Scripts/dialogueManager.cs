@@ -131,6 +131,7 @@ public class dialogueManager : MonoBehaviour
                     dialogueText.maxVisibleCharacters = visibleCount;
                     if (voiceClipCounter >= 3)
                     {
+                        //StopSound();
                         PlaySound();
                         voiceClipCounter = 0;
                     }
@@ -153,6 +154,7 @@ public class dialogueManager : MonoBehaviour
         }
 
         exitLoops:
+        //StopSound();
         dialogueText.maxVisibleCharacters = totalVisibleCharacters;
         isTyping = false;
     }
@@ -160,5 +162,10 @@ public class dialogueManager : MonoBehaviour
     public void PlaySound()
     {
         AudioManager.Instance.PlaySound(voiceClip, 0.5f);
+    }
+
+    public void StopSound()
+    {
+        AudioManager.Instance.StopSound();
     }
 }
