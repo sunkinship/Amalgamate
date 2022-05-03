@@ -17,6 +17,7 @@ public class exitThisSceneDOOR : MonoBehaviour
     public static bool exitingScene;
     bool canLeaveScene;
 
+    public GameObject prompt;
 
     private void Awake()
     {
@@ -44,6 +45,11 @@ public class exitThisSceneDOOR : MonoBehaviour
         if (collision.gameObject.tag.Equals("Player") && EnterThisScene.enteringScene == false)
         {
             canLeaveScene = true;
+            prompt.SetActive(true);
+        }
+        else
+        {
+            prompt.SetActive(false);
         }
 
     }
@@ -52,6 +58,7 @@ public class exitThisSceneDOOR : MonoBehaviour
     {
         while (player.transform.position != targetPos)
         {
+            prompt.SetActive(false);
             //Debug.Log("move");
             SetDirection();
             player.GetComponent<playerMovement>().enabled = false;
