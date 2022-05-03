@@ -76,11 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ac81b22aaab249429ca68fb364e3202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  callPostQuest: 0
-  item: {fileID: 0}
   playerInput: {fileID: 4808871467524777336}
-  trustMeter: {fileID: 0}
-  questUI: {fileID: 0}
   hornLamp: {fileID: 4808871469136409845}
   maxBrightness: 0.5
   render: {fileID: 4808871467524777231}
@@ -220,6 +216,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 954841040, guid: aae05705305996b40bfe76326d1b261e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.039
+      objectReference: {fileID: 0}
     - target: {fileID: 951023340541334098, guid: aae05705305996b40bfe76326d1b261e,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -283,7 +283,7 @@ PrefabInstance:
     - target: {fileID: 951023341175528912, guid: aae05705305996b40bfe76326d1b261e,
         type: 3}
       propertyPath: m_Name
-      value: MirroredPlayer
+      value: MirroredPlayer Variant
       objectReference: {fileID: 0}
     - target: {fileID: 951023341175528912, guid: aae05705305996b40bfe76326d1b261e,
         type: 3}
@@ -383,7 +383,7 @@ PrefabInstance:
     - target: {fileID: 3622528975488665119, guid: aae05705305996b40bfe76326d1b261e,
         type: 3}
       propertyPath: m_InstanceId
-      value: -7054
+      value: -34048
       objectReference: {fileID: 0}
     - target: {fileID: 3864105696216516965, guid: aae05705305996b40bfe76326d1b261e,
         type: 3}
