@@ -39,7 +39,7 @@ public class puzzleButton : MonoBehaviour
 
     public void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" && canActivatecanPressButton == true)
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "interactableNPC" && canActivatecanPressButton == true)
         {
             canPressButton = true;
         }
