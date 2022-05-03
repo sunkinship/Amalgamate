@@ -108,14 +108,14 @@ public class PlayerManager : MonoBehaviour
     {
         lampOn = true;
         spotShadow.SetActive(true);
-        spotShadow.transform.position = new Vector3(transform.position.x, transform.position.y - 1.75f, transform.position.z);
+        spotShadow.transform.position = new Vector3(transform.position.x + 0.054f, transform.position.y - 1.75f, transform.position.z);
     }
 
     private void Indoors()
     {
         lampOn = false;
         spotShadow.SetActive(true);
-        spotShadow.transform.position = new Vector3(transform.position.x, transform.position.y - 1.75f, transform.position.z);
+        spotShadow.transform.position = new Vector3(transform.position.x + 0.054f, transform.position.y - 1.75f, transform.position.z);
     }
 
     private void LitScene()

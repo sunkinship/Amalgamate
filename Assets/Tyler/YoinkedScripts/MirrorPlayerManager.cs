@@ -8,26 +8,24 @@ using UnityEngine.SceneManagement;
 
 public class MirrorPlayerManager : MonoBehaviour
 {
-    public static List<Quest> quests = new List<Quest>();
-    public static List<Item> inventory = new List<Item>();
-
-
+    //public static List<Quest> quests = new List<Quest>();
+    //public static List<Item> inventory = new List<Item>();
 
     // Holds names of npc who have already used forced interaction 
-    public static List<string> forcedDialogueEncounters = new List<string>();
+    //public static List<string> forcedDialogueEncounters = new List<string>();
 
     // Used to set player position when entering new scene
-    public static Vector2 spawnPoint;
+    //public static Vector2 spawnPoint;
 
-    private static bool lampOn;
-    [HideInInspector]
-    public bool callPostQuest;
+    //private static bool lampOn;
+    //[HideInInspector]
+    //public bool callPostQuest;
 
-    [HideInInspector]
-    public GameObject item;
+    //[HideInInspector]
+    //public GameObject item;
     public PlayerInput playerInput;
-    public TrustMeter trustMeter;
-    public QuestUI questUI;
+    //public TrustMeter trustMeter;
+    //public QuestUI questUI;
 
     //private SpriteLibrary spriteLibrary;
     public Light2D hornLamp;
@@ -51,69 +49,21 @@ public class MirrorPlayerManager : MonoBehaviour
 
     private void Start()
     {
-
-        questUI.UpdateList();
+        //questUI.UpdateList();
     }
 
     void Update()
     {
-        PickUpItem();
-        ToggleLitSprite();
+        //PickUpItem();
         ToggleLampLight();
     }
 
     #region lights
-    private void ToggleLitSprite()
-    {
-        string currentScene = SceneManager.GetActiveScene().name;
-        switch (currentScene)
-        {
-            case "MidQReview":
-                lampOn = false;
-                break;
-            case "MonsterTownThing":
-                lampOn = true;
-                break;
-            case "mazeScene":
-                lampOn = true;
-                break;
-            case "Vampires Shop":
-                lampOn = false;
-                break;
-            case "TestingScene":
-                lampOn = true;
-                break;
-            case "MonsterCave":
-                lampOn = true;
-                break;
-            case "ActualPuzzleScene":
-                lampOn = true;
-                break;
-            case "ForestScene":
-                lampOn = false;
-                break;
-            case "NEWMAZE":
-                lampOn = true;
-                break;
-            case "MirrorScene":
-                lampOn = true;
-                break;
-        }
-        //spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibrary/Glow");
-    }
 
     private void ToggleLampLight()
     {
-        if (lampOn)
-        {
-            lightIntensity += lightChangeRate * Time.deltaTime;
-            hornIntensity += hornChangeRate * Time.deltaTime;
-        }
-        else
-        {
-            lightIntensity -= lightChangeRate * Time.deltaTime;
-            hornIntensity -= hornChangeRate * Time.deltaTime;
-        }
+        lightIntensity += lightChangeRate * Time.deltaTime;
+        hornIntensity += hornChangeRate * Time.deltaTime;
 
         lightIntensity = Mathf.Clamp(lightIntensity, 0, maxBrightness);
         hornIntensity = Mathf.Clamp(lightIntensity, 0, 2);
@@ -125,69 +75,69 @@ public class MirrorPlayerManager : MonoBehaviour
     #endregion
 
 
-    #region quests
-    public void GetQuest(QuestGiver npc)
-    {
-        npc.AcceptQuest();
-    }
+    //#region quests
+    //public void GetQuest(QuestGiver npc)
+    //{
+    //    npc.AcceptQuest();
+    //}
 
-    /// <summary>
-    /// Deactivate quest and sets CallPostQuest to true after interaction
-    /// </summary>
-    /// <param name="npc"></param>
-    public void ProgressQuest(QuestGiver npc)
-    {
-        if (npc.quest.isActive)
-        {
-            foreach (Item item in inventory)
-            {
-                if (npc.quest.goal.IsReached(item) && npc.quest.isComplete == false)
-                {
-                    //Debug.Log("calling post quest. Item: " + item.itemName);
-                    callPostQuest = true;
-                    npc.quest.isComplete = true;
-                    npc.quest.isActive = false;
-                    return;
-                }
-            }
-            return;
-        }
-    }
+    ///// <summary>
+    ///// Deactivate quest and sets CallPostQuest to true after interaction
+    ///// </summary>
+    ///// <param name="npc"></param>
+    ////public void ProgressQuest(QuestGiver npc)
+    ////{
+    ////    if (npc.quest.isActive)
+    ////    {
+    ////        foreach (Item item in inventory)
+    ////        {
+    ////            if (npc.quest.goal.IsReached(item) && npc.quest.isComplete == false)
+    ////            {
+    ////                //Debug.Log("calling post quest. Item: " + item.itemName);
+    ////                callPostQuest = true;
+    ////                npc.quest.isComplete = true;
+    ////                npc.quest.isActive = false;
+    ////                return;
+    ////            }
+    ////        }
+    ////        return;
+    ////    }
+    ////}
 
-    #endregion
+    //#endregion
 
 
-    #region items
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Item")
-        {
-            //Debug.Log("in range");
-            item = collision.gameObject;
-        }
-    }
+    //#region items
+    //public void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.tag == "Item")
+    //    {
+    //        //Debug.Log("in range");
+    //        item = collision.gameObject;
+    //    }
+    //}
 
-    public void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag == "Item")
-        {
-            //Debug.Log("left range");
-            item = null;
-        }
-    }
+    //public void OnTriggerExit2D(Collider2D collision)
+    //{
+    //    if (collision.tag == "Item")
+    //    {
+    //        //Debug.Log("left range");
+    //        item = null;
+    //    }
+    //}
 
-    public void PickUpItem()
-    {
-        if (item != null)
-        {
-            if (playerInput.actions["Interact"].triggered)
-            {
-                //Debug.Log("Picked up item");
-                pickedUp = true;
-                item.GetComponent<ItemInteractable>().PickUp();
-            }
-        }
-    }
-    #endregion
+    //public void PickUpItem()
+    //{
+    //    if (item != null)
+    //    {
+    //        if (playerInput.actions["Interact"].triggered)
+    //        {
+    //            //Debug.Log("Picked up item");
+    //            pickedUp = true;
+    //            item.GetComponent<ItemInteractable>().PickUp();
+    //        }
+    //    }
+    //}
+    //#endregion
 
 }

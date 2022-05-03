@@ -13,6 +13,7 @@ public class puzzleButton : MonoBehaviour
     public GameObject cameraToMove;
     private GameObject objectToFocus;
     public GameObject player;
+    public GameObject mirrorPlayer;
 
     public float focusTime;
     public float waitToDisable;
@@ -21,19 +22,20 @@ public class puzzleButton : MonoBehaviour
 
     private bool canActivatecanPressButton;
 
+    public bool mirrorScene;
+
     public void Start()
     {
         objectToFocus = itemToDisable;
         canActivatecanPressButton = true;
     }
 
-
     private void Update()
     {
         if(canPressButton == true && playerInput.actions["Interact"].triggered)
         {
             canPressButton = false;
-            StartCoroutine(buttonWork());
+            StartCoroutine(ButtonWork());
         }
     }
 
@@ -53,8 +55,12 @@ public class puzzleButton : MonoBehaviour
         }
     }
 
-    public IEnumerator buttonWork()
+    public IEnumerator ButtonWork()
     {
+        if (mirrorScene)
+        {
+            mirrorPlayer.GetComponent<playerMovement>().enabled = false;
+        }
         player.GetComponent<playerMovement>().enabled = false;
         cameraToMove.GetComponent<CameraFollowPlayer>().enabled = false;
         canActivatecanPressButton = false;
@@ -68,9 +74,13 @@ public class puzzleButton : MonoBehaviour
         yield return new WaitForSeconds(focusTime);
         cameraToMove.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
         cameraToMove.GetComponent<CameraFollowPlayer>().enabled = true;
+        if (mirrorScene)
+        {
+            mirrorPlayer.GetComponent<playerMovement>().enabled = true;
+        }
         player.GetComponent<playerMovement>().enabled = true;
-        yield return new WaitForSeconds(time);
-        canActivatecanPressButton = true;
-        itemToDisable.SetActive(true);
+        //yield return new WaitForSeconds(time);
+        //canActivatecanPressButton = true;
+        //itemToDisable.SetActive(true);
     }
 }
