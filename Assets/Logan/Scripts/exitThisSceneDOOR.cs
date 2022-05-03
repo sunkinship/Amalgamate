@@ -9,7 +9,6 @@ public class exitThisSceneDOOR : MonoBehaviour
     public Vector3 targetPos;
     public Vector2 spawnLocation;
     public string sceneToLoad;
-    public float speed;
     [HideInInspector]
     public Animator playerAni;
     public Animator fadeAni;
@@ -17,6 +16,8 @@ public class exitThisSceneDOOR : MonoBehaviour
     public string playerDirection;
     public static bool exitingScene;
     bool canLeaveScene;
+
+    public GameObject prompt;
 
     private void Awake()
     {
@@ -44,6 +45,11 @@ public class exitThisSceneDOOR : MonoBehaviour
         if (collision.gameObject.tag.Equals("Player") && EnterThisScene.enteringScene == false)
         {
             canLeaveScene = true;
+            prompt.SetActive(true);
+        }
+        else
+        {
+            prompt.SetActive(false);
         }
 
     }
@@ -52,9 +58,10 @@ public class exitThisSceneDOOR : MonoBehaviour
     {
         while (player.transform.position != targetPos)
         {
+            prompt.SetActive(false);
             //Debug.Log("move");
             SetDirection();
-            player.transform.position = Vector2.MoveTowards(player.transform.position, targetPos, speed * Time.deltaTime);
+            player.GetComponent<playerMovement>().enabled = false;
             yield return null;
         }
     }
@@ -74,26 +81,7 @@ public class exitThisSceneDOOR : MonoBehaviour
     {
         switch (playerDirection)
         {
-            case "Left":
-                playerAni.SetBool("isMoving", true);
-                playerAni.SetBool("Left", true);
-                playerAni.SetBool("isCarrying", false);
-                break;
-            case "Right":
-                playerAni.SetBool("isMoving", true);
-                playerAni.SetBool("Right", true);
-                playerAni.SetBool("isCarrying", false);
-                break;
-            case "Up":
-                playerAni.SetBool("isMoving", true);
-                playerAni.SetBool("Up", true);
-                playerAni.SetBool("isCarrying", false);
-                break;
-            case "Down":
-                playerAni.SetBool("isMoving", true);
-                playerAni.SetBool("Down", true);
-                playerAni.SetBool("isCarrying", false);
-                break;
+
             case "DownIdle":
                 playerAni.SetBool("isMoving", false);
                 playerAni.SetBool("Down", true);
