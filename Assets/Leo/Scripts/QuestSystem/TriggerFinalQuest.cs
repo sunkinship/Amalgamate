@@ -8,7 +8,7 @@ public class TriggerFinalQuest : MonoBehaviour
     private static int monsterQuestCounter = 0;
 
     public SwitchMayors switchMayor;
-
+    
 
     /// <summary>
     /// Checks if player has completed at least one human and monster quest 
@@ -30,7 +30,7 @@ public class TriggerFinalQuest : MonoBehaviour
 
         if (humanQuestCounter >= 1 && monsterQuestCounter >= 1)
         {
-            switchMayor.SwitchMayor();
+            switchMayor.ActivateMayor();
         }
     }
 }

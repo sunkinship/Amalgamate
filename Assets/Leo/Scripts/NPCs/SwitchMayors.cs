@@ -7,7 +7,7 @@ public class SwitchMayors : MonoBehaviour
     public GameObject noQuestMayor;
     public GameObject QuestMayor;
 
-    public void SwitchMayor()
+    public void ActivateMayor()
     {
         noQuestMayor.SetActive(false);
         QuestMayor.SetActive(true);

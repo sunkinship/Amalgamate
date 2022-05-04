@@ -27,6 +27,11 @@ public class checkInteractions : MonoBehaviour
     //prompt
     public GameObject prompt;
 
+    public bool humanMayor;
+    public bool triggerHumanEnd;
+    public bool monsterMayor;
+    public bool triggerMonsterEnd;
+
 
     private void Awake()
     {
@@ -36,12 +41,10 @@ public class checkInteractions : MonoBehaviour
 
     void Update()
     {
-
         if(playerInput.actions["Interact"].triggered)
         {
             prompt.SetActive(false);
         }
-
 
         if(currentNPC != null)
         {
@@ -128,10 +131,6 @@ public class checkInteractions : MonoBehaviour
             player.GetComponent<playerMovement>().rb2.velocity = new Vector2(0, 0);
         }
     }
-
-
-    
-
 
     /// <summary>
     /// Set portrait based on quest state
