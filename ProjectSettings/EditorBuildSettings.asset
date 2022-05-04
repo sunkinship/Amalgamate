@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Leo/Scenes/MainMenu.unity
-    guid: d97c1f66c408f934ebd1df864ced1cd7
+    path: Assets/Leo/Scenes/NewMainMenu.unity
+    guid: 3aa89819ac25a3c4bb40e73e7db4151c
   - enabled: 1
     path: Assets/Trent/Scenes/MidQReview.unity
     guid: f6cf803d68ff795458d2093002a4bc16
