@@ -100,7 +100,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &951023340541334098
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2003,7 +2003,7 @@ MonoBehaviour:
   - {x: 0.3245592, y: -1.8744394, z: 0}
   m_ShapePathHash: -1923906395
   m_Mesh: {fileID: 0}
-  m_InstanceId: 194550
+  m_InstanceId: 121678
 --- !u!60 &9036890348715456945
 PolygonCollider2D:
   m_ObjectHideFlags: 0

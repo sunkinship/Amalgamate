@@ -6,17 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Leo/Scenes/NewMainMenu.unity
+    guid: 3aa89819ac25a3c4bb40e73e7db4151c
+  - enabled: 1
     path: Assets/Leo/Scenes/MainMenu.unity
     guid: d97c1f66c408f934ebd1df864ced1cd7
   - enabled: 1
+    path: Assets/Trent/Scenes/Player House.unity
+    guid: f8983ecbefd6d474ab92104479f67495
+  - enabled: 1
+    path: Assets/Logan/Scenes/Gameplay Loop Test Puzzle Stuff/ForestScene.unity
+    guid: ac2fa7a88bcb1ac4a884c3bff57d9830
+  - enabled: 1
     path: Assets/Trent/Scenes/MidQReview.unity
     guid: f6cf803d68ff795458d2093002a4bc16
-  - enabled: 1
-    path: Assets/Leo/Scenes/TestingScenes/MonsterCave.unity
-    guid: e4eee4cfcf5a1274c9c1ed14090908cd
-  - enabled: 1
-    path: Assets/Logan/Scripts/mazeScene.unity
-    guid: 07b6d0e579ceb0d4bb81ad602adf5495
   - enabled: 1
     path: Assets/Trent/Scenes/MonsterTownThing.unity
     guid: cc724565c540e2e4f8a80ffc363bcf67
@@ -24,18 +27,12 @@ EditorBuildSettings:
     path: Assets/Trent/Scenes/Vampires Shop.unity
     guid: 95580930ba80334438e93cc2b74e4339
   - enabled: 1
-    path: Assets/Logan/Scenes/Gameplay Loop Test Puzzle Stuff/ForestScene.unity
-    guid: ac2fa7a88bcb1ac4a884c3bff57d9830
-  - enabled: 1
-    path: Assets/Leo/Scenes/ActualPuzzleScene.unity
-    guid: f60d88fb2d2e15249905d508832fba4e
-  - enabled: 1
-    path: Assets/Trent/Scenes/Player House.unity
-    guid: f8983ecbefd6d474ab92104479f67495
+    path: Assets/Trent/Scenes/Witch house.unity
+    guid: ac67e3f584df4c8409a67958cdc11976
   - enabled: 1
     path: Assets/Tyler/Scenes/NEWMAZE.unity
     guid: 809637e1cc4b33e40853ea63bc583865
   - enabled: 1
-    path: Assets/Trent/Scenes/Witch house.unity
-    guid: ac67e3f584df4c8409a67958cdc11976
+    path: Assets/Tyler/Scenes/MirrorScene.unity
+    guid: fe1ad04dbaf13ab47b0713f964401f46
   m_configObjects: {}
