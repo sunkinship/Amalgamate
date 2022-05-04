@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
   m_Name: Monstergirl
   m_EditorClassIdentifier: 
-  m_Labels: []
+  m_Labels:
+  - m_Name: New Category
+    m_Hash: -1887952825
+    m_CategoryList: []
