@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class AudioManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class AudioManager : MonoBehaviour
 
     private bool masterMuted;
     public Slider masterSlider;
+
+    public TextMeshProUGUI masterText, musicText, sfxText;
 
     public void Awake()
     {
@@ -47,16 +50,19 @@ public class AudioManager : MonoBehaviour
     public void ChangeMasterVolume(float value)
     {
         AudioListener.volume = value;
+        masterText.text = "Master Volume: " + (int) (AudioListener.volume * 100);
     }
 
     public void ChangeMusicVolume(float value)
     {
         musicSource.volume = value;
+        musicText.text = "Music Volume: " + (int) (musicSource.volume * 100);
     }
 
     public void ChangeSFXVolume(float value)
     {
         sfxSource.volume = value;
+        sfxText.text = "SFX Volume: " + (int) (sfxSource.volume * 100);
     }
     #endregion
 

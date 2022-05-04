@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using TMPro;
 
 public class checkInteractions : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class checkInteractions : MonoBehaviour
     private GameObject currentNPC;
 
     public string nameString;
-    public Text nameText;
+    public TextMeshProUGUI nameText;
     public GameObject npcPortrait;
     public GameObject forPortrait;
 
