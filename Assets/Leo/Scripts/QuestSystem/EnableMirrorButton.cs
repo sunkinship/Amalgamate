@@ -12,6 +12,7 @@ public class EnableMirrorButton : MonoBehaviour
         {
             if (quest.questName.Equals("Mirror O' Mirror"))
             {
+                Debug.Log("eneabled button");
                 mirrorSceneButton.SetActive(true);
             }
         }

@@ -62,4 +62,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Leo/Scenes/PictureTime.unity
     guid: 777c0443f554f734c940abfbe1428453
+  - enabled: 1
+    path: Assets/Tyler/Scenes/MirrorScene.unity
+    guid: fe1ad04dbaf13ab47b0713f964401f46
   m_configObjects: {}
