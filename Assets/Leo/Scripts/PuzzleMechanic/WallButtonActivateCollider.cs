@@ -39,24 +39,37 @@ public class WallButtonActivateCollider : MonoBehaviour
         }
     }
 
-    public void OnTriggerStay2D(Collider2D collision)
+    //public void OnTriggereNTER2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.tag.Equals("Player"))
+    //    {
+    //        Debug.Log("entered collider");
+    //        canPressButton = true;
+    //    }
+    //}
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "interactableNPC" && canActivatecanPressButton == true)
+        if (collision.gameObject.tag.Equals("Player"))
         {
+            Debug.Log("entered collider");
             canPressButton = true;
         }
     }
+
 
     public void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
+            Debug.Log("Leaving collider");
             canPressButton = false;
         }
     }
 
     public IEnumerator ButtonWork()
     {
+        Debug.Log("button pressed");
         if (mirrorScene)
         {
             mirrorPlayer.GetComponent<playerMovement>().enabled = false;
