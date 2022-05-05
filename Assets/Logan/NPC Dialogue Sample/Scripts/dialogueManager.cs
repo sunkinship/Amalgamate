@@ -18,6 +18,7 @@ public class dialogueManager : MonoBehaviour
     private PlayerManager playerManage;
     private PlayerInput playerInput;
     public TriggerFinalQuest finalQuestTrigger;
+    public TriggerEnding triggerEnd;
 
     private bool isTyping;
 
@@ -64,15 +65,16 @@ public class dialogueManager : MonoBehaviour
                 playerMove.inDialogue = false;
                 playerMove.speakCooldownLeft = playerMove.speakCooldown;
 
-                // Check if game should end
+                // Check if end game condition is triggered from CheckToEnd()
                 if (currentNPC.GetComponent<QuestGiver>().triggerEnding) 
                 {
-
+                    triggerEnd.GotoEndScene();
                 }
 
                 // Turn off trigger that sets mayor portarit correctly for forced dialogue
                 if (npcInteract.forcedMayorSpeaking)
                 {
+                    Debug.Log("reset trigger");
                     npcInteract.forcedMayorSpeaking = false;
                 }
 
@@ -81,7 +83,7 @@ public class dialogueManager : MonoBehaviour
                 {
                     currentNPC.GetComponent<QuestGiver>().PostQuest();
                     questUI.UpdateList();
-                    finalQuestTrigger.CheckForEnding();
+                    finalQuestTrigger.CheckForFinalQuest();
                 }
                 // If linked quest item is recevied reset npc dialogue 
                 if (currentNPC.GetComponent<ItemGiver>().canGiveItem)

@@ -44,7 +44,7 @@ public class checkInteractions : MonoBehaviour
     {
         if (npcInteract.forcedMayorSpeaking)
         {
-            //Debug.Log("mayor");
+            Debug.Log("mayor");
             currentNPC = GameObject.Find("QuestMayor");
         }
 
@@ -77,7 +77,7 @@ public class checkInteractions : MonoBehaviour
         // Forced dialogue 
         else if (isFacingInteractable == true && currentNPC.GetComponent<npcInteract>().forceDialogue == true && currentNPC.GetComponent<npcInteract>().mustHoldCertainObject == false)
         {
-            Debug.Log("forced collier");
+            //Debug.Log("forced collier");
             RegularForecedInteraction();
         }
         // Mayor forced dialogue 

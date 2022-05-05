@@ -15,6 +15,9 @@ public class PauseMenu : MonoBehaviour
     public GameObject questListCanvas;
 
     public Animator ani;
+    public Animator fadeAni;
+
+    private bool calledCoroutine;
 
     private bool paused = false;
 
@@ -49,7 +52,20 @@ public class PauseMenu : MonoBehaviour
     public void Exit()
     {
         Pause();
-        SceneManager.LoadScene("NewMainMenu");
+        if (calledCoroutine == false)
+        {
+            calledCoroutine = true;
+            StartCoroutine(FadeAni());
+        }
+    }
+
+    public void ExitFromEnd()
+    {
+        if (calledCoroutine == false)
+        {
+            calledCoroutine = true;
+            StartCoroutine(FadeAni());
+        }
     }
 
     public void Pause()
@@ -73,5 +89,13 @@ public class PauseMenu : MonoBehaviour
         pausedCanvas.SetActive(false);
         settingsCanvas.SetActive(false);
         questListCanvas.SetActive(false);
+    }
+
+    public IEnumerator FadeAni()
+    {
+        fadeAni.SetTrigger("FadeTrigger");
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene("NewMainMenu");
+        calledCoroutine = false;
     }
 }

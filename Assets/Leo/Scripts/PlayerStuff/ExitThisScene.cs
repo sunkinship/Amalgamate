@@ -16,6 +16,8 @@ public class ExitThisScene : MonoBehaviour
     private bool calledCoroutine;
     public string playerDirection;
     public static bool exitingScene;
+    [SerializeField]
+    private bool exitingHouse;
 
     private void Awake()
     {
@@ -52,8 +54,16 @@ public class ExitThisScene : MonoBehaviour
 
     public IEnumerator FadeAndSpawn()
     {
-        fadeAni.SetTrigger("FadeTrigger");
-        yield return new WaitForSeconds(1.5f);
+        if (exitingHouse)
+        {
+            fadeAni.SetTrigger("FadeFastTrigger");
+            yield return new WaitForSeconds(0.9f);
+        }
+        else
+        {
+            fadeAni.SetTrigger("FadeTrigger");
+            yield return new WaitForSeconds(1.5f);
+        }
         SceneManager.LoadScene(sceneToLoad);
         calledCoroutine = false;
         playerMovement.inLoadingZone = false;

@@ -51,7 +51,6 @@ public class PlayerManager : MonoBehaviour
 
     private void Start()
     {
-        
         questUI.UpdateList();
     }
 

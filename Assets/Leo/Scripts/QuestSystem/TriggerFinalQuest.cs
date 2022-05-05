@@ -10,13 +10,18 @@ public class TriggerFinalQuest : MonoBehaviour
     public SwitchMayors switchMayor;
 
     private bool mayorActivated;
-    
+
+    private void Start()
+    {
+        CheckForFinalQuest();
+    }
+
 
     /// <summary>
     /// Checks if player has completed at least one human and monster quest 
     /// If true then the final quest will be triggered spawning in the mayors
     /// </summary>
-    public void CheckForEnding()
+    public void CheckForFinalQuest()
     {
         if (mayorActivated == false)
         {
@@ -38,7 +43,7 @@ public class TriggerFinalQuest : MonoBehaviour
             //    switchMayor.ActivateMayors();
             //}
 
-            if (monsterQuestCounter >= 1)
+            if (humanQuestCounter >= 1)
             {
                 mayorActivated = true;
                 switchMayor.ActivateMayors();

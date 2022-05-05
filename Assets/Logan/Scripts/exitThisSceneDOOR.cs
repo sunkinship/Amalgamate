@@ -53,7 +53,15 @@ public class exitThisSceneDOOR : MonoBehaviour
         {
             prompt.SetActive(false);
         }
+    }
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Player") && EnterThisScene.enteringScene == false)
+        {
+            canLeaveScene = false;
+            prompt.SetActive(false);
+        }
     }
 
     public IEnumerator ExitScene()

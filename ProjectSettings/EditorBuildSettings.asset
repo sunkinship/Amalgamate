@@ -59,4 +59,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Tyler/Scenes/InsideHouse7.unity
     guid: 14aa7d84f1094274ebcbd9e5158a2b97
+  - enabled: 1
+    path: Assets/Leo/Scenes/PictureTime.unity
+    guid: 777c0443f554f734c940abfbe1428453
   m_configObjects: {}

@@ -41,6 +41,9 @@ public class npcInteract : MonoBehaviour, interactable
 
     public bool mustHoldCertainObject;
 
+    [SerializeField]
+    private bool isMayor;
+
 
     private void Awake()
     {
@@ -66,6 +69,11 @@ public class npcInteract : MonoBehaviour, interactable
     /// </summary>
     public void Interact(Sprite protrait, string questState)
     {
+        if (isMayor)
+        {
+            CheckToEnd();
+        }
+
         currentPortrait = protrait;
 
         //Linked quest triggered
@@ -107,5 +115,23 @@ public class npcInteract : MonoBehaviour, interactable
         }
 
         player.GetComponent<playerMovement>().inDialogue = true;
+    }
+
+    /// <summary>
+    /// Checks if player has completed mayor quest and activates end scene trigger
+    /// </summary>
+    private void CheckToEnd()
+    {
+        foreach (Quest quest in PlayerManager.quests)
+        {
+            if (quest.questName.Equals("Find the monster mayor") && npc.quest.isHuman == false)
+            {
+                npc.triggerEnding = true;
+            }
+            else if (quest.questName.Equals("Find the human mayor") && npc.quest.isHuman)
+            {
+                npc.triggerEnding = true;
+            }
+        }
     }
 }
