@@ -60,7 +60,14 @@ public class dialogueManager : MonoBehaviour
             {
                 currentLine = 0;
                 dialogueBox.SetActive(false);
-                currentNPC.GetComponent<npcInteract>().currentPortrait = currentNPC.GetComponent<npcInteract>().portraitsPreQuest[0];
+                if (npcInteract.mayorForcedDialogue)
+                {
+                    GameObject.Find("Quest Mayor").GetComponent<npcInteract>().currentPortrait = GameObject.Find("Quest Mayor").GetComponent<npcInteract>().portraitsPreQuest[0];
+                }
+                else
+                {
+                    currentNPC.GetComponent<npcInteract>().currentPortrait = currentNPC.GetComponent<npcInteract>().portraitsPreQuest[0];
+                }
                 playerMove.inDialogue = false;
                 playerMove.speakCooldownLeft = playerMove.speakCooldown;
 

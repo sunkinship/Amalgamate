@@ -33,7 +33,7 @@ public class npcInteract : MonoBehaviour, interactable
 
     public bool forceDialogue;
     [HideInInspector]
-    public bool mayorForcedDialogue;
+    public static bool mayorForcedDialogue;
 
     public Collider2D forceDialogueCollider;
     public Collider2D afterForceCollider;

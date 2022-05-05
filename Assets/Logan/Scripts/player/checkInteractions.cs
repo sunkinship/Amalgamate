@@ -32,6 +32,7 @@ public class checkInteractions : MonoBehaviour
     public bool monsterMayor;
     public bool triggerMonsterEnd;
 
+    public GameObject Mayor;
 
     private void Awake()
     {
@@ -74,18 +75,19 @@ public class checkInteractions : MonoBehaviour
             RegularForecedInteraction();
         }
         // Mayor forced dialogue 
-        else if (currentNPC.GetComponent<npcInteract>().mayorForcedDialogue == true && currentNPC.GetComponent<npcInteract>().forceDialogue == true && currentNPC.GetComponent<npcInteract>().mustHoldCertainObject == false)
+        else if (npcInteract.mayorForcedDialogue == true)
         {
-            Debug.Log("mayor forced collier");
-            RegularForecedInteraction();
-            currentNPC.GetComponent<npcInteract>().mayorForcedDialogue = false;
+            npcInteract.mayorForcedDialogue = false;
+            currentNPC = Mayor;
+            //Debug.Log("mayor forced collier");
+            //Debug.Log("state: " + Mayor.GetComponent<npcInteract>().mayorForcedDialogue);
+            MayorForecedInteraction();
         }
         // Foreced dialogue requiring held object
         else if (isFacingInteractable == true && currentNPC.GetComponent<npcInteract>().forceDialogue == true && currentNPC.GetComponent<npcInteract>().mustHoldCertainObject == true)
         {
             HoldingObjectInteraction();
         }
-
     }
 
 
@@ -112,10 +114,24 @@ public class checkInteractions : MonoBehaviour
         nameString = currentNPC.GetComponent<npcInteract>().NPCName;
 
         forPortrait.GetComponent<managePortraits>().currentNPC = currentNPC;
-        //currentNPC.GetComponent<interactable>()?.Interact(CheckQuestState());
         currentNPC.GetComponent<npcInteract>().UpdateForcedColliders();
         PlayerManager.forcedDialogueEncounters.Add(currentNPC.name);
         CheckQuestState();
+        nameText.text = nameString;
+        player.GetComponent<playerMovement>().rb2.velocity = new Vector2(0, 0);
+    }
+
+    /// <summary>
+    /// Initiates forced dialogue from mayor
+    /// </summary>
+    private void MayorForecedInteraction()
+    {
+        nameString = Mayor.GetComponent<npcInteract>().NPCName;
+
+        //forPortrait.GetComponent<managePortraits>().currentNPC = Mayor;
+        //currentNPC.GetComponent<npcInteract>().UpdateForcedColliders();
+        PlayerManager.forcedDialogueEncounters.Add(Mayor.name);
+        Mayor.GetComponent<interactable>()?.Interact(Mayor.GetComponent<npcInteract>().portraitsNoQuest[0], "None");
         nameText.text = nameString;
         player.GetComponent<playerMovement>().rb2.velocity = new Vector2(0, 0);
     }
@@ -306,12 +322,11 @@ public class checkInteractions : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "interactableNPC")
+        if(collision.gameObject.tag == "interactableNPC" && npcInteract.mayorForcedDialogue == false)
         {
             isFacingInteractable = true;
 
             currentNPC = collision.gameObject;
-
         }
 
 

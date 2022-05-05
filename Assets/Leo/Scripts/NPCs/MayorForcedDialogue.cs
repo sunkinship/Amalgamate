@@ -10,7 +10,7 @@ public class MayorForcedDialogue : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            mayor.mayorForcedDialogue = true;
+            npcInteract.mayorForcedDialogue = true;
         }
     }
 }
