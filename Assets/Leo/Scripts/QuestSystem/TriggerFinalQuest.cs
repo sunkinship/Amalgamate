@@ -38,7 +38,7 @@ public class TriggerFinalQuest : MonoBehaviour
             //    switchMayor.ActivateMayors();
             //}
 
-            if (humanQuestCounter >= 1)
+            if (monsterQuestCounter >= 1)
             {
                 mayorActivated = true;
                 switchMayor.ActivateMayors();
