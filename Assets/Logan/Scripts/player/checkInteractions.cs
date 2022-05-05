@@ -42,7 +42,13 @@ public class checkInteractions : MonoBehaviour
 
     void Update()
     {
-        if(playerInput.actions["Interact"].triggered)
+        if (npcInteract.forcedMayorSpeaking)
+        {
+            //Debug.Log("mayor");
+            currentNPC = GameObject.Find("QuestMayor");
+        }
+
+        if (playerInput.actions["Interact"].triggered)
         {
             prompt.SetActive(false);
         }
@@ -78,8 +84,9 @@ public class checkInteractions : MonoBehaviour
         else if (npcInteract.mayorForcedDialogue == true)
         {
             npcInteract.mayorForcedDialogue = false;
+            npcInteract.forcedMayorSpeaking = true;
             currentNPC = Mayor;
-            //Debug.Log("mayor forced collier");
+            Debug.Log("mayor forced collier");
             //Debug.Log("state: " + Mayor.GetComponent<npcInteract>().mayorForcedDialogue);
             MayorForecedInteraction();
         }
@@ -127,7 +134,7 @@ public class checkInteractions : MonoBehaviour
     private void MayorForecedInteraction()
     {
         nameString = Mayor.GetComponent<npcInteract>().NPCName;
-
+        //Debug.Log("mayor forced collider");
         //forPortrait.GetComponent<managePortraits>().currentNPC = Mayor;
         //currentNPC.GetComponent<npcInteract>().UpdateForcedColliders();
         PlayerManager.forcedDialogueEncounters.Add(Mayor.name);

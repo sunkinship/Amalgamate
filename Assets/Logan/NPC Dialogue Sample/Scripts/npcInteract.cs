@@ -24,6 +24,7 @@ public class npcInteract : MonoBehaviour, interactable
     public Sprite[] portraitsPostPostQuest;
     public Sprite[] portraitsLinkedQuest;
     public Sprite[] portraitsNoQuest;
+    public Sprite[] portraitsMayorQuest;
 
     [HideInInspector]
     public Sprite currentPortrait;
@@ -33,7 +34,7 @@ public class npcInteract : MonoBehaviour, interactable
 
     public bool forceDialogue;
     [HideInInspector]
-    public static bool mayorForcedDialogue;
+    public static bool mayorForcedDialogue, forcedMayorSpeaking;
 
     public Collider2D forceDialogueCollider;
     public Collider2D afterForceCollider;
@@ -76,7 +77,7 @@ public class npcInteract : MonoBehaviour, interactable
         // No available quest
         else if (questState.Equals("None"))
         {
-            //Debug.Log("No available quest");
+            Debug.Log("No available quest");
             StartCoroutine(dialogueManager.Instance.ShowDialogue(dialogueNoQuest, portraitsNoQuest));
         }
         // Quest not started

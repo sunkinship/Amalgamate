@@ -60,14 +60,7 @@ public class dialogueManager : MonoBehaviour
             {
                 currentLine = 0;
                 dialogueBox.SetActive(false);
-                if (npcInteract.mayorForcedDialogue)
-                {
-                    GameObject.Find("Quest Mayor").GetComponent<npcInteract>().currentPortrait = GameObject.Find("Quest Mayor").GetComponent<npcInteract>().portraitsPreQuest[0];
-                }
-                else
-                {
-                    currentNPC.GetComponent<npcInteract>().currentPortrait = currentNPC.GetComponent<npcInteract>().portraitsPreQuest[0];
-                }
+                currentNPC.GetComponent<npcInteract>().currentPortrait = currentNPC.GetComponent<npcInteract>().portraitsPreQuest[0];
                 playerMove.inDialogue = false;
                 playerMove.speakCooldownLeft = playerMove.speakCooldown;
 
@@ -75,6 +68,12 @@ public class dialogueManager : MonoBehaviour
                 if (currentNPC.GetComponent<QuestGiver>().triggerEnding) 
                 {
 
+                }
+
+                // Turn off trigger that sets mayor portarit correctly for forced dialogue
+                if (npcInteract.forcedMayorSpeaking)
+                {
+                    npcInteract.forcedMayorSpeaking = false;
                 }
 
                 // If quest is completed progresses trust meter and makes isPostQuest true
