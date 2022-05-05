@@ -43,6 +43,7 @@ public class puzzleButton : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "interactableNPC" && canActivatecanPressButton == true)
         {
+            Debug.Log("enter");
             canPressButton = true;
         }
     }
@@ -51,6 +52,7 @@ public class puzzleButton : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            Debug.Log("exit");
             canPressButton = false;
         }
     }
