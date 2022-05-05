@@ -7,8 +7,9 @@ public class SwitchMayors : MonoBehaviour
     public GameObject hiddenMayor;
     public GameObject questMayor;
     public GameObject noQuestMayor;
-    private static bool mayorActive;
+    public static bool mayorActive;
     public bool inHumanTown;
+    public bool noMayorInScene;
 
     private void Start()
     {
@@ -22,7 +23,11 @@ public class SwitchMayors : MonoBehaviour
     {
         foreach (Quest quest in PlayerManager.quests)
         {
-            if (quest.questName.Equals("Find the Monster Mayor") && inHumanTown == false)
+            if (noMayorInScene)
+            {
+                return;
+            }
+            else if (quest.questName.Equals("Find the Monster Mayor") && inHumanTown == false)
             {
                 SwitchMayor();
                 return;
@@ -55,6 +60,4 @@ public class SwitchMayors : MonoBehaviour
         questMayor.SetActive(false);
         noQuestMayor.SetActive(true);
     }
-
-    public void 
 }

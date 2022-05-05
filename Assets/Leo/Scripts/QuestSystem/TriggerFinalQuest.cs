@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class TriggerFinalQuest : MonoBehaviour
 {
-    private static int humanQuestCounter = 0;
-    private static int monsterQuestCounter = 0;
+    public static int humanQuestCounter = 0;
+    public static int monsterQuestCounter = 0;
 
     public SwitchMayors switchMayor;
 

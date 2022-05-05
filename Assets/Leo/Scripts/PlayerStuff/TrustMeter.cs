@@ -9,12 +9,13 @@ public class TrustMeter : MonoBehaviour
     private Animator ani;
 
     public float fillSpeed;
-    private static float targetProgress;
+    public static float targetProgress = 0.13f;
 
     private void Awake()
     {
         slider = gameObject.GetComponent<Slider>();
         ani = gameObject.GetComponent<Animator>();
+        slider.value = targetProgress;
     }
 
     private void Update()
