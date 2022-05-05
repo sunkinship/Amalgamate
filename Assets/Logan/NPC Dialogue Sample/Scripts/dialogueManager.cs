@@ -17,7 +17,7 @@ public class dialogueManager : MonoBehaviour
     private playerMovement playerMove;
     private PlayerManager playerManage;
     private PlayerInput playerInput;
-    private TriggerFinalQuest finalQuestTrigger;
+    public TriggerFinalQuest finalQuestTrigger;
 
     private bool isTyping;
 
@@ -36,7 +36,6 @@ public class dialogueManager : MonoBehaviour
         playerInput = gameObject.GetComponent<PlayerInput>();
         playerMove = gameObject.GetComponent<playerMovement>();
         playerManage = gameObject.GetComponent<PlayerManager>();
-        finalQuestTrigger = gameObject.GetComponent<TriggerFinalQuest>();
     }
     dialogue dialogue;
     int currentLine = 0;
@@ -64,6 +63,12 @@ public class dialogueManager : MonoBehaviour
                 currentNPC.GetComponent<npcInteract>().currentPortrait = currentNPC.GetComponent<npcInteract>().portraitsPreQuest[0];
                 playerMove.inDialogue = false;
                 playerMove.speakCooldownLeft = playerMove.speakCooldown;
+
+                // Check if game should end
+                if (currentNPC.GetComponent<QuestGiver>().triggerEnding) 
+                {
+
+                }
 
                 // If quest is completed progresses trust meter and makes isPostQuest true
                 if (playerManage.callPostQuest && currentNPC.GetComponent<QuestGiver>().quest.isPostQuest == false && currentNPC.GetComponent<QuestGiver>().quest.isComplete == true)

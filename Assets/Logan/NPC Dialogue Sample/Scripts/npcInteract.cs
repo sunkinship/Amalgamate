@@ -32,6 +32,8 @@ public class npcInteract : MonoBehaviour, interactable
     private QuestGiver npc;
 
     public bool forceDialogue;
+    [HideInInspector]
+    public bool mayorForcedDialogue;
 
     public Collider2D forceDialogueCollider;
     public Collider2D afterForceCollider;

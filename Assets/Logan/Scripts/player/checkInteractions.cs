@@ -70,7 +70,15 @@ public class checkInteractions : MonoBehaviour
         // Forced dialogue 
         else if (isFacingInteractable == true && currentNPC.GetComponent<npcInteract>().forceDialogue == true && currentNPC.GetComponent<npcInteract>().mustHoldCertainObject == false)
         {
+            Debug.Log("forced collier");
             RegularForecedInteraction();
+        }
+        // Mayor forced dialogue 
+        else if (currentNPC.GetComponent<npcInteract>().mayorForcedDialogue == true && currentNPC.GetComponent<npcInteract>().forceDialogue == true && currentNPC.GetComponent<npcInteract>().mustHoldCertainObject == false)
+        {
+            Debug.Log("mayor forced collier");
+            RegularForecedInteraction();
+            currentNPC.GetComponent<npcInteract>().mayorForcedDialogue = false;
         }
         // Foreced dialogue requiring held object
         else if (isFacingInteractable == true && currentNPC.GetComponent<npcInteract>().forceDialogue == true && currentNPC.GetComponent<npcInteract>().mustHoldCertainObject == true)

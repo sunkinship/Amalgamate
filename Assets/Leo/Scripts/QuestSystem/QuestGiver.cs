@@ -13,6 +13,8 @@ public class QuestGiver : MonoBehaviour
     public bool removesCollider;
     public Collider2D colliderToRemove;
 
+    public bool triggerEnding;
+
     private void Start()
     {
         // Updates quest state after changing scenes
