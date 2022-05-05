@@ -43,8 +43,16 @@ public class TriggerFinalQuest : MonoBehaviour
             //    switchMayor.ActivateMayors();
             //}
 
-            if (humanQuestCounter >= 1)
+            if (humanQuestCounter >= 0)
             {
+                //foreach (Quest quest in PlayerManager.quests)
+                //{
+                //    if (quest.questName.Equals("Find the Monster Mayor") || quest.questName.Equals("Find the Human Mayor"))
+                //    {
+                //        switchMayor.
+                //        return;
+                //    }
+                //}
                 mayorActivated = true;
                 switchMayor.ActivateMayors();
             }

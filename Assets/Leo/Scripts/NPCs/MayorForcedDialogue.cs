@@ -8,8 +8,9 @@ public class MayorForcedDialogue : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && QuestGiver.turnOffForcedMayorCollider == false)
         {
+            Debug.Log("turn on mayor collider");
             npcInteract.mayorForcedDialogue = true;
             npcInteract.forcedMayorSpeaking = true;
         }

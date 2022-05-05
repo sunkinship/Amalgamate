@@ -15,8 +15,12 @@ public class QuestGiver : MonoBehaviour
 
     public bool triggerEnding;
 
-    private void Start()
+    [HideInInspector]
+    public static bool turnOffForcedMayorCollider;
+
+    private void Awake()
     {
+        Debug.Log("Checking to turn off forced colliders");
         // Updates quest state after changing scenes
         LoadQuestState();
 
@@ -28,7 +32,15 @@ public class QuestGiver : MonoBehaviour
         {
             if (npcName.Equals(gameObject.GetComponent<npcInteract>().NPCName))
             {
-                gameObject.GetComponent<npcInteract>().UpdateForcedColliders();
+                if (gameObject.GetComponent<npcInteract>().isMayor)
+                {
+                    Debug.Log("turn off mayor collider");
+                    turnOffForcedMayorCollider = true;
+                }
+                else
+                {
+                    gameObject.GetComponent<npcInteract>().UpdateForcedColliders();
+                }
             }
         }
     }

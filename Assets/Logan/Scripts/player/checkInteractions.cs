@@ -44,7 +44,7 @@ public class checkInteractions : MonoBehaviour
     {
         if (npcInteract.forcedMayorSpeaking)
         {
-            Debug.Log("mayor");
+            //Debug.Log("mayor");
             currentNPC = GameObject.Find("QuestMayor");
         }
 
@@ -134,10 +134,10 @@ public class checkInteractions : MonoBehaviour
     private void MayorForecedInteraction()
     {
         nameString = Mayor.GetComponent<npcInteract>().NPCName;
-        //Debug.Log("mayor forced collider");
-        //forPortrait.GetComponent<managePortraits>().currentNPC = Mayor;
-        //currentNPC.GetComponent<npcInteract>().UpdateForcedColliders();
-        PlayerManager.forcedDialogueEncounters.Add(Mayor.name);
+        Debug.Log("mayor forced collider");
+        forPortrait.GetComponent<managePortraits>().currentNPC = Mayor;
+        Mayor.GetComponent<npcInteract>().UpdateForcedColliders();
+        PlayerManager.forcedDialogueEncounters.Add(Mayor.GetComponent<npcInteract>().NPCName);
         Mayor.GetComponent<interactable>()?.Interact(Mayor.GetComponent<npcInteract>().portraitsNoQuest[0], "None");
         nameText.text = nameString;
         player.GetComponent<playerMovement>().rb2.velocity = new Vector2(0, 0);

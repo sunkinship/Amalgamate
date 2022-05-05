@@ -48,9 +48,9 @@ public class WallButtonActivateCollider : MonoBehaviour
     //    }
     //}
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag.Equals("Player"))
+        if (collision.gameObject.tag.Equals("interactionZone"))
         {
             Debug.Log("entered collider");
             canPressButton = true;
@@ -60,7 +60,7 @@ public class WallButtonActivateCollider : MonoBehaviour
 
     public void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "interactionZone")
         {
             Debug.Log("Leaving collider");
             canPressButton = false;

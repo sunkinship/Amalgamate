@@ -8,6 +8,7 @@ public class SwitchMayors : MonoBehaviour
     public GameObject questMayor;
     public GameObject noQuestMayor;
     private static bool mayorActive;
+    public bool inHumanTown;
 
     private void Start()
     {
@@ -21,13 +22,15 @@ public class SwitchMayors : MonoBehaviour
     {
         foreach (Quest quest in PlayerManager.quests)
         {
-            if (quest.questName.Equals("Find the Monster Mayor"))
+            if (quest.questName.Equals("Find the Monster Mayor") && inHumanTown == false)
             {
-                SwitchMonsterMayor();
+                SwitchMayor();
+                return;
             }
-            else if (quest.questName.Equals("Find the Human Mayor"))
+            else if (quest.questName.Equals("Find the Human Mayor") && inHumanTown)
             {
-                SwitchHumanMayor();
+                SwitchMayor();
+                return;
             }
         }
     }
@@ -44,21 +47,14 @@ public class SwitchMayors : MonoBehaviour
     }
 
     /// <summary>
-    /// Switches monster mayor to one without a quest if player talks to human mayor first
+    /// Switches mayor to one with no quest depending on which one the player talked to first
     /// </summary>
-    private void SwitchMonsterMayor()
+    private void SwitchMayor()
     {
         Debug.Log("mayor switch");
         questMayor.SetActive(false);
         noQuestMayor.SetActive(true);
     }
 
-    /// <summary>
-    /// Switches human mayor to one without a quest if player talks to monster mayor first
-    /// </summary>
-    private void SwitchHumanMayor()
-    {
-        questMayor.SetActive(false);
-        noQuestMayor.SetActive(true);
-    }
+    public void 
 }

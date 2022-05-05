@@ -41,8 +41,7 @@ public class npcInteract : MonoBehaviour, interactable
 
     public bool mustHoldCertainObject;
 
-    [SerializeField]
-    private bool isMayor;
+    public bool isMayor;
 
 
     private void Awake()
@@ -60,7 +59,7 @@ public class npcInteract : MonoBehaviour, interactable
         forceDialogue = false;
         forceDialogueCollider.enabled = false;
         afterForceCollider.enabled = true;
-        //Debug.Log("forced dialogue activated");
+        Debug.Log("forced dialogue deactivated");
     }
 
 
