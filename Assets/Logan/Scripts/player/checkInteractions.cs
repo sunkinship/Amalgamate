@@ -34,6 +34,8 @@ public class checkInteractions : MonoBehaviour
 
     public GameObject Mayor;
 
+    private GameObject currentBlock;
+
     private void Awake()
     {
         playerManager = player.GetComponent<PlayerManager>();
@@ -324,7 +326,7 @@ public class checkInteractions : MonoBehaviour
     public IEnumerator buttonPrompt()
     {
         yield return new WaitForSeconds(.26f);
-        prompt.transform.position = new Vector3(currentNPC.transform.position.x, currentNPC.transform.position.y + 2.3f, currentNPC.transform.position.z);
+        
         prompt.SetActive(true);
     }
 
@@ -344,10 +346,13 @@ public class checkInteractions : MonoBehaviour
     {
         if (other.gameObject.tag == "interactableNPC" && playerMovement.carryingObject == false && isInteractingWithNPC == false)
         {
+            prompt.transform.position = new Vector3(currentNPC.transform.position.x, currentNPC.transform.position.y + 2.3f, currentNPC.transform.position.z);
             StartCoroutine(buttonPrompt());
         }
         if (other.gameObject.tag == "movableObject" && playerMovement.carryingObject == false)
         {
+            currentBlock = other.gameObject;
+            prompt.transform.position = new Vector3(currentBlock.transform.position.x, currentBlock.transform.position.y + 1f, currentBlock.transform.position.z);
             StartCoroutine(buttonPrompt());
         }
     }
