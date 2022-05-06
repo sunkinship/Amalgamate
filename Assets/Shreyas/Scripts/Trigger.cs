@@ -6,6 +6,7 @@ using Pathfinding;
 public class Trigger : MonoBehaviour
 {
     public NPCWalk NPCparent;
+    
     // Start is called before the first frame update
     void Start()
     {

@@ -7,24 +7,21 @@ public class OGPlayerMovement : MonoBehaviour
 {
     [SerializeField] private LayerMask wallLayerMask;
 
-    private MoveDirection moveDir;
-
-    //public AudioSource woodSoundEffect;
-    //public AudioSource grassWalkingSoundEffect;
+    public AudioSource woodSoundEffect;
+    public AudioSource grassWalkingSoundEffect;
     public float moveSpeed = 300f;
     public float runMoveSpeed = 500f;
     private bool isRunning;
-
-    private float moveX = 0f;
-    private float moveY = 0f;
 
     public bool inDialogue;
 
     private Animator animator;
 
+    Vector2 movement;
+
     private PlayerInput playerInput;
 
-    public float speakCooldown = 0.5f;
+    public float speakCooldown = .5f;
     public float speakCooldownLeft;
 
     private GameObject hornLamp;
@@ -35,6 +32,10 @@ public class OGPlayerMovement : MonoBehaviour
     public GameObject interactionZones;
 
     public bool mirroredPlayer;
+
+    public string lastFacingDirection = "RIGHT";
+
+    private Vector3 lastMoveDirection;
 
     public Vector3 direction;
 
@@ -51,10 +52,6 @@ public class OGPlayerMovement : MonoBehaviour
     private float stepCoolDown;
     [SerializeField] private AudioClip clip;
 
-    private enum MoveDirection
-    {
-        None, Up, Down, Left, Right
-    }
 
     private void Awake()
     {
@@ -68,45 +65,23 @@ public class OGPlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //woodSoundEffect = GetComponent<AudioSource>();
-        //grassWalkingSoundEffect = GetComponent<AudioSource>();
+        woodSoundEffect = GetComponent<AudioSource>();
+        grassWalkingSoundEffect = GetComponent<AudioSource>();
         playerInput = GetComponent<PlayerInput>();
     }
 
-    //public void OnCollisionEnter2D(Collision collision)
-    //{
-
-    //    Debug.Log("Help");
-    //    if (tag == "Wood")
-    //    {
-    //        Debug.Log("Sound");
-    //        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
-    //        {
-    //            woodSoundEffect.UnPause();
-    //        }
-    //        else
-    //        {
-    //            woodSoundEffect.Pause();
-    //        }
-    //    }
-    //}
-
     void Update()
     {
-        //Talking to NPC cooldown
-        if (speakCooldownLeft > 0)
-        {
-            speakCooldownLeft -= Time.deltaTime;
-        }
+        //iteractionZones = GameObject.FindGameObjectWithTag("interactionZone");
 
-        //Finding curently enabled interaction zone
-        interactionZones = GameObject.FindGameObjectWithTag("interactionZone");
+        //if (carryingObject == true && inLoadingZone == true)
+        //{
+        //    interactionZones.GetComponent<pushPullObjects>();
+        //    carriedObject = pushPullObjects.currentMovable;
 
-        CarryObjectToScene();
+        //    DontDestroyOnLoad(carriedObject);
+        //}
 
-        PlayFootStepSFX();
-
-        CheckIfMoving();
 
         //Check if running
         if (playerInput.actions["Dash"].IsPressed())
@@ -118,20 +93,42 @@ public class OGPlayerMovement : MonoBehaviour
             isRunning = false;
         }
 
-        //Movement
-        if (inDialogue == false)
+        // Play footstep sfx
+        stepCoolDown -= Time.deltaTime;
+
+        if (stepCoolDown <= 0f && animator.GetBool("isMoving"))
         {
-            //Get input;
-            GetInput();
+            stepCoolDown = stepRate;
+            AudioManager.Instance.PlaySound(clip, 0.5f);
+        }
+
+        if ((Mathf.Abs(rb2.velocity.x) > 0.01 || Mathf.Abs(rb2.velocity.y) > 0.01) && inLoadingZone == false)
+        {
+            animator.SetBool("isMoving", true);
         }
         else
         {
-            direction = new Vector2(0, 0);
-            moveDir = MoveDirection.None;
+            animator.SetBool("isMoving", false);
+        }
+
+        if (inDialogue == false && inLoadingZone == false)
+        {
+            GetInput();
+        }
+
+        // Cool down for npc talking 
+        speakCooldownLeft = speakCooldownLeft - Time.deltaTime;
+    }
+
+    void FixedUpdate()
+    {
+        if (inDialogue == false)
+        {
+            Move();
         }
     }
 
-    private void FixedUpdate()
+    public void Move()
     {
         if (isRunning == false)
         {
@@ -143,151 +140,125 @@ public class OGPlayerMovement : MonoBehaviour
         }
     }
 
-    private void PlayFootStepSFX()
+    public void GetInput()
     {
-        stepCoolDown -= Time.deltaTime;
+        float moveX = 0f;
+        float moveY = 0f;
 
-        if (stepCoolDown <= 0f && animator.GetBool("isMoving"))
-        {
-            stepCoolDown = stepRate;
-            AudioManager.Instance.PlaySound(clip, 0.5f);
-        }
-    }
+        direction = Vector2.zero;
 
-    private void CheckIfMoving()
-    {
-        if ((Mathf.Abs(rb2.velocity.x) > 0.01 || Mathf.Abs(rb2.velocity.y) > 0.01) && inLoadingZone == false)
+        //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["UP"]))
+        if (playerInput.actions["Up"].IsPressed() && inLoadingZone == false && mirroredPlayer == false)
         {
-            animator.SetBool("isMoving", true);
+            hornLamp.transform.position = new Vector2(transform.position.x - 0.56f, transform.position.y + 0.3f);
+            if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Down"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
+            {
+                //Debug.Log("set trigger up");
+                animator.SetTrigger("Up");
+            }
+            moveY = +1f;
+            lastFacingDirection = "UP";
+            animator.SetBool("LastUp", true);
+            animator.SetBool("LastDown", false);
+            animator.SetBool("LastRight", false);
+            animator.SetBool("LastLeft", false);
         }
-        else
-        {
-            animator.SetBool("isMoving", false);
-        }
-    }
+        //else animator.ResetTrigger("Up");
 
-    /// <summary>
-    /// Checks for player input and sets direction to last pressed key
-    /// </summary>
-    private void GetInput()
-    {
-        if (playerInput.actions["Up"].IsPressed())
+
+        //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["DOWN"]))
+        if (playerInput.actions["Down"].IsPressed() && inLoadingZone == false && mirroredPlayer == false)
         {
-            PlayerUp();
+            hornLamp.transform.localPosition = originalPos;
+            moveY = -1f;
+            lastFacingDirection = "DOWN";
+            animator.SetBool("LastUp", false);
+            animator.SetBool("LastDown", true);
+            animator.SetBool("LastRight", false);
+            animator.SetBool("LastLeft", false);
+            if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
+            {
+                //Debug.Log("set trigger down");
+                animator.SetTrigger("Down");
+            }
         }
-        if (playerInput.actions["Right"].IsPressed())
+        //else animator.ResetTrigger("Down");
+
+        //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["LEFT"]))
+        if (playerInput.actions["Left"].IsPressed() && inLoadingZone == false)
         {
-            PlayerRight();
+            hornLamp.transform.localPosition = originalPos;
+            moveX = -1f;
+            lastFacingDirection = "LEFT";
+            animator.SetBool("LastUp", false);
+            animator.SetBool("LastDown", false);
+            animator.SetBool("LastRight", false);
+            animator.SetBool("LastLeft", true);
+            if (playerInput.actions["Right"].IsPressed() == false)
+            {
+                //Debug.Log("set trigger left");
+                animator.SetTrigger("Left");
+            }
         }
-        if (playerInput.actions["Left"].IsPressed())
+        //else animator.ResetTrigger("Left");
+
+        //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["RIGHT"]))
+        if (playerInput.actions["Right"].IsPressed() && inLoadingZone == false)
         {
-            PlayerLeft();
+            hornLamp.transform.localPosition = originalPos;
+            animator.SetTrigger("Right");
+            moveX = +1f;
+            lastFacingDirection = "RIGHT";
+            animator.SetBool("LastUp", false);
+            animator.SetBool("LastDown", false);
+            animator.SetBool("LastRight", true);
+            animator.SetBool("LastLeft", false);
+            //Debug.Log("set trigger right");
         }
-        if (playerInput.actions["Down"].IsPressed())
+        #region mirrorInput
+        if (playerInput.actions["Up"].IsPressed() && inLoadingZone == false && mirroredPlayer == true)
         {
-            PlayerDown();
+            hornLamp.transform.position = new Vector2(transform.position.x - 0.56f, transform.position.y + 0.3f);
+            if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Down"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
+            {
+                //Debug.Log("set trigger up");
+                animator.SetTrigger("Down");
+            }
+            moveY = -1f;
+            lastFacingDirection = "DOWN";
+            animator.SetBool("LastUp", false);
+            animator.SetBool("LastDown", true);
+            animator.SetBool("LastRight", false);
+            animator.SetBool("LastLeft", false);
         }
+        //else animator.ResetTrigger("Up");
+
+
+        //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["DOWN"]))
+        if (playerInput.actions["Down"].IsPressed() && inLoadingZone == false && mirroredPlayer == true)
+        {
+            hornLamp.transform.localPosition = originalPos;
+            moveY = +1f;
+            lastFacingDirection = "UP";
+            animator.SetBool("LastUp", true);
+            animator.SetBool("LastDown", false);
+            animator.SetBool("LastRight", false);
+            animator.SetBool("LastLeft", false);
+            if (playerInput.actions["Left"].IsPressed() == false && playerInput.actions["Right"].IsPressed() == false)
+            {
+                //Debug.Log("set trigger down");
+                animator.SetTrigger("Up");
+            }
+        }
+        #endregion mirrorInput
+        //else animator.ResetTrigger("Right");
 
         direction = new Vector3(moveX, moveY).normalized;
-    }
+        //rayDirection = new Vector3(moveX, moveY).normalized;
 
-    private void PlayerUp()
-    {
-        if (mirroredPlayer == false)
+        if (moveX != 0 || moveY != 0)
         {
-            moveY = 1;
-            hornLamp.transform.position = new Vector2(transform.position.x - 0.56f, transform.position.y + 0.3f);
-            if (animator.GetBool("isMoving"))
-            {
-                animator.SetTrigger("Up");
-            }
-            animator.SetBool("LastUp", true);
-            animator.SetBool("LastDown", false);
-            animator.SetBool("LastRight", false);
-            animator.SetBool("LastLeft", false);
-        }
-        else
-        {
-            moveY = -1;
-            hornLamp.transform.localPosition = originalPos;
-            if (animator.GetBool("isMoving"))
-            {
-                animator.SetTrigger("Down");
-            }
-            animator.SetBool("LastUp", false);
-            animator.SetBool("LastDown", true);
-            animator.SetBool("LastRight", false);
-            animator.SetBool("LastLeft", false);
-        }
-    }
-
-    private void PlayerDown()
-    {
-        if (mirroredPlayer == false)
-        {
-            moveY = -1;
-            hornLamp.transform.localPosition = originalPos;
-            if (animator.GetBool("isMoving"))
-            {
-                animator.SetTrigger("Down");
-            }
-            animator.SetBool("LastUp", false);
-            animator.SetBool("LastDown", true);
-            animator.SetBool("LastRight", false);
-            animator.SetBool("LastLeft", false);
-        }
-        else
-        {
-            moveY = 1;
-            hornLamp.transform.position = new Vector2(transform.position.x - 0.56f, transform.position.y + 0.3f);
-            if (animator.GetBool("isMoving"))
-            {
-                animator.SetTrigger("Up");
-            }
-            animator.SetBool("LastUp", true);
-            animator.SetBool("LastDown", false);
-            animator.SetBool("LastRight", false);
-            animator.SetBool("LastLeft", false);
-        }
-    }
-
-    private void PlayerLeft()
-    {
-        moveX = -1;
-        hornLamp.transform.localPosition = originalPos;
-        if (animator.GetBool("isMoving"))
-        {
-            animator.SetTrigger("Left");
-        }
-        animator.SetBool("LastUp", false);
-        animator.SetBool("LastDown", false);
-        animator.SetBool("LastRight", false);
-        animator.SetBool("LastLeft", true);
-    }
-
-    private void PlayerRight()
-    {
-        moveX = 1;
-        hornLamp.transform.localPosition = originalPos;
-        if (animator.GetBool("isMoving"))
-        {
-            animator.SetTrigger("Right");
-        }
-        animator.SetBool("LastUp", false);
-        animator.SetBool("LastDown", false);
-        animator.SetBool("LastRight", true);
-        animator.SetBool("LastLeft", false);
-    }
-
-    private void CarryObjectToScene()
-    {
-        //Carry object across scenes
-        if (carryingObject == true && inLoadingZone == true)
-        {
-            interactionZones.GetComponent<pushPullObjects>();
-            carriedObject = pushPullObjects.currentMovable;
-
-            DontDestroyOnLoad(carriedObject);
+            lastMoveDirection = direction;
         }
     }
 }
