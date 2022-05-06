@@ -24,6 +24,8 @@ public class puzzleButton : MonoBehaviour
 
     public bool mirrorScene;
 
+    public GameObject prompt;
+
     public void Start()
     {
         objectToFocus = itemToDisable;
@@ -45,6 +47,8 @@ public class puzzleButton : MonoBehaviour
         {
             Debug.Log("entered");
             canPressButton = true;
+            prompt.transform.position = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 1, this.gameObject.transform.position.z);
+            prompt.SetActive(true);
         }
     }
 
@@ -54,6 +58,7 @@ public class puzzleButton : MonoBehaviour
         {
             Debug.Log("left");
             canPressButton = false;
+            prompt.SetActive(false);
         }
     }
 
@@ -65,6 +70,7 @@ public class puzzleButton : MonoBehaviour
         }
         player.GetComponent<playerMovement>().enabled = false;
         cameraToMove.GetComponent<CameraFollowPlayer>().enabled = false;
+        prompt.SetActive(false);
         canActivatecanPressButton = false;
         while(cameraToMove.transform.position != new Vector3(objectToFocus.transform.position.x, objectToFocus.transform.position.y, -10))
         {

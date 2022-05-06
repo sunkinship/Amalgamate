@@ -324,6 +324,7 @@ public class checkInteractions : MonoBehaviour
     public IEnumerator buttonPrompt()
     {
         yield return new WaitForSeconds(.26f);
+        prompt.transform.position = new Vector3(currentNPC.transform.position.x, currentNPC.transform.position.y + 2.3f, currentNPC.transform.position.z);
         prompt.SetActive(true);
     }
 
