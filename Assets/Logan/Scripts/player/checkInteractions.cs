@@ -60,17 +60,17 @@ public class checkInteractions : MonoBehaviour
         
         if(isFacingInteractable == true)
         {
-            player.GetComponent<playerMovement>().isFacingNPC = true;
+            playerMovement.isFacingNPC = true;
         }
         else
         {
-            player.GetComponent<playerMovement>().isFacingNPC = false;
+            playerMovement.isFacingNPC = false;
         }
 
         // Initial check for interaction -> npcInteract -> dialogueManager
         isKeyDown = playerInput.actions["Interact"].triggered;
         // Regular dialogue 
-        if (isKeyDown && isFacingInteractable == true && player.GetComponent<playerMovement>().inDialogue == false && player.GetComponent<playerMovement>().speakCooldownLeft <= 0 && player.GetComponent<playerMovement>().carryingObject == false)
+        if (isKeyDown && isFacingInteractable == true && playerMovement.inDialogue == false && playerMovement.speakCooldownLeft <= 0 && playerMovement.carryingObject == false)
         {
             RegularInteraction();
         }
@@ -149,7 +149,7 @@ public class checkInteractions : MonoBehaviour
     /// </summary>
     private void HoldingObjectInteraction()
     {
-        if (player.GetComponent<playerMovement>().carryingObject == true)
+        if (playerMovement.carryingObject == true)
         {
             nameString = currentNPC.GetComponent<npcInteract>().NPCName;
 
@@ -342,11 +342,11 @@ public class checkInteractions : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "interactableNPC" && player.GetComponent<playerMovement>().carryingObject == false && isInteractingWithNPC == false)
+        if (other.gameObject.tag == "interactableNPC" && playerMovement.carryingObject == false && isInteractingWithNPC == false)
         {
             StartCoroutine(buttonPrompt());
         }
-        if (other.gameObject.tag == "movableObject" && player.GetComponent<playerMovement>().carryingObject == false)
+        if (other.gameObject.tag == "movableObject" && playerMovement.carryingObject == false)
         {
             StartCoroutine(buttonPrompt());
         }

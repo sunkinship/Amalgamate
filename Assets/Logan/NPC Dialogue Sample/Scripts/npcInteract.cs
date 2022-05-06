@@ -113,7 +113,7 @@ public class npcInteract : MonoBehaviour, interactable
             StartCoroutine(dialogueManager.Instance.ShowDialogue(dialoguePostPostQuest, portraitsPostPostQuest));
         }
 
-        player.GetComponent<playerMovement>().inDialogue = true;
+        playerMovement.inDialogue = true;
     }
 
     /// <summary>

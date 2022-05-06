@@ -27,7 +27,7 @@ public class pressurePlate : MonoBehaviour
     {
         if(bigPlate == true)
         {
-            if (collision.gameObject.tag == "movableObject" && collision.gameObject.name.Contains("BIG") && player.GetComponent<playerMovement>().carryingObject == false)
+            if (collision.gameObject.tag == "movableObject" && collision.gameObject.name.Contains("BIG") && playerMovement.carryingObject == false)
             {
                 triggered = true;
                 if(removeWall == true && wallToRemove != null)
@@ -38,7 +38,7 @@ public class pressurePlate : MonoBehaviour
         }
         else if(bigPlate == false)
         {
-            if (collision.gameObject.tag == "movableObject" && player.GetComponent<playerMovement>().carryingObject == false)
+            if (collision.gameObject.tag == "movableObject" && playerMovement.carryingObject == false)
             {
                 triggered = true;
                 if (removeWall == true && wallToRemove != null)

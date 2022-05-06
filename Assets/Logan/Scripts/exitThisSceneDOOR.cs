@@ -28,7 +28,7 @@ public class exitThisSceneDOOR : MonoBehaviour
 
     private void Update()
     {
-        if(canLeaveScene == true && playerInput.actions["Interact"].triggered)
+        if(canLeaveScene == true && playerInput.actions["Interact"].triggered && playerMovement.inDialogue == false)
         {
             //Debug.Log("GO");
             exitingScene = true;

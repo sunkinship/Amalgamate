@@ -10,25 +10,21 @@ public class playerMovement : MonoBehaviour
 
     public AudioSource woodSoundEffect;
     public AudioSource grassWalkingSoundEffect;
-    public float moveSpeed = 300f;
-    public float runMoveSpeed = 500f;
-    private bool isRunning;
 
-    public bool inDialogue;
+    [SerializeField]
+    private float moveSpeed, runMoveSpeed, carryWalkSpeed, carryRunSpeed;
+
+    public static bool isRunning, inDialogue, inLoadingZone;
 
     private Animator animator;
 
-    Vector2 movement;
-
     private PlayerInput playerInput;
 
-    public float speakCooldown = .5f;
-    public float speakCooldownLeft;
+    public static float speakCooldown = .5f;
+    public static float speakCooldownLeft;
 
     private GameObject hornLamp;
     Vector2 originalPos;
-
-    public static bool inLoadingZone;
 
     public GameObject interactionZones;
 
@@ -36,7 +32,7 @@ public class playerMovement : MonoBehaviour
 
     public string lastFacingDirection = "RIGHT";
 
-    private Vector3 lastMoveDirection;
+    //private Vector3 lastMoveDirection;
 
     public Vector3 direction;
 
@@ -44,13 +40,13 @@ public class playerMovement : MonoBehaviour
     public Rigidbody2D rb2;
 
     [HideInInspector]
-    public bool carryingObject, isFacingNPC;
+    public static bool carryingObject, isFacingNPC;
 
     public GameObject carriedObject;
 
     //Variables for audio 
-    private float stepRate = 0.5f;
-    private float stepCoolDown;
+    private static float stepRate = 0.5f;
+    private static float stepCoolDown;
     [SerializeField] private AudioClip clip;
 
 
@@ -131,13 +127,27 @@ public class playerMovement : MonoBehaviour
 
     public void Move()
     {
-        if (isRunning == false)
+        if (carryingObject)
         {
-            rb2.velocity = direction * moveSpeed * Time.deltaTime;
+            if (isRunning == false)
+            {
+                rb2.velocity = direction * carryWalkSpeed * Time.deltaTime;
+            }
+            else
+            {
+                rb2.velocity = direction * carryRunSpeed * Time.deltaTime;
+            }
         }
         else
         {
-            rb2.velocity = direction * runMoveSpeed * Time.deltaTime;
+            if (isRunning == false)
+            {
+                rb2.velocity = direction * moveSpeed * Time.deltaTime;
+            }
+            else
+            {
+                rb2.velocity = direction * runMoveSpeed * Time.deltaTime;
+            }
         }
     }
 
@@ -257,9 +267,9 @@ public class playerMovement : MonoBehaviour
         direction = new Vector3(moveX, moveY).normalized;
         //rayDirection = new Vector3(moveX, moveY).normalized;
 
-        if (moveX != 0 || moveY != 0)
-        {
-            lastMoveDirection = direction;
-        }
+        //if (moveX != 0 || moveY != 0)
+        //{
+        //    lastMoveDirection = direction;
+        //}
     }
 }
