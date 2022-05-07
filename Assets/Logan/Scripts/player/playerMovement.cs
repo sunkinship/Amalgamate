@@ -30,7 +30,7 @@ public class playerMovement : MonoBehaviour
 
     public bool mirroredPlayer;
 
-    public string lastFacingDirection = "RIGHT";
+    public static string lastFacingDirection = "RIGHT";
 
     //private Vector3 lastMoveDirection;
 
