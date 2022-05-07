@@ -74,7 +74,7 @@ public class dialogueManager : MonoBehaviour
                 // Turn off trigger that sets mayor portarit correctly for forced dialogue
                 if (npcInteract.forcedMayorSpeaking)
                 {
-                    Debug.Log("reset trigger");
+                    //Debug.Log("reset trigger");
                     npcInteract.forcedMayorSpeaking = false;
                 }
 

@@ -63,7 +63,8 @@ public class pressurePlate : MonoBehaviour
     public IEnumerator plateWork()
     {
         objectToFocus = wallToRemove;
-        player.GetComponent<playerMovement>().enabled = false;
+        Debug.Log("activate");
+        playerMovement.inCutScene = true;
         cameraToMove.GetComponent<CameraFollowPlayer>().enabled = false;
         while (cameraToMove.transform.position != new Vector3(objectToFocus.transform.position.x, objectToFocus.transform.position.y, -10))
         {
@@ -75,7 +76,7 @@ public class pressurePlate : MonoBehaviour
         yield return new WaitForSeconds(focusTime);
         cameraToMove.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
         cameraToMove.GetComponent<CameraFollowPlayer>().enabled = true;
-        player.GetComponent<playerMovement>().enabled = true;
+        playerMovement.inCutScene = false;
     }
 
 }

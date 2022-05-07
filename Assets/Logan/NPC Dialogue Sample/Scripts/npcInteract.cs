@@ -59,7 +59,7 @@ public class npcInteract : MonoBehaviour, interactable
         forceDialogue = false;
         forceDialogueCollider.enabled = false;
         afterForceCollider.enabled = true;
-        Debug.Log("forced dialogue deactivated");
+        //Debug.Log("forced dialogue deactivated");
     }
 
 
@@ -84,7 +84,7 @@ public class npcInteract : MonoBehaviour, interactable
         // No available quest
         else if (questState.Equals("None"))
         {
-            Debug.Log("No available quest");
+            //Debug.Log("No available quest");
             StartCoroutine(dialogueManager.Instance.ShowDialogue(dialogueNoQuest, portraitsNoQuest));
         }
         // Quest not started

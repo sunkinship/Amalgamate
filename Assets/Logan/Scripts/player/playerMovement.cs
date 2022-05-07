@@ -14,7 +14,7 @@ public class playerMovement : MonoBehaviour
     [SerializeField]
     private float moveSpeed, runMoveSpeed, carryWalkSpeed, carryRunSpeed;
 
-    public static bool isRunning, inDialogue, inLoadingZone;
+    public static bool isRunning, inDialogue, inLoadingZone, inCutScene;
 
     private Animator animator;
 
@@ -79,6 +79,7 @@ public class playerMovement : MonoBehaviour
         //    DontDestroyOnLoad(carriedObject);
         //}
 
+        //Debug.Log("speed: " + rb2.velocity);
 
         //Check if running
         if (playerInput.actions["Dash"].IsPressed())
@@ -108,7 +109,7 @@ public class playerMovement : MonoBehaviour
             animator.SetBool("isMoving", false);
         }
 
-        if (inDialogue == false && inLoadingZone == false)
+        if (inDialogue == false && inLoadingZone == false && inCutScene == false)
         {
             GetInput();
         }
@@ -137,6 +138,10 @@ public class playerMovement : MonoBehaviour
             {
                 rb2.velocity = direction * carryRunSpeed * Time.deltaTime;
             }
+        }
+        else if (inCutScene)
+        {
+            rb2.velocity = Vector2.zero;
         }
         else
         {

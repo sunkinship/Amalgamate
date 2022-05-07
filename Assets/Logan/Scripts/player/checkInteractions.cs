@@ -136,7 +136,7 @@ public class checkInteractions : MonoBehaviour
     private void MayorForecedInteraction()
     {
         nameString = Mayor.GetComponent<npcInteract>().NPCName;
-        Debug.Log("mayor forced collider");
+        //Debug.Log("mayor forced collider");
         forPortrait.GetComponent<managePortraits>().currentNPC = Mayor;
         Mayor.GetComponent<npcInteract>().UpdateForcedColliders();
         PlayerManager.forcedDialogueEncounters.Add(Mayor.GetComponent<npcInteract>().NPCName);

@@ -43,7 +43,7 @@ public class puzzleButton : MonoBehaviour
 
     public void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "interactableNPC" && canActivatecanPressButton == true)
+        if ((collision.gameObject.tag == "Player" || collision.gameObject.tag == "interactableNPC") && canActivatecanPressButton == true)
         {
             Debug.Log("entered");
             canPressButton = true;
@@ -64,11 +64,7 @@ public class puzzleButton : MonoBehaviour
 
     public IEnumerator ButtonWork()
     {
-        if (mirrorScene)
-        {
-            mirrorPlayer.GetComponent<playerMovement>().enabled = false;
-        }
-        player.GetComponent<playerMovement>().enabled = false;
+        playerMovement.inCutScene = true;
         cameraToMove.GetComponent<CameraFollowPlayer>().enabled = false;
         prompt.SetActive(false);
         canActivatecanPressButton = false;
@@ -86,7 +82,7 @@ public class puzzleButton : MonoBehaviour
         {
             mirrorPlayer.GetComponent<playerMovement>().enabled = true;
         }
-        player.GetComponent<playerMovement>().enabled = true;
+        playerMovement.inCutScene = false;
         //yield return new WaitForSeconds(time);
         //canActivatecanPressButton = true;
         //itemToDisable.SetActive(true);

@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnableMirrorButton : MonoBehaviour
 {
     public GameObject mirrorSceneButton;
+    public GameObject mirrorDoorNPC;
 
     private void Start()
     {
@@ -14,6 +15,7 @@ public class EnableMirrorButton : MonoBehaviour
             {
                 Debug.Log("eneabled button");
                 mirrorSceneButton.SetActive(true);
+                mirrorDoorNPC.SetActive(false);
             }
         }
     }

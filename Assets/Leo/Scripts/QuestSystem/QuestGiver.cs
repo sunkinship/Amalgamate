@@ -20,7 +20,8 @@ public class QuestGiver : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("Checking to turn off forced colliders");
+        //Debug.Log("Checking to turn off forced colliders");
+
         // Updates quest state after changing scenes
         LoadQuestState();
 

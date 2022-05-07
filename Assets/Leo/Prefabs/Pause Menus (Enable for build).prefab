@@ -1265,6 +1265,7 @@ MonoBehaviour:
   settingsCanvas: {fileID: 2731786135069704900}
   questListCanvas: {fileID: 60700200891700716}
   ani: {fileID: 60700200514920797}
+  fadeAni: {fileID: 60700199588873261}
 --- !u!1 &60700200802245370
 GameObject:
   m_ObjectHideFlags: 0

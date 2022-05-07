@@ -51,9 +51,11 @@ public class PauseMenu : MonoBehaviour
 
     public void Exit()
     {
+        Debug.Log("exit");
         Pause();
         if (calledCoroutine == false)
         {
+            Debug.Log("calling coroutine");
             calledCoroutine = true;
             StartCoroutine(FadeAni());
         }
