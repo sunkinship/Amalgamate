@@ -54,16 +54,8 @@ public class ExitThisScene : MonoBehaviour
 
     public IEnumerator FadeAndSpawn()
     {
-        if (exitingHouse)
-        {
-            fadeAni.SetTrigger("FadeFastTrigger");
-            yield return new WaitForSeconds(0.9f);
-        }
-        else
-        {
-            fadeAni.SetTrigger("FadeTrigger");
-            yield return new WaitForSeconds(1.5f);
-        }
+        fadeAni.SetTrigger("FadeTrigger");
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(sceneToLoad);
         calledCoroutine = false;
         playerMovement.inLoadingZone = false;

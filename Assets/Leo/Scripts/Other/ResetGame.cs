@@ -20,5 +20,8 @@ public class ResetGame : MonoBehaviour
 
         TriggerFinalQuest.humanQuestCounter = 0;
         TriggerFinalQuest.monsterQuestCounter = 0;
+
+        EnableMirrorButton.buttonEnabled = false;
+        DestroyDoorToMirror.doorDestroyed = false;
     }
 }

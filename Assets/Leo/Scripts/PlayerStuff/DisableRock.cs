@@ -8,12 +8,12 @@ public class DisableRock : MonoBehaviour
     public GameObject rock;
 
 
-    private void Update()
-    {
-        if (PlayerManager.pickedUp)
-        {
-            rock.SetActive(false);
-            Destroy(gameObject);
-        }
-    }
+    //private void Update()
+    //{
+    //    if (PlayerManager.pickedUp)
+    //    {
+    //        rock.SetActive(false);
+    //        Destroy(gameObject);
+    //    }
+    //}
 }

@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class puzzleButton : MonoBehaviour
 {
     public GameObject itemToDisable;
+    public GameObject mirrorItemToDisable;
     public float time;
     public PlayerInput playerInput;
     public bool canPressButton;
@@ -22,7 +23,8 @@ public class puzzleButton : MonoBehaviour
 
     private bool canActivatecanPressButton;
 
-    public bool mirrorScene;
+    [SerializeField]
+    private bool mirrorScene, monsterScene;
 
     public GameObject prompt;
 
@@ -67,6 +69,10 @@ public class puzzleButton : MonoBehaviour
         playerMovement.inCutScene = true;
         cameraToMove.GetComponent<CameraFollowPlayer>().enabled = false;
         prompt.SetActive(false);
+        if (monsterScene)
+        {
+            DestroyDoorToMirror.doorDestroyed = true;
+        }
         canActivatecanPressButton = false;
         while(cameraToMove.transform.position != new Vector3(objectToFocus.transform.position.x, objectToFocus.transform.position.y, -10))
         {
@@ -74,6 +80,10 @@ public class puzzleButton : MonoBehaviour
             yield return null;
         }
         yield return new WaitForSeconds(waitToDisable);
+        if (mirrorScene)
+        {
+            mirrorItemToDisable.SetActive(false);
+        }
         itemToDisable.SetActive(false);
         yield return new WaitForSeconds(focusTime);
         cameraToMove.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);

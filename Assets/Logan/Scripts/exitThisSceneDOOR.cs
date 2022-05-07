@@ -79,7 +79,7 @@ public class exitThisSceneDOOR : MonoBehaviour
     public IEnumerator FadeAndSpawn()
     {
         fadeAni.SetTrigger("FadeTrigger");
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(sceneToLoad);
         calledCoroutine = false;
         playerMovement.inLoadingZone = false;

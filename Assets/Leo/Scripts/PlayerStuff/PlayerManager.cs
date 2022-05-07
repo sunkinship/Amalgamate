@@ -39,7 +39,6 @@ public class PlayerManager : MonoBehaviour
     private static float lightChangeRate = 0.5f;
     private static float hornChangeRate = 1f;
 
-    public static bool pickedUp;
 
     private void Awake()
     {
@@ -56,7 +55,6 @@ public class PlayerManager : MonoBehaviour
 
     void Update()
     {
-        PickUpItem();
         ToggleLitSprite();
         ToggleLampLight();
     }
@@ -175,39 +173,4 @@ public class PlayerManager : MonoBehaviour
     }
 
     #endregion
-
-
-    #region items
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Item")
-        {
-            //Debug.Log("in range");
-            item = collision.gameObject;
-        }
-    }
-
-    public void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag == "Item")
-        {
-            //Debug.Log("left range");
-            item = null;
-        }
-    }
-
-    public void PickUpItem()
-    {
-        if (item != null)
-        {
-            if (playerInput.actions["Interact"].triggered)
-            {
-                //Debug.Log("Picked up item");
-                pickedUp = true;
-                item.GetComponent<ItemInteractable>().PickUp();
-            }
-        }
-    }
-    #endregion
-
 }
