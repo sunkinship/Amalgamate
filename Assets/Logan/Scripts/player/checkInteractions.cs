@@ -54,6 +54,7 @@ public class checkInteractions : MonoBehaviour
 
         if (playerInput.actions["Interact"].triggered)
         {
+            StopCoroutine(ButtonPrompt());
             buttonPromptt.SetActive(false);
             blockPrompt.SetActive(false);
             npcPrompt.SetActive(false);
@@ -327,9 +328,10 @@ public class checkInteractions : MonoBehaviour
         }
     }
 
-    public IEnumerator buttonPrompt()
+    public IEnumerator ButtonPrompt()
     {
-        yield return new WaitForSeconds(.26f);
+        //yield return new WaitForSeconds(.26f);
+        yield return new WaitForSeconds(0);
         
         buttonPromptt.SetActive(true);
     }
@@ -351,19 +353,19 @@ public class checkInteractions : MonoBehaviour
         if (other.gameObject.tag == "interactableNPC" && playerMovement.carryingObject == false && isInteractingWithNPC == false)
         {
             npcPrompt.transform.position = new Vector3(currentNPC.transform.position.x, currentNPC.transform.position.y + 2.3f, currentNPC.transform.position.z);
-            StartCoroutine(buttonPrompt());
+            StartCoroutine(ButtonPrompt());
         }
         if (other.gameObject.tag == "movableObject" && playerMovement.carryingObject == false)
         {
             currentBlock = other.gameObject;
             blockPrompt.transform.position = new Vector3(currentBlock.transform.position.x, currentBlock.transform.position.y + 1f, currentBlock.transform.position.z);
-            StartCoroutine(buttonPrompt());
+            StartCoroutine(ButtonPrompt());
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        StopCoroutine(buttonPrompt());
+        StopCoroutine(ButtonPrompt());
         isFacingInteractable = false;
         npcPrompt.SetActive(false);
         blockPrompt.SetActive(false);

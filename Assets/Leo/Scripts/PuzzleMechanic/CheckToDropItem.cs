@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CheckToDropItem : MonoBehaviour
 {
-    private bool canDrop;
+    private bool canDrop = true;
 
     private void Update()
     {
@@ -14,6 +14,7 @@ public class CheckToDropItem : MonoBehaviour
         }
         else
         {
+            Debug.Log("false");
             pushPullObjects.canDropObject = false;
         }
     }
