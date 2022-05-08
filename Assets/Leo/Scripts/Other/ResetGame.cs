@@ -8,7 +8,6 @@ public class ResetGame : MonoBehaviour
     {
         PlayerManager.quests.Clear();
         PlayerManager.inventory.Clear();
-        PlayerManager.finishedQuests.Clear();
         PlayerManager.forcedDialogueEncounters.Clear();
         PlayerManager.spawnPoint = new Vector2(0, 0);
 
@@ -24,8 +23,5 @@ public class ResetGame : MonoBehaviour
 
         EnableMirrorButton.buttonEnabled = false;
         DestroyDoorToMirror.doorDestroyed = false;
-
-        playerMovement.inCutScene = false;
-        playerMovement.lastFacingDirection = "DOWN";
     }
 }
