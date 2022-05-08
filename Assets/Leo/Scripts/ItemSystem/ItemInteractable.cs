@@ -16,6 +16,8 @@ public class ItemInteractable : MonoBehaviour
 
     public GameObject colliderToDestroy;
 
+    public bool doNotDestroy;
+
     private void Awake()
     {
         player = GameObject.Find("Player").GetComponent<PlayerManager>();
@@ -76,7 +78,10 @@ public class ItemInteractable : MonoBehaviour
         item.pickedUp = true;
         item.quantity = 1;
         PlayerManager.inventory.Add(item);
-        colliderToDestroy.SetActive(false);
+        if (doNotDestroy)
+        {
+            colliderToDestroy.SetActive(false);
+        }
         Destroy(gameObject);
     }
 }
