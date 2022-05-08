@@ -719,8 +719,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.000002, y: 291}
-  m_SizeDelta: {x: 1325.5645, y: 826.31055}
+  m_AnchoredPosition: {x: -2.9, y: -0.9}
+  m_SizeDelta: {x: 1927.4075, y: 1201.4785}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1832253732
 Animator:
@@ -732,7 +732,7 @@ Animator:
   m_GameObject: {fileID: 1832253730}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f121013c28b6a994486ced2931881dfd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -994,3 +994,4 @@ MonoBehaviour:
   splashLogo: {fileID: 1942691767}
   splashText: {fileID: 1702199491}
   splashTitle: {fileID: 622048023}
+  donut: {fileID: 1832253730}
