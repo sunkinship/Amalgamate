@@ -19,7 +19,7 @@ public class exitThisSceneDOOR : MonoBehaviour
     bool canLeaveScene;
     public PlayerInput playerInput;
 
-    public GameObject doorPrompt;
+    public GameObject prompt;
 
     private void Awake()
     {
@@ -47,12 +47,11 @@ public class exitThisSceneDOOR : MonoBehaviour
         if (collision.gameObject.tag.Equals("Player") && EnterThisScene.enteringScene == false)
         {
             canLeaveScene = true;
-            doorPrompt.transform.position = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 1, this.gameObject.transform.position.z);
-            doorPrompt.SetActive(true);
+            prompt.SetActive(true);
         }
         else
         {
-            doorPrompt.SetActive(false);
+            prompt.SetActive(false);
         }
     }
 
@@ -61,7 +60,7 @@ public class exitThisSceneDOOR : MonoBehaviour
         if (collision.gameObject.tag.Equals("Player") && EnterThisScene.enteringScene == false)
         {
             canLeaveScene = false;
-            doorPrompt.SetActive(false);
+            prompt.SetActive(false);
         }
     }
 
@@ -69,7 +68,7 @@ public class exitThisSceneDOOR : MonoBehaviour
     {
         while (player.transform.position != targetPos)
         {
-            doorPrompt.SetActive(false);
+            prompt.SetActive(false);
             //Debug.Log("move");
             SetDirection();
             player.GetComponent<playerMovement>().enabled = false;

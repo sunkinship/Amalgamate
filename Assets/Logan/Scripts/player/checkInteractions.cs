@@ -25,9 +25,7 @@ public class checkInteractions : MonoBehaviour
     private PlayerManager playerManager;
 
     //prompt
-    public GameObject npcPrompt;
-    public GameObject blockPrompt;
-    public GameObject buttonPromptt;
+    public GameObject prompt;
 
     public bool humanMayor;
     public bool triggerHumanEnd;
@@ -54,9 +52,7 @@ public class checkInteractions : MonoBehaviour
 
         if (playerInput.actions["Interact"].triggered)
         {
-            buttonPromptt.SetActive(false);
-            blockPrompt.SetActive(false);
-            npcPrompt.SetActive(false);
+            prompt.SetActive(false);
         }
 
         if(currentNPC != null)
@@ -331,7 +327,7 @@ public class checkInteractions : MonoBehaviour
     {
         yield return new WaitForSeconds(.26f);
         
-        buttonPromptt.SetActive(true);
+        prompt.SetActive(true);
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -350,13 +346,13 @@ public class checkInteractions : MonoBehaviour
     {
         if (other.gameObject.tag == "interactableNPC" && playerMovement.carryingObject == false && isInteractingWithNPC == false)
         {
-            npcPrompt.transform.position = new Vector3(currentNPC.transform.position.x, currentNPC.transform.position.y + 2.3f, currentNPC.transform.position.z);
+            prompt.transform.position = new Vector3(currentNPC.transform.position.x, currentNPC.transform.position.y + 2.3f, currentNPC.transform.position.z);
             StartCoroutine(buttonPrompt());
         }
         if (other.gameObject.tag == "movableObject" && playerMovement.carryingObject == false)
         {
             currentBlock = other.gameObject;
-            blockPrompt.transform.position = new Vector3(currentBlock.transform.position.x, currentBlock.transform.position.y + 1f, currentBlock.transform.position.z);
+            prompt.transform.position = new Vector3(currentBlock.transform.position.x, currentBlock.transform.position.y + 1f, currentBlock.transform.position.z);
             StartCoroutine(buttonPrompt());
         }
     }
@@ -365,8 +361,6 @@ public class checkInteractions : MonoBehaviour
     {
         StopCoroutine(buttonPrompt());
         isFacingInteractable = false;
-        npcPrompt.SetActive(false);
-        blockPrompt.SetActive(false);
-        buttonPromptt.SetActive(false);
+        prompt.SetActive(false);
     }
 }

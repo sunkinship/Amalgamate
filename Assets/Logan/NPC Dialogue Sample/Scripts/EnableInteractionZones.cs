@@ -15,7 +15,6 @@ public class EnableInteractionZones : MonoBehaviour
     private void Awake()
     {
         ani = player.GetComponent<Animator>();
-        downTrigger.SetActive(true);
     }
 
     // Update is called once per frame
@@ -26,25 +25,25 @@ public class EnableInteractionZones : MonoBehaviour
 
     private void SetInteractionZone()
     {
-        if (playerMovement.lastFacingDirection.Equals("RIGHT"))
+        if (ani.GetBool("LastRight") == true)
         {
             rightTrigger.SetActive(true);
         }
         else rightTrigger.SetActive(false);
 
-        if (playerMovement.lastFacingDirection.Equals("LEFT"))
+        if (ani.GetBool("LastLeft") == true)
         {
             leftTrigger.SetActive(true);
         }
         else leftTrigger.SetActive(false);
 
-        if (playerMovement.lastFacingDirection.Equals("UP"))
+        if (ani.GetBool("LastUp") == true)
         {
             upTrigger.SetActive(true);
         }
         else upTrigger.SetActive(false);
 
-        if (playerMovement.lastFacingDirection.Equals("DOWN"))
+        if (ani.GetBool("LastDown") == true)
         {
             downTrigger.SetActive(true);
         }
