@@ -27,5 +27,7 @@ public class ResetGame : MonoBehaviour
 
         playerMovement.inCutScene = false;
         playerMovement.lastFacingDirection = "DOWN";
+
+        DisableRock.leftHouse = false;
     }
 }
