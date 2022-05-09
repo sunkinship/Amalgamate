@@ -65,6 +65,17 @@ public class playerMovement : MonoBehaviour
         woodSoundEffect = GetComponent<AudioSource>();
         grassWalkingSoundEffect = GetComponent<AudioSource>();
         playerInput = GetComponent<PlayerInput>();
+
+        if (mirroredPlayer)
+        {
+            hornLamp.transform.position = new Vector2(transform.position.x - 0.56f, transform.position.y + 0.3f);
+            animator.SetTrigger("Up");
+            lastFacingDirection = "UP";
+            animator.SetBool("LastUp", true);
+            animator.SetBool("LastDown", false);
+            animator.SetBool("LastRight", false);
+            animator.SetBool("LastLeft", false);
+        }
     }
 
     void Update()

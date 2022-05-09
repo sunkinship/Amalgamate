@@ -36,6 +36,7 @@ public class puzzleButton : MonoBehaviour
     private AudioClip openDoor;
     [SerializeField]
     private AudioClip buttonPressed;
+
     public void Start()
     {
         objectToFocus = itemToDisable;
