@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class puzzleButton : MonoBehaviour
 {
     public GameObject itemToDisable;
+    public GameObject mirrorItemToDisable;
     public float time;
     public PlayerInput playerInput;
     public bool canPressButton;
@@ -22,7 +23,19 @@ public class puzzleButton : MonoBehaviour
 
     private bool canActivatecanPressButton;
 
-    public bool mirrorScene;
+    [SerializeField]
+    private bool mirrorScene, monsterScene;
+
+    public GameObject prompt;
+
+    public Sprite pressedSprite;
+
+    [SerializeField]
+    private AudioSource audSrc;
+    [SerializeField]
+    private AudioClip openDoor;
+    [SerializeField]
+    private AudioClip buttonPressed;
 
     public void Start()
     {
@@ -35,16 +48,19 @@ public class puzzleButton : MonoBehaviour
         if(canPressButton == true && playerInput.actions["Interact"].triggered)
         {
             canPressButton = false;
+            audSrc.PlayOneShot(buttonPressed);
             StartCoroutine(ButtonWork());
         }
     }
 
     public void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "interactableNPC" && canActivatecanPressButton == true)
+        if ((collision.gameObject.tag == "Player" || collision.gameObject.tag == "interactableNPC") && canActivatecanPressButton == true)
         {
             Debug.Log("entered");
             canPressButton = true;
+            prompt.transform.position = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 1, this.gameObject.transform.position.z);
+            prompt.SetActive(true);
         }
     }
 
@@ -54,17 +70,20 @@ public class puzzleButton : MonoBehaviour
         {
             Debug.Log("left");
             canPressButton = false;
+            prompt.SetActive(false);
         }
     }
 
     public IEnumerator ButtonWork()
     {
-        if (mirrorScene)
-        {
-            mirrorPlayer.GetComponent<playerMovement>().enabled = false;
-        }
-        player.GetComponent<playerMovement>().enabled = false;
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = pressedSprite;
+        playerMovement.inCutScene = true;
         cameraToMove.GetComponent<CameraFollowPlayer>().enabled = false;
+        prompt.SetActive(false);
+        if (monsterScene)
+        {
+            DestroyDoorToMirror.doorDestroyed = true;
+        }
         canActivatecanPressButton = false;
         while(cameraToMove.transform.position != new Vector3(objectToFocus.transform.position.x, objectToFocus.transform.position.y, -10))
         {
@@ -72,6 +91,11 @@ public class puzzleButton : MonoBehaviour
             yield return null;
         }
         yield return new WaitForSeconds(waitToDisable);
+        if (mirrorScene)
+        {
+            mirrorItemToDisable.SetActive(false);
+        }
+        audSrc.PlayOneShot(openDoor);
         itemToDisable.SetActive(false);
         yield return new WaitForSeconds(focusTime);
         cameraToMove.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
@@ -80,7 +104,7 @@ public class puzzleButton : MonoBehaviour
         {
             mirrorPlayer.GetComponent<playerMovement>().enabled = true;
         }
-        player.GetComponent<playerMovement>().enabled = true;
+        playerMovement.inCutScene = false;
         //yield return new WaitForSeconds(time);
         //canActivatecanPressButton = true;
         //itemToDisable.SetActive(true);

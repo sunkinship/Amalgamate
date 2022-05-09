@@ -46,7 +46,7 @@ public class dialogueManager : MonoBehaviour
         currentNPC = portraitManager.GetComponent<managePortraits>().currentNPC;
 
         // Checking for input during NPC interaction
-        if (playerMove.inDialogue == true && playerInput.actions["Interact"].triggered && isTyping == false)
+        if (playerMovement.inDialogue == true && playerInput.actions["Interact"].triggered && isTyping == false)
         {
             // Going to next line of dialogue after input
             ++currentLine;
@@ -62,19 +62,19 @@ public class dialogueManager : MonoBehaviour
                 currentLine = 0;
                 dialogueBox.SetActive(false);
                 currentNPC.GetComponent<npcInteract>().currentPortrait = currentNPC.GetComponent<npcInteract>().portraitsPreQuest[0];
-                playerMove.inDialogue = false;
-                playerMove.speakCooldownLeft = playerMove.speakCooldown;
+                playerMovement.inDialogue = false;
+                playerMovement.speakCooldownLeft = playerMovement.speakCooldown;
 
                 // Check if end game condition is triggered from CheckToEnd()
                 if (currentNPC.GetComponent<QuestGiver>().triggerEnding) 
                 {
-                    triggerEnd.GotoEndScene();
+                    triggerEnd.GoToEndScene();
                 }
 
                 // Turn off trigger that sets mayor portarit correctly for forced dialogue
                 if (npcInteract.forcedMayorSpeaking)
                 {
-                    Debug.Log("reset trigger");
+                    //Debug.Log("reset trigger");
                     npcInteract.forcedMayorSpeaking = false;
                 }
 

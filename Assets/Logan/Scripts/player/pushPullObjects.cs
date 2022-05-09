@@ -27,6 +27,11 @@ public class pushPullObjects : MonoBehaviour
 
     public Animator ani;
 
+    [SerializeField]
+    private AudioSource audSrc;
+    [SerializeField]
+    private AudioClip placeBlock;
+
     private void Awake()
     {
         playerRender = player.GetComponent<Renderer>();
@@ -37,32 +42,33 @@ public class pushPullObjects : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            //prompt.SetActive(false);
-        }
+        //if (Input.GetKeyDown(KeyCode.E) || isMovingObject == true)
+        //{
+        //    StopCoroutine(ButtonPrompt());
+        //    prompt.SetActive(false);
+        //}
 
         //Pick up
-        if (playerInput.actions["Interact"].triggered && isFacingMovable == true && isMovingObject == false && canPickUp == true && player.GetComponent<playerMovement>().inDialogue == false)
+        if (playerInput.actions["Interact"].triggered && isFacingMovable == true && isMovingObject == false && canPickUp == true && playerMovement.inDialogue == false)
         {
-            //Debug.Log("picked up");
+            playerMovement.carryingObject = true;
             prompt.SetActive(false);
             ani.SetBool("isCarrying", true);
             canPickUp = false;
-            player.GetComponent<playerMovement>().moveSpeed = 200f;
             heldObjectRender = heldItem.GetComponent<Renderer>();
             heldObjectRender.GetComponent<PositionRendering>().enabled = false;
             heldItem.GetComponent<BoxCollider2D>().enabled = false;
             heldItemCollider = heldItem.GetComponent<BoxCollider2D>();
+            //Debug.Log("initial false");
             canDropObject = false;
             isMovingObject = true;
-            player.GetComponent<playerMovement>().carryingObject = true;
-            Invoke("enableDrop", 0.2f);
-
+            Invoke("EnableDrop", 0.2f);
         }
         //Drop
-        if (playerInput.actions["Interact"].triggered && isMovingObject == true && canDropObject == true && player.GetComponent<playerMovement>().inDialogue == false && player.GetComponent<playerMovement>().isFacingNPC == false)
+        if (playerInput.actions["Interact"].triggered && isMovingObject == true && canDropObject == true)
         {
+            playerMovement.carryingObject = false;
+            audSrc.PlayOneShot(placeBlock);
             heldItem.GetComponentInChildren<ParticleSystem>().Play();
             ani.SetBool("isCarrying", false);
             canPickUp = false;
@@ -70,24 +76,21 @@ public class pushPullObjects : MonoBehaviour
             heldItem.GetComponent<BoxCollider2D>().enabled = true;
             isMovingObject = false;
             currentMovable.transform.position = this.gameObject.transform.position;
-            player.GetComponent<playerMovement>().carryingObject = false;
             currentMovable = null;
             heldItem = null;
             canDropObject = false;
-            player.GetComponent<playerMovement>().moveSpeed = 300;
             Invoke("CanPickUp", 0.2f);
         }
-
 
         if (isMovingObject == true)
         {
             heldObjectRender.sortingOrder = playerRender.sortingOrder + 100;
             currentMovable.transform.position = player.transform.position + currentMovable.GetComponent<holdableObject>().holdLocation;
 
-            if (player.GetComponent<playerMovement>().inDialogue == true)
-            {
-                canDropObject = false;
-            }
+            //if (playerMovement.inDialogue == true)
+            //{
+            //    canDropObject = false;
+            //}
 
             //if (Physics2D.BoxCast(heldItemCollider.bounds.center, heldItemCollider.bounds.size, 0f, direction, 3f, wallLayerMask))
             //{
@@ -103,7 +106,7 @@ public class pushPullObjects : MonoBehaviour
         }
     }
 
-    private void enableDrop()
+    private void EnableDrop()
     {
         canDropObject = true;
     }
@@ -114,11 +117,12 @@ public class pushPullObjects : MonoBehaviour
     }
 
 
-    public IEnumerator buttonPrompt()
-    {
-        yield return new WaitForSeconds(2);
-        prompt.SetActive(true);
-    }
+    //public IEnumerator ButtonPrompt()
+    //{
+    //    Debug.Log("set active");
+    //    yield return new WaitForSeconds(2);
+    //    prompt.SetActive(true);
+    //}
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -130,11 +134,11 @@ public class pushPullObjects : MonoBehaviour
         }
 
     }
-  private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "moveableObject" && player.GetComponent<playerMovement>().carryingObject == false)
+        if (collision.gameObject.tag == "moveableObject" && playerMovement.carryingObject == false)
         {
-            StartCoroutine(buttonPrompt());
+            //StartCoroutine(ButtonPrompt());
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -142,8 +146,8 @@ public class pushPullObjects : MonoBehaviour
         if (collision.gameObject.tag == "movableObject")
         {
             isFacingMovable = false;
-            StopCoroutine(buttonPrompt());
-            prompt.SetActive(false);
+            //StopCoroutine(ButtonPrompt());
+            //prompt.SetActive(false);
         }
     }
 }

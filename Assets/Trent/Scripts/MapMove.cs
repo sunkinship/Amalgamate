@@ -24,7 +24,7 @@ public class MapMove : MonoBehaviour
     {
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         //rb.velocity = moveVelocity * Time.fixedDeltaTime;
-        moveVelocity = moveInput.normalized * speed * playerMove.moveSpeed;
+        moveVelocity = moveInput.normalized * speed * 0;
     }
 
     private void FixedUpdate()

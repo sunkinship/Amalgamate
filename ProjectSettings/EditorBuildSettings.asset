@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Logan/Scenes/splashScreen.unity
+    guid: 54fa8660dec2fed419debd07f6c77999
+  - enabled: 1
     path: Assets/Leo/Scenes/NewMainMenu.unity
     guid: 3aa89819ac25a3c4bb40e73e7db4151c
   - enabled: 1
@@ -27,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Logan/Scenes/Gameplay Loop Test Puzzle Stuff/ForestScene.unity
     guid: ac2fa7a88bcb1ac4a884c3bff57d9830
   - enabled: 1
-    path: Assets/Leo/Scenes/ActualPuzzleScene.unity
+    path: Assets/Leo/Scenes/TestingScenes/ActualPuzzleScene.unity
     guid: f60d88fb2d2e15249905d508832fba4e
   - enabled: 1
     path: Assets/Trent/Scenes/Player House.unity
@@ -65,10 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Tyler/Scenes/MirrorScene.unity
     guid: fe1ad04dbaf13ab47b0713f964401f46
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Shreyas/Scenes/Barn Maze.unity
+    guid: bd1c775ecd27b0247854c2667a10add9
   m_configObjects: {}

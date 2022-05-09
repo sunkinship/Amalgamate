@@ -25,7 +25,9 @@ public class checkInteractions : MonoBehaviour
     private PlayerManager playerManager;
 
     //prompt
-    public GameObject prompt;
+    public GameObject npcPrompt;
+    public GameObject blockPrompt;
+    public GameObject buttonPromptt;
 
     public bool humanMayor;
     public bool triggerHumanEnd;
@@ -33,6 +35,8 @@ public class checkInteractions : MonoBehaviour
     public bool triggerMonsterEnd;
 
     public GameObject Mayor;
+
+    private GameObject currentBlock;
 
     private void Awake()
     {
@@ -50,7 +54,10 @@ public class checkInteractions : MonoBehaviour
 
         if (playerInput.actions["Interact"].triggered)
         {
-            prompt.SetActive(false);
+            StopCoroutine(ButtonPrompt());
+            buttonPromptt.SetActive(false);
+            blockPrompt.SetActive(false);
+            npcPrompt.SetActive(false);
         }
 
         if(currentNPC != null)
@@ -60,17 +67,17 @@ public class checkInteractions : MonoBehaviour
         
         if(isFacingInteractable == true)
         {
-            player.GetComponent<playerMovement>().isFacingNPC = true;
+            playerMovement.isFacingNPC = true;
         }
         else
         {
-            player.GetComponent<playerMovement>().isFacingNPC = false;
+            playerMovement.isFacingNPC = false;
         }
 
         // Initial check for interaction -> npcInteract -> dialogueManager
         isKeyDown = playerInput.actions["Interact"].triggered;
         // Regular dialogue 
-        if (isKeyDown && isFacingInteractable == true && player.GetComponent<playerMovement>().inDialogue == false && player.GetComponent<playerMovement>().speakCooldownLeft <= 0 && player.GetComponent<playerMovement>().carryingObject == false)
+        if (isKeyDown && isFacingInteractable == true && playerMovement.inDialogue == false && playerMovement.speakCooldownLeft <= 0 && playerMovement.carryingObject == false)
         {
             RegularInteraction();
         }
@@ -134,7 +141,7 @@ public class checkInteractions : MonoBehaviour
     private void MayorForecedInteraction()
     {
         nameString = Mayor.GetComponent<npcInteract>().NPCName;
-        Debug.Log("mayor forced collider");
+        //Debug.Log("mayor forced collider");
         forPortrait.GetComponent<managePortraits>().currentNPC = Mayor;
         Mayor.GetComponent<npcInteract>().UpdateForcedColliders();
         PlayerManager.forcedDialogueEncounters.Add(Mayor.GetComponent<npcInteract>().NPCName);
@@ -149,7 +156,7 @@ public class checkInteractions : MonoBehaviour
     /// </summary>
     private void HoldingObjectInteraction()
     {
-        if (player.GetComponent<playerMovement>().carryingObject == true)
+        if (playerMovement.carryingObject == true)
         {
             nameString = currentNPC.GetComponent<npcInteract>().NPCName;
 
@@ -321,10 +328,12 @@ public class checkInteractions : MonoBehaviour
         }
     }
 
-    public IEnumerator buttonPrompt()
+    public IEnumerator ButtonPrompt()
     {
-        yield return new WaitForSeconds(.26f);
-        prompt.SetActive(true);
+        //yield return new WaitForSeconds(.26f);
+        yield return new WaitForSeconds(0);
+        
+        buttonPromptt.SetActive(true);
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -341,20 +350,25 @@ public class checkInteractions : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "interactableNPC" && player.GetComponent<playerMovement>().carryingObject == false && isInteractingWithNPC == false)
+        if (other.gameObject.tag == "interactableNPC" && playerMovement.carryingObject == false && isInteractingWithNPC == false)
         {
-            StartCoroutine(buttonPrompt());
+            npcPrompt.transform.position = new Vector3(currentNPC.transform.position.x, currentNPC.transform.position.y + 2.3f, currentNPC.transform.position.z);
+            StartCoroutine(ButtonPrompt());
         }
-        if (other.gameObject.tag == "movableObject" && player.GetComponent<playerMovement>().carryingObject == false)
+        if (other.gameObject.tag == "movableObject" && playerMovement.carryingObject == false)
         {
-            StartCoroutine(buttonPrompt());
+            currentBlock = other.gameObject;
+            blockPrompt.transform.position = new Vector3(currentBlock.transform.position.x, currentBlock.transform.position.y + 1f, currentBlock.transform.position.z);
+            StartCoroutine(ButtonPrompt());
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        StopCoroutine(buttonPrompt());
+        StopCoroutine(ButtonPrompt());
         isFacingInteractable = false;
-        prompt.SetActive(false);
+        npcPrompt.SetActive(false);
+        blockPrompt.SetActive(false);
+        buttonPromptt.SetActive(false);
     }
 }

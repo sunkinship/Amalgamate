@@ -13,6 +13,7 @@ public class splashScreen : MonoBehaviour
     public Image splashLogo;
     public Image splashText;
     public Image splashTitle;
+    public GameObject donut;
 
     private void Awake()
     {
@@ -21,6 +22,9 @@ public class splashScreen : MonoBehaviour
 
     public IEnumerator splashScreenRoutine()
     {
+        yield return new WaitForSeconds(1.8f);
+        donut.SetActive(false);
+        yield return new WaitForSeconds(.2f);
         presentsAnimator.SetTrigger("startShowLogo");
         yield return new WaitForSeconds(2);
         textAnimator.SetTrigger("startShowText");

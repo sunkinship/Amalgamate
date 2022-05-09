@@ -20,14 +20,14 @@ public class MapEnable : MonoBehaviour
         {
             Map.SetActive(true);
             mapEnabled = true;
-            pM.moveSpeed = 0;
+            //pM.moveSpeed = 0;
 
 
         } else if (mapEnabled == true && Input.GetKeyDown(KeyCode.M)){
 
             Map.SetActive(false);
             mapEnabled = false;
-            pM.moveSpeed = 6;
+            //pM.moveSpeed = 6;
 
         }
     }

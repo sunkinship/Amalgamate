@@ -20,5 +20,6 @@ public enum ItemType
     Apple,
     Potion,
     Hay,
-    Sapphire
+    Sapphire,
+    DiamondApple
 }

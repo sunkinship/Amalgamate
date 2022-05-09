@@ -8,6 +8,7 @@ public class ResetGame : MonoBehaviour
     {
         PlayerManager.quests.Clear();
         PlayerManager.inventory.Clear();
+        PlayerManager.finishedQuests.Clear();
         PlayerManager.forcedDialogueEncounters.Clear();
         PlayerManager.spawnPoint = new Vector2(0, 0);
 
@@ -20,5 +21,15 @@ public class ResetGame : MonoBehaviour
 
         TriggerFinalQuest.humanQuestCounter = 0;
         TriggerFinalQuest.monsterQuestCounter = 0;
+
+        EnableMirrorButton.buttonEnabled = false;
+        DestroyDoorToMirror.doorDestroyed = false;
+
+        playerMovement.inCutScene = false;
+        playerMovement.lastFacingDirection = "DOWN";
+
+        DisableRock.leftHouse = false;
+
+        EnableBarnMaze.barnQuest = false;
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ItemInteractable : MonoBehaviour
 {
@@ -9,18 +10,63 @@ public class ItemInteractable : MonoBehaviour
     [HideInInspector]
     public PlayerManager player;
 
-    private GameObject itemObject;
+    public PlayerInput playerInput;
 
+    private bool canPickUp;
+
+    public GameObject colliderToDestroy;
+
+    public bool doNotDestroy;
+
+    [SerializeField]
+    private AudioSource audSrc;
+    [SerializeField]
+    private AudioClip objectObtained;
     private void Awake()
     {
         player = GameObject.Find("Player").GetComponent<PlayerManager>();
-        itemObject = this.gameObject;
+    }
+
+    private void Update()
+    {
+        CheckToPickUpItem();
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "interactionZone" || collision.tag == "Player")
+        {
+            //Debug.Log("in range");
+            canPickUp = true;
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "interactionZone" || collision.tag == "Player")
+        {
+            //Debug.Log("left range");
+            canPickUp = false;
+        }
+    }
+
+    public void CheckToPickUpItem()
+    {
+        if (canPickUp)
+        {
+            if (playerInput.actions["Interact"].triggered)
+            {
+                //Debug.Log("Picked up item");
+                audSrc.PlayOneShot(objectObtained);
+                PickUpItem();
+            }
+        }
     }
 
     /// <summary>
     /// Pick up item in range and add to inventory 
     /// </summary>
-    public void PickUp()
+    public void PickUpItem()
     {
         foreach (Item item in PlayerManager.inventory)
         {
@@ -28,7 +74,8 @@ public class ItemInteractable : MonoBehaviour
             {
                 //Debug.Log("Picked up item type: " + this.item.itemType + " same as " + item.itemType);
                 item.quantity++;
-                Destroy(itemObject);
+                Destroy(gameObject);
+                colliderToDestroy.SetActive(false);
                 return;
             }
         }
@@ -36,6 +83,10 @@ public class ItemInteractable : MonoBehaviour
         item.pickedUp = true;
         item.quantity = 1;
         PlayerManager.inventory.Add(item);
-        Destroy(itemObject);
+        if (doNotDestroy)
+        {
+            colliderToDestroy.SetActive(false);
+        }
+        Destroy(gameObject);
     }
 }

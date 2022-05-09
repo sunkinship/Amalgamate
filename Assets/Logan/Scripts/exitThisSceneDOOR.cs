@@ -19,7 +19,7 @@ public class exitThisSceneDOOR : MonoBehaviour
     bool canLeaveScene;
     public PlayerInput playerInput;
 
-    public GameObject prompt;
+    public GameObject doorPrompt;
 
     private void Awake()
     {
@@ -28,7 +28,7 @@ public class exitThisSceneDOOR : MonoBehaviour
 
     private void Update()
     {
-        if(canLeaveScene == true && playerInput.actions["Interact"].triggered)
+        if(canLeaveScene == true && playerInput.actions["Interact"].triggered && playerMovement.inDialogue == false)
         {
             //Debug.Log("GO");
             exitingScene = true;
@@ -47,11 +47,12 @@ public class exitThisSceneDOOR : MonoBehaviour
         if (collision.gameObject.tag.Equals("Player") && EnterThisScene.enteringScene == false)
         {
             canLeaveScene = true;
-            prompt.SetActive(true);
+            doorPrompt.transform.position = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 1, this.gameObject.transform.position.z);
+            doorPrompt.SetActive(true);
         }
         else
         {
-            prompt.SetActive(false);
+            doorPrompt.SetActive(false);
         }
     }
 
@@ -60,7 +61,7 @@ public class exitThisSceneDOOR : MonoBehaviour
         if (collision.gameObject.tag.Equals("Player") && EnterThisScene.enteringScene == false)
         {
             canLeaveScene = false;
-            prompt.SetActive(false);
+            doorPrompt.SetActive(false);
         }
     }
 
@@ -68,7 +69,7 @@ public class exitThisSceneDOOR : MonoBehaviour
     {
         while (player.transform.position != targetPos)
         {
-            prompt.SetActive(false);
+            doorPrompt.SetActive(false);
             //Debug.Log("move");
             SetDirection();
             player.GetComponent<playerMovement>().enabled = false;
@@ -79,7 +80,7 @@ public class exitThisSceneDOOR : MonoBehaviour
     public IEnumerator FadeAndSpawn()
     {
         fadeAni.SetTrigger("FadeTrigger");
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(sceneToLoad);
         calledCoroutine = false;
         playerMovement.inLoadingZone = false;

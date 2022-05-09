@@ -22,12 +22,25 @@ public class pressurePlate : MonoBehaviour
     public float waitToDisable;
     public float speed = 0.0005f;
 
+    private Sprite originalSprite;
+    public Sprite pressedSprite;
+
+    [SerializeField]
+    private AudioSource audSrc;
+    [SerializeField]
+    private AudioClip openDoor;
+    [SerializeField]
+    private AudioClip plateDown;
+    private void Start()
+    {
+        originalSprite = this.gameObject.GetComponent<SpriteRenderer>().sprite;
+    }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if(bigPlate == true)
         {
-            if (collision.gameObject.tag == "movableObject" && collision.gameObject.name.Contains("BIG") && player.GetComponent<playerMovement>().carryingObject == false)
+            if (collision.gameObject.tag == "movableObject" && collision.gameObject.name.Contains("BIG") && playerMovement.carryingObject == false)
             {
                 triggered = true;
                 if(removeWall == true && wallToRemove != null)
@@ -38,11 +51,13 @@ public class pressurePlate : MonoBehaviour
         }
         else if(bigPlate == false)
         {
-            if (collision.gameObject.tag == "movableObject" && player.GetComponent<playerMovement>().carryingObject == false)
+            if (collision.gameObject.tag == "movableObject" && playerMovement.carryingObject == false)
             {
+                audSrc.PlayOneShot(plateDown);
                 triggered = true;
                 if (removeWall == true && wallToRemove != null)
                 {
+                    this.gameObject.GetComponent<SpriteRenderer>().sprite = pressedSprite;
                     StartCoroutine(plateWork());
                 }
             }
@@ -52,6 +67,7 @@ public class pressurePlate : MonoBehaviour
     {
         if (collision.gameObject.tag == "movableObject")
         {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = originalSprite;
             triggered = false;
             if (removeWall == true && wallToRemove != null)
             {
@@ -63,7 +79,9 @@ public class pressurePlate : MonoBehaviour
     public IEnumerator plateWork()
     {
         objectToFocus = wallToRemove;
-        player.GetComponent<playerMovement>().enabled = false;
+        
+        Debug.Log("activate");
+        playerMovement.inCutScene = true;
         cameraToMove.GetComponent<CameraFollowPlayer>().enabled = false;
         while (cameraToMove.transform.position != new Vector3(objectToFocus.transform.position.x, objectToFocus.transform.position.y, -10))
         {
@@ -71,11 +89,12 @@ public class pressurePlate : MonoBehaviour
             yield return null;
         }
         yield return new WaitForSeconds(waitToDisable);
+        audSrc.PlayOneShot(openDoor);
         wallToRemove.SetActive(false);
         yield return new WaitForSeconds(focusTime);
         cameraToMove.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
         cameraToMove.GetComponent<CameraFollowPlayer>().enabled = true;
-        player.GetComponent<playerMovement>().enabled = true;
+        playerMovement.inCutScene = false;
     }
 
 }
