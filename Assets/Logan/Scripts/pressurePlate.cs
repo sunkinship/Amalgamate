@@ -22,6 +22,13 @@ public class pressurePlate : MonoBehaviour
     public float waitToDisable;
     public float speed = 0.0005f;
 
+    private Sprite originalSprite;
+    public Sprite pressedSprite;
+
+    private void Start()
+    {
+        originalSprite = this.gameObject.GetComponent<SpriteRenderer>().sprite;
+    }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -43,6 +50,7 @@ public class pressurePlate : MonoBehaviour
                 triggered = true;
                 if (removeWall == true && wallToRemove != null)
                 {
+                    this.gameObject.GetComponent<SpriteRenderer>().sprite = pressedSprite;
                     StartCoroutine(plateWork());
                 }
             }
@@ -52,6 +60,7 @@ public class pressurePlate : MonoBehaviour
     {
         if (collision.gameObject.tag == "movableObject")
         {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = originalSprite;
             triggered = false;
             if (removeWall == true && wallToRemove != null)
             {
@@ -63,6 +72,7 @@ public class pressurePlate : MonoBehaviour
     public IEnumerator plateWork()
     {
         objectToFocus = wallToRemove;
+        
         Debug.Log("activate");
         playerMovement.inCutScene = true;
         cameraToMove.GetComponent<CameraFollowPlayer>().enabled = false;

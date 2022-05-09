@@ -28,6 +28,8 @@ public class puzzleButton : MonoBehaviour
 
     public GameObject prompt;
 
+    public Sprite pressedSprite;
+
     public void Start()
     {
         objectToFocus = itemToDisable;
@@ -66,6 +68,7 @@ public class puzzleButton : MonoBehaviour
 
     public IEnumerator ButtonWork()
     {
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = pressedSprite;
         playerMovement.inCutScene = true;
         cameraToMove.GetComponent<CameraFollowPlayer>().enabled = false;
         prompt.SetActive(false);
