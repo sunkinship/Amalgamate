@@ -46,9 +46,11 @@ public class playerMovement : MonoBehaviour
 
     //Variables for audio 
     private static float stepRate;
+    private static float stepRate2;
     private static float stepCoolDown;
     [SerializeField] private float volume;
     [SerializeField] private AudioClip clip;
+    [SerializeField] private bool mirrorScene;
 
 
     private void Awake()
@@ -108,8 +110,15 @@ public class playerMovement : MonoBehaviour
 
         if (stepCoolDown <= 0f && animator.GetBool("isMoving") && mirroredPlayer == false)
         {
-            stepCoolDown = stepRate;
-            AudioManager.Instance.PlaySound(clip, volume);
+            if(mirrorScene == true)
+            {
+                stepCoolDown = stepRate2;
+            }
+            else
+            {
+                stepCoolDown = stepRate;
+            }
+            AudioManager.Instance.PlaySound(clip, 0.5f);
         }
 
         if ((Mathf.Abs(rb2.velocity.x) > 0.01 || Mathf.Abs(rb2.velocity.y) > 0.01) && inLoadingZone == false)
@@ -163,11 +172,14 @@ public class playerMovement : MonoBehaviour
             {
                 rb2.velocity = direction * moveSpeed * Time.deltaTime;
                 stepRate = 0.5f;
+                stepRate2 = 0.9f;
+                
             }
             else
             {
                 rb2.velocity = direction * runMoveSpeed * Time.deltaTime;
                 stepRate = 0.4f;
+                stepRate2 = 0.7f;
             }
         }
     }
