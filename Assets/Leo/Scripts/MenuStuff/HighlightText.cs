@@ -9,8 +9,8 @@ public class HighlightText : MonoBehaviour
     public GetLights getLights;
     public GameObject particles;
     public Image textImage;
-    public Image borderImage;
-    [HideInInspector]
+    //public Image borderImage;
+    //[HideInInspector]
     //public TextMeshProUGUI targetText;
     //private static bool isHighlighted;
     //private static float intensity = 0;
@@ -46,7 +46,7 @@ public class HighlightText : MonoBehaviour
     public void TurnOnGlow()
     {
         textImage.color = new Color32(247, 217, 127, 255);
-        borderImage.color = new Color32(247, 217, 127, 255);
+        //borderImage.color = new Color32(247, 217, 127, 255);
         //isHighlighted = true;
         //targetText.fontSharedMaterial = getLights.glowMat;
     }
@@ -54,7 +54,7 @@ public class HighlightText : MonoBehaviour
     public void TurnOnGlow2()
     {
         textImage.color = new Color32(247, 217, 127, 255);
-        borderImage.color = new Color32(247, 217, 127, 255);
+        //borderImage.color = new Color32(247, 217, 127, 255);
         //isHighlighted = true;
         //targetText.fontSharedMaterial = getLights.notButtonMat;
     }
@@ -62,7 +62,7 @@ public class HighlightText : MonoBehaviour
     public void TurnOffGlow()
     {
         textImage.color = Color.white;
-        borderImage.color = Color.white;
+        //borderImage.color = Color.white;
         //isHighlighted = false;
         //targetText.fontSharedMaterial = getLights.notGlowMat;
     }

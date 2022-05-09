@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MenuHandler : MonoBehaviour
 {
-    public GetLights getLights;
+    //public GetLights getLights;
     public GameObject mainMenuCanvas, settingsCanvas, creditsCanvas;
     private CurrentCanvas currentCanvas = CurrentCanvas.mainmenu;
+    public Animator dimPanelAni;
 
     public Animator ani;
-    public float waitTime = 1.5f;
+    public float waitTime = 0f;
 
 
     private enum CurrentCanvas{
@@ -19,6 +20,7 @@ public class MenuHandler : MonoBehaviour
 
     public void MainMenu()
     {
+        dimPanelAni.SetTrigger("DidmFadeIn");
         DisableCanvas();
         currentCanvas = CurrentCanvas.mainmenu;
         mainMenuCanvas.SetActive(true);
@@ -26,8 +28,9 @@ public class MenuHandler : MonoBehaviour
 
     public void MainMenuFromCredits()
     {
-        getLights.pointLight.enabled = false;
-        getLights.spriteLight.enabled = false;
+        //getLights.pointLight.enabled = false;
+        //getLights.spriteLight.enabled = false;
+        dimPanelAni.SetTrigger("DidmFadeIn");
         DisableCanvas();
         ani.Play("PlayerLeftReturn");
         StartCoroutine(ExitCredits());
@@ -35,6 +38,7 @@ public class MenuHandler : MonoBehaviour
 
     public void Settings()
     {
+        dimPanelAni.SetTrigger("DidmFadeOut");
         DisableCanvas();
         currentCanvas = CurrentCanvas.settings;
         settingsCanvas.SetActive(true);
@@ -42,8 +46,9 @@ public class MenuHandler : MonoBehaviour
 
     public void Credits()
     {
-        getLights.pointLight.enabled = false;
-        getLights.spriteLight.enabled = false;
+        //getLights.pointLight.enabled = false;
+        //getLights.spriteLight.enabled = false;
+        dimPanelAni.SetTrigger("DidmFadeOut");
         DisableCanvas();
         ani.Play("PlayerLeft");
         StartCoroutine(EnterCredits());
@@ -54,8 +59,8 @@ public class MenuHandler : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         currentCanvas = CurrentCanvas.credits;
         creditsCanvas.SetActive(true);
-        getLights.pointLight.enabled = true;
-        getLights.spriteLight.enabled = true;
+        //getLights.pointLight.enabled = true;
+        //getLights.spriteLight.enabled = true;
     }
 
     private IEnumerator ExitCredits()
@@ -63,8 +68,8 @@ public class MenuHandler : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         currentCanvas = CurrentCanvas.mainmenu;
         mainMenuCanvas.SetActive(true);
-        getLights.pointLight.enabled = true;
-        getLights.spriteLight.enabled = true;
+        //getLights.pointLight.enabled = true;
+        //getLights.spriteLight.enabled = true;
     }
 
     private void DisableCanvas()
