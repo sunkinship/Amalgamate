@@ -355,7 +355,7 @@ public class checkInteractions : MonoBehaviour
             npcPrompt.transform.position = new Vector3(currentNPC.transform.position.x, currentNPC.transform.position.y + 2.3f, currentNPC.transform.position.z);
             StartCoroutine(ButtonPrompt());
         }
-        if (other.gameObject.tag == "movableObject" && playerMovement.carryingObject == false)
+        else if (other.gameObject.tag == "movableObject" && playerMovement.carryingObject == false)
         {
             currentBlock = other.gameObject;
             blockPrompt.transform.position = new Vector3(currentBlock.transform.position.x, currentBlock.transform.position.y + 1f, currentBlock.transform.position.z);

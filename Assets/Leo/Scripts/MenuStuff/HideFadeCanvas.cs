@@ -11,7 +11,7 @@ public class HideFadeCanvas : MonoBehaviour
 
     private void Start()
     {
-        Invoke("Hide", 1.5f);
+        Invoke("Hide", 0f);
     }
     public void OnClickGoHome()
     {
@@ -22,7 +22,7 @@ public class HideFadeCanvas : MonoBehaviour
     public IEnumerator Fade()
     {
         anim.SetTrigger("FadeTrigger");
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.1f);
         SceneManager.LoadScene(sceneToLoad);
     }
 

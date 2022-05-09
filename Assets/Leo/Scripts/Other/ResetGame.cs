@@ -23,6 +23,7 @@ public class ResetGame : MonoBehaviour
         TriggerFinalQuest.monsterQuestCounter = 0;
 
         EnableMirrorButton.buttonEnabled = false;
+        EnableMirrorButton.buttonPressed = false;
         DestroyDoorToMirror.doorDestroyed = false;
 
         playerMovement.inCutScene = false;

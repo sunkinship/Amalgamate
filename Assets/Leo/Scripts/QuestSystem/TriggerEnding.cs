@@ -20,6 +20,9 @@ public class TriggerEnding : MonoBehaviour
 
     public Animator meterAni;
 
+    public Canvas fadeCanvas;
+    public Canvas endCanvas;
+
     public void GoToEndScene()
     {
         Debug.Log("GO");
@@ -65,6 +68,7 @@ public class TriggerEnding : MonoBehaviour
 
     public IEnumerator GoToMainMenu()
     {
+        ChangeCanvasOrder();
         fadeAni.SetTrigger("FadeOutSlow");
         yield return new WaitForSeconds(3.3f);
         SceneManager.LoadScene(sceneToLoad);
@@ -78,5 +82,11 @@ public class TriggerEnding : MonoBehaviour
     {
         meterAni.Play("TrustMeterDown");
         yield return new WaitForSeconds(1f);
+    }
+
+    private void ChangeCanvasOrder()
+    {
+        fadeCanvas.sortingOrder = 3;
+        endCanvas.sortingOrder = 2;
     }
 }

@@ -30,6 +30,8 @@ public class puzzleButton : MonoBehaviour
 
     public Sprite pressedSprite;
 
+    public bool buttonOnWitchHouse;
+
     [SerializeField] private AudioClip openDoor;
     [SerializeField] private AudioClip buttonPressed;
     [SerializeField] private float volume;
@@ -44,6 +46,10 @@ public class puzzleButton : MonoBehaviour
     {
         if(canPressButton == true && playerInput.actions["Interact"].triggered)
         {
+            if (buttonOnWitchHouse)
+            {
+                EnableMirrorButton.buttonPressed = true;
+            }
             canPressButton = false;
             AudioManager.Instance.PlaySound(buttonPressed, 0.5f);
             StartCoroutine(ButtonWork());

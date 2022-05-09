@@ -6,8 +6,11 @@ public class EnableMirrorButton : MonoBehaviour
 {
     public GameObject realButton;
     public GameObject fakeButton;
+    public GameObject fakePressedButton;
+    public GameObject redDoor;
 
     public static bool buttonEnabled;
+    public static bool buttonPressed;
 
     private void Start()
     {
@@ -27,6 +30,12 @@ public class EnableMirrorButton : MonoBehaviour
                     fakeButton.SetActive(false);
                 }
             }
+        }
+        else if (buttonPressed)
+        {
+            fakePressedButton.SetActive(true);
+            fakeButton.SetActive(true);
+            redDoor.SetActive(false);
         }
     }
 }
