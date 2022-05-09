@@ -13,7 +13,7 @@ public class TriggerEnding : MonoBehaviour
     private bool calledCoroutine;
     public static bool exitingScene;
 
-    public GameObject photo;
+    public GameObject endPanel;
 
     public bool cameraFlash;
 
@@ -50,8 +50,10 @@ public class TriggerEnding : MonoBehaviour
     public IEnumerator CamFlash()
     {
         cameraAni.SetTrigger("FadeTrigger");
-        photo.SetActive(true);
-        yield return new WaitForSeconds(1.5f);
+        endPanel.SetActive(true);
+        yield return new WaitForSeconds(6f);
+        fadeAni.SetTrigger("FadeTrigger");
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(sceneToLoad);
         calledCoroutine = false;
         playerMovement.inLoadingZone = false;
