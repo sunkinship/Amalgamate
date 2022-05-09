@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1639,7 +1639,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &1267827427
+--- !u!43 &1226128042
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2039,8 +2039,8 @@ MonoBehaviour:
     lines: []
   dialogueNoQuest:
     lines:
-    - ... <size=20>press 'e' to continue</size>
-    - 'HELLO!?!?! '
+    - YOU AWAKE!?!? PRESS 'E' IF YOU CAN HEAR ME!
+    - ...
     - 'FINALLY, YOU''RE AWAKE! '
     - 'You remember me, right? '
     - 'Your ol'' pal Rockdrick! '
@@ -2235,6 +2235,8 @@ MonoBehaviour:
   playerInput: {fileID: 1500110635}
   colliderToDestroy: {fileID: 0}
   doNotDestroy: 0
+  audSrc: {fileID: 0}
+  objectObtained: {fileID: 0}
 --- !u!212 &1441172125
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3907,7 +3909,7 @@ MonoBehaviour:
     lines:
     - 'Rock on! '
     - 'Get it? '
-    - '<size=32>ROCK</size> ON?!?! '
+    - '<size=80>ROCK.</size> ON?!?! '
     - '<size=80>HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA</size> '
     - <i> *cough* *cough* </i>
     - 'Wait I can''t cough... '
@@ -3925,26 +3927,27 @@ MonoBehaviour:
     - 'It takes practice after all. '
     - <size=20>Maybe you're the real rock here...</size>
     - 'Anyways, '
-    - 'I''m gonna teach you how to complete a quest! '
-    - 'Huh? Why did I bring that up? '
-    - 'Everyone is gonna ask you to do stuff for them that''s just how the world
-      works. '
-    - 'Nobody wants to fetch items and talk to strangers.  '
-    - 'So that''s what makes you special! '
-    - <size=20>And the fact you're half human and half monster...</size>
-    - 'But thats not the point. '
-    - 'Lets have you do your first quest! '
-    - 'Go fetch me that apple ya got lying in that corner over there. '
-    - 'You can pick it up by pressing ''E''. '
-    - And if you ever forget what you need to do <size=12>again...</size>
-    - 'You can press the ''Esc'' key to open up the menu. '
-    - 'And if you click on ''Quest list'' you can view your active quests and a description
-      of what to do! '
-    - 'And before <size=20> I </size> forget... '
-    - 'If you ever get lost or you want to see me again... '
-    - 'Click the ''Fast Travel'' button and you''ll return home! '
-    - 'Now... '
-    - GO AND GET THAT. APPLE I'M STARVIN'
+    - 'I''m gonna teach you how to complete your first quest! '
+    - You can recieve a quest by talking to people!
+    - 'I already gave you quest so you don''t need to silently stare at me again. '
+    - 'If you ever forget what you were doin'' <size=20>again...</size> '
+    - 'You can open up the <color=yellow>''Pause Menu''</color> by hitting the <color=yellow>''Escape''</color>
+      key! '
+    - 'And in this glorious <color=yellow>''Pause Menu'' </color> is the <color=yellow>''Quest
+      Log''! </color> '
+    - 'The Quest Log will show you a description of the current quests you have! '
+    - 'Not even you could you forget that! <size=20>Hopefully...</size> '
+    - And finally when you complete a quest,
+    - 'The <color=yellow> ''Amalgameter'' </color> will drop down from the top right
+      and will you show how much progress you have made so far! '
+    - <size=20>Making friends is a lot of work... </size>
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
   dialoguePostQuest:
     lines:
     - Fantastic!
