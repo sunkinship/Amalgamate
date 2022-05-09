@@ -14,8 +14,11 @@ public class TriggerEnding : MonoBehaviour
     public static bool exitingScene;
 
     public GameObject endPanel;
+    public GameObject photo;
 
     public bool cameraFlash;
+
+    public Animator meterAni;
 
     public void GoToEndScene()
     {
@@ -36,6 +39,11 @@ public class TriggerEnding : MonoBehaviour
         }
     }
 
+    public void MainMenuFromEnd()
+    {
+        StartCoroutine(GoToMainMenu());
+    }
+
     public IEnumerator FadeAndSpawn()
     {
         fadeAni.SetTrigger("FadeTrigger");
@@ -47,17 +55,28 @@ public class TriggerEnding : MonoBehaviour
         exitingScene = false;
     }
 
-    public IEnumerator CamFlash()
+    private IEnumerator CamFlash()
     {
-        cameraAni.SetTrigger("FadeTrigger");
+        cameraAni.SetTrigger("FadeInTrigger");
+        photo.SetActive(true);
+        yield return new WaitForSeconds(5f);
         endPanel.SetActive(true);
-        yield return new WaitForSeconds(6f);
-        fadeAni.SetTrigger("FadeTrigger");
-        yield return new WaitForSeconds(1f);
+    }
+
+    public IEnumerator GoToMainMenu()
+    {
+        fadeAni.SetTrigger("FadeOutSlow");
+        yield return new WaitForSeconds(3.3f);
         SceneManager.LoadScene(sceneToLoad);
         calledCoroutine = false;
         playerMovement.inLoadingZone = false;
         PlayerManager.spawnPoint = spawnLocation;
         exitingScene = false;
+    }
+
+    private IEnumerator TrustMeterRateing()
+    {
+        meterAni.Play("TrustMeterDown");
+        yield return new WaitForSeconds(1f);
     }
 }
