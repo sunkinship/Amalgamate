@@ -1,61 +1,55 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class ShowCreditText : MonoBehaviour
 {
-    public GetLights getLights;
-    public GameObject trent, leo, logan, tyler, shreyas;
+    //public GetLights getLights;
+    public GameObject trent, leo, logan, tyler, shreyas, misc;
 
+    private void SetAllOff()
+    {
+        trent.SetActive(false);
+        leo.SetActive(false);
+        logan.SetActive(false);
+        tyler.SetActive(false);
+        shreyas.SetActive(false);
+        misc.SetActive(true);
+    }
 
     public void TrentGlow()
     {
-        trent.GetComponent<TextMeshProUGUI>().fontSharedMaterial = getLights.notButtonMat;
-    }
-
-    public void TrentOff()
-    {
-        trent.GetComponent<TextMeshProUGUI>().fontSharedMaterial = getLights.hiddenMat;
+        SetAllOff();
+        trent.SetActive(true);
     }
 
     public void LeoGlow()
     {
-        leo.GetComponent<TextMeshProUGUI>().fontSharedMaterial = getLights.notButtonMat;
-    }
-
-    public void LeoOff()
-    {
-        leo.GetComponent<TextMeshProUGUI>().fontSharedMaterial = getLights.hiddenMat;
+        SetAllOff();
+        leo.SetActive(true);
     }
 
     public void LoganGlow()
     {
-        logan.GetComponent<TextMeshProUGUI>().fontSharedMaterial = getLights.notButtonMat;
-    }
-
-    public void LoganOff()
-    {
-        logan.GetComponent<TextMeshProUGUI>().fontSharedMaterial = getLights.hiddenMat;
+        SetAllOff();
+        logan.SetActive(true);
     }
 
     public void TylerGlow()
     {
-        tyler.GetComponent<TextMeshProUGUI>().fontSharedMaterial = getLights.notButtonMat;
-    }
-
-    public void TylerOff()
-    {
-        tyler.GetComponent<TextMeshProUGUI>().fontSharedMaterial = getLights.hiddenMat;
+        SetAllOff();
+        tyler.SetActive(true);
     }
 
     public void ShreyasGlow()
     {
-        shreyas.GetComponent<TextMeshProUGUI>().fontSharedMaterial = getLights.notButtonMat;
+        SetAllOff();
+        shreyas.SetActive(true);
     }
 
-    public void ShreyasOff()
+    public void MiscGlow()
     {
-        shreyas.GetComponent<TextMeshProUGUI>().fontSharedMaterial = getLights.hiddenMat;
+        SetAllOff();
+        misc.SetActive(true);
     }
 }
