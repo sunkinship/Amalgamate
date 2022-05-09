@@ -11,7 +11,7 @@ public class HideFadeCanvas : MonoBehaviour
 
     private void Start()
     {
-        Invoke("Hide", 0f);
+        Invoke("Hide", 1.5f);
     }
     public void OnClickGoHome()
     {

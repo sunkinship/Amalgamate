@@ -10,7 +10,7 @@ public class MenuHandler : MonoBehaviour
     private CurrentCanvas currentCanvas = CurrentCanvas.mainmenu;
     public Animator dimPanelAni;
 
-    public Animator ani;
+    //public Animator ani;
     public float waitTime = 0f;
 
 
@@ -20,7 +20,7 @@ public class MenuHandler : MonoBehaviour
 
     public void MainMenu()
     {
-        dimPanelAni.SetTrigger("DidmFadeIn");
+        dimPanelAni.SetTrigger("DimFadeIn");
         DisableCanvas();
         currentCanvas = CurrentCanvas.mainmenu;
         mainMenuCanvas.SetActive(true);
@@ -30,15 +30,17 @@ public class MenuHandler : MonoBehaviour
     {
         //getLights.pointLight.enabled = false;
         //getLights.spriteLight.enabled = false;
-        dimPanelAni.SetTrigger("DidmFadeIn");
+        dimPanelAni.SetTrigger("DimFadeIn");
         DisableCanvas();
-        ani.Play("PlayerLeftReturn");
-        StartCoroutine(ExitCredits());
+        //ani.Play("PlayerLeftReturn");
+        //StartCoroutine(ExitCredits());
+        currentCanvas = CurrentCanvas.mainmenu;
+        mainMenuCanvas.SetActive(true);
     }
 
     public void Settings()
     {
-        dimPanelAni.SetTrigger("DidmFadeOut");
+        dimPanelAni.SetTrigger("DimFadeOut");
         DisableCanvas();
         currentCanvas = CurrentCanvas.settings;
         settingsCanvas.SetActive(true);
@@ -48,29 +50,31 @@ public class MenuHandler : MonoBehaviour
     {
         //getLights.pointLight.enabled = false;
         //getLights.spriteLight.enabled = false;
-        dimPanelAni.SetTrigger("DidmFadeOut");
+        dimPanelAni.SetTrigger("DimFadeOut");
         DisableCanvas();
-        ani.Play("PlayerLeft");
-        StartCoroutine(EnterCredits());
-    }
-
-    private IEnumerator EnterCredits()
-    {
-        yield return new WaitForSeconds(waitTime);
+        //ani.Play("PlayerLeft");
+        //StartCoroutine(EnterCredits());
         currentCanvas = CurrentCanvas.credits;
         creditsCanvas.SetActive(true);
-        //getLights.pointLight.enabled = true;
-        //getLights.spriteLight.enabled = true;
     }
 
-    private IEnumerator ExitCredits()
-    {
-        yield return new WaitForSeconds(waitTime);
-        currentCanvas = CurrentCanvas.mainmenu;
-        mainMenuCanvas.SetActive(true);
-        //getLights.pointLight.enabled = true;
-        //getLights.spriteLight.enabled = true;
-    }
+    //private IEnumerator EnterCredits()
+    //{
+    //    yield return new WaitForSeconds(waitTime);
+    //    currentCanvas = CurrentCanvas.credits;
+    //    creditsCanvas.SetActive(true);
+    //    //getLights.pointLight.enabled = true;
+    //    //getLights.spriteLight.enabled = true;
+    //}
+
+    //private IEnumerator ExitCredits()
+    //{
+    //    yield return new WaitForSeconds(waitTime);
+    //    currentCanvas = CurrentCanvas.mainmenu;
+    //    mainMenuCanvas.SetActive(true);
+    //    //getLights.pointLight.enabled = true;
+    //    //getLights.spriteLight.enabled = true;
+    //}
 
     private void DisableCanvas()
     {
