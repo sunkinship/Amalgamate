@@ -45,9 +45,9 @@ public class playerMovement : MonoBehaviour
     public GameObject carriedObject;
 
     //Variables for audio 
-    private static float stepRate = 0.5f;
+    private static float stepRate;
     private static float stepCoolDown;
-    [SerializeField] private float volume = 0.5f;
+    [SerializeField] private float volume;
     [SerializeField] private AudioClip clip;
 
 
@@ -106,7 +106,7 @@ public class playerMovement : MonoBehaviour
         // Play footstep sfx
         stepCoolDown -= Time.deltaTime;
 
-        if (stepCoolDown <= 0f && animator.GetBool("isMoving"))
+        if (stepCoolDown <= 0f && animator.GetBool("isMoving") && mirroredPlayer == false)
         {
             stepCoolDown = stepRate;
             AudioManager.Instance.PlaySound(clip, volume);
