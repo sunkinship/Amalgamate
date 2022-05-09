@@ -27,6 +27,11 @@ public class pushPullObjects : MonoBehaviour
 
     public Animator ani;
 
+    [SerializeField]
+    private AudioSource audSrc;
+    [SerializeField]
+    private AudioClip placeBlock;
+
     private void Awake()
     {
         playerRender = player.GetComponent<Renderer>();
@@ -63,6 +68,7 @@ public class pushPullObjects : MonoBehaviour
         if (playerInput.actions["Interact"].triggered && isMovingObject == true && canDropObject == true)
         {
             playerMovement.carryingObject = false;
+            audSrc.PlayOneShot(placeBlock);
             heldItem.GetComponentInChildren<ParticleSystem>().Play();
             ani.SetBool("isCarrying", false);
             canPickUp = false;

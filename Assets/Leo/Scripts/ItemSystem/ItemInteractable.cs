@@ -18,6 +18,10 @@ public class ItemInteractable : MonoBehaviour
 
     public bool doNotDestroy;
 
+    [SerializeField]
+    private AudioSource audSrc;
+    [SerializeField]
+    private AudioClip objectObtained;
     private void Awake()
     {
         player = GameObject.Find("Player").GetComponent<PlayerManager>();
@@ -53,6 +57,7 @@ public class ItemInteractable : MonoBehaviour
             if (playerInput.actions["Interact"].triggered)
             {
                 //Debug.Log("Picked up item");
+                audSrc.PlayOneShot(objectObtained);
                 PickUpItem();
             }
         }

@@ -30,6 +30,12 @@ public class puzzleButton : MonoBehaviour
 
     public Sprite pressedSprite;
 
+    [SerializeField]
+    private AudioSource audSrc;
+    [SerializeField]
+    private AudioClip openDoor;
+    [SerializeField]
+    private AudioClip buttonPressed;
     public void Start()
     {
         objectToFocus = itemToDisable;
@@ -41,6 +47,7 @@ public class puzzleButton : MonoBehaviour
         if(canPressButton == true && playerInput.actions["Interact"].triggered)
         {
             canPressButton = false;
+            audSrc.PlayOneShot(buttonPressed);
             StartCoroutine(ButtonWork());
         }
     }
@@ -87,6 +94,7 @@ public class puzzleButton : MonoBehaviour
         {
             mirrorItemToDisable.SetActive(false);
         }
+        audSrc.PlayOneShot(openDoor);
         itemToDisable.SetActive(false);
         yield return new WaitForSeconds(focusTime);
         cameraToMove.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
