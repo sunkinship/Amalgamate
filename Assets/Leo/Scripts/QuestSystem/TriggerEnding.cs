@@ -13,6 +13,8 @@ public class TriggerEnding : MonoBehaviour
     private bool calledCoroutine;
     public static bool exitingScene;
 
+    public GameObject photo;
+
     public bool cameraFlash;
 
     public void GoToEndScene()
@@ -30,7 +32,7 @@ public class TriggerEnding : MonoBehaviour
         }
         else
         {
-
+            StartCoroutine(CamFlash());
         }
     }
 
@@ -48,6 +50,7 @@ public class TriggerEnding : MonoBehaviour
     public IEnumerator CamFlash()
     {
         cameraAni.SetTrigger("FadeTrigger");
+        photo.SetActive(true);
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(sceneToLoad);
         calledCoroutine = false;

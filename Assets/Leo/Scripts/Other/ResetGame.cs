@@ -29,5 +29,7 @@ public class ResetGame : MonoBehaviour
         playerMovement.lastFacingDirection = "DOWN";
 
         DisableRock.leftHouse = false;
+
+        EnableBarnMaze.barnQuest = false;
     }
 }
