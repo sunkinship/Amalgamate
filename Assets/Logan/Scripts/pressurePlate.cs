@@ -25,12 +25,9 @@ public class pressurePlate : MonoBehaviour
     private Sprite originalSprite;
     public Sprite pressedSprite;
 
-    [SerializeField]
-    private AudioSource audSrc;
-    [SerializeField]
-    private AudioClip openDoor;
-    [SerializeField]
-    private AudioClip plateDown;
+    [SerializeField] private AudioClip openDoor;
+    [SerializeField] private AudioClip plateDown;
+    [SerializeField] private float volume;
     private void Start()
     {
         originalSprite = this.gameObject.GetComponent<SpriteRenderer>().sprite;
@@ -53,7 +50,7 @@ public class pressurePlate : MonoBehaviour
         {
             if (collision.gameObject.tag == "movableObject" && playerMovement.carryingObject == false)
             {
-                audSrc.PlayOneShot(plateDown);
+                AudioManager.Instance.PlaySound(plateDown, 0.5f);
                 triggered = true;
                 if (removeWall == true && wallToRemove != null)
                 {
@@ -89,7 +86,7 @@ public class pressurePlate : MonoBehaviour
             yield return null;
         }
         yield return new WaitForSeconds(waitToDisable);
-        audSrc.PlayOneShot(openDoor);
+        AudioManager.Instance.PlaySound(openDoor, 0.5f);
         wallToRemove.SetActive(false);
         yield return new WaitForSeconds(focusTime);
         cameraToMove.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
