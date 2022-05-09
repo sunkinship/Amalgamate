@@ -47,6 +47,7 @@ public class playerMovement : MonoBehaviour
     //Variables for audio 
     private static float stepRate = 0.5f;
     private static float stepCoolDown;
+    [SerializeField] private float volume = 0.5f;
     [SerializeField] private AudioClip clip;
 
 
@@ -108,7 +109,7 @@ public class playerMovement : MonoBehaviour
         if (stepCoolDown <= 0f && animator.GetBool("isMoving"))
         {
             stepCoolDown = stepRate;
-            AudioManager.Instance.PlaySound(clip, 0.5f);
+            AudioManager.Instance.PlaySound(clip, volume);
         }
 
         if ((Mathf.Abs(rb2.velocity.x) > 0.01 || Mathf.Abs(rb2.velocity.y) > 0.01) && inLoadingZone == false)
@@ -144,10 +145,12 @@ public class playerMovement : MonoBehaviour
             if (isRunning == false)
             {
                 rb2.velocity = direction * carryWalkSpeed * Time.deltaTime;
+                stepRate = 0.67f;
             }
             else
             {
                 rb2.velocity = direction * carryRunSpeed * Time.deltaTime;
+                stepRate = 0.6f;
             }
         }
         else if (inCutScene)
@@ -159,10 +162,12 @@ public class playerMovement : MonoBehaviour
             if (isRunning == false)
             {
                 rb2.velocity = direction * moveSpeed * Time.deltaTime;
+                stepRate = 0.5f;
             }
             else
             {
                 rb2.velocity = direction * runMoveSpeed * Time.deltaTime;
+                stepRate = 0.4f;
             }
         }
     }
