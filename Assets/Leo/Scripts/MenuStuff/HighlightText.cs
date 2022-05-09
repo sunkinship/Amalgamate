@@ -51,13 +51,13 @@ public class HighlightText : MonoBehaviour
         //targetText.fontSharedMaterial = getLights.glowMat;
     }
 
-    public void TurnOnGlow2()
-    {
-        textImage.color = new Color32(247, 217, 127, 255);
-        //borderImage.color = new Color32(247, 217, 127, 255);
-        //isHighlighted = true;
-        //targetText.fontSharedMaterial = getLights.notButtonMat;
-    }
+    //public void TurnOnGlow2()
+    //{
+    //    textImage.color = new Color32(247, 217, 127, 255);
+    //    //borderImage.color = new Color32(247, 217, 127, 255);
+    //    //isHighlighted = true;
+    //    //targetText.fontSharedMaterial = getLights.notButtonMat;
+    //}
 
     public void TurnOffGlow()
     {
