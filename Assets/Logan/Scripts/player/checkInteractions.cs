@@ -28,6 +28,7 @@ public class checkInteractions : MonoBehaviour
     public GameObject npcPrompt;
     public GameObject blockPrompt;
     public GameObject buttonPromptt;
+    public float npcPromptYOffset;
 
     public bool humanMayor;
     public bool triggerHumanEnd;
@@ -352,7 +353,7 @@ public class checkInteractions : MonoBehaviour
     {
         if (other.gameObject.tag == "interactableNPC" && playerMovement.carryingObject == false && isInteractingWithNPC == false)
         {
-            npcPrompt.transform.position = new Vector3(currentNPC.transform.position.x, currentNPC.transform.position.y + 2.3f, currentNPC.transform.position.z);
+            npcPrompt.transform.position = new Vector3(currentNPC.transform.position.x, currentNPC.transform.position.y + npcPromptYOffset, currentNPC.transform.position.z);
             StartCoroutine(ButtonPrompt());
         }
         else if (other.gameObject.tag == "movableObject" && playerMovement.carryingObject == false)
