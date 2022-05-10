@@ -37,7 +37,13 @@ public class TriggerFinalQuest : MonoBehaviour
                 }
             }
 
-            if (humanQuestCounter >= 2 && monsterQuestCounter >= 1)
+            //if (humanQuestCounter >= 2 && monsterQuestCounter >= 1)
+            //{
+            //    mayorActivated = true;
+            //    switchMayor.ActivateMayors();
+            //}
+
+            if (humanQuestCounter >= 0)
             {
                 mayorActivated = true;
                 switchMayor.ActivateMayors();

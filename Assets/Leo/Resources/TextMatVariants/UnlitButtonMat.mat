@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UnlitPlayer
+  m_Name: UnlitButtonMat
   m_Shader: {fileID: -6465566751694194690, guid: a0a1ed00987745f44b7d00c7a58820db,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
@@ -30,4 +30,4 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
-    - Color_18748F50: {r: 0.77897286, g: 0.717877, b: 0.012219183, a: 0.77897286}
+    - Color_18748F50: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}

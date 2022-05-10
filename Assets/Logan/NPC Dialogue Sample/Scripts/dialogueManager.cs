@@ -68,6 +68,7 @@ public class dialogueManager : MonoBehaviour
                 // Check if end game condition is triggered from CheckToEnd()
                 if (currentNPC.GetComponent<QuestGiver>().triggerEnding) 
                 {
+                    Debug.Log("trigger eneding");
                     triggerEnd.GoToEndScene();
                 }
 

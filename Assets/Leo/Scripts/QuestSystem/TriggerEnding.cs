@@ -41,6 +41,7 @@ public class TriggerEnding : MonoBehaviour
         }
         else
         {
+            //Debug.Log("Now");
             StartCoroutine(CamFlash());
         }
     }
@@ -85,11 +86,11 @@ public class TriggerEnding : MonoBehaviour
         exitingScene = false;
     }
 
-    private IEnumerator TrustMeterRateing()
-    {
-        meterAni.Play("TrustMeterDown");
-        yield return new WaitForSeconds(1f);
-    }
+    //private IEnumerator TrustMeterRateing()
+    //{
+    //    meterAni.Play("TrustMeterDown");
+    //    yield return new WaitForSeconds(1f);
+    //}
 
     private void ChangeCanvasOrder()
     {
