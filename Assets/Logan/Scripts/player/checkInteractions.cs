@@ -66,6 +66,15 @@ public class checkInteractions : MonoBehaviour
     void Update()
     {
 
+        if(Input.GetKey(KeyCode.E))
+        {
+            npcPromptActive = false;
+            blockPromptActive = false;
+            buttonPromptActive = false;
+        }
+        
+
+
         if (npcPromptActive == true)
         {
             npcPrompt.SetActive(true);
@@ -382,7 +391,7 @@ public class checkInteractions : MonoBehaviour
         {
             isFacingInteractable = true;
             //npcPromptActive = true;
-            currentNPC = collision.gameObject;
+            
         }
 
 
@@ -392,6 +401,7 @@ public class checkInteractions : MonoBehaviour
     {
         if (other.gameObject.tag == "interactableNPC" && playerMovement.carryingObject == false && isInteractingWithNPC == false)
         {
+            currentNPC = other.gameObject;
             npcPrompt.transform.position = new Vector3(currentNPC.transform.position.x, currentNPC.transform.position.y + npcPromptYOffset, currentNPC.transform.position.z);
             npcPromptActive = true;
         }
