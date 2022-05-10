@@ -10,6 +10,7 @@ public class TriggerEnding : MonoBehaviour
     public string sceneToLoad;
     public Animator fadeAni;
     public Animator cameraAni;
+    public Animator photoAni;
     private bool calledCoroutine;
     public static bool exitingScene;
 
@@ -62,6 +63,7 @@ public class TriggerEnding : MonoBehaviour
     {
         cameraAni.SetTrigger("FadeInTrigger");
         photo.SetActive(true);
+        photoAni.SetTrigger("PhotoZoom");
         yield return new WaitForSeconds(5f);
         endPanel.SetActive(true);
     }
