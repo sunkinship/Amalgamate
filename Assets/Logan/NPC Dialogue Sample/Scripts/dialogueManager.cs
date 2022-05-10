@@ -103,6 +103,7 @@ public class dialogueManager : MonoBehaviour
         }
     }
 
+
     public void Kill()
     {
         Destroy(currentNPC.gameObject);
