@@ -8,6 +8,8 @@ public class playerMovement : MonoBehaviour
 {
     [SerializeField] private LayerMask wallLayerMask;
 
+
+
     public AudioSource woodSoundEffect;
     public AudioSource grassWalkingSoundEffect;
 
@@ -118,7 +120,7 @@ public class playerMovement : MonoBehaviour
             {
                 stepCoolDown = stepRate;
             }
-            AudioManager.Instance.PlaySound(clip, 0.5f);
+            AudioManager.Instance.PlaySound(clip, volume);
         }
 
         if ((Mathf.Abs(rb2.velocity.x) > 0.01 || Mathf.Abs(rb2.velocity.y) > 0.01) && inLoadingZone == false)
