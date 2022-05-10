@@ -32,5 +32,7 @@ public class ResetGame : MonoBehaviour
         DisableRock.leftHouse = false;
 
         EnableBarnMaze.barnQuest = false;
+
+        vourgnrhgghgggg.vampQuestSwap = false;
     }
 }

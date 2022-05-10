@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class vourgnrhgghgggg : MonoBehaviour
 {
-
     public static bool vampQuestSwap;
 
     public GameObject badVamp;
@@ -29,5 +28,4 @@ public class vourgnrhgghgggg : MonoBehaviour
             goodVamp.SetActive(true);
         }
     }
-
 }
