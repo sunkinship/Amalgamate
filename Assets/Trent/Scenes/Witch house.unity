@@ -282,7 +282,7 @@ Transform:
   m_Father: {fileID: 1869490819}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &51044361
+--- !u!43 &66786537
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7882,7 +7882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 367051009}
   NPCName: Witch
-  voiceClip: {fileID: 8300000, guid: e0d157bbc0240ca46a29cfcd7589a194, type: 3}
+  voiceClip: {fileID: 8300000, guid: 5bdb15d08e440194bbece6668520220c, type: 3}
   dialoguePreQuest:
     lines:
     - Oh a visitor...
@@ -7910,7 +7910,7 @@ MonoBehaviour:
     - Did you find the apple?
     - You did?
     - Oh thank you!
-    - Now my potion will be complete!
+    - fianlly<size=0.5> finally </size> my potion will be complete
     - I can finally be a model!
   dialoguePostPostQuest:
     lines:
@@ -7956,7 +7956,6 @@ MonoBehaviour:
   afterForceCollider: {fileID: 0}
   mustHoldCertainObject: 0
   isMayor: 0
-  rockdrick: 0
 --- !u!70 &1215491907
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -14144,7 +14143,6 @@ MonoBehaviour:
   meterAni: {fileID: 0}
   fadeCanvas: {fileID: 0}
   endCanvas: {fileID: 0}
-  clip: {fileID: 0}
 --- !u!114 &2087206377
 MonoBehaviour:
   m_ObjectHideFlags: 0

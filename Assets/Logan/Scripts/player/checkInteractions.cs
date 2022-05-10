@@ -48,6 +48,10 @@ public class checkInteractions : MonoBehaviour
 
     private GameObject currentBlock;
 
+    public bool isEndMayor;
+
+    public static bool endDialogueTriggered;
+
     private void Awake()
     {
         promptFinder = GameObject.Find("findPrompts").GetComponent<findPrompts>();
@@ -56,11 +60,6 @@ public class checkInteractions : MonoBehaviour
         buttonPromptt = promptFinder.buttonPromptt;
         playerManager = player.GetComponent<PlayerManager>();
         //playerInput = gameObject.GetComponent<PlayerInput>();
-    }
-
-    private void Start()
-    {
-        
     }
 
     void Update()
@@ -73,8 +72,6 @@ public class checkInteractions : MonoBehaviour
             buttonPromptActive = false;
         }
         
-
-
         if (npcPromptActive == true)
         {
             npcPrompt.SetActive(true);
@@ -93,7 +90,7 @@ public class checkInteractions : MonoBehaviour
             blockPrompt.SetActive(false);
         }
 
-        if(npcPrompt)
+        //if(npcPrompt)
 
         if (npcInteract.forcedMayorSpeaking)
         {
@@ -133,17 +130,23 @@ public class checkInteractions : MonoBehaviour
         // Forced dialogue 
         else if (isFacingInteractable == true && currentNPC.GetComponent<npcInteract>().forceDialogue == true && currentNPC.GetComponent<npcInteract>().mustHoldCertainObject == false)
         {
-            //Debug.Log("forced collier");
+            Debug.Log("forced collier");
+            RegularForecedInteraction();
+        }
+        //Ending forced dialogue
+        else if (isEndMayor && endDialogueTriggered == false)
+        {
+            Debug.Log("end");
+            endDialogueTriggered = true;
             RegularForecedInteraction();
         }
         // Mayor forced dialogue 
         else if (npcInteract.mayorForcedDialogue == true)
         {
+            Debug.Log("mayor");
             npcInteract.mayorForcedDialogue = false;
             npcInteract.forcedMayorSpeaking = true;
             currentNPC = Mayor;
-            Debug.Log("mayor forced collier");
-            //Debug.Log("state: " + Mayor.GetComponent<npcInteract>().mayorForcedDialogue);
             MayorForecedInteraction();
         }
         // Foreced dialogue requiring held object
@@ -256,6 +259,7 @@ public class checkInteractions : MonoBehaviour
     /// </summary>
     private void RegularQuestCheck()
     {
+        //Debug.Log("regular Check");
         //Linked quest triggered
         if (npcItem.canGiveItem == true)
         {
@@ -339,6 +343,7 @@ public class checkInteractions : MonoBehaviour
     /// </summary>
     private void PreConditionCheck()
     {
+        //Debug.Log("Predcondition Check");
         //Linked quest triggered
         if (npcItem.canGiveItem == true)
         {
