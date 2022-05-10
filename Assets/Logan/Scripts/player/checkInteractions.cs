@@ -50,6 +50,8 @@ public class checkInteractions : MonoBehaviour
 
     public bool isEndMayor;
 
+    public static bool endDialogueTriggered;
+
     private void Awake()
     {
         promptFinder = GameObject.Find("findPrompts").GetComponent<findPrompts>();
@@ -132,9 +134,10 @@ public class checkInteractions : MonoBehaviour
             RegularForecedInteraction();
         }
         //Ending forced dialogue
-        else if (isEndMayor)
+        else if (isEndMayor && endDialogueTriggered == false)
         {
             Debug.Log("end");
+            endDialogueTriggered = true;
             RegularForecedInteraction();
         }
         // Mayor forced dialogue 
