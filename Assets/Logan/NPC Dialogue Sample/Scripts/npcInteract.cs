@@ -43,6 +43,8 @@ public class npcInteract : MonoBehaviour, interactable
 
     public bool isMayor;
 
+    public bool rockdrick;
+
 
     private void Awake()
     {
