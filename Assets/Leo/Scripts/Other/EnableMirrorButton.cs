@@ -34,7 +34,7 @@ public class EnableMirrorButton : MonoBehaviour
         else if (buttonPressed)
         {
             fakePressedButton.SetActive(true);
-            fakeButton.SetActive(true);
+            fakeButton.SetActive(false);
             redDoor.SetActive(false);
         }
     }
