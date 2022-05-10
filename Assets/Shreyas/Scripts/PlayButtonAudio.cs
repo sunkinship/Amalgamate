@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class PlayButtonAudio : MonoBehaviour
 {
-    public GameObject AudioObj1;
-    public GameObject AudioObj2;
+    public AudioClip highlightButton;
+    public AudioClip buttonPress;
 
     public void HighlightButton()
     {
-        Instantiate(AudioObj1, transform.position, transform.rotation);
+        AudioManager.Instance.PlaySound(highlightButton, 0.5f);
     }
 
     public void ClickButton()
     {
-        Instantiate(AudioObj2, transform.position, transform.rotation);
+        AudioManager.Instance.PlaySound(buttonPress, 0.5f);
     }
 
 }
