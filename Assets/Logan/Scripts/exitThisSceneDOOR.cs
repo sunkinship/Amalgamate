@@ -25,11 +25,11 @@ public class exitThisSceneDOOR : MonoBehaviour
     private void Awake()
     {
         playerAni = player.GetComponent<Animator>();
+        doorPrompt = GameObject.Find("doorPrompt");
     }
 
     private void Start()
     {
-        doorPrompt = GameObject.Find("doorPrompt");
         doorPrompt.SetActive(false);
         promptOn = false;
     }
