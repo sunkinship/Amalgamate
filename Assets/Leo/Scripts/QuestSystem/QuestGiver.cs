@@ -77,10 +77,12 @@ public class QuestGiver : MonoBehaviour
     /// </summary>
     public void CheckforPreCondition()
     {
+        //Debug.Log("Checking for precondition");
         foreach (Quest quest in PlayerManager.quests)
         {
             if (quest.isComplete && quest.questName.Equals(this.quest.PreQuestName))
             {
+                //Debug.Log("found match");
                 this.quest.isAvailable = true;
             }
         }
