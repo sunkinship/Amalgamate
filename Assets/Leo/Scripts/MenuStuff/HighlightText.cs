@@ -6,7 +6,7 @@ using TMPro;
 
 public class HighlightText : MonoBehaviour
 {
-    public GetLights getLights;
+    //public GetLights getLights;
     public GameObject particles;
     public Image textImage;
     //public Image borderImage;
