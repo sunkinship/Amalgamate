@@ -178,37 +178,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7396207, y: 2.8697596}
   m_EdgeRadius: 0
---- !u!1 &152630212
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 152630214}
-  m_Layer: 0
-  m_Name: PreventBug
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &152630214
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 152630212}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.500971, y: 0.56459236, z: -1.040747}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &236273829
+--- !u!43 &98850006
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -371,6 +341,36 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &152630212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 152630214}
+  m_Layer: 0
+  m_Name: PreventBug
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &152630214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152630212}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.500971, y: 0.56459236, z: -1.040747}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &311952890
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,6 +1548,51 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &994812741
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 994812743}
+  - component: {fileID: 994812742}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &994812742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994812741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c1ce6843ba20334e954aca4c93c80ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 63886c3738aed3749a120e6a3a757ce6, type: 3}
+  volume: 1
+--- !u!4 &994812743
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994812741}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.915702, y: 0.08486193, z: 17.195683}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1017726026
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,7 +2179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1500110636}
   NPCName: Rockdrick
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: c45da6e583b9fd041b5f0f85cc385d40, type: 3}
   dialoguePreQuest:
     lines: []
   dialogueMidQuest:
@@ -2580,6 +2625,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_InstanceId
       value: -26446
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622528975488665119, guid: aae05705305996b40bfe76326d1b261e,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 98850006}
+    - target: {fileID: 3622528975488665119, guid: aae05705305996b40bfe76326d1b261e,
+        type: 3}
+      propertyPath: m_InstanceId
+      value: -37038
       objectReference: {fileID: 0}
     - target: {fileID: 3864105696216516965, guid: aae05705305996b40bfe76326d1b261e,
         type: 3}
@@ -4013,7 +4068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1500110636}
   NPCName: Rockdrick
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: c45da6e583b9fd041b5f0f85cc385d40, type: 3}
   dialoguePreQuest:
     lines:
     - 'Rock on! '
@@ -4050,8 +4105,8 @@ MonoBehaviour:
     - 'The <color=yellow> ''Amalgameter'' </color> will drop down from the top right
       and will you show how much progress you have made so far! '
     - <size=20>Making friends is a lot of work... </size>
-    - 
-    - 
+    - Anyway,
+    - I'm starvin
     - 
     - 
     - 
