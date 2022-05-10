@@ -5,12 +5,15 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class GetLights : MonoBehaviour
 {
+    public Light2D pointLight, spriteLight;
     [HideInInspector]
-    public Material glowMat, notGlowMat;
+    public Material glowMat, notGlowMat, hiddenMat, notButtonMat;
 
     private void Awake()
     {
-        glowMat = Resources.Load<Material>("TextMatVariants/MenuButtonGlow");
-        notGlowMat = Resources.Load<Material>("TextMatVariants/UnlitPlayer");
+        glowMat = Resources.Load<Material>("TextMatVariants/PixelEmulator-xq08 SDF - Glow");
+        notGlowMat = Resources.Load<Material>("TextMatVariants/PixelEmulator-xq08 SDF - NotGlow");
+        hiddenMat = Resources.Load<Material>("TextMatVariants/PixelEmulator-xq08 SDF - Hidden");
+        notButtonMat = Resources.Load<Material>("TextMatVariants/PixelEmulator-xq08 SDF - NotButton");
     }
 }

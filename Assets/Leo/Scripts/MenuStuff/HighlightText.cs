@@ -6,63 +6,72 @@ using TMPro;
 
 public class HighlightText : MonoBehaviour
 {
-    public GetLights lightMats;
-    private Image image;
-
+    //public GetLights getLights;
     public GameObject particles;
     public Image textImage;
-    private static bool lampOn;
-
-    private float maxBrightness = 1f;
-
-    public Material mat;
-    public Renderer render;
-    private static float hornIntensity = 0;
-    private static float hornChangeRate = 1f;
+    //public Image borderImage;
+    //[HideInInspector]
+    //public TextMeshProUGUI targetText;
+    //private static bool isHighlighted;
+    //private static float intensity = 0;
+    //private static float changeRate = 0.5f;
+    //private static float maxBrightness = 0.4f;
+    //public bool hornGlow;
 
     private void Awake()
     {
-        image = gameObject.GetComponent<Image>();
+        //targetText = gameObject.GetComponentInChildren<TextMeshProUGUI>();
     }
 
     private void Update()
     {
-        MenuPlayerLight();
-    }
+        //if (hornGlow)
+        //{
+        //    if (isHighlighted)
+        //    {
+        //        intensity += changeRate * Time.deltaTime;
+        //    }
+        //    else
+        //    {
+        //        intensity -= changeRate * Time.deltaTime;
+        //    }
 
-    private void MenuPlayerLight()
-    {
-        Debug.Log("light");
-        if (lampOn)
-        {
-            Debug.Log("on");
-            hornIntensity += hornChangeRate * Time.deltaTime;
-        }
-        else
-        {
-            Debug.Log("off");
-            hornIntensity -= hornChangeRate * Time.deltaTime;
-        }
+        //    intensity = Mathf.Clamp(intensity, 0, maxBrightness);
 
-        hornIntensity = Mathf.Clamp(hornIntensity, 0, maxBrightness);
-
-        mat.SetColor("Color_18748F50", Color.yellow * hornIntensity);
+        //    getLights.pointLight.intensity = intensity;
+        //    getLights.spriteLight.intensity = intensity;
+        //}
     }
 
     public void TurnOnGlow()
     {
-        lampOn = true;
-        //textImage.color = new Color32(247, 217, 127, 255);
-        textImage.material = lightMats.glowMat;
-        image.material = lightMats.glowMat;
+        textImage.color = new Color32(247, 217, 127, 255);
+        //borderImage.color = new Color32(247, 217, 127, 255);
+        //isHighlighted = true;
+        //targetText.fontSharedMaterial = getLights.glowMat;
     }
+
+    //public void TurnOnGlow2()
+    //{
+    //    textImage.color = new Color32(247, 217, 127, 255);
+    //    //borderImage.color = new Color32(247, 217, 127, 255);
+    //    //isHighlighted = true;
+    //    //targetText.fontSharedMaterial = getLights.notButtonMat;
+    //}
 
     public void TurnOffGlow()
     {
-        lampOn = false;
-        //textImage.color = Color.white;
-        textImage.material = lightMats.notGlowMat;
-        image.material = lightMats.notGlowMat;
+        textImage.color = Color.white;
+        //borderImage.color = Color.white;
+        //isHighlighted = false;
+        //targetText.fontSharedMaterial = getLights.notGlowMat;
+    }
+
+    public void IncreaseGlow()
+    {
+        //targetText.fontSharedMaterial = getLights.glowMat;
+        //getLights.pointLight.intensity = 0.7f;
+        //getLights.spriteLight.intensity = 1f;
     }
 
     public void PlayEffect()
