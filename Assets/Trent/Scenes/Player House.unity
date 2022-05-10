@@ -4294,9 +4294,14 @@ GameObject:
   - component: {fileID: 1917281466}
   - component: {fileID: 1917281465}
   - component: {fileID: 1917281464}
+  - component: {fileID: 1917281469}
+  - component: {fileID: 1917281468}
+  - component: {fileID: 1917281467}
+  - component: {fileID: 1917281470}
+  - component: {fileID: 1917281471}
   m_Layer: 0
   m_Name: NormalRock
-  m_TagString: Untagged
+  m_TagString: interactableNPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4355,7 +4360,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5000
-  m_Sprite: {fileID: 21300000, guid: 846ade2b917c93e459e29472dc38d5f8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a602ef8e6f145fd4286eb3421c1b0029, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4380,6 +4385,155 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1917281467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917281463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b47e6c53a82b0b4abacc91ccdb90a2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item:
+    itemType: 0
+    pickedUp: 0
+    quantity: 0
+    itemName: 
+    description: 
+  linkedQuestName: 
+  player: {fileID: 1500110631}
+  canGiveItem: 0
+  gaveItem: 0
+--- !u!114 &1917281468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917281463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da45dc90f8a4284c8031a9c62b42bb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest:
+    hasQuest: 0
+    hasConnectedQuest: 0
+    hasPreConditionQuest: 0
+    isHuman: 0
+    isActive: 0
+    isComplete: 0
+    isPostQuest: 0
+    isConnectedQuest: 0
+    isAvailable: 0
+    questName: 
+    description: 
+    connectedQuestName: 
+    PreQuestName: 
+    goal:
+      goalType: 0
+      requiredType: 0
+      requiredAmount: 0
+      currentAmount: 0
+  player: {fileID: 1500110631}
+  questUI: {fileID: 1506136198}
+  removesCollider: 0
+  colliderToRemove: {fileID: 0}
+  triggerEnding: 0
+--- !u!114 &1917281469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917281463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667a9eff7669af34882d95a6b84f9d52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1500110636}
+  NPCName: Rockderika
+  voiceClip: {fileID: 8300000, guid: ca113a45d602a4949a8c49e5cb9bd23b, type: 3}
+  dialoguePreQuest:
+    lines:
+    - .
+  dialogueMidQuest:
+    lines: []
+  dialoguePostQuest:
+    lines: []
+  dialoguePostPostQuest:
+    lines: []
+  dialogueLinkedQuest:
+    lines: []
+  dialogueNoQuest:
+    lines:
+    - <size=30>Rock.</size>
+    - <size=55>Rock.</size>
+    - <size=80><b>ROCK.</b></size>
+  portraitsPreQuest:
+  - {fileID: 2423511626826670224, guid: 012e0a08596d47746a582aca1df360f1, type: 3}
+  portraitsMidQuest: []
+  portraitsPostQuest: []
+  portraitsPostPostQuest: []
+  portraitsLinkedQuest: []
+  portraitsNoQuest:
+  - {fileID: 21300000, guid: c0dbba0d00ef8464e88f63b9fdd920aa, type: 3}
+  - {fileID: 21300000, guid: c0dbba0d00ef8464e88f63b9fdd920aa, type: 3}
+  - {fileID: 21300000, guid: c0dbba0d00ef8464e88f63b9fdd920aa, type: 3}
+  portraitsMayorQuest: []
+  currentPortrait: {fileID: 0}
+  forceDialogue: 0
+  forceDialogueCollider: {fileID: 0}
+  afterForceCollider: {fileID: 0}
+  mustHoldCertainObject: 0
+  isMayor: 0
+  rockdrick: 0
+--- !u!70 &1917281470
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917281463}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.13243341}
+  m_Size: {x: 1.25, y: 1.5148668}
+  m_Direction: 0
+--- !u!61 &1917281471
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917281463}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.026839614, y: 0.067098856}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.25, y: 1.25}
+    newSize: {x: 1.25, y: 1.25}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5700638, y: 0.525332}
+  m_EdgeRadius: 0
 --- !u!1 &1965637039
 GameObject:
   m_ObjectHideFlags: 0
