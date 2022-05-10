@@ -25,7 +25,7 @@ public class TriggerEnding : MonoBehaviour
 
     public void GoToEndScene()
     {
-        Debug.Log("GO");
+        //Debug.Log("GO");
         if (cameraFlash == false)
         {
             exitingScene = true;

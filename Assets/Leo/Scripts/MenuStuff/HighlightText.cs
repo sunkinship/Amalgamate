@@ -32,15 +32,15 @@ public class HighlightText : MonoBehaviour
 
     private void MenuPlayerLight()
     {
-        Debug.Log("light");
+        //Debug.Log("light");
         if (lampOn)
         {
-            Debug.Log("on");
+            //Debug.Log("on");
             hornIntensity += hornChangeRate * Time.deltaTime;
         }
         else
         {
-            Debug.Log("off");
+            //Debug.Log("off");
             hornIntensity -= hornChangeRate * Time.deltaTime;
         }
 

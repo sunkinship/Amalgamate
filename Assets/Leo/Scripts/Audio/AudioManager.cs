@@ -48,7 +48,7 @@ public class AudioManager : MonoBehaviour
 
     private void WaitToAssign()
     {
-        Debug.Log("Scene loaded");
+        //Debug.Log("Scene loaded");
         masterSlider = GameObject.Find("Master Slider").GetComponent<Slider>();
         masterText = GameObject.Find("MasterText").GetComponent<TextMeshProUGUI>();
         musicText = GameObject.Find("MusicText").GetComponent<TextMeshProUGUI>();
