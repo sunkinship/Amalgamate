@@ -20,6 +20,8 @@ public class dialogueManager : MonoBehaviour
     public TriggerFinalQuest finalQuestTrigger;
     public TriggerEnding triggerEnd;
 
+    private float volumeInstance;
+
     private bool isTyping;
 
     public GameObject portraitManager;
@@ -33,6 +35,7 @@ public class dialogueManager : MonoBehaviour
     public static dialogueManager Instance { get; private set; }
     private void Awake()
     {
+        
         Instance = this;
         playerInput = gameObject.GetComponent<PlayerInput>();
         playerMove = gameObject.GetComponent<playerMovement>();
@@ -45,6 +48,7 @@ public class dialogueManager : MonoBehaviour
 
     public void Update()
     {
+        volumeInstance = currentNPC.GetComponent<npcInteract>().volume;
         currentNPC = portraitManager.GetComponent<managePortraits>().currentNPC;
         rockdrick = currentNPC.GetComponent<npcInteract>().rockdrick;
         // Checking for input during NPC interaction
@@ -188,7 +192,7 @@ public class dialogueManager : MonoBehaviour
 
     public void PlaySound()
     {
-        AudioManager.Instance.PlaySound(voiceClip, 0.5f);
+        AudioManager.Instance.PlaySound(voiceClip, volumeInstance);
     }
 
     public void StopSound()
