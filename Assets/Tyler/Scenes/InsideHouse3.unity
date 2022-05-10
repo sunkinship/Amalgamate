@@ -1521,7 +1521,7 @@ Transform:
   m_Father: {fileID: 99213695}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &1463185890
+--- !u!43 &1325268778
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2032,6 +2032,12 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 138332346}
+    - target: {fileID: 2109358371195210746, guid: 78e308617e920954fb5060a70ab7879e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 08dfecfe29c998e4ab06d9b2c0bff062,
+        type: 3}
     - target: {fileID: 2109358371783551122, guid: 78e308617e920954fb5060a70ab7879e,
         type: 3}
       propertyPath: player
