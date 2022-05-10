@@ -41,10 +41,12 @@ public class dialogueManager : MonoBehaviour
     dialogue dialogue;
     int currentLine = 0;
 
+    public bool rockdrick;
+
     public void Update()
     {
         currentNPC = portraitManager.GetComponent<managePortraits>().currentNPC;
-
+        rockdrick = currentNPC.GetComponent<npcInteract>().rockdrick;
         // Checking for input during NPC interaction
         if (playerMovement.inDialogue == true && playerInput.actions["Interact"].triggered && isTyping == false)
         {
@@ -59,6 +61,12 @@ public class dialogueManager : MonoBehaviour
             // Resetting values after interaction ended
             else
             {
+
+                if(rockdrick)
+                {
+                    Kill();
+                }
+
                 currentLine = 0;
                 dialogueBox.SetActive(false);
                 currentNPC.GetComponent<npcInteract>().currentPortrait = currentNPC.GetComponent<npcInteract>().portraitsPreQuest[0];
@@ -94,6 +102,11 @@ public class dialogueManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void Kill()
+    {
+        Destroy(currentNPC.gameObject);
     }
 
     /// <summary>
