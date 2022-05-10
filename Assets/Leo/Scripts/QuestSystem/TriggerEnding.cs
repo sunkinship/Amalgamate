@@ -43,7 +43,11 @@ public class TriggerEnding : MonoBehaviour
         else
         {
             //Debug.Log("working");
-            StartCoroutine(CamFlash());
+            if (calledCoroutine == false)
+            {
+                calledCoroutine = true;
+                StartCoroutine(CamFlash());
+            }
         }
     }
 
