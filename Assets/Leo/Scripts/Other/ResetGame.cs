@@ -34,5 +34,6 @@ public class ResetGame : MonoBehaviour
         EnableBarnMaze.barnQuest = false;
 
         vourgnrhgghgggg.vampQuestSwap = false;
+        vourgnrhgghgggg.vampQuestSwap2 = false;
     }
 }

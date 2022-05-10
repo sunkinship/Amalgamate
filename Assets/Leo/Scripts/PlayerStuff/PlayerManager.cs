@@ -27,7 +27,7 @@ public class PlayerManager : MonoBehaviour
     public PlayerInput playerInput;
     public TrustMeter trustMeter;
     public QuestUI questUI;
-    public GameObject spotShadow;
+    //public GameObject spotShadow;
 
     //private SpriteLibrary spriteLibrary;
     public Light2D hornLamp;
@@ -103,22 +103,22 @@ public class PlayerManager : MonoBehaviour
     private void DarkScene()
     {
         lampOn = true;
-        spotShadow.SetActive(true);
-        spotShadow.transform.position = new Vector3(transform.position.x + 0.054f, transform.position.y - 1.75f, transform.position.z);
+        //spotShadow.SetActive(true);
+        //spotShadow.transform.position = new Vector3(transform.position.x + 0.054f, transform.position.y - 1.75f, transform.position.z);
     }
 
     private void Indoors()
     {
         lampOn = false;
-        spotShadow.SetActive(true);
-        spotShadow.transform.position = new Vector3(transform.position.x + 0.054f, transform.position.y - 1.75f, transform.position.z);
+        //spotShadow.SetActive(true);
+        //spotShadow.transform.position = new Vector3(transform.position.x + 0.054f, transform.position.y - 1.75f, transform.position.z);
     }
 
     private void LitScene()
     {
         lampOn = false;
-        spotShadow.SetActive(true);
-        spotShadow.transform.position = new Vector3(transform.position.x - 0.2700005f, transform.position.y - 1.75f, transform.position.z);
+        //spotShadow.SetActive(true);
+        //spotShadow.transform.position = new Vector3(transform.position.x - 0.2700005f, transform.position.y - 1.75f, transform.position.z);
     }
 
     private void ToggleLampLight()

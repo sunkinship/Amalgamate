@@ -5,27 +5,55 @@ using UnityEngine;
 public class vourgnrhgghgggg : MonoBehaviour
 {
     public static bool vampQuestSwap;
+    public static bool vampQuestSwap2;
 
-    public GameObject badVamp;
-    public GameObject goodVamp;
+    public GameObject noQuestVamp;
+    public GameObject GuardQuestVamp;
+    public GameObject QuestVamp;
 
-    public void Awake()
+    public void Start()
     {
-        foreach (Quest quest in PlayerManager.quests)
+        CheckVampState();
+        SwapVamp();
+    }
+
+    private void SwapVamp()
+    {
+        if (vampQuestSwap == false && vampQuestSwap2 == false)
         {
-            if(quest.questName.Equals("Alchemical Potion") && quest.isComplete)
-            {
-                vampQuestSwap = true;
-            }
+            noQuestVamp.SetActive(true);
+        }
+        else if (vampQuestSwap && vampQuestSwap2 == false)
+        {
+            GuardQuestVamp.SetActive(true);
+        }
+        else
+        {
+            QuestVamp.SetActive(true);
         }
     }
 
-    private void Start()
+    private void CheckVampState()
     {
-        if(vampQuestSwap == true)
+        foreach (Quest quest in PlayerManager.quests)
         {
-            badVamp.SetActive(false);
-            goodVamp.SetActive(true);
+            Debug.Log("name: " + quest.questName + " complete: " + quest.isComplete);
+            if (quest.questName.Equals("Alchemical Potion") && quest.isComplete == false)
+            {
+                Debug.Log("gaurds");
+                vampQuestSwap = true;
+                return;
+            }
+            else if (quest.questName.Equals("Alchemical Potion") && quest.isComplete)
+            {
+                Debug.Log("vamp quest");
+                vampQuestSwap2 = true;
+                return;
+            }
+            else
+            {
+                Debug.Log("normal");
+            }
         }
     }
 }

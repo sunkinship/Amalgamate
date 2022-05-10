@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954841039}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.27000046, y: -1.7499999, z: 0}
+  m_LocalPosition: {x: 0.042, y: -1.7499999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 951023341024232070}
@@ -518,11 +518,12 @@ MonoBehaviour:
   carryRunSpeed: 300
   interactionZones: {fileID: 9005686773923157071}
   mirroredPlayer: 0
-  lastFacingDirection: RIGHT
   direction: {x: 0, y: 0, z: 0}
   rb2: {fileID: 951023341175528873}
   carriedObject: {fileID: 0}
+  volume: 0
   clip: {fileID: 8300000, guid: 1c2d8d252aeb0a9409c4b034a776f4a3, type: 3}
+  mirrorScene: 0
 --- !u!58 &951023341175528874
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -673,6 +674,7 @@ MonoBehaviour:
   triggerEnd: {fileID: 0}
   portraitManager: {fileID: 951023340541334101}
   questUI: {fileID: 0}
+  rockdrick: 0
 --- !u!114 &951023341175528878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1454,7 +1456,7 @@ MonoBehaviour:
   forPortrait: {fileID: 951023340541334101}
   player: {fileID: 951023341175528912}
   npcItem: {fileID: 0}
-  prompt: {fileID: 0}
+  npcPromptYOffset: 0
   humanMayor: 0
   triggerHumanEnd: 0
   monsterMayor: 0
@@ -1472,12 +1474,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ea84b752691ff479699df679e01ac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  promptFinder: {fileID: 0}
   player: {fileID: 951023341175528912}
-  prompt: {fileID: 0}
   wallLayerMask:
     serializedVersion: 2
     m_Bits: 256
   ani: {fileID: 0}
+  placeBlock: {fileID: 0}
+  volume: 0
 --- !u!1 &1594623863795698164
 GameObject:
   m_ObjectHideFlags: 0
@@ -1557,7 +1561,7 @@ MonoBehaviour:
   forPortrait: {fileID: 951023340541334101}
   player: {fileID: 951023341175528912}
   npcItem: {fileID: 0}
-  prompt: {fileID: 0}
+  npcPromptYOffset: 0
   humanMayor: 0
   triggerHumanEnd: 0
   monsterMayor: 0
@@ -1575,12 +1579,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ea84b752691ff479699df679e01ac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  promptFinder: {fileID: 0}
   player: {fileID: 951023341175528912}
-  prompt: {fileID: 0}
   wallLayerMask:
     serializedVersion: 2
     m_Bits: 256
   ani: {fileID: 0}
+  placeBlock: {fileID: 0}
+  volume: 0
 --- !u!1 &1880100631409725233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1918,7 +1924,7 @@ MonoBehaviour:
   - {x: 0.3245592, y: -1.8744394, z: 0}
   m_ShapePathHash: -1923906395
   m_Mesh: {fileID: 0}
-  m_InstanceId: 508668
+  m_InstanceId: 987938
 --- !u!60 &9036890348715456945
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2036,7 +2042,7 @@ MonoBehaviour:
   forPortrait: {fileID: 951023340541334101}
   player: {fileID: 951023341175528912}
   npcItem: {fileID: 0}
-  prompt: {fileID: 0}
+  npcPromptYOffset: 0
   humanMayor: 0
   triggerHumanEnd: 0
   monsterMayor: 0
@@ -2054,12 +2060,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ea84b752691ff479699df679e01ac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  promptFinder: {fileID: 0}
   player: {fileID: 951023341175528912}
-  prompt: {fileID: 0}
   wallLayerMask:
     serializedVersion: 2
     m_Bits: 256
   ani: {fileID: 0}
+  placeBlock: {fileID: 0}
+  volume: 0
 --- !u!1 &4036841044617028604
 GameObject:
   m_ObjectHideFlags: 0
@@ -2375,7 +2383,7 @@ MonoBehaviour:
   forPortrait: {fileID: 951023340541334101}
   player: {fileID: 951023341175528912}
   npcItem: {fileID: 0}
-  prompt: {fileID: 0}
+  npcPromptYOffset: 0
   humanMayor: 0
   triggerHumanEnd: 0
   monsterMayor: 0
@@ -2393,12 +2401,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ea84b752691ff479699df679e01ac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  promptFinder: {fileID: 0}
   player: {fileID: 951023341175528912}
-  prompt: {fileID: 0}
   wallLayerMask:
     serializedVersion: 2
     m_Bits: 256
   ani: {fileID: 0}
+  placeBlock: {fileID: 0}
+  volume: 0
 --- !u!1 &8992413607103381137
 GameObject:
   m_ObjectHideFlags: 0
