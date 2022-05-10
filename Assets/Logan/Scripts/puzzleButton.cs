@@ -47,6 +47,7 @@ public class puzzleButton : MonoBehaviour
 
     public void Start()
     {
+        prompt = promptFinder.buttonPromptt;
         prompt.SetActive(false);
         objectToFocus = itemToDisable;
         canActivatecanPressButton = true;
