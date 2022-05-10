@@ -11663,17 +11663,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1912036927}
-          m_MethodName: ClickButton
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
   - eventID: 1
     callback:
       m_PersistentCalls:
@@ -32570,7 +32559,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -32836,17 +32825,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1912036927}
-          m_MethodName: ClickButton
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
   - eventID: 1
     callback:
       m_PersistentCalls:
@@ -32868,17 +32846,6 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 979460539}
           m_MethodName: TurnOnGlow
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1912036927}
-          m_MethodName: HighlightButton
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -58969,17 +58936,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1912036927}
-          m_MethodName: ClickButton
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
   - eventID: 1
     callback:
       m_PersistentCalls:
@@ -59970,10 +59926,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d6a615288408d4cb1f35d3fa01084c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AudioObj1: {fileID: 1520225535682128691, guid: 3fd992498e69e5e4bbefcbf38b2d6399,
-    type: 3}
-  AudioObj2: {fileID: 1846916305753885001, guid: 579ea13af6cc59a49a6bff69a287934f,
-    type: 3}
+  highlightButton: {fileID: 8300000, guid: 9134b85bce5100041988ae08b2d11ae4, type: 3}
+  buttonPress: {fileID: 8300000, guid: 0f538df253368664c870a40535610463, type: 3}
 --- !u!1 &1956019337
 GameObject:
   m_ObjectHideFlags: 0
@@ -60035,17 +59989,6 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1956019341}
           m_MethodName: TurnOffGlow
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 56808879}
-          m_MethodName: TrentOff
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -60448,17 +60391,6 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 2014497662}
           m_MethodName: IncreaseGlow
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1912036927}
-          m_MethodName: ClickButton
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
