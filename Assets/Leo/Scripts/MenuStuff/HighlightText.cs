@@ -51,6 +51,7 @@ public class HighlightText : MonoBehaviour
 
     public void TurnOnGlow()
     {
+        Debug.Log("glow");
         lampOn = true;
         //textImage.color = new Color32(247, 217, 127, 255);
         textImage.material = lightMats.glowMat;
@@ -59,6 +60,7 @@ public class HighlightText : MonoBehaviour
 
     public void TurnOffGlow()
     {
+        Debug.Log("off");
         lampOn = false;
         //textImage.color = Color.white;
         textImage.material = lightMats.notGlowMat;
