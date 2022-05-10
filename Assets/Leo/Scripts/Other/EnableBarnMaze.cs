@@ -11,7 +11,7 @@ public class EnableBarnMaze : MonoBehaviour
     {
         foreach (Quest quest in PlayerManager.quests)
         {
-            if (quest.questName.Equals("Hay in the Barn"))
+            if (quest.questName.Equals("Hay in the barn"))
             {
                 barnDoor.SetActive(true);
                 return;
