@@ -19,15 +19,31 @@ public class exitThisSceneDOOR : MonoBehaviour
     bool canLeaveScene;
     public PlayerInput playerInput;
 
-    public GameObject doorPrompt;
+    private GameObject doorPrompt;
+    public static bool promptOn;
 
     private void Awake()
     {
         playerAni = player.GetComponent<Animator>();
     }
 
+    private void Start()
+    {
+        doorPrompt = GameObject.Find("doorPrompt");
+    }
+
     private void Update()
     {
+
+        if(promptOn == true)
+        {
+            doorPrompt.SetActive(true);
+        }
+        else
+        {
+            doorPrompt.SetActive(false);
+        }
+
         if(canLeaveScene == true && playerInput.actions["Interact"].triggered && playerMovement.inDialogue == false)
         {
             //Debug.Log("GO");
@@ -48,7 +64,7 @@ public class exitThisSceneDOOR : MonoBehaviour
         {
             canLeaveScene = true;
             doorPrompt.transform.position = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 1, this.gameObject.transform.position.z);
-            doorPrompt.SetActive(true);
+            promptOn = true;
         }
         //else
         //{
@@ -61,7 +77,7 @@ public class exitThisSceneDOOR : MonoBehaviour
         if (collision.gameObject.tag.Equals("Player") && EnterThisScene.enteringScene == false)
         {
             canLeaveScene = false;
-            doorPrompt.SetActive(false);
+            promptOn = false;
         }
     }
 
