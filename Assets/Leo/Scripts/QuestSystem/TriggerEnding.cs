@@ -63,8 +63,9 @@ public class TriggerEnding : MonoBehaviour
     {
         cameraAni.SetTrigger("FadeInTrigger");
         photo.SetActive(true);
+        yield return new WaitForSeconds(1f);
         photoAni.SetTrigger("PhotoZoom");
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(10f);
         endPanel.SetActive(true);
     }
 
@@ -72,7 +73,7 @@ public class TriggerEnding : MonoBehaviour
     {
         ChangeCanvasOrder();
         fadeAni.SetTrigger("FadeOutSlow");
-        yield return new WaitForSeconds(3.3f);
+        yield return new WaitForSeconds(3.8f);
         SceneManager.LoadScene(sceneToLoad);
         calledCoroutine = false;
         playerMovement.inLoadingZone = false;
