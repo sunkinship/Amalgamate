@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Player
-  m_Shader: {fileID: -6465566751694194690, guid: 1a625022b62a90943be61c6d790123de,
+  m_Name: MainMenuHorn
+  m_Shader: {fileID: -6465566751694194690, guid: a0a1ed00987745f44b7d00c7a58820db,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
@@ -21,13 +21,13 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Emission:
-        m_Texture: {fileID: 2800000, guid: a5645df8c9a84d348a8239f125cab612, type: 3}
+        m_Texture: {fileID: 2800000, guid: eaa62a052e8f3464d968c62d300490ba, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: b10730d7d5064f3479d126d8ed9d407e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
-    - Color_18748F50: {r: 1024, g: 1024, b: 1024, a: 0}
+    - Color_18748F50: {r: 0, g: 0, b: 0, a: 0}
