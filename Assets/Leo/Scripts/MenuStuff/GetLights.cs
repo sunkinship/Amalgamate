@@ -11,6 +11,6 @@ public class GetLights : MonoBehaviour
     private void Awake()
     {
         glowMat = Resources.Load<Material>("TextMatVariants/MenuButtonGlow");
-        notGlowMat = Resources.Load<Material>("TextMatVariants/UnlitPlayer");
+        notGlowMat = Resources.Load<Material>("TextMatVariants/UnlitButtonMat");
     }
 }

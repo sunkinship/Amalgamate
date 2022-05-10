@@ -78,6 +78,7 @@ public class TriggerEnding : MonoBehaviour
         fadeAni.SetTrigger("FadeOutSlow");
         yield return new WaitForSeconds(3.8f);
         SceneManager.LoadScene(sceneToLoad);
+        ResetGame.Reset();
         calledCoroutine = false;
         playerMovement.inLoadingZone = false;
         PlayerManager.spawnPoint = spawnLocation;

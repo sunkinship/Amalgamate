@@ -98,6 +98,7 @@ public class PauseMenu : MonoBehaviour
         fadeAni.SetTrigger("FadeTrigger");
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene("NewMainMenu");
+        ResetGame.Reset();
         calledCoroutine = false;
     }
 }

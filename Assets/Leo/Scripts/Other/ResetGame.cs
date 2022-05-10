@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ResetGame : MonoBehaviour
 {
-    public void Reset()
+    public static void Reset()
     {
         PlayerManager.quests.Clear();
         PlayerManager.inventory.Clear();
