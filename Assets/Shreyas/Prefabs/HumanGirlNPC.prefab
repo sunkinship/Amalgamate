@@ -599,7 +599,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.1852105, y: 0.43497252}
+  m_Offset: {x: -0.9666077, y: 0.43497252}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -610,7 +610,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6787758, y: 5.3736405}
+  m_Size: {x: 2.1159813, y: 5.3736405}
   m_EdgeRadius: 0
 --- !u!114 &7274780271711555605
 MonoBehaviour:
@@ -708,7 +708,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.304119, y: 0.42581463}
+  m_Offset: {x: 1.1454556, y: 0.42581463}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -719,7 +719,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.715071, y: 5.303665}
+  m_Size: {x: 2.0323977, y: 5.303665}
   m_EdgeRadius: 0
 --- !u!114 &7274780271972894760
 MonoBehaviour:
@@ -783,7 +783,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02300179, y: 1.1710033}
+  m_Offset: {x: 0.029356718, y: 0.9087727}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -794,7 +794,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9612963, y: 1.815794}
+  m_Size: {x: 1.3704848, y: 2.5283198}
   m_EdgeRadius: 0
 --- !u!114 &7274780272290189604
 MonoBehaviour:
@@ -858,7 +858,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02055657, y: -0.5060005}
+  m_Offset: {x: 0.035327673, y: -0.58139396}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -869,7 +869,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9917152, y: 0.6111231}
+  m_Size: {x: 1.3515418, y: 0.61102057}
   m_EdgeRadius: 0
 --- !u!114 &7274780273312440276
 MonoBehaviour:
