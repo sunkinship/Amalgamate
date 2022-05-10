@@ -77,4 +77,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Tyler/Scenes/InsideHouse9.unity
     guid: f6cbe7b25070c63499522a6c3b3fbbbf
+  - enabled: 1
+    path: Assets/Trent/Scenes/InsideMonsterHouseScenes/MonsterHouseScene1.unity
+    guid: efdc19cd362d0ee43b05b84aca152b82
+  - enabled: 1
+    path: Assets/Trent/Scenes/InsideMonsterHouseScenes/MonsterHouseScene2.unity
+    guid: 363d8139444ec304ab20e629be882cd6
+  - enabled: 1
+    path: Assets/Trent/Scenes/InsideMonsterHouseScenes/MonsterHouseScene3.unity
+    guid: 21d7af3bfc5a98f4ebe315db47879b1f
   m_configObjects: {}
