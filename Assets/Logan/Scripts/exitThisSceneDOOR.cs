@@ -30,6 +30,8 @@ public class exitThisSceneDOOR : MonoBehaviour
     private void Start()
     {
         doorPrompt = GameObject.Find("doorPrompt");
+        doorPrompt.SetActive(false);
+        promptOn = false;
     }
 
     private void Update()

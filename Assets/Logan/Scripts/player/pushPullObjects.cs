@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class pushPullObjects : MonoBehaviour
 {
+
+    public findPrompts promptFinder;
+
+
     private PlayerInput playerInput;
     public static GameObject heldItem;
     public GameObject player;
@@ -14,7 +18,7 @@ public class pushPullObjects : MonoBehaviour
     public static bool isMovingObject;
     public static bool canDropObject;
     static bool canPickUp;
-    public GameObject prompt;
+    private GameObject prompt;
 
     private static Collider2D heldItemCollider;
 
@@ -32,6 +36,8 @@ public class pushPullObjects : MonoBehaviour
 
     private void Awake()
     {
+        promptFinder = GameObject.Find("findPrompts").GetComponent<findPrompts>();
+        prompt = promptFinder.buttonPromptt;
         playerRender = player.GetComponent<Renderer>();
         playerInput = player.GetComponent<PlayerInput>();
         canPickUp = true;
@@ -129,6 +135,7 @@ public class pushPullObjects : MonoBehaviour
             isFacingMovable = true;
             heldItem = collision.gameObject;
             currentMovable = collision.gameObject;
+            
         }
 
     }
@@ -144,6 +151,7 @@ public class pushPullObjects : MonoBehaviour
         if (collision.gameObject.tag == "movableObject")
         {
             isFacingMovable = false;
+            
             //StopCoroutine(ButtonPrompt());
             //prompt.SetActive(false);
         }

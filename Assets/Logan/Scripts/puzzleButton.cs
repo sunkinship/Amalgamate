@@ -5,6 +5,9 @@ using UnityEngine.InputSystem;
 
 public class puzzleButton : MonoBehaviour
 {
+
+    private findPrompts promptFinder;
+
     public GameObject itemToDisable;
     public GameObject mirrorItemToDisable;
     public float time;
@@ -36,8 +39,15 @@ public class puzzleButton : MonoBehaviour
     [SerializeField] private AudioClip buttonPressed;
     [SerializeField] private float volume;
 
+    private void Awake()
+    {
+        promptFinder = GameObject.Find("findPrompts").GetComponent<findPrompts>();
+        prompt = promptFinder.buttonPromptt;
+    }
+
     public void Start()
     {
+        prompt.SetActive(false);
         objectToFocus = itemToDisable;
         canActivatecanPressButton = true;
     }

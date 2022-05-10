@@ -7,6 +7,9 @@ using TMPro;
 
 public class checkInteractions : MonoBehaviour
 {
+
+    private findPrompts promptFinder;
+
     private bool isKeyDown;
     private bool isFacingInteractable;
     public PlayerInput playerInput;
@@ -25,9 +28,15 @@ public class checkInteractions : MonoBehaviour
     private PlayerManager playerManager;
 
     //prompt
-    public GameObject npcPrompt;
-    public GameObject blockPrompt;
-    public GameObject buttonPromptt;
+    private GameObject npcPrompt;
+    private GameObject blockPrompt;
+    private GameObject buttonPromptt;
+
+    private static bool npcPromptActive;
+    private static bool blockPromptActive;
+    private static bool buttonPromptActive;
+
+
     public float npcPromptYOffset;
 
     public bool humanMayor;
@@ -41,12 +50,42 @@ public class checkInteractions : MonoBehaviour
 
     private void Awake()
     {
+        promptFinder = GameObject.Find("findPrompts").GetComponent<findPrompts>();
+        npcPrompt = promptFinder.npcPrompt;
+        blockPrompt = promptFinder.blockPrompt;
+        buttonPromptt = promptFinder.buttonPromptt;
         playerManager = player.GetComponent<PlayerManager>();
         //playerInput = gameObject.GetComponent<PlayerInput>();
     }
 
+    private void Start()
+    {
+        
+    }
+
     void Update()
     {
+
+        if (npcPromptActive == true)
+        {
+            npcPrompt.SetActive(true);
+        }
+        else
+        {
+            npcPrompt.SetActive(false);
+        }
+
+        if(blockPromptActive == true)
+        {
+            blockPrompt.SetActive(true);
+        }
+        else
+        {
+            blockPrompt.SetActive(false);
+        }
+
+        if(npcPrompt)
+
         if (npcInteract.forcedMayorSpeaking)
         {
             //Debug.Log("mayor");
@@ -342,7 +381,7 @@ public class checkInteractions : MonoBehaviour
         if(collision.gameObject.tag == "interactableNPC" && npcInteract.mayorForcedDialogue == false)
         {
             isFacingInteractable = true;
-
+            //npcPromptActive = true;
             currentNPC = collision.gameObject;
         }
 
@@ -354,22 +393,24 @@ public class checkInteractions : MonoBehaviour
         if (other.gameObject.tag == "interactableNPC" && playerMovement.carryingObject == false && isInteractingWithNPC == false)
         {
             npcPrompt.transform.position = new Vector3(currentNPC.transform.position.x, currentNPC.transform.position.y + npcPromptYOffset, currentNPC.transform.position.z);
-            StartCoroutine(ButtonPrompt());
+            npcPromptActive = true;
         }
         else if (other.gameObject.tag == "movableObject" && playerMovement.carryingObject == false)
         {
             currentBlock = other.gameObject;
             blockPrompt.transform.position = new Vector3(currentBlock.transform.position.x, currentBlock.transform.position.y + 1f, currentBlock.transform.position.z);
-            StartCoroutine(ButtonPrompt());
+            blockPromptActive = true;
+            //StartCoroutine(ButtonPrompt());
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        StopCoroutine(ButtonPrompt());
+        //StopCoroutine(ButtonPrompt());
         isFacingInteractable = false;
-        npcPrompt.SetActive(false);
-        blockPrompt.SetActive(false);
-        buttonPromptt.SetActive(false);
+        //npcPrompt.SetActive(false);
+        npcPromptActive = false;
+        blockPromptActive = false;
+        buttonPromptActive = false;
     }
 }
