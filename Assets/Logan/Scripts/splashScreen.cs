@@ -31,7 +31,6 @@ public class splashScreen : MonoBehaviour
         yield return new WaitForSeconds(2);
         presentsAnimator.SetTrigger("startHideLogo");
         textAnimator.SetTrigger("startHideText");
-        titleAnimator.SetTrigger("startShowTitle");
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("NewMainMenu");
         yield return null;

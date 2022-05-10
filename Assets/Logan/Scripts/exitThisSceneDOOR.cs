@@ -50,10 +50,10 @@ public class exitThisSceneDOOR : MonoBehaviour
             doorPrompt.transform.position = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 1, this.gameObject.transform.position.z);
             doorPrompt.SetActive(true);
         }
-        else
-        {
-            doorPrompt.SetActive(false);
-        }
+        //else
+        //{
+        //    doorPrompt.SetActive(false);
+        //}
     }
 
     private void OnTriggerExit2D(Collider2D collision)
