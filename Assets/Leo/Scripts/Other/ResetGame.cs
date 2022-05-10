@@ -8,9 +8,9 @@ public class ResetGame : MonoBehaviour
     {
         PlayerManager.quests.Clear();
         PlayerManager.inventory.Clear();
-        PlayerManager.finishedQuests.Clear();
+        //PlayerManager.finishedQuests.Clear();
         PlayerManager.forcedDialogueEncounters.Clear();
-        PlayerManager.spawnPoint = new Vector2(0, 0);
+        PlayerManager.spawnPoint = new Vector2(0.2f, 0.3f);
 
         TrustMeter.targetProgress = 0.13f;
 

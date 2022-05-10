@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EnableBarnMaze : MonoBehaviour
 {
-    public static bool barnQuest;public GameObject barnDoor;
+    public static bool barnQuest;
+    public GameObject barnDoor;
 
     void Start()
     {

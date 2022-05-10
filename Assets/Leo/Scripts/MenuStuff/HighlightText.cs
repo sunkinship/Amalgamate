@@ -20,6 +20,8 @@ public class HighlightText : MonoBehaviour
     private static float hornIntensity = 0;
     private static float hornChangeRate = 1f;
 
+    public bool mainMenuButton;
+
     private void Awake()
     {
         image = gameObject.GetComponent<Image>();
@@ -27,7 +29,10 @@ public class HighlightText : MonoBehaviour
 
     private void Update()
     {
-        MenuPlayerLight();
+        if (mainMenuButton)
+        {
+            MenuPlayerLight();
+        }
     }
 
     private void MenuPlayerLight()
@@ -51,20 +56,32 @@ public class HighlightText : MonoBehaviour
 
     public void TurnOnGlow()
     {
-        Debug.Log("glow");
-        lampOn = true;
-        //textImage.color = new Color32(247, 217, 127, 255);
-        textImage.material = lightMats.glowMat;
-        image.material = lightMats.glowMat;
+        //Debug.Log("glow");
+        if (mainMenuButton == false)
+        {
+            textImage.color = new Color32(247, 217, 127, 255);
+        }
+        else
+        {
+            lampOn = true;
+            textImage.material = lightMats.glowMat;
+            image.material = lightMats.glowMat;
+        }
     }
 
     public void TurnOffGlow()
     {
-        Debug.Log("off");
-        lampOn = false;
-        //textImage.color = Color.white;
-        textImage.material = lightMats.notGlowMat;
-        image.material = lightMats.notGlowMat;
+        //Debug.Log("off");
+        if (mainMenuButton == false)
+        {
+            textImage.color = Color.white;
+        }
+        else
+        {
+            lampOn = false;
+            textImage.material = lightMats.notGlowMat;
+            image.material = lightMats.notGlowMat;
+        }
     }
 
     public void PlayEffect()

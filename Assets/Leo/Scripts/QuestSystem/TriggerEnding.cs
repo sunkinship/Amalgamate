@@ -24,6 +24,8 @@ public class TriggerEnding : MonoBehaviour
     public Canvas fadeCanvas;
     public Canvas endCanvas;
 
+    public AudioClip clip;
+
     public void GoToEndScene()
     {
         //Debug.Log("GO");
@@ -62,6 +64,7 @@ public class TriggerEnding : MonoBehaviour
     private IEnumerator CamFlash()
     {
         cameraAni.SetTrigger("FadeInTrigger");
+        AudioManager.Instance.PlaySound(clip, 1f);
         photo.SetActive(true);
         yield return new WaitForSeconds(1f);
         photoAni.SetTrigger("PhotoZoom");

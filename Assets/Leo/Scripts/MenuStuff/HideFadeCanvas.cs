@@ -15,6 +15,7 @@ public class HideFadeCanvas : MonoBehaviour
     }
     public void OnClickGoHome()
     {
+        PlayerManager.spawnPoint = new Vector2(0.2f, 0.3f);
         fadeCanvas.SetActive(true);
         StartCoroutine(Fade());
     }

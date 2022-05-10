@@ -11,13 +11,13 @@ public class AddNPCToEnd : MonoBehaviour
 
     private void CheckNPCToAdd()
     {
-        foreach (string name in PlayerManager.finishedQuests)
-        {
-            if (gameObject.GetComponent<npcInteract>().NPCName.Equals(name))
-            {
-                return;
-            }
-        }
-        Destroy(gameObject);
+        //foreach (string name in PlayerManager.finishedQuests)
+        //{
+        //    if (gameObject.GetComponent<npcInteract>().NPCName.Equals(name))
+        //    {
+        //        return;
+        //    }
+        //}
+        //Destroy(gameObject);
     }
 }

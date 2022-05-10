@@ -7,14 +7,14 @@ public class ShowCreditText : MonoBehaviour
     //public GetLights getLights;
     public GameObject trent, leo, logan, tyler, shreyas, misc;
 
-    private void SetAllOff()
+    public void SetAllOff()
     {
         trent.SetActive(false);
         leo.SetActive(false);
         logan.SetActive(false);
         tyler.SetActive(false);
         shreyas.SetActive(false);
-        misc.SetActive(true);
+        misc.SetActive(false);
     }
 
     public void TrentGlow()
