@@ -7,7 +7,7 @@ public class EnableBarnMaze : MonoBehaviour
     public static bool barnQuest;
     public GameObject barnDoor;
 
-    void Start()
+    void Update()
     {
         foreach (Quest quest in PlayerManager.quests)
         {
