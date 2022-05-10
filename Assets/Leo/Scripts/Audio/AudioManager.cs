@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource musicSource, sfxSource;
 
     private bool masterMuted;
+
     public Slider masterSlider;
 
     public TextMeshProUGUI masterText, musicText, sfxText;
@@ -26,6 +28,31 @@ public class AudioManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        SceneManager.sceneLoaded += OnSceneLoaded;
+
+    }
+
+    //private void Start()
+    //{
+    //    Debug.Log("Scene loaded");
+    //    masterSlider = GameObject.Find("Master Slider").GetComponent<Slider>();
+    //    masterText = GameObject.Find("MasterText").GetComponent<TextMeshProUGUI>();
+    //    musicText = GameObject.Find("MusicText").GetComponent<TextMeshProUGUI>();
+    //    sfxText = GameObject.Find("SFXText").GetComponent<TextMeshProUGUI>();
+    //}
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        WaitToAssign();
+    }
+
+    private void WaitToAssign()
+    {
+        Debug.Log("Scene loaded");
+        masterSlider = GameObject.Find("Master Slider").GetComponent<Slider>();
+        masterText = GameObject.Find("MasterText").GetComponent<TextMeshProUGUI>();
+        musicText = GameObject.Find("MusicText").GetComponent<TextMeshProUGUI>();
+        sfxText = GameObject.Find("SFXText").GetComponent<TextMeshProUGUI>();
     }
 
     #region Play Audio

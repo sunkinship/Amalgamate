@@ -1202,6 +1202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 60700200718803980}
   - component: {fileID: 60700200718803983}
+  - component: {fileID: 8306509928870502302}
   m_Layer: 0
   m_Name: Pause Menus (Enable for build)
   m_TagString: Untagged
@@ -1245,6 +1246,19 @@ MonoBehaviour:
   questListCanvas: {fileID: 60700200891700716}
   ani: {fileID: 60700200514920797}
   fadeAni: {fileID: 60700199588873261}
+--- !u!114 &8306509928870502302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60700200718803981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8562024d5d66d642b0bff68b90fd767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCanvas: {fileID: 2731786135069704900}
 --- !u!1 &60700200802245370
 GameObject:
   m_ObjectHideFlags: 0
