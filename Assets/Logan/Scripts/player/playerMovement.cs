@@ -193,6 +193,7 @@ public class playerMovement : MonoBehaviour
 
         direction = Vector2.zero;
 
+        //Debug.Log("dir: " + direction);
         //if (Input.GetKey(KeybindManager.MyInstance.Keybinds["UP"]))
         if (playerInput.actions["Up"].IsPressed() && inLoadingZone == false && mirroredPlayer == false)
         {
