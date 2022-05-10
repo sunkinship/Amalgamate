@@ -28,9 +28,10 @@ public class TriggerEnding : MonoBehaviour
 
     public void GoToEndScene()
     {
-        //Debug.Log("GO");
+        Debug.Log("GO");
         if (cameraFlash == false)
         {
+            Debug.Log("not working");
             exitingScene = true;
             playerMovement.inLoadingZone = true;
             if (calledCoroutine == false)
@@ -41,6 +42,7 @@ public class TriggerEnding : MonoBehaviour
         }
         else
         {
+            Debug.Log("working");
             StartCoroutine(CamFlash());
         }
     }
@@ -63,6 +65,7 @@ public class TriggerEnding : MonoBehaviour
 
     private IEnumerator CamFlash()
     {
+        Debug.Log("why");
         cameraAni.SetTrigger("FadeInTrigger");
         AudioManager.Instance.PlaySound(clip, 1f);
         photo.SetActive(true);
