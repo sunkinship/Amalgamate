@@ -27,6 +27,7 @@ public class PlayerManager : MonoBehaviour
     public PlayerInput playerInput;
     public TrustMeter trustMeter;
     public QuestUI questUI;
+    public LogUpdatedText logText;
     //public GameObject spotShadow;
 
     //private SpriteLibrary spriteLibrary;

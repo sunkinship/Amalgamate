@@ -56,6 +56,10 @@ public class QuestGiver : MonoBehaviour
         PlayerManager.quests[PlayerManager.quests.Count - 1].isActive = true;
         PlayerManager.quests[PlayerManager.quests.Count - 1].isComplete = false;
         questUI.UpdateList();
+        if (quest.questName != "" && quest.description != "")
+        {
+            player.logText.LogUpdateAnimation();
+        }
     }
 
     /// <summary>
@@ -96,7 +100,7 @@ public class QuestGiver : MonoBehaviour
         quest.isPostQuest = true;
         CheckToRemoveCollider();
         player.trustMeter.StartCoroutine("AddProgress", 0.087f);
-        //PlayerManager.finishedQuests.Add(gameObject.GetComponent<npcInteract>().NPCName);
+        player.logText.QuestCompleteAnimation();
     }
 
     public void CheckToRemoveCollider()
