@@ -5,16 +5,24 @@ using UnityEngine;
 public class LogUpdatedText : MonoBehaviour
 {
     public Animator logAni;
-    
+    private bool calledCoroutine;
 
     public void LogUpdateAnimation()
     {
-        StartCoroutine(PlayUpdateAni());
+        if (calledCoroutine == false)
+        {
+            calledCoroutine = true;
+            StartCoroutine(PlayUpdateAni());
+        }
     }
 
     public void QuestCompleteAnimation()
     {
-        StartCoroutine(PlayCompleteAni());
+        if (calledCoroutine == false)
+        {
+            calledCoroutine = true;
+            StartCoroutine(PlayCompleteAni());
+        }
     }
 
     private IEnumerator PlayUpdateAni()
@@ -22,6 +30,7 @@ public class LogUpdatedText : MonoBehaviour
         logAni.SetTrigger("TriggerRight");
         yield return new WaitForSeconds(2);
         logAni.SetTrigger("TriggerLeft");
+        calledCoroutine = false;
     }
 
     private IEnumerator PlayCompleteAni()
@@ -29,5 +38,6 @@ public class LogUpdatedText : MonoBehaviour
         logAni.SetTrigger("TriggerRight");
         yield return new WaitForSeconds(2);
         logAni.SetTrigger("TriggerLeft");
+        calledCoroutine = false;
     }
 }
