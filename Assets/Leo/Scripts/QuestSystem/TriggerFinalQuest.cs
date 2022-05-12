@@ -11,9 +11,14 @@ public class TriggerFinalQuest : MonoBehaviour
 
     private bool mayorActivated;
 
+
     private void Start()
     {
-        CheckForFinalQuest();
+        if (humanQuestCounter >= 2 && monsterQuestCounter >= 1)
+        {
+            mayorActivated = true;
+            switchMayor.ActivateMayors();
+        }
     }
 
 

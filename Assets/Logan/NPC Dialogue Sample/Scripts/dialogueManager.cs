@@ -32,6 +32,7 @@ public class dialogueManager : MonoBehaviour
     public QuestUI questUI;
     private AudioClip voiceClip;
 
+
     public static dialogueManager Instance { get; private set; }
     private void Awake()
     {

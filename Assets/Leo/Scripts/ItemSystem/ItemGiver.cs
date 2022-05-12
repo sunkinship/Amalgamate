@@ -11,6 +11,18 @@ public class ItemGiver : MonoBehaviour
     [HideInInspector]
     public bool canGiveItem, gaveItem;
 
+    public static bool harryGaveHay;
+
+    private void Start()
+    {
+        if (harryGaveHay)
+        {
+            if (gameObject.GetComponent<npcInteract>().NPCName.Equals("Harry"))
+            {
+                linkedQuestName = "";
+            }
+        }
+    }
 
     /// <summary>
     /// Gives required item to player if player has received linked quest 
@@ -19,14 +31,18 @@ public class ItemGiver : MonoBehaviour
     {
         foreach (Quest quest in PlayerManager.quests)
         {
-            if (quest.questName.Equals(linkedQuestName) && gaveItem == false)
+            if (quest.questName.Equals(linkedQuestName) && gaveItem == false && linkedQuestName != "")
             {
                 canGiveItem = true;
                 PickUp();
+                if (linkedQuestName.Equals("Hay is for pigs"))
+                {
+                    harryGaveHay = true;
+                }
+                linkedQuestName = "";
             }
         }
     }
-
 
     /// <summary>
     /// Receive item from npc and add to inventory 

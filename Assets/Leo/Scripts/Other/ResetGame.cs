@@ -35,5 +35,8 @@ public class ResetGame : MonoBehaviour
 
         vourgnrhgghgggg.vampQuestSwap = false;
         vourgnrhgghgggg.vampQuestSwap2 = false;
+
+        ItemGiver.harryGaveHay = false;
+
     }
 }
