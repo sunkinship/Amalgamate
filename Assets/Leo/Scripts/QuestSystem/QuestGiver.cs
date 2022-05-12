@@ -95,7 +95,7 @@ public class QuestGiver : MonoBehaviour
         //Debug.Log(quest.questName + " complete");
         quest.isPostQuest = true;
         CheckToRemoveCollider();
-        player.trustMeter.StartCoroutine("AddProgress", 0.15f);
+        player.trustMeter.StartCoroutine("AddProgress", 0.087f);
         //PlayerManager.finishedQuests.Add(gameObject.GetComponent<npcInteract>().NPCName);
     }
 

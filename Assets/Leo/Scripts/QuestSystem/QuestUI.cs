@@ -20,7 +20,7 @@ public class QuestUI : MonoBehaviour
         textContents = "";
         foreach (Quest quest in PlayerManager.quests)
         {
-            if (quest.isActive && quest.isComplete == false)
+            if (quest.isActive && quest.isComplete == false && quest.questName != "" && quest.description != "")
             {
                 textContents += " *" + quest.questName + "\n -" + quest.description + "\n\n";
             }
