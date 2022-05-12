@@ -32,7 +32,7 @@ public class ItemInteractable : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "interactionZone" || collision.tag == "Player")
+        if (collision.tag == "interactionZone" || collision.tag == "ItemChecker")
         {
             //Debug.Log("in range");
             canPickUp = true;
@@ -41,7 +41,7 @@ public class ItemInteractable : MonoBehaviour
 
     public void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "interactionZone" || collision.tag == "Player")
+        if (collision.tag == "interactionZone" || collision.tag == "ItemChecker")
         {
             //Debug.Log("left range");
             canPickUp = false;
