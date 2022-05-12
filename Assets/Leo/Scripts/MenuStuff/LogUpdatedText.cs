@@ -18,7 +18,7 @@ public class LogUpdatedText : MonoBehaviour
 
     private IEnumerator PlayUpdateAni()
     {
-        Debug.Log("one");
+        //Debug.Log("one");
         logUpdatedAni.SetTrigger("TriggerRight");
         yield return new WaitForSeconds(3);
         //Debug.Log("two");
