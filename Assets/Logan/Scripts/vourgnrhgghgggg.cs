@@ -38,13 +38,13 @@ public class vourgnrhgghgggg : MonoBehaviour
         foreach (Quest quest in PlayerManager.quests)
         {
             Debug.Log("name: " + quest.questName + " complete: " + quest.isComplete);
-            if (quest.questName.Equals("Alchemical Potion") && quest.isComplete == false)
+            if (quest.questName.Equals("Tasty Potion") && quest.isComplete == false)
             {
                 Debug.Log("gaurds");
                 vampQuestSwap = true;
                 return;
             }
-            else if (quest.questName.Equals("Alchemical Potion") && quest.isComplete)
+            else if (quest.questName.Equals("Tasty Potion") && quest.isComplete)
             {
                 Debug.Log("vamp quest");
                 vampQuestSwap2 = true;
