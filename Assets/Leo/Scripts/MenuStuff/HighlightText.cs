@@ -13,7 +13,7 @@ public class HighlightText : MonoBehaviour
     public Image textImage;
     private static bool lampOn;
 
-    private float maxBrightness = 1f;
+    private float maxBrightness = 0.4f;
 
     public Material mat;
     public Renderer render;
