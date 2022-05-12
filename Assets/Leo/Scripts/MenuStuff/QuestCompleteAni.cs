@@ -19,7 +19,7 @@ public class QuestCompleteAni : MonoBehaviour
     private IEnumerator PlayCompleteAni()
     {
         questCompleteAni.SetTrigger("TriggerRight");
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
         questCompleteAni.SetTrigger("TriggerLeft");
         calledCoroutine = false;
     }

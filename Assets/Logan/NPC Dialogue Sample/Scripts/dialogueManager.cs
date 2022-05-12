@@ -93,8 +93,10 @@ public class dialogueManager : MonoBehaviour
 
                 if (npcInteract.newQuest == true)
                 {
-                    if (currentNPC.GetComponent<Quest>().questName != "" && currentNPC.GetComponent<Quest>().description != "")
+                    //Debug.Log("new quest");
+                    if (currentNPC.GetComponent<QuestGiver>().quest.questName != "" && currentNPC.GetComponent<QuestGiver>().quest.description != "")
                     {
+                        //Debug.Log("yay");
                         playerManage.logText.LogUpdateAnimation();
                     }
                     npcInteract.newQuest = false;
