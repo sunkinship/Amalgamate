@@ -91,6 +91,15 @@ public class dialogueManager : MonoBehaviour
                     npcInteract.forcedMayorSpeaking = false;
                 }
 
+                if (npcInteract.newQuest == true)
+                {
+                    if (currentNPC.GetComponent<Quest>().questName != "" && currentNPC.GetComponent<Quest>().description != "")
+                    {
+                        playerManage.logText.LogUpdateAnimation();
+                    }
+                    npcInteract.newQuest = false;
+                }
+
                 // If quest is completed progresses trust meter and makes isPostQuest true
                 if (playerManage.callPostQuest && currentNPC.GetComponent<QuestGiver>().quest.isPostQuest == false && currentNPC.GetComponent<QuestGiver>().quest.isComplete == true)
                 {

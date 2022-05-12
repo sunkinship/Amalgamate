@@ -35,7 +35,7 @@ public class QuestGiver : MonoBehaviour
             {
                 if (gameObject.GetComponent<npcInteract>().isMayor)
                 {
-                    Debug.Log("turn off mayor collider");
+                    //Debug.Log("turn off mayor collider");
                     turnOffForcedMayorCollider = true;
                 }
                 else
@@ -56,10 +56,6 @@ public class QuestGiver : MonoBehaviour
         PlayerManager.quests[PlayerManager.quests.Count - 1].isActive = true;
         PlayerManager.quests[PlayerManager.quests.Count - 1].isComplete = false;
         questUI.UpdateList();
-        if (quest.questName != "" && quest.description != "")
-        {
-            player.logText.LogUpdateAnimation();
-        }
     }
 
     /// <summary>
@@ -100,7 +96,7 @@ public class QuestGiver : MonoBehaviour
         quest.isPostQuest = true;
         CheckToRemoveCollider();
         player.trustMeter.StartCoroutine("AddProgress", 0.087f);
-        player.logText.QuestCompleteAnimation();
+        player.completeText.QuestCompleteAnimation();
     }
 
     public void CheckToRemoveCollider()

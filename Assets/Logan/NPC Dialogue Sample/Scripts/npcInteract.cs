@@ -46,6 +46,7 @@ public class npcInteract : MonoBehaviour, interactable
 
     public bool rockdrick;
 
+    public static bool newQuest;
 
     private void Awake()
     {
@@ -95,6 +96,7 @@ public class npcInteract : MonoBehaviour, interactable
         {
             //Debug.Log("New quest");
             StartCoroutine(dialogueManager.Instance.ShowDialogue(dialoguePreQuest, portraitsPreQuest));
+            newQuest = true;
             playerManager.GetQuest(npc);
         } 
         // Quest started but not completed

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LogUpdatedText : MonoBehaviour
 {
-    public Animator logAni;
+    public Animator logUpdatedAni;
     private bool calledCoroutine;
 
     public void LogUpdateAnimation()
@@ -16,28 +16,13 @@ public class LogUpdatedText : MonoBehaviour
         }
     }
 
-    public void QuestCompleteAnimation()
-    {
-        if (calledCoroutine == false)
-        {
-            calledCoroutine = true;
-            StartCoroutine(PlayCompleteAni());
-        }
-    }
-
     private IEnumerator PlayUpdateAni()
     {
-        logAni.SetTrigger("TriggerRight");
+        //Debug.Log("one");
+        logUpdatedAni.SetTrigger("TriggerRight");
         yield return new WaitForSeconds(2);
-        logAni.SetTrigger("TriggerLeft");
-        calledCoroutine = false;
-    }
-
-    private IEnumerator PlayCompleteAni()
-    {
-        logAni.SetTrigger("TriggerRight");
-        yield return new WaitForSeconds(2);
-        logAni.SetTrigger("TriggerLeft");
+        //Debug.Log("two");
+        logUpdatedAni.SetTrigger("TriggerLeft");
         calledCoroutine = false;
     }
 }
