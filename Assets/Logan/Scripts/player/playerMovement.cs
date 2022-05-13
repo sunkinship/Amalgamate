@@ -85,6 +85,11 @@ public class playerMovement : MonoBehaviour
 
     void Update()
     {
+
+        foreach (Quest item in PlayerManager.quests)
+        {
+            Debug.Log(item.questName);
+        } 
         //iteractionZones = GameObject.FindGameObjectWithTag("interactionZone");
 
         //if (carryingObject == true && inLoadingZone == true)
