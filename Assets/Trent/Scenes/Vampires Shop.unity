@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -57797,7 +57797,70 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 12.0854225, y: 0.7091665}
   m_EdgeRadius: 0
---- !u!43 &531570892
+--- !u!4 &541089014 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7318425315069949881, guid: 2720c9a7ad490c6428b68d1e9aceeed3,
+    type: 3}
+  m_PrefabInstance: {fileID: 7318425314528865103}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &551227091
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 551227093}
+  - component: {fileID: 551227092}
+  m_Layer: 0
+  m_Name: Walls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &551227092
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551227091}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.10410419, y: 3.7217064}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.79189175, y: 17.44836}
+  m_EdgeRadius: 0
+--- !u!4 &551227093
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551227091}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.162548, y: -0.36859584, z: 9.950715}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 987169200}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!43 &561290511
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -57960,69 +58023,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!4 &541089014 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7318425315069949881, guid: 2720c9a7ad490c6428b68d1e9aceeed3,
-    type: 3}
-  m_PrefabInstance: {fileID: 7318425314528865103}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &551227091
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 551227093}
-  - component: {fileID: 551227092}
-  m_Layer: 0
-  m_Name: Walls
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &551227092
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 551227091}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.10410419, y: 3.7217064}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.79189175, y: 17.44836}
-  m_EdgeRadius: 0
---- !u!4 &551227093
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 551227091}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.162548, y: -0.36859584, z: 9.950715}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 987169200}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &563089656
 GameObject:
   m_ObjectHideFlags: 0
@@ -70732,13 +70732,13 @@ MonoBehaviour:
     - 'Maybe you would be a good fit to be one of my assistants. '
     - '... '
     - 'Ah, would you look at that. The potion is done. '
-    - 'Here is the <color=cyan>''Tasty Concoction''</color> . '
+    - 'Here is the ''Tasty Concoction''. '
     - 'Now hopefully you''ll visit me again. '
     - 'Your blood smells absolutely delightful... '
   dialogueNoQuest:
     lines:
     - 'Your <color=red>blood</color> smells like a human... '
-    - 'But your a monster... '
+    - 'But you''re a monster... '
     - 'How peculiar... '
   portraitsPreQuest:
   - {fileID: 21300000, guid: 06f38c84d94e37241be78b342a079e4e, type: 3}
