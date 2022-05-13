@@ -70,6 +70,7 @@ public class AudioManager : MonoBehaviour
     {
         musicSource.clip = clip;
         musicSource.volume = volume;
+        musicSource.loop = true;
         musicSource.Play();
     }
     #endregion
